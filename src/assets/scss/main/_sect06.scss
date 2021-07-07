@@ -1,0 +1,118 @@
+.sect-come {
+    background-color: #F0F0F0;
+    padding-bottom: 10.0rem !important;
+
+    .title {
+        padding: 6.5rem 0 3.0rem;
+
+    }
+
+    .come {
+        overflow: hidden;
+
+        ul {
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #bdbdbd;
+            background: #e6e6e6;
+
+            li {
+                float: left;
+                width: 50%;
+                height: 430px;
+
+                iframe,
+                >div {
+                    width: 100%;
+                    height: 100%;
+                }
+
+
+            }
+
+            .map {
+                .wrap_map {
+                    height: 486px;
+                }
+            }
+
+            .mapExp {
+                padding: 40px;
+                background-color: white;
+            }
+
+            >p {
+                font-family: "Nanum gothic", sans-serif;
+            }
+
+            .p0 {
+                font-size: 2.0rem;
+                margin-top: 50px;
+                font-weight: 600;
+            }
+
+            .p0:first-child {
+                margin-top: 0;
+            }
+
+            .p1 {
+                position: relative;
+                font-size: 1.8rem;
+                line-height: 1.6;
+                margin-top: 14px;
+                padding-left: 12px;
+
+                .wayBtn {
+                    position: relative;
+                    top: -2px;
+                    margin-left: 4px;
+                }
+            }
+
+            .p1:before {
+                content: '-';
+                display: inline-block;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .sect-come {
+
+        .title {}
+
+        .come {
+
+            ul {
+
+                li {
+                    float: none;
+                    width: 100%;
+                    height: auto;
+                }
+
+                .map {
+                    .wrap_map {}
+                }
+
+                .mapExp {}
+
+                >p {}
+
+                .p0 {}
+
+                .p0:first-child {}
+
+                .p1 {
+
+                    .wayBtn {}
+                }
+
+                .p1:before {}
+            }
+        }
+    }
+}

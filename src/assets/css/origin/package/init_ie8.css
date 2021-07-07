@@ -1,0 +1,193 @@
+@charset 'utf-8';
+
+.title {position: relative;}
+.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+.title .tit-box h2 {font-size: 27px; letter-spacing:-2.5px}
+.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+.title .pkg-tab {position: relative; margin: 22px auto 0; width: 826px; left: 1.5px;}
+.title .pkg-tab > li {position: relative; float: left; top: 0; width:25%; border: 2px solid transparent; border-left: 1px solid #a8a6a4; margin-left: -1px; padding-left: 1px; padding-right:1px}
+.title .pkg-tab > li.nth-1 {border-left: none; margin-left: 0;}
+.title .pkg-tab > li.on {border: 2px solid #fff; z-index: 1; padding-left: 0;}
+.title .pkg-tab > li.nth-1.on {padding-right: 1px;}
+.title .pkg-tab > li a {display: block; width: 100%; height: 45px; font-size: 16px; font-weight: 400; color: #fff;}
+.title .pkg-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+    
+/* 180425 pkg-tab 변경_다솜 */
+.title .pkg-tab.tab-wid {width:1180px; margin:47px auto 0;}
+.title .pkg-tab.tab-wid > li {width:20%;}
+.title .pkg-tab.tab-wid > li a {box-sizing: border-box; height: 46px;}
+.title .pkg-tab.tab-wid > li a span {display:none}
+.title .pkg-tab.tab-wid .no-tab a {cursor: default;}
+
+.pkg-wrap {padding: 60px 0 80px;}
+.bx-wrapper, .bx-wrapper, .pkg-wrap .container, .vari-wrap .container {width: 1180px;}
+#pkg-box > section {opacity: 0; visibility: hidden; word-break: keep-all; height: 0; overflow: hidden;}
+#pkg-box > section.on {opacity: 1; visibility: visible;  height: auto; overflow: visible;}
+.pkg-wrap [class*=pkg-] h3, .pkg-wrap [class*=pkg-] .p0 {text-align: center;}
+.pkg-wrap [class*=pkg-] h3 {font-size: 35px; color: #44a8ff; font-weight: 600;}
+.pkg-wrap [class*=pkg-] .p0, .pkg-wrap [class*=pkg-] .p1, .pkg-wrap .ul0 > li h5 {color: #373737;}
+.pkg-wrap [class*=pkg-] .p0 {margin-top: 34px; font-size: 18px;}
+.pkg-wrap [class*=pkg-] .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 50px; background: #44a8ff;}
+.pkg-wrap [class*=pkg-] h4 {margin-top: 35px; font-size: 22px;}
+.pkg-wrap [class*=pkg-] .p1, .pkg-wrap .ul0 > li .p-txt {color: #7c7c7c;}
+.pkg-wrap [class*=pkg-] .p1 {margin-top: 30px; font-size: 18px; line-height: 1.5;}
+.pkg-wrap .bxBox .d-cap {color: #fff; font-size: 24px; position: absolute; bottom: 10px; left: 8px; font-family: "Nanum Gothic", sans-serif;}
+.pkg-wrap .ul0 {position: relative; margin-top: 80px;}
+.pkg-wrap .ul0 > li {float: left; width: 370px; border-top: 1px solid #44a8ff; margin-left: 30px;}
+.pkg-wrap .ul0 > li:first-child {margin-left: 0;}
+.pkg-wrap .ul0 > li h5 {margin-top: 21px; font-size: 18px; font-weight: 600;}
+.pkg-wrap .ul0 > li h5 + .p-txt {margin-top: 12px;}
+.pkg-wrap .ul0 > li .p-txt {position: relative; line-height: 1.6; word-break: keep-all; letter-spacing: -0.5px;}
+.pkg-wrap .ul0 > li .p-txt.i-s {padding-left: 15px;}
+.pkg-wrap .ul0 > li .p-txt.i-s:before {content: "※"; display: inline-block; position: absolute; left: 0;}
+.pkg-wrap .ul0 > li .p-txt.i-d {padding-left: 10px;}
+.pkg-wrap .ul0 > li .p-txt.i-d:before {content: "-"; display: inline-block; position: absolute; left: 0;}
+.pkg-wrap .ul0 > li .p-txt em {display:block; font-weight:bold; margin-top:20px;}
+.pkg-wrap .ul0 > li h5 + .p-txt em {margin-top: 0;}
+.pkg-wrap .ul0 > li .p-txt.i-m {padding-left: 27px; margin-bottom:5px; line-height:21px}
+.pkg-wrap .ul0 > li .p-txt.i-m:before {content: ""; display: inline-block; position: absolute; width:21px; height:100%; left: 0; background:url(http://img.ocean2you.co.kr/renew/package/bg_i_m.png); background-position: center; background-repeat:no-repeat}
+    
+.pkg-wrap .line {display:inline-block; width:1px; height:15px; margin:0 15px; vertical-align:middle; background:#7c7c7c}
+.pkg-wrap .ul-box em {font-weight:bold}
+.pkg-wrap .ul-box .sub-tit {display:block; padding-top:5px; font-weight:bold; color:#373737}
+    
+/* 180425 오션숯불갈비 이미지_다솜 */
+.pkg-wrap .pkg-img-list li {box-sizing:border-box; float:left; width:49%; max-width:620px; margin-top:40px; margin-left:40px; }
+.pkg-wrap .pkg-img-list.img-margin li {max-width:630px; margin-left:20px;}
+.pkg-wrap .pkg-img-list li.nth-1, .pkg-wrap .pkg-img-list li.nth-2 {margin-top:0;}
+.pkg-wrap .pkg-img-list li.nth-1, .pkg-wrap .pkg-img-list li.nth-3 {margin-left:0;}
+
+/* 180425 내용 변경_다솜 */
+.pkg-wrap [class*=pkg-] {clear:both}
+.pkg-wrap .ul-box {position:relative; margin-top:35px;}
+.pkg-wrap .ul-box.wd-full {clear: both; width: 100%;}
+.pkg-wrap .ul-box.wd-il {display: inline-block; min-width: 340px;}
+.pkg-wrap .ul-box.wid50 {float:left; width:50%;}
+.pkg-wrap .ul-box:before {content:''; display:block; position:absolute; width:30px; height:2px; top:0; background:#44a8ff}
+.pkg-wrap .ul-box h5, .pkg-wrap .ul-box .ul-sub-tit {font-weight: 600; letter-spacing:-1px; color:#373737;}
+.pkg-wrap .ul-box h5 {position: relative; padding:10px 0 20px; font-size:18px;}
+.pkg-wrap .ul-box h5 + .ul0-1.li-left {margin-top:-20px}
+.pkg-wrap .ul-box .ul-sub-tit {padding:30px 0 0; font-size:16px;}
+.pkg-wrap .ul-box .ul0-1 li {position:relative; margin-top:5px; font-size:15px; line-height:20px; letter-spacing:-1px; color:#7c7c7c}
+.pkg-wrap .ul-box .ul0-1 li.mt {margin-top:15px;}
+.pkg-wrap .ul-box .ul0-1 li:first-child {margin-top:0}
+.pkg-wrap .ul-box .ul0-1 ul li:first-child {margin-top:5px}
+.pkg-wrap .ul-box .ul0-1.li-left li {/*float:left; width:518px;*/ margin-top:20px}
+.pkg-wrap .ul-box .ul0-1.li-left .fir-li {clear:both; float:left; width:580px;}
+.pkg-wrap .ul-box .ul0-1.li-left .mid-li {float:left; width:372px;}
+.pkg-wrap .ul-box .ul0-1.li-left .last-li {float:left; width:328px;}
+.pkg-wrap .ul-box .ul0-1.li-left .clr-li {clear:both; width:100%; margin-top:0; padding-top:20px}
+.pkg-wrap .ul-box .ul0-1 li p {margin-top:3px; font-size:15px; line-height:20px; letter-spacing:-1px;}
+.pkg-wrap .ul-box .ul0-1 .i-s {position:relative; padding-left: 18px;}
+.pkg-wrap .ul-box .i-s:before {content: "※"; display: inline-block; position: absolute; left: 0;}
+.pkg-wrap .ul-box .i-d {position:relative; padding-left:9px;}
+.pkg-wrap .ul-box .i-d:before {content: ""; display: inline-block; position: absolute; width:5px; height:1px; top:9px; left: 0; background:#7c7c7c}
+.pkg-wrap .ul-box .i-n {position:relative; padding-left:16px; text-indent: -16px;}
+    
+.pkg-wrap .ul-box .ul0-1.li-left-2 li {float:left; width:50%; margin-top:0}
+.pkg-wrap .ul-box .ul0-1.li-left-2 .clr-li {clear:both; width:100%; margin-top:0; padding-top:20px}
+    
+/* 190319 낚시도구대여 */
+.pkg-wrap .ul-box .btn-dl {display: inline-block; height: 32px; margin-left: 15px; padding: 0 11px; font-size: 16px; font-weight: bold; line-height: 32px; color: #fff; background: #44a8ff;}
+.pkg-wrap .ul-box li {display: table;}
+.pkg-wrap .ul-box li > span {position: relative; display: table-cell;}
+.pkg-wrap .ul-box li > span:first-child {padding-right: 9px;}
+.pkg-wrap .ul-box li > span:first-child:before {content: ':'; position: absolute; top: 1px; right: 3px; vertical-align: middle;}
+/* type-2 */
+.pkg-wrap .ul-box.type-2 {font-size: 16px; vertical-align: top; color: #838383;}
+.pkg-wrap .ul-box.type-2:before {width: 68px;}
+.pkg-wrap .ul-box.type-2 h5 {padding: 16px 0 15px;}
+.pkg-wrap .ul-box.type-2 .ul0-1 li {font-size: 16px;}
+.pkg-wrap .ul-box.type-2 .ul0-1 li.mt {margin-top: 25px;}
+/* multi-h5 */
+.pkg-wrap .ul-box.multi-h5 {}
+.pkg-wrap .ul-box.multi-h5:before {content: none;}
+.pkg-wrap .ul-box.multi-h5 h5 {}
+.pkg-wrap .ul-box.multi-h5 h5:before { content:''; display:block; position:absolute; width:68px; height:2px; top:0; background:#44a8ff;}
+.pkg-wrap .ul-box.multi-h5 ul + h5 {margin-top: 35px;}
+
+/* 낚시도구 대여 지도 */
+.pkg-wrap .ul-box .pkg-map-list {padding-top: 5px;}
+.pkg-wrap .ul-box .pkg-map-list li {position: relative; float: left; margin: 35px 0 0 40px;}
+.pkg-wrap .ul-box .pkg-map-list .map-all, .pkg-wrap .ul-box .pkg-map-list .li-1, .pkg-wrap .ul-box .pkg-map-list .li-4 {margin-left: 0;}
+.pkg-wrap .ul-box .pkg-map-list .map-all {}
+.pkg-wrap .ul-box .pkg-map-list .map-l {}
+.pkg-wrap .ul-box .pkg-map-list .li-1 {clear: both; float: left;}
+
+.pkg-wrap .rv-a {display: block; position:relative; margin: 65px auto 0; width: 306px; height: 64px; font-size: 24px; font-family: "Nanum Gothic", sans-serif; text-align: center; background: #44a8ff; color: #fff; line-height: 57px; border-radius: 4px; font-weight: 600;}
+.pkg-wrap .rv-a > * {vertical-align: middle;}
+.pkg-wrap .rv-a2 .gt {position: relative; margin-left: 20px;}
+
+/* rv-a2 */
+.pkg-wrap .rv-a2 {display: block; position:relative; margin: 22px 0 0; width: 375px; height: 70px; font-size: 18px; text-align: center; background: #00b2dd; color: #fff; font-weight: 300;}
+.pkg-wrap .rv-a2 > * {vertical-align: middle;}
+.pkg-wrap .rv-a2 .s0 {display: inline-block; line-height: 70px;}
+.pkg-wrap .rv-a2 .gt {position: absolute; top: 50%; right: 25px; margin-top:-7px;}
+
+.pkg-wrap .sltMenu-intro .ul1 > li .p-txt {color: #7c7c7c;}
+.pkg-wrap .sltMenu-intro .ul1 > li .p-txt {position: relative; line-height: 1.6; word-break: keep-all; letter-spacing: -0.5px;}
+.pkg-wrap .sltMenu-intro .ul1 > li .p-txt.i-s {padding-left: 15px;}
+.pkg-wrap .sltMenu-intro .ul1 > li .p-txt.i-s:before {content: "※"; display: inline-block; position: absolute; left: 0;}
+.pkg-wrap .sltMenu-intro .ul1 > li .p-txt.i-d {padding-left: 10px;}
+.pkg-wrap .sltMenu-intro .ul1 > li .p-txt.i-d:before {content: "-"; display: inline-block; position: absolute; left: 0;}
+
+.pkg-wrap .sltMenu-intro {position: relative; margin-top: 50px; border-top: 1px solid #44a8ff;}
+.pkg-wrap .sltMenu-intro h5 {font-size: 18px; font-weight: 700; margin-top: 12px;}
+.pkg-wrap .sltMenu-intro .ul1 {margin-top: 24px;}
+.pkg-wrap .sltMenu-intro .ul1 > li {position: relative; padding: 20px; border: 1px solid #ebebeb; margin-top: 20px;}
+.pkg-wrap .sltMenu-intro .ul1 > li > div {float: left;}
+.pkg-wrap .sltMenu-intro .ul1 > li .d1 {width: 40%;/*width: 471px;*/}
+.pkg-wrap .sltMenu-intro .ul1 > li .d2 {position: relative; width: 60%; padding-left: 30px; /*margin-left: 50px; width: 716px;*/ /* height: 254px; */}
+.pkg-wrap .sltMenu-intro .ul1 > li .d2 .s-w {display: inline-block; width: 22px; height: 22px; border-radius: 50%; background: #4e4e4e; color: #fff; text-align: center; font-size: 14px; vertical-align: middle; text-indent: 1.2px;}
+/*.pkg-wrap .sltMenu-intro .ul1 > li .d2 .usePrc {position: absolute; bottom: 0;}*/
+.pkg-wrap .sltMenu-intro .ul1 > li .d2 .usePrc .p-txt .s-txt {/* display: inline-block; */}
+.pkg-wrap .sltMenu-intro .ul1 > li .d2 .usePrc .p-txt .s-txt:before {content: " / ";}
+.pkg-wrap .sltMenu-intro .ul1 > li .d2 .usePrc .p-txt .s-txt:first-child:before {display: none;}
+.pkg-wrap .sltMenu-intro .ul1 > li .d2 .usePrc .p-txt .s-txt a {color: #7c7c7c;}
+.pkg-wrap .sltMenu-intro .ul1 > li .d2 .usePrc .p1 {margin-bottom: 5px;}
+.pkg-wrap .sltMenu-intro .ul1 > li strong {font-weight: 700; display: block; margin-bottom: 20px;}
+
+.pkg-wrap [class*=pkg-] > .p-row {font-size: 24px; text-align: center; padding-top: 40px; margin: 40px auto -50px; line-height: 1.5; border-top: 1px solid #e1e1e1;}
+
+/* 180425 하단 패키지 탭 추가_다솜 */
+.pkg-b-tab-box {width:1180px; margin:0 auto; text-align:center; padding:0 7px 40px}
+/*.pkg-b-tab-box .pkg-b-tab li {float:left; box-sizing:border-box; width:16.666%; height:62px; border:1px solid #e2e2e2; border-left:0; background:#fff}*/
+.pkg-b-tab-box .pkg-b-tab li {float:left; box-sizing:border-box; width: 20%; height:62px; border:1px solid #e2e2e2; border-left:0; background:#fff}
+.pkg-b-tab-box .pkg-b-tab .nth-1 {border-left:1px solid #e2e2e2;}
+.pkg-b-tab-box .pkg-b-tab li a {display:block; padding:20px 0; font-size:16px; font-weight:700; /*line-height:60px;*/ color:#373737;}
+.pkg-b-tab-box .pkg-b-tab li a > span {display:none}
+.pkg-b-tab-box .pkg-b-tab .on { background:#3197f0}
+.pkg-b-tab-box .pkg-b-tab .on a {color:#fff;}
+.pkg-b-tab-box .pkg-b-tab .no-tab a {cursor: default;}
+
+.vari-wrap {padding: 0px 0 130px; letter-spacing: -1px;}
+.vari-wrap .container {padding-top:37px; border-top: 1px solid #e1e1e1;}
+.vari-wrap h3 {font-size: 24px; font-weight: 700;}
+.vari-wrap .ul1 {margin-top: 32px;}
+.vari-wrap .ul1 > li {position: relative; float: left; margin-left: 10px;}
+.vari-wrap .ul1 > li:first-child {margin-left: 0;}
+.vari-wrap .ul1 > li a {position: relative; display: block; width: 285px; min-height: 300px; padding: 23px 10px 10px 10px; border: 1px solid #e2e2e2; color: #222;}
+.vari-wrap .ul1 > li a .i-scut {display: block; position: absolute; right: 0; top: 0; color: #fff; width: 66px; height: 74px; background: url(http://img.ocean2you.co.kr/renew/i-scut.png) no-repeat; text-align: right; padding: 6px 4px 0 0;}
+.vari-wrap .ul1 > li a h4 {font-size: 23px;}
+.vari-wrap .ul1 > li a .p1 {font-size: 17px;line-height: 1.5; margin-top: 12px;}
+.vari-wrap .ul1 > li a .variImg {display: block; margin-top: 13px;}
+
+/* 연회장 테이블 추가 */
+.pkg-wrap .banqTb {}
+.pkg-wrap .banqTb table {background: #fff; width: 100%; margin: 0px auto 0;}
+.pkg-wrap .banqTb [class*=hall-] th, .pkg-wrap .banqTb [class*=hall-] td {border: 1px solid #d6d6d6; font-size: 17px; color: #5c5c5c; line-height: 1.4; letter-spacing: -1px; vertical-align: middle;}
+.pkg-wrap .banqTb th {background: #f3f0f0; padding: 5px 0; font-weight: 700;}
+.pkg-wrap .banqTb td {padding: 8px 5px;}
+.pkg-wrap .banqTb .hall-1 col:first-child {width: 12%;}
+.pkg-wrap .banqTb .hall-1 col:nth-child(2) {width: 18%;}
+.pkg-wrap .banqTb .hall-1 col:nth-child(3) {width: 10%;}
+.pkg-wrap .banqTb .hall-1 col:nth-child(4) {width: 10%;}
+.pkg-wrap .banqTb .hall-1 col:nth-child(5) {width: 15%;}
+.pkg-wrap .banqTb .hall-1 col:nth-child(6) {width: 15%;}
+.pkg-wrap .banqTb .hall-1 col:nth-child(7) {width: 15%;}
+.pkg-wrap .banqTb .hall-1 th {}
+.pkg-wrap .banqTb .hall-1 td {text-align: center;}
+.pkg-wrap .banqTb .hall-1 .textCenter {padding-left: 30px; text-align: left;} 
+.pkg-wrap .banqTb .hall-1 [class*=numType_] {margin-right: 10px;}
+.pkg-wrap .banqTb .hall-1 [class*=numType_] + span {position: relative; top: 1px;}
+.pkg-wrap .banqTb .hall-1 .s-num {display: inline-block;}

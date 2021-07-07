@@ -1,0 +1,57 @@
+@@include('../include/_head.html', {
+    "page": "login"
+    })
+    
+</head>
+
+<body>
+    <main id="wrap" class="wrap">
+        @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_login.html')
+
+        <!--탑메뉴 오버이벤트를 위한 태그-->
+        <div class="page-data" data-name="d_find_pw"></div>
+
+        <div class="wrap-container wrap-login">
+            <section class="sect-find">
+                <div class="sect-contents">
+                    <h3 class="page-title">비밀번호 재설정</h3>
+                    <div class="login-contents">
+                        <div class="find-area">
+                            <div class="newpw-title-box">
+                                <div class="icon-img">
+                                    <img src="http://design.ebiznetworks.co.kr/lhc/ocean2y_condo/img/login/icon_lock.png" alt="돋보기">
+                                </div>
+                                <p class="title">새로운 비밀번호 입력</p>
+
+                                <p class="p-sub">※ 오션투유리조트에서 새로 사용하실 비밀번호를 입력해 주세요.</p>
+                            </div>
+                            <div class="in-area-newpw">
+                                <ul class="in-area-ul">
+                                    <li>
+                                        <label for="in-newpw">새 비밀번호</label>
+                                        <input type="password" id="in-newpw" class="in-newpw">
+                                    </li>
+                                    <li>
+                                        <label for="in-newpw-sync">새 비밀번호 확인</label>
+                                        <input type="password" id="in-newpw-sync" class="in-newpw-sync">
+                                    </li>
+                                </ul>
+                                <p class="p-notice">8~16자리의 영문 대소문자, 숫자, 특수문자를 조합</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-btn-area">
+                        <a href="./index.html" class="btn-complete btn-blue">변경완료</a>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+
+        @@include('../include/_footer.html')
+    </main>
+
+</body>
+
+</html>

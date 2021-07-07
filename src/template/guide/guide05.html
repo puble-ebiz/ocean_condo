@@ -1,0 +1,432 @@
+@@include('./_guide_top.html')
+    
+    </head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    
+    <script>
+        function fnMove(num){
+            var offset = $("#art" + num).offset();
+            $('html, body').animate({scrollTop : (offset.top)-200}, 0);
+        }
+    </script>
+    
+
+    <body>
+        <main id="wrap" class="wrap">
+            @@include('./_guide_sub.html')
+
+            <!--탑메뉴 오버이벤트를 위한 태그-->
+            <div class="page-data" data-name="d_guide05"></div>
+    
+            <div class="wrap-container wrap-guide">
+                <section class="sect-guide scss_com">
+                    <div class="sect-contents information guide05">
+                        <h3 class="page-title">회원권 명의개서</h3>
+                        <!-- 탭 -->
+                        <ul class="mb-tab clr">
+                            <li class="tab01 on"><a href="javascript:;" onclick="fnMove('1')">명의변경</a></li>
+                            <li class="tab02"><a href="javascript:;" onclick="fnMove('2')">상속</a></li>
+                            <li class="tab03"><a href="javascript:;" onclick="fnMove('3')">계명</a></li>
+                            <li class="tab03"><a href="javascript:;" onclick="fnMove('4')">법인 합병 및 분할</a></li>
+                            <li class="tab03"><a href="javascript:;" onclick="fnMove('5')">상호변경</a></li>
+                        </ul>
+                        <div class="top-title">
+                            <h3>회원권 명의개서 안내</h3>
+                            <p>ㆍ리조트 회원권은 양도, 양수, 상속 등이 가능하며 이 경우 당사가 정하는 소정의 명의변경 절차를 거쳐야 합니다. </p>
+                            <p>ㆍ신청서류를 우편으로 발송해 주시면 승인절차를 거친 후 명의개서를 완료하여 드립니다.(명의개서 수수료 33만원 납부)</p>
+                        </div>
+                        <article id="art1">
+                            <h3>명의변경</h3>
+                            <div>
+                                <table>
+                                    <caption>명의변경</caption>
+                                    <colgroup>
+                                        <col width="15%"/>
+                                        <col width="60%"/>
+                                        <col width="25%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>구비서류</th>
+                                            <th>신청서 양식</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>양도인</th>
+                                            <td>
+                                                <p>ㆍ인감증명서 1부 (법인은 법인인감증명서) <br/>
+                                                    ㆍ회원카드 반납 (분실 시 회원카드분실확인서 작성)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a class="down_file" href="#" download="회원 카드 분실 확인서">회원 카드 분실 확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>양수인</th>
+                                            <td>
+                                                <p>ㆍ개인: 주민등록등본 또는 가족관계 증명서 1부 <br/>
+                                                    ㆍ법인: 법인인감증명서, 법인등기부등본, 사업자등록증 사본 각 1부, <br/>
+                                                    <em></em>재직증명서 각 1부(우대회원 등록하실 분)
+                                                </p>
+                                                <p>
+                                                    ㆍ가족회원신청서 <br/>
+                                                    ㆍ반명함판(3x4) 1매 (가족회원 포함) <br/>
+                                                    ㆍ소유권이전 등기부등본 1부 - 말소사항포함(제출용) <br/>
+                                                    ㆍ개인정보제공및활용동의서작성 (도장날인) <br/>
+                                                    ㆍ확약서(별도송부) <br/>
+                                                    ㆍ매매계약서 사본 1부
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a class="down_file" href="#" download="가족/우대 회원 신청서">가족/우대 회원 신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="개인정보제공 및 활용동의서" style="letter-spacing: -1px;">개인정보제공 및 활용동의서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>공통서류</th>
+                                            <td>
+                                                <p>ㆍ회원권 명의변경신청서(인감도장 날인) <br/>
+                                                    ㆍ계약서 반납: 분실 시 확인서 작성 양도자, 양수인 인감도장 날인, 양수인 인감증명서 첨부
+                                                </p>
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="down_file" href="#" download="회원권 명의변경 신청서">회원권 명의변경 신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="확인서">확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>수수료</th>
+                                            <td>
+                                                <p>330,000원 (VAT포함 )</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+
+                        
+
+
+
+                        <article id="art2">
+                            <h3>상속</h3>
+                            <div>
+                                <table>
+                                    <caption>상속</caption>
+                                    <colgroup>
+                                        <col width="15%"/>
+                                        <col width="60%"/>
+                                        <col width="25%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>구비서류</th>
+                                            <th>신청서 양식</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>피상속인</th>
+                                            <td>
+                                                <p>ㆍ호적등본(제적포함) 또는 사망진단서 <br/>
+                                                    ㆍ가족관계증명서(피상속인 기준) 1부 <br/>
+                                                    ㆍ회원(숙박)카드 반납 (분실 시 회원 카드 분실확인서 작성)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a class="down_file" href="#" download="회원 카드 분실 확인서">회원 카드 분실 확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>상속인</th>
+                                            <td>
+                                                <p>ㆍ주민등록등본 또는 가족관계 증명서 1부<br/> 
+                                                    ㆍ가족/우대 회원신청서<br/> 
+                                                    ㆍ반명함판(3x4) 사진 1매 (가족/우대 회원 포함) <br/>
+                                                    ㆍ소유권이전 등기부등본 1통 - 말소사항포함(제출용) <br/>
+                                                    ㆍ개인정보제공 및 활용동의서 작성 (도장날인) <br/>
+                                                    ㆍ확양서 (별도송부) <br/>
+                                                    ㆍ상속동의서 작성(인감도장날인, 법적 상속인 인감증명서 각 1부)-별도양식없음
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a class="down_file" href="#" download="가족/우대 회원 신청서">가족/우대 회원 신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="개인정보제공 및 활용동의서" style="letter-spacing: -1px;">개인정보제공 및 활용동의서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>공통서류</th>
+                                            <td>
+                                                <p>ㆍ회원권 명의변경신청서(인감도장 날인) <br/>
+                                                    ㆍ계약서 반납: 분실 시 확인서 작성 양도자, 양수인 인감도장 날인, 양수인 인감증명서 첨부
+                                                </p>
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="down_file" href="#" download="회원권 명의변경 신청서">회원권 명의변경 신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="확인서">확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>수수료</th>
+                                            <td>
+                                                <p>330,000원 (VAT포함 )</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+
+                        <article id="art3">
+                            <h3>계명</h3>
+                            <div>
+                                <table>
+                                    <caption>계명</caption>
+                                    <colgroup>
+                                        <col width="15%"/>
+                                        <col width="60%"/>
+                                        <col width="25%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>구비서류</th>
+                                            <th>신청서 양식</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>정회원</th>
+                                            <td>ㆍ회원권 개명신청서(회원/회사용)<br/> 
+                                                ㆍ인감도장 날인, 인감증명서 <br/>
+                                                ㆍ개명 증명할 수 있는 서류 <br/>
+                                                ㆍ계약서 반납(분실 시 확인서 1부 작성, 인감증명서 첨부) <br/>
+                                                ㆍ회원카드 반납(분실 시 회원카드분실 확인서 작성) <br/>
+                                                ㆍ공유제의 경우: 소요권이전 등기부등본 1통-말소사항포함(제출용)<br/>
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="down_file" href="#" download="회원개명신청서">회원개명신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="회원카드분실 확인서">회원카드분실 확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="확인서">확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>수수료</th>
+                                            <td>330,000원 (VAT포함 )</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+                        <article id="art4">
+                            <h3>법인합병/상호변경</h3>
+                            <div>
+                                <table>
+                                    <caption>법인합병/상호변경</caption>
+                                    <colgroup>
+                                        <col width="15%"/>
+                                        <col width="60%"/>
+                                        <col width="25%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>구비서류</th>
+                                            <th>신청서 양식</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>변경 전</th>
+                                            <td>
+                                                <p>
+                                                    ㆍ법인인감증명서 <br/>
+                                                    ㆍ회원 카드 및 숙박 카드 반납 (분실 시 회원 카드분실신청서 작성)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a class="down_file" href="#" download="회원 카드 분실 확인서">회원 카드 분실 확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>변경 후</th>
+                                            <td>
+                                                <p>ㆍ 법인: 인감증명서, 법인등기부등본(합병/분할 내용이 포함된 것), <br/>
+                                                    <em></em>사업자등록증 사본 각 1부) <br/>
+                                                    ㆍ법인우대회원신청서(기명회원권만 해당) 우대회원: 재직증명서 각 1부, 반명함판(3x4) 사진 1매 <br/><br/>
+
+                                                    ㆍ소유권이전 등기부등본 1부 - 말소사항포함(제출용) <br/>
+                                                    ㆍ개인정보제공및 활용동의서 작성 - 법인 인감도장 날인 <br/>
+                                                    ㆍ 확약서(별도송부)
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <a class="down_file" href="#" download="법인우대회원신청서">법인우대회원신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="개인정보제공 및 활용동의서">개인정보제공 및 활용동의서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>공통서류</th>
+                                            <td>
+                                                <p>ㆍ 회원권 합병/분할 신청서(회원/회사용 작성) <br/>
+                                                    ㆍ계약서 반납(분실 시 확인서 작성 양도자, 양수인 인감도장 날인, 법인 인감증명서 각 1부)
+                                                </p>
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="down_file" href="#" download="회원권 합병/분할 신청서">회원권 합병/분할 신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="확인서">확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>수수료</th>
+                                            <td>330,000원 (VAT포함)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+                        <article id="art5">
+                            <h3>상호변경</h3>
+                            <div>
+                                <table>
+                                    <caption>상호변경</caption>
+                                    <colgroup>
+                                        <col width="15%"/>
+                                        <col width="60%"/>
+                                        <col width="25%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>구비서류</th>
+                                            <th>신청서 양식</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>정회원</th>
+                                            <td>
+                                                <p>
+                                                    ㆍ상호변경신청서 (회원/회사용 작성) - 법인 인감도장 날인 <br/>
+                                                    ㆍ법인 인감증명서, 법인등기부등본(말소사항포함), 사업자등록증 사본 각 1부 <br/>
+                                                    ㆍ변경된 법인 CI 이미지(메일첨부, jpg형식)  <br/>
+                                                    ㆍ소유권 이전 등기부등본 1부-말소사항포함(제출용) <br/>
+                                                    ㆍ계약서 반납(분실 시 확인서 1부 작성 - 법인 인감도장 날인) <br/>
+                                                    ㆍ숙박 카드 반납(분실 시 회원 카드분실확인서 작성 - 법인 인감도장 날인) <br/>
+                                                    ㆍ개인정보제공 및 활용동의서 작성 - 법인 인감도장 날인
+                                                </p>
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="down_file" href="#" download="상호변경신청서">상호변경신청서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="회원카드분실 확인서">회원카드분실 확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="확인서">확인서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                                <a class="down_file" href="#" download="개인정보제공및활용동의서">개인정보제공및활용동의서
+                                                    <img src="http://img.ocean2youresort.co.kr/transferOfTitle/img_download.png" alt="다운로드"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>수수료</th>
+                                            <td>330,000원 (VAT포함)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                        <article id="art6">
+                            <h3>수수료 입금방법</h3>
+                            <div>
+                                <table>
+                                    <caption>수수료 입금방법</caption>
+                                    <colgroup>
+                                        <col width="15%"/>
+                                        <col width="42.5%"/>
+                                        <col width="42.5%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>은행계좌 입금</th>
+                                            <th>온라인 결제</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>결제방법</th>
+                                            <td>ㆍ은행명: 농협은행<br/>ㆍ계좌번호: 351-0971-1127-93<br/>ㆍ예금주: 주식회사 네오위즈(삼포지점)</td>
+                                            <td class="payment">
+                                                <a href="#">명의개서 수수료 결제</a>
+                                                <p>※ 로그인 후 마이페이지 > 회원권 명의개서</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+                        <article>
+                            <h3>유의사항</h3>
+                            <p>※ 주민등록본에 주민번호는 미기재로 출력 해주세요(개인정보보호법에 관한 법률에 기준)</p>
+                            <p>※ 문의: <span>02) 6255-0000</span></p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            @@include('../include/_footer.html')
+        </main>
+    </body>
+    
+    </html>

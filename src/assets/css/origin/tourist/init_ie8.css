@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+.title .container, .tour-wrap .container {width: 1180px;}
+	
+.title {position: relative;}
+.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+.title .tit-box h2 {font-size: 27px; letter-spacing: -2.5px}
+.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+.title .pkg-tab {position: relative; display: inline-block; margin: 25px auto 0;}
+.title .pkg-tab > li {position: relative; float: left; top: 0; width: 165px; /*border: 2px solid transparent; border-left: 1px solid #a8a6a4; margin-left: -1px;*/ padding: 2px;}
+.title .pkg-tab > li.nth-1 {margin-left: 0;}
+.title .pkg-tab > li.on {padding: 0; border: 2px solid #fff; z-index: 1; }
+.title .pkg-tab > li a {display: block; box-sizing: border-box; width: 100%; height: 51px; font-size: 17px; font-weight: 400; color: #fff;}
+.title .pkg-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+.title .pkg-tab > li a span {display:none}
+.title .pkg-tab .no-tab a {cursor: default;}
+
+/*관광지*/
+.tour-wrap {padding: 60px 0 80px;}
+.tour-wrap .tour-sec {/*display: none; */}
+.tour-wrap .tour-sec .area {}
+.tour-wrap .tour-sec .area .h3-tit {position: relative; padding-left: 20px; font-size: 26px; margin: 30px 0 15px; line-height: 38px;}
+.tour-wrap .tour-sec .area .h3-tit > * {line-height: 38px;}
+.tour-wrap .tour-sec .area .h3-tit:before {content: ""; position: absolute; display: inline-block; width: 10px; height: 26px; top: 50%; left: 0; margin-top: -12px; background: #c0c0c0;}
+.tour-wrap .tour-sec .area .list + .list {margin-top: 20px;}
+.tour-wrap .tour-sec .area .list > li {float: left; width: 280px; margin-left: 20px; overflow: hidden;}
+.tour-wrap .tour-sec .area .list > li:first-child {margin-left: 0;}
+.tour-wrap .tour-sec .area .list > .link-tour {cursor:pointer}
+.tour-wrap .tour-sec .area .list > li .tour-img {border: 1px solid #a19e9f; width: 280px; height: 160px; box-sizing: border-box;}
+.tour-wrap .tour-sec .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+.tour-wrap .tour-sec .area .list > li dl dt {font-size: 15px; color: 0; padding-bottom: 10px; margin-bottom: 6px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.tour-wrap .tour-sec .area .list > li dl dt h4 {margin-bottom: 6px; font-size: 22px; color: #008ead; font-weight: 700;}
+.tour-wrap .tour-sec .area .list > li dl dd {font-size: 16px; color: #4c4c4c; line-height: 1.7; word-break: keep-all;}

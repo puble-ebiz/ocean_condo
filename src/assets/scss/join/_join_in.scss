@@ -1,0 +1,244 @@
+.wrap-join .sect-join {
+
+    .sect-contents {
+
+        .join-in-contents {
+            max-width: 1180px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-top: 2px solid #373737;
+            border-bottom: 1px solid #ccc;
+
+            .in-area {
+                margin: 0 auto;
+                padding: 0 28.0rem;
+
+            }
+
+            .in-area-top {
+                padding-top: 50px;
+                padding-bottom: 40px;
+                font-weight: 400;
+
+                p:nth-of-type(1) {
+                    margin: 1.5rem auto 2.0rem;
+                    text-align: center;
+                }
+
+                >p {
+
+                    span {
+                        color: #FF3F71;
+                    }
+                }
+            }
+
+            .in-area-bottom {
+                border-top: 1px solid #ccc;
+                padding-top: 40px;
+                padding-bottom: 60px;
+            }
+
+            .in-ul {
+                .item-business {
+                    .in-box {
+                        width: 340px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        input {
+                            width: 100px;
+                        }
+                    }
+                }
+
+                &>li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    label {
+                        width: 130px;
+                        color: #595959;
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: -0.5px;
+                        cursor: auto;
+                    }
+
+                    input:not([type="radio"]) {
+                        width: 340px;
+                        height: 44px;
+                        border: 1px solid #999999;
+                        font-size: 16px;
+                        padding-left: 15px;
+
+                        &::placeholder {
+                            color: #888;
+                        }
+
+                        &:focus {
+                            background-color: #f5f5f5;
+                            border: 1px solid #CCCCCC;
+                        }
+                    }
+
+                    .in-tel {
+                        width: 100px;
+                    }
+
+                    .p-bar {
+                        width: 20px;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+
+                }
+
+                &>li.item-address {
+                    align-items: unset;
+
+                    .address-box {
+                        padding-left: 37px;
+
+                        .box-top {
+                            margin-bottom: 10px;
+                        }
+
+                        .box-bottom {
+                            input {
+                                margin-bottom: 10px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .p-notice {
+                color: #595959;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: -0.8px;
+                margin-bottom: 15px;
+                margin-left: 130px;
+            }
+
+            .gender-ul {
+                display: flex;
+
+                &>li {
+                    input {
+                        display: none;
+                    }
+
+                    label {
+                        width: auto;
+                        display: flex;
+                        align-items: center;
+                        color:
+                            #595959;
+                        font-size: 16px;
+                        letter-spacing: -0.4px;
+                        line-height: 1;
+                        position: relative;
+                        padding-bottom: 2px;
+
+                        &::before {
+                            transform: translateY(2px);
+                            position: relative;
+                            box-sizing: border-box;
+                            content: "";
+                            display: block;
+                            background: #ccc;
+                            border: solid 0.4rem #fff;
+                            width: 2.1rem;
+                            height: 2.1rem;
+                            border-radius: 50%;
+                            -webkit-box-shadow: 0 0 0 1.6px #ccc;
+                            box-shadow: 0 0 0 1.6px #ccc;
+                            margin-right: 1.0rem;
+                            margin-top: 1px;
+                        }
+                    }
+
+                    input:checked+label::before {
+                        background: #44a8ff;
+                        box-shadow: 0 0 0 1.6px #44a8ff;
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-left: 33px;
+                    }
+                }
+            }
+        }
+
+        //동의페이지
+        .agree-contents {
+            .checkbox_group {
+                >div.ckbox {
+                    margin-bottom: 2.0rem;
+                    text-align: right;
+                }
+            }
+
+            .agree-list {
+                .title {
+                    overflow: hidden;
+                    padding: 1.5rem 3.0rem;
+                    background-color: #F0F0F0;
+                    border-bottom: 1px solid #ccc;
+                    font-size: 1.8rem;
+
+                    p {
+                        float: left;
+                    }
+
+                    b {
+                        float: right;
+                        display: block;
+                    }
+                }
+
+                .content {
+                    overflow: hidden;
+                    padding-bottom: 1.5rem;
+
+                    .prbox {
+                        height: 14.0rem;
+                        overflow-y: scroll;
+                        margin-top: 1.8rem;
+                        padding: 1.5rem;
+                        line-height: normal;
+                        font-size: 1.5rem;
+                        color: #777777;
+                    }
+
+                    .ckbox {
+                        margin: 1.8rem 0;
+                        float: right;
+                        color: #595959 !important;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+    .btn-black {
+        background-color: #595959;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: -0.5px;
+        font-weight: 400;
+        line-height: 1;
+        padding: 14px 22px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,278 @@
+.wrap-map{
+
+}
+
+.wrap-map .sect-map{
+    *{
+        letter-spacing: -0.7px;
+    }
+    .sect-contents{
+        // padding-top: 10.0rem;
+        // padding-bottom: 15.0rem;
+        .title-box{
+            margin: 0 auto;
+            text-align: center;
+            .title-main{
+                color: #595959;
+                font-size: 4.5rem;
+                font-weight: 500;
+                letter-spacing: -0.5px;
+            }
+            .title-sub{
+                margin-top: 3.0rem;
+                color: #595959;
+                font-size: 2.4rem;
+                font-weight: 400;
+                letter-spacing: -0.5px;
+            }
+        }
+        .map-img-box{
+            margin-top: 5.4rem;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .map-info{
+            // height: 11.8rem;
+            padding-top: 5.0rem;
+            padding-bottom: 4.0rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            .info-item{
+                // padding-left: 1.0rem;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                .p-name{
+                    display: flex;
+                    align-items: center;
+                    .span-icon{
+                        min-width: 3.4rem;
+                    }
+                    .span-name{
+                        font-size: 2.0rem;
+                        font-weight: 500;
+                        
+                    }
+                }
+                .p-txt{
+                    margin-left: 4.8rem;
+                    color: #595959;
+                    font-size: 2.0rem;
+                    
+                }
+            }
+        }
+        .waycome-area{
+            margin-top: 6.0rem;
+            display: flex;
+            // justify-content: space-between;
+            .waycome-title{
+                font-size: 2.6rem;
+                font-weight: 500;
+            }
+            .waycome-ul{
+               margin-left: 8.2rem;
+                &>li{
+                    display: flex;
+                    margin-bottom: 2.0rem;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                    .p-name{
+                        span{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid #999;
+                            width: 14.8rem;
+                            height: 3.6rem;
+                            color: #373737;
+                            font-size: 1.8rem;
+                            font-weight: 500;
+                            letter-spacing: -0.7px;
+                        }
+                        
+                        
+                    }
+                    .p-txt{
+                        padding-top: 1.0rem;
+                        margin-left: 3.2rem;
+                        color: #595959;
+                        font-size: 1.8rem;
+                        letter-spacing: -0.7px;
+                    }
+                    .waycome-part-ul{
+                        padding-top: 0.2rem;
+                        &>li{
+                            margin-left: 3.2rem;
+                            margin-bottom: 3.6rem;
+                            .waycome-point-box{
+                                display: flex;
+                                align-items: center;
+                                .p-point{
+                                    color: #595959;
+                                    font-size: 1.8rem;
+                                    font-weight: 500;
+                                    position: relative;
+                                    &::before{
+                                        content: "ㆍ";
+                                        position: absolute;
+                                        left: -1.6rem;
+                                    }
+                                }
+                                .btn-go-way{
+                                    background-color: #595959;
+                                    margin-left: 1.0rem;
+                                    color: #fff;
+                                    font-size: 1.5rem;
+                                    line-height: 0.8;
+                                    padding: 1.0rem 1.5rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    // align-items: center;
+                                }
+                               
+                            }
+                            .waycome-order{
+                                display: flex;
+                                margin-top: 1.0rem;
+                                p{
+                                    display: flex;
+                                    position: relative;
+                                    color: #595959;
+                                    font-size: 1.8rem;
+                                    letter-spacing: -0.7px;
+                                    line-height: 1.1;
+                                    &::after{
+                                        content: "";
+                                        background: url("http://design.ebiznetworks.co.kr/lhc/ocean2y_condo/img/map/icon_arrow_order.png") no-repeat center center;
+                                        
+                                        position: relative;
+                                        width: 3.2rem;
+                                        
+                                    }
+                                    &:last-of-type:after{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:990px){
+    .wrap-map .sect-map{
+        *{
+   
+        }
+        .sect-contents{
+            padding: 0 2.0rem;
+            padding-top: 6.0rem;
+            padding-bottom: 10.0rem;
+            .title-box{
+    
+                .title-main{
+          
+                }
+                .title-sub{
+               
+                }
+            }
+            .map-img-box{
+                
+                img{
+                    
+                }
+            }
+            .map-info{
+                flex-direction: column;
+                padding-top: 2.6rem;
+                padding-bottom: 2.4rem;
+                .info-item{
+                    width: 100%;
+                    margin-bottom: 1.2rem;
+                    .p-name{
+                        
+                        .span-icon{
+                            
+                        }
+                        .span-name{
+                            
+                        }
+                    }
+                    .p-txt{
+           
+                        
+                    }
+                }
+            }
+            .waycome-area{
+                flex-direction: column;
+                .waycome-title{
+                   
+                }
+                .waycome-ul{
+                   margin-left: 0;
+                   margin-top: 2.0rem;
+                    &>li{
+                        flex-direction: column;
+                        
+                        &:last-of-type{
+                            
+                        }
+                        .p-name{
+                            span{
+
+                            }
+                            
+                            
+                        }
+                        .p-txt{
+                            margin-left: 1.6rem;    
+                        }
+                        .waycome-part-ul{
+                            
+                            &>li{
+                                margin-left: 1.6rem;
+                                .waycome-point-box{
+                                    
+                                    .p-point{
+                                        
+                                        &::before{
+                                            
+                                        }
+                                    }
+                                    .btn-go-way{
+                                     
+                                    }
+                                   
+                                }
+                                .waycome-order{
+                                    flex-wrap: wrap;
+                                    p{
+                                        
+                                        &::after{
+
+                                        }
+                                        &:last-of-type:after{
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

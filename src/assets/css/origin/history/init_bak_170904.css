@@ -1,0 +1,163 @@
+@charset 'utf-8';
+
+.vid-wrap {background: url(../../img/intro/intro_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 400px;}
+
+
+
+@media (max-width: 767px) {
+	.xs-block {display: block;}
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 86px; color: #fff;}
+	.title .tit-box h2 {font-size: 20px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 15px auto; background: #fff;}
+	.title .titTxt img {width: 310px;}
+	.title .tit-box .p0 {font-size: 15px; margin-top: 5px; line-height: 1.4; word-break: keep-all; letter-spacing: -1px;}
+	.title .p0.under {display: inline-block; padding-bottom: 1px; border-bottom: 1px solid #fff;}
+	
+	.history {padding: 45px 0 100px;}
+	.history .container {width: 100%; width: 310px;}
+	.history h3, .history .lgn-box {font-family: "Nanum Gothic", sans-serif;}
+	.history h3 {font-size: 24px; color: #44a8ff; text-align: center; font-weight: 600;}
+	.history .mg- {display: block; height: 1px; width: 30px; margin: 12px auto 18px; background: #44a8ff;}
+	.history .lgn-box {border: 1px solid #e5e5e5; padding: 5px;}
+	.history .lgn-box .lgnBtn-list {position: relative;}
+	.history .lgn-box .lgnBtn-list > li {position: relative; margin-top: 10px;}
+	.history .lgn-box .lgnBtn-list > li:first-child {position: relative; margin-top: 0px;}
+	.history .lgn-box .lgnBtn-list > li > a {display: block; height: 50px; color: #fff; text-align: center; font-size: 14px; padding-left: 40px;}
+	.history .lgn-box .lgnBtn-list > li > a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+	.history .lgn-box .lgnBtn-list > li.f > a {background: #3b5999;}
+	.history .lgn-box .lgnBtn-list > li.k > a {background: #ffeb00; color: #3b1e12;}
+	.history .lgn-box .lgnBtn-list > li.n > a {background: #1ec800;}
+	.history .lgn-box .lgnBtn-list > li.d > a {background: #fff; color: #707070; border: 1px solid #cbcbcb;}
+	.history .lgn-box .lgnBtn-list > li.g > a {background: #d34837;}
+	.history .lgn-box .lgnBtn-list > li .i-logo {position: absolute; top: 14px; left: 62px;}
+	.history .lgn-box .lgnBtn-list > li.f .i-logo {height: 24px;}
+	.history .lgn-box .lgnBtn-list > li.k .i-logo {height: 25px; top: 14px; left: 58px;}
+	.history .lgn-box .lgnBtn-list > li.n .i-logo {height: 18px; top: 18px;}
+	.history .lgn-box .lgnBtn-list > li.d .i-logo {height: 30px; top: 10px; left: 42px;}
+	.history .lgn-box .lgnBtn-list > li.g .i-logo {height: 22px; top: 16px;}
+	.history .lgn-box .p0 {position: relative; font-size: 13px; padding: 0 8px 0 15px; margin-top: 15px; line-height: 1.4; word-break: keep-all;}
+	.history .lgn-box .p0:before {position: absolute; content: "※"; left: 0px;}
+	
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+	
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 24px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 18px auto 20px; background: #fff;}
+	.title .tit-box .titTxt img {width: 450px;}
+	.title .tit-box .p0 {font-size: 18px; margin-top: 10px;}
+	.title .p0.under {display: inline-block; padding-bottom: 5px; border-bottom: 1px solid #fff;}
+	
+	.history {padding: 75px 0 120px;}
+	.history .container {width: 768px;}
+	.history h3, .history .lgn-box {font-family: "Nanum Gothic", sans-serif;}
+	.history h3 {font-size: 27px; color: #44a8ff; text-align: center; font-weight: 600;}
+	.history .mg- {display: block; height: 1px; width: 30px; margin: 18px auto 28px; background: #44a8ff;}
+	.history .lgn-box {border: 1px solid #e5e5e5; padding: 50px 100px;}
+	.history .lgn-box .lgnBtn-list {position: relative;}
+	.history .lgn-box .lgnBtn-list > li {position: relative; margin-top: 10px;}
+	.history .lgn-box .lgnBtn-list > li:first-child {position: relative; margin-top: 0px;}
+	.history .lgn-box .lgnBtn-list > li > a {display: block; height: 50px; color: #fff; text-align: center; font-size: 15px; padding-left: 40px;}
+	.history .lgn-box .lgnBtn-list > li > a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+	.history .lgn-box .lgnBtn-list > li.f > a {background: #3b5999;}
+	.history .lgn-box .lgnBtn-list > li.k > a {background: #ffeb00; color: #3b1e12;}
+	.history .lgn-box .lgnBtn-list > li.n > a {background: #1ec800;}
+	.history .lgn-box .lgnBtn-list > li.d > a {background: #fff; color: #707070; border: 1px solid #cbcbcb;}
+	.history .lgn-box .lgnBtn-list > li.g > a {background: #d34837;}
+	.history .lgn-box .lgnBtn-list > li .i-logo {position: absolute; top: 14px; left: 182px;}
+	.history .lgn-box .lgnBtn-list > li.f .i-logo {height: 24px;}
+	.history .lgn-box .lgnBtn-list > li.k .i-logo {height: 25px; top: 14px; left: 178px;}
+	.history .lgn-box .lgnBtn-list > li.n .i-logo {height: 18px; top: 18px;}
+	.history .lgn-box .lgnBtn-list > li.d .i-logo {height: 30px; top: 10px; left: 162px;}
+	.history .lgn-box .lgnBtn-list > li.g .i-logo {height: 22px; top: 16px;}
+	.history .lgn-box .p0 {position: relative; font-size: 15px; padding: 0 8px 0 26px; margin-top: 30px; line-height: 1.4; word-break: keep-all;}
+	.history .lgn-box .p0:before {position: absolute; content: "※"; left: 8px;}
+	
+	
+}
+
+@media (min-width: 992px) and (max-width: 1431px) {
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 24px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .titTxt img {width: 450px;}
+	.title .tit-box .p0 {font-size: 18px; margin-top: 10px;}
+	.title .p0.under {display: inline-block; padding-bottom: 5px; border-bottom: 1px solid #fff;}
+	
+	.history {padding: 75px 0 120px;}
+	.history .container {width: 992px;}
+	.history h3, .history .lgn-box {font-family: "Nanum Gothic", sans-serif;}
+	.history h3 {font-size: 30px; color: #44a8ff; text-align: center; font-weight: 600;}
+	.history .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 28px; background: #44a8ff;}
+	.history .lgn-box {border: 1px solid #e5e5e5; padding: 50px 100px;}
+	.history .lgn-box .lgnBtn-list {position: relative; margin-top: -20px;}
+	.history .lgn-box .lgnBtn-list > li {position: relative; float: left; width: 50%; padding: 0 8px; margin-top: 20px;}
+	.history .lgn-box .lgnBtn-list > li > a {display: block; height: 50px; color: #fff; text-align: center; padding-left: 40px;}
+	.history .lgn-box .lgnBtn-list > li > a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+	.history .lgn-box .lgnBtn-list > li.f > a {background: #3b5999;}
+	.history .lgn-box .lgnBtn-list > li.k > a {background: #ffeb00; color: #3b1e12;}
+	.history .lgn-box .lgnBtn-list > li.n > a {background: #1ec800;}
+	.history .lgn-box .lgnBtn-list > li.d > a {background: #fff; color: #707070; border: 1px solid #cbcbcb;}
+	.history .lgn-box .lgnBtn-list > li.g > a {background: #d34837;}
+	.history .lgn-box .lgnBtn-list > li .i-logo {position: absolute; top: 14px; left: 104px;}
+	.history .lgn-box .lgnBtn-list > li.f .i-logo {height: 24px;}
+	.history .lgn-box .lgnBtn-list > li.k .i-logo {height: 25px; top: 14px; left: 98px;}
+	.history .lgn-box .lgnBtn-list > li.n .i-logo {height: 18px; top: 18px;}
+	.history .lgn-box .lgnBtn-list > li.d .i-logo {height: 30px; top: 10px; left: 82px;}
+	.history .lgn-box .lgnBtn-list > li.g .i-logo {height: 22px; top: 16px;}
+	.history .lgn-box .p0 {position: relative; font-size: 16px; padding: 0 8px 0 26px; margin-top: 30px; line-height: 1.4; word-break: keep-all;}
+	.history .lgn-box .p0:before {position: absolute; content: "※"; left: 8px;}
+	
+}
+
+
+@media (min-width: 1432px) {
+	
+
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .p0 {position: relative; font-size: 18px; margin-top: 10px;}
+	
+	.history {padding: 75px 0 120px;}
+	.history .container {width: 980px;}
+	.history .his-tab {position: relative; width: 620px; height: 42px;}
+	.history .his-tab > li {position: relative; width: 33.33%; float: left; height: 100%; border: 1px solid #b7bfc8; border-left-width: 0; background: #f8f8f8;}
+	.history .his-tab > li:first-child {border-left-width: 1px;}
+	.history .his-tab > li .btn-a, .history .term-tab > li .btn-a {color: #6c7580; display: block; height: 100%; text-align: center; font-weight: 600;}
+	.history .his-tab > li .btn-a:after, .history .term-tab > li .btn-a:after {content: ""; display: inline-block; height: 107%; vertical-align: middle;}
+	.history .his-tab > li.on .btn-a, .history .term-tab > li.on .btn-a {background: #44a8ff;}
+	.history .his-tab > li.on .btn-a, .history .term-tab > li.on .btn-a {color: #fff;}
+	.history .term-row {position: relative; margin: 20px auto;}
+	.history .term-tab {position: relative; width: 235px; height: 30px; float: right;}
+	.history .term-tab > li {float: left; width: 25%; height: 100%; border: 1px solid #d1d1d1; border-left-width: 0;}
+	.history .term-tab > li:first-child {border-left-width: 1px;}
+	.history .term-tab > li .btn-a {font-weight: 400; color: #2b2b2b; font-size: 13px;}
+	
+	
+	
+	.history .history-tbl {position: relative;}
+	.history .history-tbl th, .history .history-tbl td {vertical-align: middle; color: #404040;}
+	.history .history-tbl thead {background: #f5f5f5; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf;}
+	.history .history-tbl thead th {font-size: 13px; height: 34px; font-weight: 600;}
+	.history .history-tbl tbody {border-bottom: 1px solid #dfdfdf;}
+	.history .history-tbl tbody td .non-cont {padding: 40px; width: 100%; text-align: center; font-size: 15px;}
+	
+	.history .pagenation {text-align: center; font-size: 0; margin-top: 50px;}
+	.history .pagenation a {display: inline-block; font-size: 13px; width: 26px; height: 26px; vertical-align: middle; line-height: 24px; color: #919191; font-family: "Nanum Gothic"; font-weight: 600; margin-left: 2px; margin-right: 2px; color: #666; border: 1px solid transparent;}
+	.history .pagenation a[class*="prev"], .history .pagenation a[class*="next"] {font-size: 12px; line-height: 24px; letter-spacing: -2px; color: #fff; background: #ccc;}
+	.history .pagenation a:hover, .history .pagenation a.on {border: 1px solid #44a8ff; color: #44a8ff;}
+	.history .pagenation a.prev {text-indent: -4px;}
+	.history .pagenation a.pprev {text-indent: -2px;}
+	.history .pagenation a.next {text-indent: 1px;}
+}
+

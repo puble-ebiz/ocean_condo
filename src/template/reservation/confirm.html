@@ -1,0 +1,194 @@
+@@include('../include/_head.html', {
+	"page": "reservation"
+})
+<h1 class="hidden">오션투유 리조트 주변관광지</h1>
+    <div id="wrap">
+	    @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_reservation.html')
+
+
+        <!--탑메뉴 오버이벤트를 위한 태그-->
+    <div class="page-data" data-name="d_rsv02"></div>
+		
+    <section class="reservation" id="setTop">
+
+        <div id="wrapper">
+            <div id="contents">
+                <h2 class="com-ft">예약내역 전체</h2>
+		
+                <!-- 180727 예약내역조회 -->
+                <div class="rsv-wrap">
+                    
+                    <!-- 탭 -->
+                    <ul class="rsv-tab clr">
+                        <li class="tab-rsv-01 on"><a href="javascript:;">전체</a></li>
+                        <li class="tab-rsv-02"><a href="javascript:;">예약 진행중인 상품</a></li>
+                        <li class="tab-rsv-03"><a href="javascript:;">예약불가 및 취소상품</a></li>
+                    </ul>
+                    
+                    
+                    <!-- 예약내역 -->
+                    <div class="rsv-list-area">
+                        <div class="rsv-col-box">
+                            <table class="rsv-col">
+                                <caption>예약내역 상품</caption>
+                                <colgroup>
+                                    <col class="nth-1">
+                                    <col class="nth-2">
+                                    <col class="nth-3">
+                                    <col class="nth-4">
+                                    <col class="nth-5">
+                                    <col class="nth-6">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">접수일자</th>
+                                        <th scope="col">숙소명</th>
+                                        <th scope="col">평형</th>
+                                        <th scope="col">투숙일</th>
+                                        <th scope="col">예약상태</th>
+                                        <!-- 2021-05-07 예약확인서 주석처리 -->
+                                        <!-- <th scope="col">예약확인서</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 예약내역이 있을 경우 -->
+                                    <tr>
+                                        <td scope="row">2021.02.23</td>
+                                        <td class="f-bd"><a href="confirm_details.html">오션투유 리조트</a></td>
+                                        <td>14평</td>
+                                        <td>2021.02.23 ~ 2021.02.24</td>
+                                        <td class="f-bd">예약확정</td>
+                                        <!-- 2021-05-07 출력하기 주석처리 -->
+                                        <!-- <td><a href="#none" class="btn-rcp">출력하기</a></td> -->
+                                    </tr>
+                                    
+                                    <!-- 예약내역 취소  -->
+                                    <tr>
+                                        <td scope="row">2021.02.23</td>
+                                        <td class="f-bd"><a href="confirm_details.html">오션투유 리조트</a></td>
+                                        <td>14평</td>
+                                        <td>2021.02.23 ~ 2021.02.24</td>
+                                        <td class="f-bd c-red">취소완료</td>
+                                    </tr>
+                                    
+                                    <!-- 예약내역이 없을 경우 -->
+                                    <tr class="no">
+                                        <td colspan="6">예약 내역이 없습니다.</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="rsv-num-box">
+                            <ul class="pagenation clr" id="pagenation">
+                                <li class="first"><a href="#none" onclick="javascript:location.href='#'">&lt;&lt;</a></li>
+                                <li class="first"><a href="#none" onclick="javascript:location.href='#'">&lt;</a></li>		  
+                                <li class="on"><a href="#none" onclick="javascript:location.href='#'">1</a></li>
+                                <li class="last"><a href="#none" onclick="javascript:location.href='#'">&gt;</a></li>
+                                <li class="last"><a href="#none" onclick="javascript:location.href='#'">&gt;&gt;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 진행순서안내 -->
+                    <div class="rsv-guide-area">
+                        <p class="rsv-guide-tit">예약 진행 순서 안내</p>
+                        
+                        <ol class="rsv-order-list clr">
+                            <li class="nth-1">
+                                <span class="img"></span>
+                                <p class="guide-tit"><span>01.</span>객실선택</p>
+                            </li>
+                            <li class="nth-2">
+                                <span class="img"></span>
+                                <p class="guide-tit"><span>02.</span>결제대기</p>
+                            </li>
+                            <li class="nth-3">
+                                <span class="img"></span>
+                                <p class="guide-tit"><span>03.</span>결제완료</p>
+                            </li>
+                            <li class="nth-4">
+                                <span class="img"></span>
+                                <p class="guide-tit"><span>04.</span>예약확정/불가안내</p>
+                            </li>
+                            <li class="nth-5">
+                                <span class="img"></span>
+                                <p class="guide-tit"><span>05.</span>예약완료 및 환불절차</p>
+                            </li>
+                        </ol>
+        
+                        <ol class="rsv-guide-list clr">
+                            <li class="nth-1">
+                                <div class="img-box">
+                                    <span class="img"></span>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="guide-tit"><span>01.</span>객실선택</p>
+                                    <p class="guide-txt">객실, 투숙일, 옵션을 선택하신 후 결제하기 버튼을 누르시면 결제페이지로 넘어갑니다.</p>
+                                </div>
+                            </li>
+                            <li class="nth-2">
+                                <div class="img-box">
+                                    <span class="img"></span>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="guide-tit"><span>02.</span>결제대기</p>
+                                    <p class="guide-txt">
+                                        무통장 결제 시 결제대기상태이며, 무통장입금은 입금이 완료될때까지는 예약진행이 되지않습니다.<br>
+                                        객실이 가능하더라도 입금이 늦어질경우 선착순으로 객실이 마감될 수 있습니다. 
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="nth-3">
+                                <div class="img-box">
+                                    <span class="img"></span>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="guide-tit"><span>03.</span>결제완료</p>
+                                    <p class="guide-txt">
+                                        고객님의 결제내역이 확인 되었습니다. 잠시 기다려 주시면 상담원의 연락(문자 또는 전화)를 받으실 수 있습니다.<br>
+                                        취소 및 변경을 원하실 경우 고객센터(goco_tel)로 문의하시거나 1:1문의에 접수 부탁 드립니다. 
+                                   </p>
+                                </div>
+                            </li>
+                            <li class="nth-4">
+                                <div class="img-box">
+                                    <span class="img"></span>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="guide-tit"><span>04.</span>예약확정/불가안내</p>
+                                    <p class="guide-txt">고객님이 예약하신 상품으로 예약가능여부를 확인중입니다. 예약확정 및 불가안내는 18시 이전 접수건의 경우, 당일 22시까지 순차적으로 문자 또는 전화를 통해 안내해 드립니다.(주말 및 휴일은 다음 영업일 안내)</p>
+                                </div>
+                            </li>
+                            <li class="nth-5">
+                                <div class="img-box">
+                                    <span class="img"></span>
+                                </div>
+                                <div class="txt-box">
+                                    <p class="guide-tit"><span>05.</span>예약완료 및 환불절차</p>
+                                    <p class="guide-txt">원하시는 상품의 예약이 성공적으로 완료 시 문자 또는 전화로 예약확정안내 내용을 보내드리며, 성함 및 예약번호로 시설이용이 가능하십니다.</p>
+                                    <p class="guide-txt">
+                                        원하시는 상품의 예약이 불가능할 시 예약취소 및 환불처리가 이루어집니다.<br>
+                                        무통장 입금의 경우 익일 정오 12시 이전에 일괄적으로 환불 처리되오니 참고 바랍니다. (주말 및 공휴일은 익일 영업일에 처리)<br>
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="clr"></div>
+    </section>
+		
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

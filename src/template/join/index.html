@@ -1,0 +1,114 @@
+@@include('../include/_head.html', {
+    "page": "join"
+    })
+    
+</head>
+
+<body>
+    <main id="wrap" class="wrap">
+        @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_join.html')
+
+
+        <div class="wrap-container wrap-join">
+            <section class="sect-join">
+                <div class="sect-contents">
+                    <div class="title-box">
+                        <h3 class="page-title title-main">오션투유 리조트 회원가입</h3>
+                        <div class="title-sub">
+                            고객님의 오션투유 리조트 회원권 정보 확인을 위해<br> 아래 정보를 입력해주시기 바랍니다.
+                        </div>
+                    </div>
+                    <div class="join-contents">
+                        <div class="join-area">
+                            <ul class="select-member-ul">
+                                <li>
+                                    <input type="radio" name="member" id="mem01" class="in-radio" checked>
+                                    <label for="mem01">개인회원</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="member" id="mem02" class="in-radio">
+                                    <label for="mem02">개인/법인사업자</label>
+                                </li>
+                            </ul>
+
+                            <div class="cont-box cont-box01 on">
+                                <ul class="in-area-ul">
+                                    <li>
+                                        <label for="in-name">이름</label>
+                                        <input type="text" id="in-name" class="in-name" placeholder="이름을 입력해주세요.">
+                                    </li>
+                                    <li>
+                                        <label for="in-social-num01">주민번호</label>
+                                        <input type="number" id="in-" class="in-social-num01" maxlength="6" placeholder="주민번호6자리">
+                                        <p class="p-bar">-</p>
+                                        <input type="password" id="social-num02" class="in-social-num02" maxlength="3" placeholder="123">
+                                        <p class="p-star">* * * *</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="cont-box cont-box02">
+                                <ul class="in-area-ul">
+                                    <li>
+                                        <label for="in-name-buisness">대표자명</label>
+                                        <input type="text" id="in-name-buisness" class="in-name" placeholder="이름을 입력해주세요.">
+                                    </li>
+                                    <li>
+                                        <label for="in-company">상호</label>
+                                        <input type="text" id="in-company" class="in-company" placeholder="“(주)”를 제외한 사업자명을 입력해주세요.">
+                                    </li>
+                                    <li>
+                                        <label for="in-buisness-num01">사업자번호</label>
+                                        <input type="number" id="in-buisness-num01" class="in-buisness-num01" placeholder="123" maxlength="3">
+                                        <p class="p-bar">-</p>
+                                        <input type="number" id="in-buisness-num02" class="in-buisness-num02" placeholder="12" maxlength="2">
+                                        <p class="p-bar">-</p>
+                                        <input type="number" id="in-buisness-num03" class="in-buisness-num03" placeholder="12345" maxlength="5">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bottom-btn-area">
+                        <!--개인용 회원가입-->
+                        <a href="./join_person.html" class="btn-person btn-blue btn-on">회원가입하기</a>
+                        <!--기업용 회원가입-->
+                        <a href="./join_business.html" class="btn-buisness btn-blue">회원가입하기</a>
+                    </div>
+                </div>
+            </section>
+    
+            
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".wrap-join .select-member-ul .in-radio").on("click",function(){
+                    let index = $(this).parent("li").index();
+                    if(index == 0){
+                        $(".wrap-join .cont-box02").removeClass("on");
+                        $(".wrap-join .cont-box01").addClass("on");
+
+                        $(".wrap-join .btn-buisness").removeClass("btn-on");
+                        $(".wrap-join .btn-person").addClass("btn-on");
+                    }
+                    if(index == 1){
+                        $(".wrap-join .cont-box01").removeClass("on");
+                        $(".wrap-join .cont-box02").addClass("on");
+
+                        $(".wrap-join .btn-person").removeClass("btn-on");
+                        $(".wrap-join .btn-buisness").addClass("btn-on");
+                    }
+                    
+                });
+            });
+        </script>
+
+        @@include('../include/_footer.html')
+    </main>
+
+</body>
+
+</html>

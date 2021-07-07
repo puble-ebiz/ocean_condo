@@ -1,0 +1,76 @@
+* {
+    // font-size: 1.6rem;
+}
+
+
+
+
+.wrap {
+    .wrap-container {
+        section {
+            .sect-contents {
+                max-width: 1180px;
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 5.5rem;
+                padding-bottom: 15.0rem;
+
+                .page-title {
+                    text-align: center;
+                    font-size: 4.2rem;
+                    letter-spacing: -2.1px;
+                    font-weight: 500;
+                }
+
+            }
+
+        }
+    }
+
+    // img{
+    //     max-width: none;   
+    // }
+}
+
+.common-page-title {
+    text-align: center;
+    color: #373737;
+    font-size: 4.2rem;
+    letter-spacing: -2.1px;
+    margin-bottom: 5.0rem;
+    font-weight: 500;
+}
+
+/*위로가기 버튼*/
+.fn-up-wrap {
+    z-index: 80;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+
+    .fn-scroll-up {
+
+        img {
+            width: fit-content;
+        }
+    }
+}
+
+@media(max-width:990px) {
+    html {
+        font-size: calc((10/720)*100vw);
+    }
+
+    .wrap {
+        .wrap-container {
+            section {
+                .sect-contents {
+                    width: 95%;
+                }
+
+
+            }
+        }
+    }
+}

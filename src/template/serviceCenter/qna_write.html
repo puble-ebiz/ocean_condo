@@ -1,0 +1,70 @@
+@@include('../include/_head.html', {
+	"page": "serviceCenter"
+})
+	
+</head>
+<body>
+<h1 class="hidden">고객센터 - 묻고답하기 작성</h1>
+<div class="wrap">
+
+    @@include('../include/_header.html')
+    @@include('../include/_sub/_subpage_top_service.html')
+
+    <div class="page-data" data-name="d_svc03"></div>
+    <!-- 2021 고객센터 -->
+    <div class="wrap-container">
+        <section class="scss_com service-center">
+            <div class="sect-contents">
+                <h3 class="common-page-title">묻고 답하기</h3>
+                <!-- 묻고답하기 작성 -->
+                <article>
+                    <div class="content-area">
+                        <div class="qna">
+                            <ul class="write table">
+                                <li>
+                                    <p>제목</p>
+                                    <input type="text"/>
+                                </li>
+                                <li>
+                                    <p>분류</p>
+                                    <select>
+                                        <option>분류를 선택해 주세요</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    
+                                        <p>작성자</p>
+                                        <input type="text" placeholder="이름을 입력해주세요"/>
+                                        <p>비밀번호</p>
+                                        <input type="text" placeholder="비밀번호를 입력해주세요"/>
+                                    
+                                </li>
+                                <li>
+                                    <p>휴대혼번호</p>
+                                    <input type="text" placeholder="'-'빼고 입력해주세요"/>
+                                    <p>이메일주소</p>
+                                    <input type="text" placeholder="이메일주소를 입력해주세요"/>
+                                </li>
+                                <li>
+                                    <p>문의내용</p>
+                                    <textarea></textarea>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-submit">
+                        <a href="#">취소</a>
+                        <a href="#">확인</a>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+    </div>
+
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

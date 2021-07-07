@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+.vid-wrap {background: url(http://img.ocean2you.co.kr/renew/package/pkg_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 400px;}
+
+.title .tit-box h2 {font-weight: 400;}
+
+.title {position: relative;}
+.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+.title .tit-box h2 {font-size: 27px;}
+.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+.title .p0 {position: relative; font-size: 18px; margin-top: 10px;}
+.title .p0.under {display: inline-block; padding-bottom: 5px; border-bottom: 1px solid #fff;}
+
+.login {padding: 75px 0 120px;}
+.login .container {width: 1054px;}
+.login h3, .login .lgn-box {font-family: "Nanum Gothic", sans-serif;}
+.login h3 {font-size: 34px; color: #44a8ff; text-align: center; font-weight: 600;}
+.login .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 28px; background: #44a8ff;}
+.login .lgn-box {border: 1px solid #e5e5e5; padding: 50px 120px;}
+.login .lgn-box .lgnBtn-list {position: relative; margin-top: -20px;}
+.login .lgn-box .lgnBtn-list > li {position: relative; float: left; width: 50%; padding: 0 8px; margin-top: 20px;}
+.login .lgn-box .lgnBtn-list > li > a {display: block; height: 50px; color: #fff; text-align: center; padding-left: 40px;}
+.login .lgn-box .lgnBtn-list > li > a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+.login .lgn-box .lgnBtn-list > li.f > a {background: #3b5999;}
+.login .lgn-box .lgnBtn-list > li.k > a {background: #ffeb00; color: #3b1e12;}
+.login .lgn-box .lgnBtn-list > li.n > a {background: #1ec800;}
+.login .lgn-box .lgnBtn-list > li.d > a {background: #fff; color: #707070; border: 1px solid #cbcbcb;}
+.login .lgn-box .lgnBtn-list > li.g > a {background: #d34837;}
+.login .lgn-box .lgnBtn-list > li .i-logo {position: absolute; top: 14px; left: 108px;}
+.login .lgn-box .lgnBtn-list > li.f .i-logo {height: 24px;}
+.login .lgn-box .lgnBtn-list > li.k .i-logo {height: 25px; top: 14px; left: 102px;}
+.login .lgn-box .lgnBtn-list > li.n .i-logo {height: 18px; top: 18px;}
+.login .lgn-box .lgnBtn-list > li.d .i-logo {height: 30px; top: 10px; left: 86px;}
+.login .lgn-box .lgnBtn-list > li.g .i-logo {height: 22px; top: 16px;}
+.login .lgn-box .p0 {position: relative; font-size: 16px; padding: 0 8px 0 26px; margin-top: 30px; line-height: 1.4; word-break: keep-all;}
+.login .lgn-box .p0:before {position: absolute; content: "※"; left: 8px;}

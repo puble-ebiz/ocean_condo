@@ -1,0 +1,99 @@
+
+<!--header -->
+<header class="header-new">
+    <!-- <div class="header-top">
+        <nav class="top">
+
+        </nav>
+    </div> -->
+    <div class="header-container">
+        <div class="logo-area">
+            <a href="../main/" class="top-logo"><img src="http://design.ebiznetworks.co.kr/lhc/ocean2y_condo/img/common/top_logo.png" alt="오션투유 리조트소개"></a>
+        </div>
+        <div class="btn-menu-area show-mobile">
+            <button type="button" class="btn-open-menu">
+                <img src="http://design.ebiznetworks.co.kr/lhc/ocean2y_condo/img/common/m_btn_open_menu.png" alt="메뉴열기">
+            </button>
+        </div>
+        <div class="menu-area">
+            <!-- <div class="top-box">
+                <div></div>
+                <div class="btn-close-manu"></div>
+                <ul class="reserve-menu-ul">
+                    <li><a href="#none">객실예약</a></li>
+                    <li><a href="#none">예약확인</a></li>
+                </ul>
+            </div> -->
+            
+            <nav class="nav-main-menu">
+                <ul class="main-menu-ul">
+                    <li><a href="../intro/">오션투유리조트 소개</a></li>
+                    <li><a href="../partner/">제휴시설</a></li>
+                    <li><a href="../group/">단체문의</a></li>
+                    <li><a href="../tourist/tourist_goseong.html">관광지</a></li>
+                    <li><a href="../event/event_goseong.html">이벤트&뉴스</a></li>
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="service-area">
+            <nav class="nav-member">
+                <ul class="member-ul">
+                    <li><a href="../login/">로그인</a></li>
+                    <li><a href="../join/">회원가입</a></li>
+                </ul>
+            </nav>
+            <div class="reserve-menu-area">
+                <nav class="nav-reserve">
+                    <a href="#none" class="btn-go-reserve">
+                        <div class="btn-contents-box">
+                            <div class="icon-calendar"><img src="http://design.ebiznetworks.co.kr/lhc/ocean2y_condo/img/common/icon_calendar.png" alt=""></div>
+                            <p class="p-name">예약하기</p>
+                        </div>
+                    </a>
+                    <ul class="reserve-ul">
+                        <li><a href="#none">객실예약</a></li>
+                        <li><a href="">예약확인</a></li>
+                        <li><a href="">단체예약</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--./header -->
+
+<script>
+    $(document).ready(function(){
+        let reserveOverOn = false;
+        let reserveOutOn = false;
+        $(".nav-reserve").mouseover(function(e){
+            console.log("작동");
+            if(reserveOverOn == true) return false;
+            reserveOverOn = true;
+            $('.reserve-ul').slideDown(320,
+            function(){
+                reserveOverOn = false;
+                // console.log("완료")
+            });
+        });
+
+        $(".nav-reserve").mouseleave(function(e){
+            if(reserveOutOn == true) return false;
+            reserveOutOn = true
+            $('.reserve-ul').slideUp(320, function(){
+                reserveOutOn = false;
+            });
+            
+        });
+    });
+
+    $(".header-new .btn-open-menu").on("click", function(){
+        $(".header-new .menu-area").show();
+    });
+
+
+
+
+</script>

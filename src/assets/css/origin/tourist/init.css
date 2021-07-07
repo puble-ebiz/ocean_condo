@@ -1,0 +1,160 @@
+@charset 'utf-8';
+#wrap * {box-sizing: border-box;}
+.tour-wrap * {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+
+.vid-wrap {position: relative; width: 100%; height: 400px; padding-top: 98px; background: url(http://img.ocean2you.co.kr/renew/intro/intro_titBg.jpg) no-repeat top center; -webkit-background-size: cover; background-size: cover;}
+
+.bx-wrapper .bx-controls-direction {margin-top: -22.15px;}
+.bx-wrapper .bx-controls-direction a {width: 22px; height: 43px;}
+.bx-wrapper .bx-prev {left: 30px;}
+.bx-wrapper .bx-next {right: 30px;}
+
+@media (max-width: 767px) {
+    .vid-wrap {height: auto;}
+    
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 16px; color: #fff;}
+	.title .tit-box h2 {font-size: 18px; letter-spacing: -2.5px}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 18px auto 20px; background: #fff;}
+    .title .tit-box .titTxt {width: 70%; margin: 0 auto;}
+	.title .pkg-tab {position: relative; box-sizing: border-box; display: block; margin: 25px auto 0; padding: 0 5px 25px;}
+	.title .pkg-tab > li {position: relative; float: left; top: 0; width: 49%; margin: 0 2%; border: 3px solid #a8a6a4;}
+	.title .pkg-tab > li.on {border-color: #fff;}
+	.title .pkg-tab > li a {display: block; box-sizing: border-box; width: 100%; height: 45px; font-size: 15px; font-weight: 400; color: #fff;}
+	.title .pkg-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+    .title .pkg-tab > li a span {display:none}
+	
+    
+    /*관광지*/
+    .tour-wrap {padding: 40px 0 50px; /*padding: 20px 15px 21px;*/}
+    .tour-wrap .container {width: 94%; margin: 0 auto;}
+    .tour-wrap .tour-sec {/*display: none;*/ margin: 0 auto; text-align: center;}
+    .tour-wrap .tour-sec .area {display: inline-block; text-align: left;}
+    .tour-wrap .tour-sec .area .h3-tit {position: relative; padding-left: 10px; font-size: 16px; margin: 10px 0 13px;}
+    .tour-wrap .tour-sec .area:first-child .h3-tit {margin-top: 0;}
+    .tour-wrap .tour-sec .area .h3-tit > * {}
+    .tour-wrap .tour-sec .area .h3-tit:before {content: ""; position: absolute; display: inline-block; width: 5px; height: 16px; top: 50%; left: 0; margin-top: -8px; background: #c0c0c0;}
+    .tour-wrap .tour-sec .area .list + .list {margin-top: 20px;}
+    .tour-wrap .tour-sec .area .list > li {float: left; width: 49%; margin: 0 0 4% 2%; overflow: hidden;}
+    .tour-wrap .tour-sec .area .list > li:first-child, .tour-wrap .tour-sec .area .list > li:nth-child(2n+1) {margin-left: 0;}
+    .tour-wrap .tour-sec .area .list > .link-tour {cursor:pointer}
+    .tour-wrap .tour-sec .area .list > li .tour-img {border: 1px solid #a19e9f; width: 100%; box-sizing: border-box;}
+    .tour-wrap .tour-sec .area .list > li .tour-img img {width: 100%;}
+    .tour-wrap .tour-sec .area .list > li dl {margin-top: 8px; letter-spacing: -0.9px;}
+    .tour-wrap .tour-sec .area .list > li dl dt {font-size: 12px; color: 0; padding-bottom: 6px; margin-bottom: 3px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    .tour-wrap .tour-sec .area .list > li dl dt h4 {margin-bottom: 6px; font-size: 15px; color: #008ead; font-weight: 700;}
+    .tour-wrap .tour-sec .area .list > li dl dd {font-size: 12px; color: #4c4c4c; line-height: 1.7; word-break: keep-all;}
+	
+}
+
+
+@media (max-device-width: 320px) {
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.title .container, .tour-wrap .container {width: 768px;}
+    
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px; letter-spacing: -2.5px}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .pkg-tab {position: relative; box-sizing: border-box; display: block; max-width: 768px; margin: 25px auto 0; padding: 0 10px;}
+	.title .pkg-tab > li {position: relative; float: left; top: 0; width: 49%; margin: 0; border: 3px solid #a8a6a4;}
+	.title .pkg-tab > li:first-child { margin-left: 0;}
+	.title .pkg-tab > li.on {border-color: #fff;}
+	.title .pkg-tab > li a {display: block; box-sizing: border-box; width: 100%; height: 60px; font-size: 17px; font-weight: 400; color: #fff;}
+	.title .pkg-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+    .title .pkg-tab > li a span {display:none}
+    
+    /*관광지*/
+    .tour-wrap {padding: 60px 0 80px; /*padding: 28px 28px 70px;*/}
+    .tour-wrap .tour-sec {/*display: none;*/ margin: 0 auto; text-align: center;}
+    .tour-wrap .tour-sec .area {display: inline-block; text-align: left;}
+    .tour-wrap .tour-sec .area .h3-tit {position: relative; padding-left: 20px; font-size: 24px; margin: 30px 0 15px;}
+    .tour-wrap .tour-sec .area:first-child .h3-tit {margin-top: 0;}
+    .tour-wrap .tour-sec .area .h3-tit > * {}
+    .tour-wrap .tour-sec .area .h3-tit:before {content: ""; position: absolute; display: inline-block; width: 10px; height: 24px; top: 50%; left: 0; margin-top: -11px; background: #c0c0c0;}
+    .tour-wrap .tour-sec .area .list + .list {margin-top: 20px;}
+    .tour-wrap .tour-sec .area .list > li {float: left; width: 49%; margin: 0 0 3% 2%; overflow: hidden;}
+    .tour-wrap .tour-sec .area .list > li:first-child, .tour-wrap .tour-sec .area .list > li:nth-child(2n+1) {margin-left: 0;}
+    .tour-wrap .tour-sec .area .list > .link-tour {cursor:pointer}
+    .tour-wrap .tour-sec .area .list > li .tour-img {border: 1px solid #a19e9f; width: 100%; box-sizing: border-box;}
+    .tour-wrap .tour-sec .area .list > li .tour-img img {width: 100%;}
+    .tour-wrap .tour-sec .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+    .tour-wrap .tour-sec .area .list > li dl dt {font-size: 13px; color: 0; padding-bottom: 10px; margin-bottom: 6px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    .tour-wrap .tour-sec .area .list > li dl dt h4 {margin-bottom: 6px; font-size: 20px; color: #008ead; font-weight: 700;}
+    .tour-wrap .tour-sec .area .list > li dl dd {font-size: 14px; color: #4c4c4c; line-height: 1.7; word-break: keep-all;}
+}
+
+@media (min-width: 992px) and (max-width: 1431px) {
+	.title .container, .tour-wrap .container {width: 992px;}
+    
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px; letter-spacing: -2.5px}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .pkg-tab {position: relative; display: inline-block; margin: 25px auto 0;}
+	.title .pkg-tab > li {position: relative; float: left; top: 0; width: 165px; /*border: 2px solid transparent; border-left: 1px solid #a8a6a4; margin-left: -1px;*/ padding: 2px;}
+	.title .pkg-tab > li.nth-1 {margin-left: 0;}
+	.title .pkg-tab > li.on {padding: 0; border: 2px solid #fff; z-index: 1; }
+	.title .pkg-tab > li a {display: block; box-sizing: border-box; width: 100%; height: 51px; padding: 0 10px; font-size: 17px; font-weight: 400; color: #fff;}
+	.title .pkg-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+    .title .pkg-tab > li a span {display:none}
+    .title .pkg-tab .no-tab a {cursor: default;}
+    
+    /*관광지*/
+    .tour-wrap {padding: 60px 0 80px; /*padding: 23px 20px 70px*/}
+    .tour-wrap .tour-sec {/*display: none;*/ margin: 0 auto; text-align: center;}
+    .tour-wrap .tour-sec .area {display: inline-block; text-align: left;}
+    .tour-wrap .tour-sec .area .h3-tit {position: relative; padding-left: 20px; font-size: 24px; margin: 30px 0 15px;}
+    .tour-wrap .tour-sec .area .h3-tit > * {}
+    .tour-wrap .tour-sec .area .h3-tit:before {content: ""; position: absolute; display: inline-block; width: 10px; height: 24px; top: 50%; left: 0; margin-top: -11px; background: #c0c0c0;}
+    .tour-wrap .tour-sec .area .list + .list {margin-top: 20px;}
+    .tour-wrap .tour-sec .area .list > li {float: left; width: 224px; margin-left: 13px; overflow: hidden;}
+    .tour-wrap .tour-sec .area .list > li:first-child {margin-left: 0;}
+    .tour-wrap .tour-sec .area .list > .link-tour {cursor:pointer}
+    .tour-wrap .tour-sec .area .list > li .tour-img {border: 1px solid #a19e9f; width: 100%; box-sizing: border-box;}
+    .tour-wrap .tour-sec .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+    .tour-wrap .tour-sec .area .list > li dl dt {font-size: 13px; color: 0; padding-bottom: 10px; margin-bottom: 6px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    .tour-wrap .tour-sec .area .list > li dl dt h4 {margin-bottom: 6px; font-size: 20px; color: #008ead; font-weight: 700;}
+    .tour-wrap .tour-sec .area .list > li dl dd {font-size: 14px; color: #4c4c4c; line-height: 1.7; word-break: keep-all;}
+}
+
+
+@media (min-width: 1432px) {
+	.title .container, .tour-wrap .container {width: 1180px;}
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px; letter-spacing: -2.5px}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .pkg-tab {position: relative; display: inline-block; margin: 25px auto 0;}
+	.title .pkg-tab > li {position: relative; float: left; top: 0; width: 165px; /*border: 2px solid transparent; border-left: 1px solid #a8a6a4; margin-left: -1px;*/ padding: 2px;}
+	.title .pkg-tab > li.nth-1 {margin-left: 0;}
+	.title .pkg-tab > li.on {padding: 0; border: 2px solid #fff; z-index: 1; }
+	.title .pkg-tab > li a {display: block; box-sizing: border-box; width: 100%; height: 51px; padding: 0 10px; font-size: 17px; font-weight: 400; color: #fff;}
+	.title .pkg-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+    .title .pkg-tab > li a span {display:none}
+    .title .pkg-tab .no-tab a {cursor: default;}
+    
+    /*관광지*/
+    .tour-wrap {padding: 60px 0 80px; /*padding: 33px 0 100px*/}
+    .tour-wrap .container {margin: 0 auto;}
+    .tour-wrap .tour-sec {/*display: none; */}
+    .tour-wrap .tour-sec .area {}
+    .tour-wrap .tour-sec .area .h3-tit {position: relative; padding-left: 20px; font-size: 26px; margin: 30px 0 15px; line-height: 38px;}
+    .tour-wrap .tour-sec .area .h3-tit > * {line-height: 38px;}
+    .tour-wrap .tour-sec .area .h3-tit:before {content: ""; position: absolute; display: inline-block; width: 10px; height: 26px; top: 50%; left: 0; margin-top: -12px; background: #c0c0c0;}
+    .tour-wrap .tour-sec .area .list + .list {margin-top: 20px;}
+    .tour-wrap .tour-sec .area .list > li {float: left; width: 280px; margin-left: 20px; overflow: hidden;}
+    .tour-wrap .tour-sec .area .list > li:first-child {margin-left: 0;}
+    .tour-wrap .tour-sec .area .list > .link-tour {cursor:pointer}
+    .tour-wrap .tour-sec .area .list > li .tour-img {border: 1px solid #a19e9f; width: 280px; height: 160px; box-sizing: border-box;}
+    .tour-wrap .tour-sec .area .list > li dl {margin-top: 15px; letter-spacing: -0.9px;}
+    .tour-wrap .tour-sec .area .list > li dl dt {font-size: 15px; color: 0; padding-bottom: 10px; margin-bottom: 6px; border-bottom: 1px solid #c8c8c8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    .tour-wrap .tour-sec .area .list > li dl dt h4 {margin-bottom: 6px; font-size: 22px; color: #008ead; font-weight: 700;}
+    .tour-wrap .tour-sec .area .list > li dl dd {font-size: 16px; color: #4c4c4c; line-height: 1.7; word-break: keep-all;}
+   
+}
+

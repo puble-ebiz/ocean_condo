@@ -1,0 +1,682 @@
+	@charset 'utf-8';
+
+	.vid-wrap {
+	  background: url(http://img.ocean2you.co.kr/renew/package/pkg_titBg.jpg) no-repeat top center;
+	  padding-top: 98px;
+	  position: relative;
+	  width: 100%;
+	  height: 400px;
+	}
+
+	.title {
+	  position: relative;
+	}
+
+	.title .tit-box {
+	  text-align: center;
+	  padding-top: 76px;
+	  color: #fff;
+	}
+
+	.title .tit-box h2 {
+	  font-size: 27px;
+	}
+
+	.title .tit-box .mg- {
+	  display: block;
+	  height: 1px;
+	  width: 60px;
+	  margin: 18px auto 20px;
+	  background: #fff;
+	}
+
+	.title .tit-box .p0 {
+	  font-size: 20px;
+	  margin-top: 10px;
+	}
+
+	.event-wrap {
+	  padding: 60px 0 170px;
+	  min-height: 1294px;
+	}
+
+	.tab-rg-box {
+	  z-index: 2;
+	  position: absolute;
+	  width: 100%;
+	  text-align: center;
+	  margin: 20px auto 0;
+	  padding: 20px 0;
+	  background: #fff;
+	}
+
+	.tab-rg-box.on {
+	  position: fixed;
+	  top: 94px;
+	  left: 0;
+	  margin: 0;
+	}
+
+	.tab-region {
+	  position: relative;
+	  display: inline-block;
+	  text-align: center;
+	  /*margin-bottom: 35px;*/
+	  font-size: 0;
+	}
+
+	.tab-region>li {
+	  display: inline-block;
+	  font-size: 16px;
+	  padding-left: 10px;
+	}
+
+	.tab-region>li:first-child {
+	  padding-left: 0;
+	}
+
+	.tab-region>li>a {
+	  display: block;
+	  color: #000;
+	  background: #fff;
+	  border: 1px solid #99adcb;
+	  padding: 0 35px;
+	  line-height: 52px;
+	  font-size: 20px;
+	  box-sizing: border-box;
+	}
+
+	.tab-region>li>a .d-arr {
+	  display: none;
+	}
+
+	.tab-region>li.on>a {
+	  background: #99adcb;
+	  color: #fff;
+	}
+
+	.tab-region>li.on>a .d-arr {
+	  display: inline-block;
+	}
+
+	.cont-region {}
+
+	.event-sort-box+.event-sort-box {
+	  margin-top: 60px;
+	  padding-top: 60px;
+	  border-top: 1px solid #ccc;
+	}
+
+	/* .cont-region > li {display: none;}
+	.cont-region > li.on {display: block;} */
+
+	.bx-wrapper,
+	.bx-wrapper,
+	.event-wrap .container {
+	  width: 1180px;
+	}
+
+	#evt-box>section {
+	  word-break: keep-all;
+	  text-align: center;
+	}
+
+	.event-wrap [class*=facil-] h3 {
+	  font-size: 21px;
+	  margin: 0px auto 25px;
+	  color: #595959;
+	  font-weight: 600;
+	}
+
+	.event-wrap .bxBox {
+	  position: relative;
+	}
+
+	.event-wrap .bxBox .bxS>li {
+	  z-index: 1 !important;
+	  width: 1180px;
+	  height: 493px;
+	}
+
+	.event-wrap .bxBox .li-1 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_01.jpg) no-repeat;
+	}
+
+	.event-wrap .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_02.jpg) no-repeat;
+	}
+
+	/* 20180306_이벤트페이지 배너추가_다솜 */
+	.event-wrap .bxBox .li-3 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_03.jpg) no-repeat;
+	}
+
+	.event-wrap .bxBox .li-4 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_04.jpg) no-repeat;
+	}
+
+	.event-wrap .tulip .bxBox .li-1 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_tulip01.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .tulip .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_tulip02.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .midnight .bxBox iframe {
+	  width: 100%;
+	  height: 664px;
+	}
+
+	/* 180515_라벤더축제 */
+	.event-wrap .lavender .bxBox .li-1 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_lavender01.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .lavender .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_lavender02.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .lavender .hidden-xs {
+	  display: block
+	}
+
+	.event-wrap .ocKite .bxBox .li-1 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_ocKite01.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .ocKite .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_ocKite02.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.fac-mt {
+	  margin-top: 60px;
+	  padding-top: 60px;
+	  border-top: 1px solid #ccc;
+	}
+
+	.fac-mt-b {
+	  margin-bottom: 60px;
+	  padding-bottom: 60px;
+	  border-bottom: 1px solid #ccc;
+	}
+
+	/* 181015_축제 6종 추가 + 텍스트로 변경_다솜 */
+	.event-wrap .facil-1 {
+	  position: relative;
+	}
+
+	.event-wrap .facil-1+.facil-1 {
+	  margin-top: 60px;
+	  padding-top: 60px;
+	  border-top: 1px solid #ccc;
+	}
+
+	.event-wrap .facil-1 .bxBox li {
+	  position: relative;
+	  /*background: url(http://img.ocean2you.co.kr/renew/event/event_01.jpg) no-repeat; background-size: cover;*/
+	}
+
+	/* 기본 캠프파이어 축제 */
+	.event-wrap .facil-1 .bxBox .fc-li-box {
+	  box-sizing: border-box;
+	  display: table;
+	  width: 100%;
+	  height: 100%;
+	  padding: 0 125px;
+	  background: rgba(0, 0, 0, 0.65);
+	}
+
+	.event-wrap .facil-1 .bxBox .fc-txt-box {
+	  display: table-cell;
+	  width: 100%;
+	  text-align: center;
+	  vertical-align: middle;
+	}
+
+	.event-wrap .facil-1 .bxBox .fc-txt-box p {
+	  letter-spacing: -1px;
+	  color: #fff;
+	}
+
+	.event-wrap .facil-1 .bxBox .fc-txt-box .fc-li-tit {
+	  margin-bottom: 20px;
+	  font-size: 30px;
+	  line-height: 42px;
+	}
+
+	.event-wrap .facil-1 .bxBox .fc-txt-box .fc-li-txt {
+	  font-size: 20px;
+	  line-height: 42px;
+	}
+
+	.event-wrap .facil-1 .bxBox .li-1 {}
+
+	.event-wrap .facil-1 .bxBox .li-2 {}
+
+	/* DMZ 전국 플라잉디스크 대회 */
+	.event-wrap .flying .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_fiying.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* GBA 고성 DMZ 그란폰도 */
+	.event-wrap .granfondo .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_granfondo.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 통일 고성 명태축제 */
+	.event-wrap .pollock .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_pollock.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 설악문화제 */
+	.event-wrap .seolag .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_seolag.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 바다별빛 대포야 사랑해 */
+	.event-wrap .sscLove .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_sscLove.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 속초국화전 */
+	.event-wrap .gughwa .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_gughwa.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 설악동 단풍축제 */
+	.event-wrap .seolagMaple .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_seolagMaple.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 스탬프투어 */
+	.event-wrap .stamp .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_stamp.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 빛 축제 */
+	.event-wrap .light .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_light.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 음악불꽃크루즈 */
+	.event-wrap .musicFire .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_musicFire.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 181106 소확행 캠프파이어 불꽃축제 */
+	.event-wrap .sohwaghaeng .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_sohwaghaeng.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 춘계 전국 중고등학교 검도대회 */
+	.event-wrap .geomdo .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_geomdo.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 190322 고성 미시령 힐클라임대회 */
+	.event-wrap .hill .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_thebike.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 190417 동해안 최북단 저도어장 대문어축제 2019 */
+	.event-wrap .octopus .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_octopus_01.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .octopus .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_octopus_02.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 190426 속초 사잇길 음악여행 버스킹 */
+	.event-wrap .skBusking .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_busking.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 190426 속초 봄빛 축제 */
+	.event-wrap .skNuri .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_nuri.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 실향민 문화 축제 */
+	.event-wrap .silyang .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_silyang.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 190521 속초 시민의 날 */
+	.event-wrap .skBusking .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_simin.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 190814_dmz평화의길 */
+	.event-wrap .dmz .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_dmz01.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .dmz .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_dmz02.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* DMZ POP */
+	.event-wrap .dmzpop .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_dmzpop.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .dmzpop .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_dmzpop02.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	/* 190826_금강통일배 유소년클럽 축구대회 */
+	.event-wrap .fifasChild .bxBox li {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_fifasChild01.jpg) no-repeat;
+	  background-size: cover;
+	}
+
+	.event-wrap .fifasChild .bxBox .li-2 {
+	  background: url(http://img.ocean2you.co.kr/renew/event/event_fifasChild02.jpg) no-repeat;
+	  background-size: cover;
+    }
+    
+    /* halloween */
+    .event-wrap .halloween .bxBox li {background: url(http://img.ocean2you.co.kr/renew/event/event_halloween.jpg) no-repeat; background-size: cover;}
+    .event-wrap .halloween .bxBox .li-2 {background: url(http://img.ocean2you.co.kr/renew/event/event_back_halloween.jpg) no-repeat; background-size: cover;}
+
+    .halloween-tariff-table {
+        width: 100%;
+        margin-top: 40px;
+        color: #5d5d5d;
+        line-height: 1.3;
+        text-align: center;
+    }
+    .halloween-tariff-table colgroup col {
+        width: 33.33%;
+    }
+    .halloween-tariff-table thead,
+    .halloween-tariff-table tbody {border: 1px solid #bfbfbf;}
+    .halloween-tariff-table tbody {border-top: none;}
+    .halloween-tariff-table th,
+    .halloween-tariff-table td {border-left: 1px solid #bfbfbf; vertical-align: middle; height: 52px;}
+    .halloween-tariff-table th .cell,
+    .halloween-tariff-table td .cell {padding: 5px 0;}
+    .halloween-tariff-table th {background-color: #eaeaea; border-bottom: none; font-weight: 500; font-size: 18px;}
+    .halloween-tariff-table td {background-color: #fff; letter-spacing: -1px;}
+    .halloween-tariff-table tbody tr:not(:first-child) td {border-top: 1px solid #eaeaea;}
+    .halloween-tariff-table tbody td:nth-child(1),
+    .halloween-tariff-table tbody td:nth-child(2) {font-size: 18px;}
+    .halloween-tariff-table tbody td:nth-child(2) {font-weight: 500;}
+
+	.event-wrap .evt01-tb {
+	  position: relative;
+	  text-align: left;
+	  margin-top: 54px;
+	  letter-spacing: -1px;
+	  line-height: 1.2;
+	}
+
+	.event-wrap .evt01-tb>li {
+	  float: left;
+	  width: 100%;
+	  border: 1px solid #bfbfbf;
+	  margin-top: -1px;
+	}
+
+	.event-wrap .evt01-tb>li:first-child {
+	  margin-top: 0;
+	}
+
+	.event-wrap .evt01-tb>li span {
+	  display: inline-block;
+	  vertical-align: top;
+	}
+
+	.event-wrap .evt01-tb .l-th,
+	.event-wrap .evt01-tb .s-lbl {
+	  background: #eaeaea;
+	}
+
+	.event-wrap .evt01-tb .l-th {
+	  text-align: center;
+	  color: #414141;
+	  font-size: 20px;
+	  padding: 15px 0;
+	  font-weight: 700;
+	}
+
+	.event-wrap .evt01-tb .l-td {
+	  color: #5d5d5d;
+	  font-size: 0;
+	  width: 33.33%;
+	}
+
+	.event-wrap .evt01-tb .l-td>span {
+	  padding: 12px 0;
+	  font-size: 19px;
+	}
+
+	.event-wrap .evt01-tb .l-td .s-lbl {
+	  border-right: 1px solid #bfbfbf;
+	  width: 25%;
+	  text-align: center;
+	}
+
+	.event-wrap .evt01-tb .l-td .s-txt {
+	  padding-left: 10px;
+	  width: 75%;
+	}
+
+	.event-wrap .evt01-tb .l-td:nth-child(5) .s-lbl,
+	.event-wrap .evt01-tb .l-td:nth-child(6),
+	.event-wrap .evt01-tb .l-td:nth-child(7) {
+	  line-height: 2.4;
+	}
+
+	.event-wrap .evt01-tb .l-td:nth-child(2),
+	.event-wrap .evt01-tb .l-td:nth-child(3),
+	.event-wrap .evt01-tb .l-td:nth-child(5),
+	.event-wrap .evt01-tb .l-td:nth-child(6) {
+	  border-right: 0;
+	}
+
+	.event-wrap .evt01-tb .l-td.nth-2,
+	.event-wrap .evt01-tb .l-td.nth-3,
+	.event-wrap .evt01-tb .l-td.nth-5,
+	.event-wrap .evt01-tb .l-td.nth-6 {
+	  border-right: 0;
+	}
+
+	.event-wrap .lh-01 {
+	  line-height: 2.4 !important;
+	}
+
+	.event-wrap .lh-02 {
+	  line-height: 1.2 !important;
+	}
+
+	.event-wrap .br-r-01 {
+	  border-right: 0 !important;
+	}
+
+	.event-wrap .kite .l-td.nth-6 .s-txt,
+	.event-wrap .ocKite .l-td.nth-6 .s-txt {
+	  font-size: 16px;
+	  position: relative;
+	  top: 4px;
+	}
+
+	/* 20180306_이벤트페이지 추가 및 디자인 수정_다솜 */
+	.event-wrap .evt02-tb .l-td {
+	  color: #5d5d5d;
+	  font-size: 0;
+	  width: 33.33%;
+	}
+
+	.event-wrap .evt02-tb .l-td:nth-child(4) {
+	  line-height: 1.2;
+	  border-right: 1px solid #bfbfbf;
+	}
+
+	.event-wrap .evt02-tb .l-td:nth-child(2),
+	.event-wrap .evt02-tb .l-td:nth-child(3),
+	.event-wrap .evt02-tb .l-td:nth-child(5),
+	.event-wrap .evt02-tb .l-td:nth-child(6) {
+	  border-right: 0;
+	}
+
+	.event-wrap .evt02-tb .l-td.type03,
+	.event-wrap .evt01-tb .l-td:nth-child(5) .s-lbl {
+	  line-height: 2.4;
+	}
+
+	.event-wrap .evt02-tb .l-td.type02,
+	.event-wrap .evt02-tb .l-td:nth-child(5) .s-txt {
+	  line-height: 1.2;
+	}
+
+	.event-wrap .evt02-tb .l-td>span {
+	  font-size: 18px;
+	}
+
+	.event-wrap .evt02-tb .l-td.type02>span {
+	  height: auto;
+	}
+
+
+	.event-wrap .fc-list .txt-box {
+	  position: absolute;
+	  left: 0;
+	  top: 140px;
+	  width: 100%;
+	  color: #fff;
+	}
+
+	.event-wrap .fc-list .txt-box .p1 {
+	  font-size: 30px;
+	}
+
+	.event-wrap .fc-list .txt-box .p2 {
+	  font-size: 18px;
+	  margin-top: 16px;
+	  line-height: 1.6;
+	}
+
+	.event-wrap .fc-list .txt-box .more-a>* {
+	  vertical-align: middle;
+	}
+
+	.event-wrap .fc-list .txt-box .more-a {
+	  width: 142px;
+	  height: 35px;
+	  font-size: 17px;
+	  display: inline-block;
+	  margin-top: 20px;
+	  padding: 3px 10px 6px;
+	  border: 1px solid #44a8ff;
+	}
+
+	.event-wrap .fc-list .txt-box .more-a .gt {
+	  position: relative;
+	  top: 2px;
+	  width: 8px;
+	  margin-left: 2px;
+	  left: 10px;
+	}
+
+	.event-wrap .facil-1 .fc-list li.nth-2 .bxBox .txt-box,
+	.event-wrap .facil-1 .fc-list li.nth-4 .bxBox .txt-box {
+	  top: 155px;
+	}
+
+	.event-wrap .facil-1 .flt-box {
+	  position: relative;
+	  margin-top: 20px;
+	}
+
+	.event-wrap .facil-1 .flt-box>div {
+	  position: relative;
+	  float: left;
+	  width: 50%;
+	}
+
+	.event-wrap .facil-1 .flt-box>div img {}
+
+	.event-wrap .facil-1 .flt-box>.d1 {
+	  text-align: left;
+	}
+
+	.event-wrap .facil-1 .flt-box>.d2 {
+	  text-align: right;
+	}
+
+	.event-wrap .facil-1 .flt-box>.d3 {
+	  text-align: left;
+	  margin-top: 20px;
+	}
+
+	.event-wrap .facil-1 .flt-box>div .txt-box {
+	  text-align: center;
+	  top: 180px;
+	}
+
+	.event-wrap .facil-1 .flt-box .d1 .txt-box,
+	.event-wrap .facil-1 .flt-box .d3 .txt-box {
+	  padding-right: 10px;
+	}
+
+	.event-wrap .facil-1 .flt-box .d2 .txt-box {
+	  padding-left: 10px;
+	}
+
+
+	.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	  position: absolute;
+	  width: 100%;
+	  bottom: -30px;
+	  display: block;
+	  text-align: center;
+	}
+
+	.bx-wrapper .bx-pager.bx-default-pager a {
+	  background: #fff;
+	  width: 11px;
+	  height: 11px;
+	  margin: 0 2.5px;
+	  border-radius: 50%;
+	  -moz-border-radius: 50%;
+	  -webkit-border-radius: 50%;
+	  border: 1px solid #8d8d8b;
+	}
+
+	.bx-wrapper .bx-pager.bx-default-pager a:hover,
+	.bx-wrapper .bx-pager.bx-default-pager a.active {
+	  background: #44a8ff;
+	  border-color: #44a8ff;
+	}

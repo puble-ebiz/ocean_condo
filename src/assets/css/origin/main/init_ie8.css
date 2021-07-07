@@ -1,0 +1,228 @@
+@charset 'utf-8';
+
+/* 190405 오션투유 메인 공지 */
+.pop-notice {position: fixed; z-index: 99999; width: 100%; height: 100%; top: 0; left: 0; text-align: center;}
+.pop-notice .pop-ugn-box {position: relative; display: table; box-sizing: border-box; width: 100%; height: 100%;}
+.pop-notice .pop-ugn-box .img-pop-ugn {display: table-cell; text-align: center; vertical-align: middle;}
+.pop-notice .pop-ugn-box .img-pop-ugn img {position: relative;}
+
+/* 1810110 상단띠배너_다솜 */
+.topbn-wrap {z-index: 99991; position: absolute; width: 100%; /*height: 77px;*/ margin: 0 auto; top: 0; text-align: center;}
+.topbn-wrap .bx-wrapper {width: 100%;}
+.topbn-wrap .bx-wrapper .bx-pager, .topbn-wrap .bx-wrapper .bx-controls-auto {display: none;}
+.topbn-wrap .slide-banner {position: relative; width: 100%; height: 100%; margin: 0 auto;}
+.topbn-wrap .slide-banner li {position: relative; width: 100%;}
+.topbn-wrap .slide-banner .bn-list-1 {}
+.topbn-wrap .slide-banner .bn-list-2 {}
+.topbn-wrap .slide-banner li .bn-link {display: block; width: 100%; min-width: 1180px; height: 77px;}
+.topbn-wrap .slide-banner .bn-ocean .bn-link {background: url(http://img.ocean2you.co.kr/renew/tbn_bustour.jpg) repeat-x center center;}
+.m-vid {display: none;}
+
+.vid {position: absolute; width: 100%; height: 100%; display: none;}
+
+.main {position: relative;}
+.main:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.ocean2you.co.kr/renew/main_ptBg.png) repeat;}
+
+.ie8 .vid {display: none;}
+
+.main > * {position: relative;}
+
+.main .txt-box {position: absolute; display: block; width: 100%; text-align: center;
+	top: 50%; margin-top: -168px;}
+.main .txt-box {color: #fff;}
+.main .txt-box .p0 {font-size: 26px; line-height: 1.5;}
+.main .txt-box .mg- {display: block; height: 1px; width: 98px; margin: 35px auto; background: #fff;}
+/* 180711_텍스트 수정 및 추가_다솜 */
+.main .txt-box .p1 {margin: 45px auto 18px;}
+.main .txt-box .p2 {margin-bottom:36px; font-size:32px; font-weight:800; line-height:32px;}
+
+.main .txt-box .more-a {display: block; margin: 0 auto; 
+	font-size: 24px; border: 4px solid #fff;
+	width: 208px; height: 54px;}
+.main .txt-box .more-a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+
+.main #scr-box {position: absolute; left: 50%; margin-left: -14px; bottom: 25px;}
+.main #scr-box > img {position: relative; top: 0; display: block; margin: 3px auto;}
+.main #scr-box > img.nth-1 {margin-bottom: 8px;}
+.main #scr-box > img.nth-2 {margin-bottom: 5px;
+	-webkit-animation: scrAni-02 1.5s 1.1s infinite;
+	animation: scrAni-02 1.5s 1.1s infinite;
+}
+.main #scr-box > img.nth-3 {
+	-webkit-animation: scrAni-03 1.5s 1.2s infinite;
+	animation: scrAni-03 1.5s 1.2s infinite;
+}
+@keyframes scrAni-02 {
+	0% {opacity: 0;}
+	50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+@keyframes scrAni-03 {
+	0% {opacity: 0;}
+	50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+
+/* 20180228_날씨추가_다솜 */
+.weath-wrap {display:block; position:relative; overflow:hidden; width:318px; height:68px; margin:0 auto; margin-top:50px; border:2px solid #fff; border-radius:50px;}
+.weath-wrap .weath-box {display:table; position:relative; box-sizing:border-box; width:100%; height:100%; padding:0 18px; border-radius:50px; background:#000; opacity:0.33; filter:alpha(opacity=33);}
+.weath-wrap .weath-box p, .weath-wrap .weath-box span {font-weight:bold; letter-spacing:-0.75px; color:#fff; font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif;}
+.weath-wrap .weath-box p {display:table-cell; position:relative; vertical-align:middle; text-align:center;}
+.weath-wrap .weath-box p:before {content:''; display:block; position:absolute; width:1px; height:33px; top:15px; left:0; margin-top:0px; background:#fff; opacity:0.33; filter:alpha(opacity=33);}
+.weath-wrap .weath-box p:first-child:before {content:none;}
+.weath-wrap .weath-box .weath-img {width:56px; padding-right:3px;}
+.weath-wrap .weath-box .weath-txt span {display:inline-block; width:100%; font-size:15px;}
+.weath-wrap .weath-box .weath-txt .day {margin-top:-3px; line-height:16px;}
+.weath-wrap .weath-box .weath-txt .location {line-height:27px;}
+.weath-wrap .weath-box .tem-txt {width:81px; padding-left:10px; text-align:left;}
+.weath-wrap .weath-box .tem-txt span {display:inline-block; letter-spacing:-2px;}
+.weath-wrap .weath-box .tem-txt .tem-num {min-width:40px; font-size:34px; line-height:21px; }
+.weath-wrap .weath-box .tem-txt .tem-cel {position:absolute; font-size:24px; margin-top:2px;}
+
+.intro {position: relative; width: 100%; color: #fff;
+	background: url(http://img.ocean2you.co.kr/renew/intro_bg.jpg) no-repeat ; padding: 160px 0 90px;
+}
+.intro .container {position: relative;}
+.intro [class*=colth-] {width: 50%; float: left;}
+.intro .colth-1 {padding-left: 60px;}
+.intro .colth-1 .mg- {position: relative; left: 5px; 
+	width: 109px; height: 1px; background: #fff;}
+.intro .colth-1 h2 {font-size: 65px; font-family: "Nanum gothic", sans-serif; 
+	line-height: 1.4; margin-top: 10px;}
+.intro .colth-1 .p0 {font-size: 19px; line-height: 1.6; margin-top: 20px;}
+.intro .colth-1 .more-a {display: block; position: relative; 
+	width: 140px; height: 70px; padding-left: 5px; margin: 30px 0 0 -60px;
+	line-height: 69px; font-size: 16px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.intro .colth-1 .more-a .i-rArr {margin-left: 5px;}
+.intro .colth-1 .more-a:hover {padding-left: 10px;}
+.intro .colth-1 .more-a:after {position: absolute; right: 0; top: 0;
+	content: ""; display: block;
+	width: 70px; height: 70px; border: 8px solid rgb(255,255,255);
+	box-sizing: border-box;
+}
+
+.intro .colth-2 {padding-left: 100px;}
+.intro .colth-2 > div > * {float: left; letter-spacing: -0.5px;}
+.intro .colth-2 > div > .p0 {font-size: 19px; line-height: 1.6; margin-top: -6px;}
+.intro .colth-2 > div.nth-1 > .img-1 {margin-right: 20px;}
+.intro .colth-2 > div.nth-2 > .img-1 {margin-right: 23px;}
+.intro .colth-2 > div.nth-1 > .p0 {width: 240px;}
+.intro .colth-2 > div.nth-2 {margin-top: 50px;}
+.intro .colth-2 > div.nth-2 > .p0 {width: 280px;}
+.intro .colth-2 > div > .more-a {font-size: 17px; width: 102px; height: 30px;
+	display: block; text-align: center; border: 1px solid #fff;
+	margin-top: 14px;
+	-webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;
+}
+.intro .colth-2 > div > .more-a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+.intro .colth-2 > div > .more-a:hover {color: #00c6ff; border-color: #00c6ff;}
+    
+/* 180712_패키지 수정_다솜 */
+.package {position: relative; width: 100%; padding: 0 0 80px;/*padding: 110px 0 151px;*/}	
+.package .in-bg {position: relative; width: 100%; /*height: 549px;*/
+	background: url(http://img.ocean2you.co.kr/renew/package_bg.jpg) no-repeat top center;
+}
+.package .container {padding-top: 120px;}
+.package .in-tit {text-align: center;}
+.package .in-tit .mg- {position: relative; width: 131px; height: 1px; background: #fff; margin: 0px auto 30px; background: #104c6a;}
+.package .in-tit h2 {font-size: 64px; font-family: "Nanum Gothic", sans-serif; color: #104c6a;}
+.package .in-tit .p0 {font-size: 19px; color: #282828; margin-top: 30px;}
+.package .pkg-list {margin-top: 116px;}
+.package .pkg-list > li {position: relative; float: left; color: #fff; width: 320px; height: 305px; margin-left: 50px; margin-bottom:25px}
+.package .pkg-list > li.nth-1 {margin-left: 0;}
+.package .pkg-list > li.nth-2 {}
+.package .pkg-list > li.nth-3 {}
+.package .pkg-list > li.nth-4 {}
+.package .pkg-list > li.nth-5 {clear: both; float:left; }
+.package .pkg-list > li.nth-6 {}
+.package .pkg-list > li.nth-7 {}
+.package .pkg-list > li.nth-8 {}
+.package .pkg-list > li.nth-1, .package .pkg-list > li.nth-5 {margin-left: 0;}
+.package .pkg-list > li.nth-2, .package .pkg-list > li.nth-6 {margin-top: 20px;}
+.package .pkg-list > li .in-cont {position: absolute; top: 114px; left: 24px;}
+.package .pkg-list .mg- {position: relative; width: 46px; height: 1px; background: #fff;}
+.package .pkg-list h3 {font-size: 25px; font-family: "Nanum Gothic", sans-serif; margin-top: 10px;}
+.package .pkg-list .p0 {font-size: 18px; margin-top: 25px; line-height: 1.3;}
+.package .pkg-list .more-a {font-size: 17px; display: inline-block; padding: 0px 10px; height: 28px; border: 1px solid #fff; margin-top: 20px;
+	-webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;
+}
+.package .pkg-list .more-a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+.package .pkg-list .more-a:hover {color: #00c6ff; border-color: #00c6ff;}
+.package .pkg-list span.more-a:hover {color: #fff; border-color: #fff;}
+
+.tourist {position: relative; padding: 84px 0 100px; background: #5ec1fe;}
+.tourist .in-tit {text-align: center; color: #fff;}
+.tourist .in-tit h2 {font-size: 37px; font-weight: 600;}
+.tourist .in-tit .p0 {font-size: 22px; margin-top: 25px;}
+.tourist .tour-list {position: relative; margin: 80px auto 0;}
+.tourist .tour-list > li {position: relative; float: left; width: 358px; height: 281px; text-align: center; color: #fff;}
+.tourist .tour-list > li a {position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;}
+.tourist .tour-list > li h3 {font-size: 25px; font-weight: 600; margin-top: 116px; text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);}
+.tourist .tour-list > li .mg- {position: relative; width: 46px; height: 1px; background: #fff; margin: 15px auto;}
+.tourist .tour-list > li .p0 {display: none; font-size: 17px; font-weight: 600; line-height: 1.4; letter-spacing: -1px; word-break: keep-all;}
+.tourist .tour-list > li .p0 .s0 {display: block; margin-bottom: 14px;}
+.tourist .tour-list > li:hover a {background: url(http://img.ocean2you.co.kr/renew/bg_dim.png) repeat;}
+.tourist .tour-list > li.lst:hover a {background: none;}
+.tourist .tour-list > li:hover h3 {margin-top: 40px;}
+.tourist .tour-list > li:hover .p0 {display: block;}
+.tourist .tour-list > li .more-a {font-size: 17px; display: inline-block; padding: 0px 10px; height: 28px; border: 1px solid #00c6ff; margin-top: 20px; color: #00c6ff;
+	}
+	.tourist .tour-list > li .more-a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+
+
+.facil {position: relative; padding: 90px 0;
+	background: url(http://img.ocean2you.co.kr/renew/facil_bg.jpg) no-repeat top center;
+}
+.facil .in-tit {text-align: center; color: #323232;}
+.facil .in-tit h2 {font-size: 37px; font-weight: 600;}
+.facil .in-tit .p0 {font-size: 22px; margin-top: 25px;}
+
+.facil .bxList {margin-top: 9px;}
+.facil .bxList .bxBox {margin-left: 9px; position: relative; float: left;}
+.facil .bxList.nth-1 {margin-top: 66px;}
+.facil .bxList.nth-1 .bxBox.nth-1 {width: 565px;}
+.facil .bxList.nth-1 .bxBox.nth-2 {width: 858px; margin-left: 9px;}
+.facil .bxList.nth-2 .bxBox.nth-2 {margin-left: 17px;}
+.facil .bxList.nth-3 .bxBox {margin-left: 11px;}
+
+.facil .bxList .bxBox.nth-1 {margin-left: 0px;}
+
+.facil .bxList .bxBox .txt-box {position: absolute; bottom: 0; width: 100%; padding: 18px 22px 24px; color: #fff;
+	background: url(http://img.ocean2you.co.kr/renew/bg_dim.png) repeat;
+}
+.facil .bxList .bxBox .txt-box .p0 {font-size: 22px;}
+.facil .bxList .bxBox .txt-box .more-a
+, .facil .bxList .bxBox .in-txt .more-a {display: inline-block;font-size: 17px; margin-top: 12px; padding: 0px 10px; height: 30px; border: 1px solid #fff;
+	-webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;
+}
+.facil .bxList .bxBox .txt-box .more-a:after
+, .facil .bxList .bxBox .in-txt .more-a:after {content: ""; height: 110%; display: inline-block; vertical-align: middle;}
+.facil .bxList .bxBox .txt-box .more-a:hover
+,.facil .bxList .bxBox .in-txt .more-a:hover {border: 1px solid #00c6ff; color: #00c6ff;}
+
+.facil .bxList .bxBox .in-txt {position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: #fff; text-align: center;}
+.facil .bxList .bxBox .in-txt .p0 {font-size: 22px; font-weight: 600; margin: 62px auto 8px;}
+.facil .bxList .bxBox .in-txt .p1 {font-size: 17px; line-height: 1.3; margin-top: 10px;}
+.facil .bxList .bxBox .in-txt .more-a {border: 1px solid #00c6ff; color: #00c6ff;}
+
+
+.wayto {position: relative; padding: 90px 0 120px; background: #f1f1f1;}
+.wayto .in-tit {text-align: center; color: #323232;}
+.wayto .in-tit h2 {font-size: 37px; font-weight: 600;}
+.wayto .in-tit .p0 {font-size: 22px; margin-top: 25px;}
+
+.wayto .map-box {position: relative; margin-top: 62px; border: 1px solid #bdbdbd; background: #e6e6e6;}
+.wayto .map-box > div {float: left; width: 50%; height: 517px;}
+.wayto .map-box .map iframe, .wayto .map-box .map > div {width: 100%; height: 100%;}
+.wayto .map-box .map .wrap_map {height: 486px;}
+.wayto .map-box .mapExp {padding: 58px 30px 30px 40px;}
+.wayto .map-box .mapExp > p {font-family: "Nanum gothic", sans-serif;}
+.wayto .map-box .mapExp .p0 {font-size: 24px; margin-top: 50px; font-weight: 600;}
+.wayto .map-box .mapExp .p0:first-child {margin-top: 0;}
+.wayto .map-box .mapExp .p1 {position: relative; font-size: 20px; line-height: 1.6; margin-top: 14px; padding-left: 12px;}
+.wayto .map-box .mapExp .p1:before {content: '-'; display: inline-block; position: absolute; left: 0;}
+.wayto .map-box .mapExp .wayBtn {position: relative; top: -2px; margin-left: 4px;}

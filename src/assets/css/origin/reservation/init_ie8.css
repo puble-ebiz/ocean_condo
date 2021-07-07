@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+.vid-wrap {background: url(http://img.ocean2you.co.kr/renew/intro/intro_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 320px;}
+
+.title {position: relative;}
+.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+.title .tit-box h2 {font-size: 27px; font-weight: 400;}
+.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+.title .facil-tab {position: relative; margin: 22px auto 0; width: 462px; left: 1.5px;}
+.title .facil-tab > li {position: relative; float: left; top: 0; width: 44%; border: 2px solid #fff; margin: 0 3%;}
+.title .facil-tab > li a {display: block; width: 100%; height: 45px; font-size: 16px; font-weight: 400; color: #fff;}
+.title .facil-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+
+.title .facil-tab > li a img {position: relative; margin-right: 12px;}
+.title .facil-tab > li a .i-user {top: -2px;}
+.title .facil-tab > li a .i-cal {top: -1px;}
+
+.reservation {padding: 75px 0 114px;}
+.reservation .container {width: 1054px;}
+.reservation .container > h3 {font-size: 34px; color: #44a8ff; text-align: center; font-weight: 600; font-family: "Nanum Gothic", sans-serif;}
+.reservation .p0 {font-weight: 18px; text-align: center; margin-top: 12px;}
+.reservation .mg- {display: block; height: 1px; width: 60px; margin: 20px auto 48px; background: #44a8ff;}

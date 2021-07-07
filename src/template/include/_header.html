@@ -1,0 +1,94 @@
+
+<!--header -->
+<header class="header-new">
+    <div class="header-top">
+        <nav class="nav-top-menu">
+            <ul class="top-menu-ul">
+                <li><a href="../main/index.html">홈</a></li>
+                <!-- 로그인시에 로그인 -->
+                <li><a href="../join/">회원가입</a></li>
+                <li><a href="../login/">로그인</a></li>
+                <!-- ../로그인시에 로그인 -->
+                
+                <!-- 로그인시에 마이페이지 -->
+                <li><a href="../mypage/">마이페이지</a></li>
+                <!-- .//로그인시에 마이페이지 -->
+                <li><a href="../reservation/confirm.html">예약내역조회</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-container">
+        <div class="logo-area">
+            <a href="../main/" class="top-logo">
+                <img src="http://img.ocean2youresort.co.kr/common/top_logo.png" alt="오션투유리조트소개">
+            </a>
+        </div>
+        <div class="btn-menu-area show-mobile">
+            <a class="toggle-menu" href="#">
+                <i></i>
+                <i></i>
+                <i></i>
+              </a>
+        </div>
+        
+        <div class="menu-area">
+            
+            <nav class="nav-main-menu">
+<!-- 2021-04-27 추가 -->
+                <div class="main-menu-join">
+                    <img src="http://img.ocean2you.co.kr/renew/logo_m.png" alt="오션투유리조트">
+                    <ul>
+                        <li><a href="../join/">회원가입</a></li>
+                        <li><a href="../login/">로그인</a></li>
+                        <!-- 로그인시에 마이페이지 -->
+                        <!-- <li><a href="../mypage/">마이페이지</a></li> -->
+                    </ul>
+                </div>
+                <ul class="main-menu-top">
+                    <li><a href="../reservation/index.html">객실예약</a></li>
+                    <li><a href="../reservation/confirm.html">예약확인</a></li>
+                </ul>
+<!-- //2021-04-27 추가 -->
+
+                <ul class="main-menu-ul">
+                    <li><a href="../intro/index.html">오션투유리조트 소개</a></li>
+                    <li><a href="../partner/index.html">제휴시설</a></li>
+                    <!-- <li><a href="../group/index.html">단체문의</a></li> -->
+                    <li><a href="../tourist/tourist_goseong.html">관광지</a></li>
+                    <!-- <li><a href="../event/event_goseong.html">이벤트&뉴스</a></li> -->
+                    <li><a href="../reservation/index.html">예약하기</a></li>
+                    <li><a href="../guide/guide01.html">회원이용안내</a></li>
+                    <li><a href="../serviceCenter/notice.html">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="service-area">
+            <div class="reserve-menu-area">
+                <nav class="nav-reserve">
+                    <a href="../reservation/index.html" class="btn-go-reserve">
+                        <div class="btn-contents-box">
+                            <div class="icon-calendar"><img src="http://img.ocean2youresort.co.kr/common/icon_calendar.png" alt="아이콘"></div>
+                            <p class="p-name">통합예약</p>
+                        </div>
+                    </a>
+                    <ul class="reserve-ul">
+                        <li><a href="../reservation/index.html">객실예약</a></li>
+                        <li><a href="../reservation/confirm.html">예약확인</a></li>
+                    </ul>
+                </nav>
+                <!-- 2021 -->      
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<script>
+    $(function() {
+  $(".toggle-menu").click(function() {
+    $(this).toggleClass("active");
+    $('.menu-area').toggleClass("open");
+  });
+});
+</script>

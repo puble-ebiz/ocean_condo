@@ -1,0 +1,112 @@
+@@include('../include/_head.html', {
+	"page": "serviceCenter"
+})
+	
+</head>
+<body>
+<h1 class="hidden">고객센터 - 묻고답하기 view</h1>
+<div class="wrap">
+
+    @@include('../include/_header.html')
+    @@include('../include/_sub/_subpage_top_service.html')
+
+    <div class="page-data" data-name="d_svc03"></div>
+    <!-- 2021 고객센터 -->
+    <div class="wrap-container">
+        <section class="scss_com service-center">
+            <div class="sect-contents">
+                <h3 class="common-page-title">묻고 답하기</h3>
+                <!-- 묻고답하기 보기 -->
+                <article>
+                    <div class="content-area">
+                        <div class="svc-title">
+                            <h4>오션투유콘도 양수 양도 안내</h4>
+                            <span>2020-12-01</span>
+                        </div>
+                        <div class="svc-content">
+                            안녕하세요. 오션투유콘도 입니다. <br/><br/>
+                            저희 고코투어를 사랑해주시는 고객여러분의 깊은 감사의 말씀드리며 <br/>
+                            (주)코레스코의 고코투어 서비스가 (주)바로네트웍스로 양도됨을 안내드립니다. 
+                        </div>
+
+                        <!-- 답변영역입니다 -->
+                        <div class="svc-content answer">
+                            <div><b>답변완료</b></div>
+                            <p>
+                                <span>작성일: 2021-01-08</span>
+                                안녕하세요. 오션투유콘도 입니다. <br/>
+                                저희 고코투어를 사랑해주시는 고객여러분의 깊은 감사의 말씀드리며 <br/>
+                                (주)코레스코의 고코투어 서비스가 (주)바로네트웍스로 양도됨을 안내드립니다. <br/>
+                                <br/>
+                                기존에 이용하고 계신 모든 서비스는 그대로 유지되며 회원님께서 제공해 주신 <br/>
+                                소중한 정보 또한 암호화되어 안정적으로 유지됩니다. <br/>
+                                <br/>
+                                양도이후에도 고코투어는 기존과 동일하게 이용하실 수 있으며 <br/>
+                                더 나은 서비스와 만족을 위하여 최선을 다하겠습니다. <br/>
+                                <br/>
+                                양도와 관련하여 문의사항이 있으신 경우 고코투어 고객센터( 1666 - 1243 )로 <br/>
+                                전화주시거나 www.go.co.kr 고객센터로 문의 주시기 바랍니다. <br/>
+                                <br/>
+                                감사합니다.
+                            </p>
+                        </div>
+                        <!-- //답변영역입니다 -->
+                    </div>
+                    <a class="back" href="./qna.html">목록</a>
+                    
+                    <!-- 답변이 없을때 -->
+                    <div class="button">
+                        <a href="#" data-popup-open="change"><img src="http://img.ocean2youresort.co.kr/serviceCenter/icon_return.png "/> 수정</a>
+                        <a href="#" data-popup-open="change"><img src="http://img.ocean2youresort.co.kr/serviceCenter/icon_x.png "/> 삭제</a>
+                    </div>
+                    <!-- 답변이 없을때 //-->
+
+
+                    <!-- 수정/삭제 popup --> 
+                    <div class="popup" data-popup="change"> 
+                        <div class="popup-inner"> 
+                            <div class="popup-contents"> 
+                                <a class="popup-close" data-popup-close="change" href="#">
+                                    <img src="http://img.ocean2youresort.co.kr/mypage/icon_close.png" alt="닫기"/>
+                                </a>
+                                <p>정보수정을 위해 비밀번호를 입력해주세요.</p>
+                                <input type="text" placeholder="비밀번호를 입력해주세요"/>
+                                <div>
+                                    <a href="#" data-popup-close="change" >취소</a>
+                                    <a href="#">확인</a>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                    <!-- 수정 popup // --> 
+                    <script>
+                        $(function() {
+                        //OPEN
+                        $('[data-popup-open]').on('click', function(e)  {
+                            var targeted_popup_class = jQuery(this).attr('data-popup-open');
+                            $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+                            e.preventDefault();
+                        });
+
+                        //CLOSE
+                        $('[data-popup-close]').on('click', function(e)  {
+                            var targeted_popup_class = jQuery(this).attr('data-popup-close');
+                            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+                            e.preventDefault();
+                        });
+                    });
+                    </script>
+
+                </article>
+                
+            </div>
+        </section>
+    </div>
+
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

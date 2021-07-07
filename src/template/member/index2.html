@@ -1,0 +1,69 @@
+@@include('../include/_head.html', {
+	"page": "member"
+})
+	
+</head>
+<body>
+
+<h1 class="hidden">오션투유 리조트 로그인</h1>
+<div id="wrap">
+
+    <div class="vid-wrap">
+        
+	    @@include('../include/_header.html')
+       
+        
+        <section class="title">
+            <div class="container tit-box">
+                <h2>로그인</h2>
+                <div class="mg-"></div>
+                <div class="titTxt"><img src="http://img.ocean2you.co.kr/renew/member/login_title.png" alt="로그인"></div>
+                <p class="p0"><span class="xs-block">내 소셜 아이디로 간편하게 오션투유 리조트</span> 설악비치 호탤앤리조트 가입과 로그인이 가능합니다.</p>
+                <p class="p0 under">신규가입시 2,000원 적립금 지급, 결제금액 1% 적립</p>
+            </div>
+        </section>
+    </div>
+		
+    <section class="login" id="setTop">
+        <div class="container">
+
+            <div id="customer">
+                <div class="Login clr">
+                    <div class="naverLogin">
+                        <h4>간단하게 로그인</h4>
+                        <ul class="snsLarge clr">
+
+                            <li class="google">
+                                <a href="javascript:g_login();"><img src="http://img.go.co.kr/mobile/g_logo.jpg" width="25">&nbsp;&nbsp;<span>구글 아이디로 로그인</span></a>
+                            </li>
+                            <li class="naver">
+                                <a href="javascript:n_login2();"><img src="http://img.go.co.kr/mobile/n_logo.jpg">&nbsp;&nbsp;<span>네이버 아이디로 로그인</span></a>
+                            </li>
+                            <li class="daum">
+                                <a href="javascript:d_login();"><img src="http://img.go.co.kr/mobile/daum_logo.jpg">&nbsp;&nbsp;<span>다음 아이디로 로그인</span></a>
+                            </li>
+                            <li class="kakao">
+                                <a href="javascript:kakaologin();"><img src="http://img.go.co.kr/mobile/k2_logo.jpg">&nbsp;&nbsp;<span>카카오톡 아이디로 로그인</span></a>
+                            </li>
+                            <li class="facebook">
+                                <a href="javascript:f_login();"><img src="http://img.go.co.kr/mobile/f_logo.jpg">&nbsp;&nbsp;<span>페이스북 아이디로 로그인</span></a>
+                            </li>
+                        </ul>
+                        <div class="alert clr">
+                            <div class="img"><img src="http://img.go.co.kr/icon_alert.jpg"></div>
+                            <div class="text">
+                                내 소셜 아이디로 간편하게 고코투어 가입과 로그인이 가능합니다.<br>
+                                <span>신규가입시 2,000원 할인쿠폰 증정, 결제금액 1% 적립, 다양한 할인쿠폰 발급</span><br> 로그인/회원가입 시 이용약관, 개인정보취급방침에 동의하게 됩니다.<br> 회원가입시 SMS/메일링 수신에 동의합니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

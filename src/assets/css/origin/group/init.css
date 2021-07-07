@@ -1,0 +1,615 @@
+@charset 'utf-8';
+#wrap * {box-sizing: border-box;}
+a {color: #2b2b2b;}
+.vid-wrap {background: url(http://img.ocean2you.co.kr/renew/intro/intro_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 320px; 
+	-webkit-background-size: cover; background-size: cover;}
+
+/* 20180320_접수완료 레이어 팝업_다솜 */
+.group-popup {z-index:9999; display:none; position:fixed; box-sizing:border-box; width:100%; height:100%; top:0; left:0; background:rgba(0, 0, 0, 0.5)}
+.group-popup .popup-wrap {position:relative; max-width:600px; margin:0 auto; top:50%; margin-top:-200px;}
+.group-popup .popup-container {position:relative; box-sizing:border-box; padding:25px 25px 35px; text-align:center; border:1px solid #c5c5c5; background:#fff;}
+.group-popup .popup-container .fc-blue {color:#2876e6}
+.group-popup .popup-container .popup-container {}
+.group-popup .popup-container .popup-cust {padding:5px 0 14px; border-bottom:1px solid #c5c5c5;}
+.group-popup .popup-container .popup-cust p {font-size:24px; line-height:35px; letter-spacing:-1px; color:#131313;}
+.group-popup .popup-container .popup-cust .f-bd {}
+.group-popup .popup-container .popup-cust .f-bd span {font-size:24px; line-height:35px; font-weight:bold;}
+.group-popup .popup-container .popup-cust .popup-txt {font-size:20px;}
+.group-popup .popup-container .popup-cust .popup-txt.pd-tb {padding:6px 0;}
+.group-popup .popup-container .info-txt {padding:15px 0 19px; font-size:16px; line-height:23px; color:#707070;}
+.group-popup .popup-container .btn-close {display:inline-block; min-width:200px; height:50px; font-size:18px; line-height:50px; font-weight:bold; color:#fff; background:#f75c07;}
+
+
+@media (max-width: 767px) {
+	.xs-block {display: block;}
+	.xs-hidden {display: none;}
+	.vid-wrap {height: auto; }
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 16px; padding-bottom: 22px; color: #fff;}
+	.title .tit-box h2 {font-size: 18px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 18px auto 20px; background: #fff;}
+	.title .tit-box .titTxt img {width: 290px;}
+	.title .tit-box .p0 {display: none;}
+	
+	.group-wrap {padding: 34px 0 54px;}
+	/*.bx-wrapper, .bx-wrapper, .group-wrap .container {width: 360px;}*/
+	
+	hr {border: 0; border-top: 1px solid #dedede; margin: 25px auto;}
+	
+	.intro-sec {position: relative; width: 100%;}
+	.intro-sec .d-row {position: relative;}
+	.intro-sec .d-map {width: 97%; margin: 10px auto 0;}
+	.intro-sec .d-map > img {width: 100%;}
+	.intro-sec p {width: 99%; margin: 0 auto; text-align: center; word-break: keep-all}
+	.intro-sec .p-1 {font-size: 14px; font-weight: 700; font-family: "Nanum Gothic", sans-serif; line-height: 1.3; letter-spacing: -0.5px;}
+	.intro-sec .p-1 strong {font-size: 16px; color: #242424; margin-bottom: 4px; display: inline-block;}
+	.intro-sec .p-2 {font-size: 12.5px; color: #595959; line-height: 1.5; margin-top: 8px; letter-spacing: -1px;}
+    .intro-sec .p-2.type-2 {margin-top: 0; color: #0068c3;}
+	.intro-sec .area-btn {margin-top: 16px;}
+	.intro-sec .area-btn > a {position: relative; display: inline-block; width: 94%; height: 44px; background: #319af6; color: #fff; font-size: 15px; text-align: center;}
+	.intro-sec .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.intro-sec .area-btn > a .ic-rArrow:after {border-color: #fff; width: 7px; height: 7px; top: -1px; left: 6px;}
+	.intro-sec .sun {width: 94%; margin: 10px auto;}
+	.intro-sec .p-3 {width: 84%; margin: 0 auto; position: relative; color: #c41919; font-size: 12.5px; line-height: 1.5;}
+	.intro-sec .p-3.dot .dot {}
+	
+	.banq-sec {}
+	.banq-sec .mBanqTb {}
+	.banq-sec .mBanqTb table {background: #fff; width: 98%; margin: 10px auto 0;}
+	.banq-sec .mBanqTb [class*=hall-] th, .banq-sec .mBanqTb [class*=hall-] td {border: 1px solid #d6d6d6; font-size: 11.5px; color: #5c5c5c; line-height: 1.4; letter-spacing: -1px; vertical-align: middle;}
+	.banq-sec .mBanqTb th {background: #f3f0f0; padding: 8px 0;}
+	.banq-sec .mBanqTb td {padding: 5px;}
+	.banq-sec .mBanqTb .hall-1 col:first-child {width: 27%;}
+	.banq-sec .mBanqTb .hall-1 col:nth-child(2) {width: 27%;}
+	.banq-sec .mBanqTb .hall-1 col:nth-child(3) {width: 18%;}
+	.banq-sec .mBanqTb .hall-1 col:nth-child(4) {width: 20%;}
+	.banq-sec .mBanqTb .hall-1 th {}
+	.banq-sec .mBanqTb .hall-1 td {text-align: center;}
+	/*.banq-sec .mBanqTb .hall-2 .textCenter {text-align: center;}*/
+	.banq-sec .mBanqTb .hall-2 col{width: 25%;}
+	.banq-sec .mBanqTb .hall-2 td {padding-left: 5px;}
+	.banq-sec .mBanqTb .hall-2 .numType_01 {width: 30px;}
+	.banq-sec .mBanqTb .hall-2 .numType_02 {width: 26px;}
+	.banq-sec .mBanqTb .hall-2 .numType_03 {width: 26px;}
+	.banq-sec .mBanqTb .hall-2 .numType_04 {width: 22px; margin: 0 3px;}
+	.banq-sec .mBanqTb .hall-2 [class*=numType_] + span {position: relative; top: 2px;}
+	.banq-sec .mBanqTb .hall-3 col:nth-child(1) {width: 25%;}
+	.banq-sec .mBanqTb .hall-3 col:nth-child(2) {width: 75%;}
+	.banq-sec .mBanqTb .hall-3 td{word-break: keep-all;}
+	.banq-sec .p-ps {width: 98%; margin: 0 auto; position: relative; padding-left: 18px; font-size: 12px; color: #848484; margin-top: 10px; letter-spacing: -1px; line-height: 1.4; word-break: keep-all;}
+	.banq-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 14px; height: 14px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); background-size: 14px; top: 1px;}
+	
+	
+	section[class*=-sec] h3.h3-tit {font-size: 16px; color: #4c4c4c; text-align: center; font-weight: 700;}
+	section[class*=-sec] h3.h3-tit + p {font-size: 14px; color: #454545; text-align: center; line-height: 1.3; word-break: keep-all; letter-spacing: -0.5px; margin: 8px auto 0;}
+	.room-sec {position: relative;}
+	.room-sec  > .p0 {width: 90%;}
+	
+	.room-sec .ul-list, .room-sec .p-ps {width: 86%; margin: 0 auto;}
+	.room-sec .ul-list {}
+	.room-sec .ul-list .li-item {float: left; position: relative; width: 100%; margin-top: 25px;}
+	.room-sec .ul-list .li-item:first-child {margin-left: 0;}
+	.room-sec .ul-list .li-item figure {position: relative; overflow: hidden; width: 100%; height: 160px;}
+	.room-sec .ul-list .li-item figure > img {position: absolute; bottom: 0; width: 100%;}
+	.room-sec .ul-list .li-item:first-child figure > img {position: absolute; bottom: -15px;}
+	.room-sec .ul-list .li-item > div {position: relative;}
+	.room-sec .ul-list .li-item .d-row-1 {margin-top: 6px; height: 32px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name {font-size: 15px; color: #535353; font-weight: 700; line-height: 1.1; position: relative; top: 3px;}
+	.room-sec .ul-list .li-item .d-row-1 .a-btn {position: absolute; right: 0; top: 0; font-size: 12px; background: #01374f; color: #fff; display: inline-block; text-align: center; line-height: 1.3; letter-spacing: -0.5px; padding: 8px 9px; z-index: 2; letter-spacing: -0.5px;}
+	.room-sec .ul-list .li-item .d-row-2 {padding-left: 32px; line-height: 1.4; color: #636363; margin-top: -5px; font-size: 13px;}
+	.room-sec .ul-list .li-item .d-row-2:before {content: ""; display: inline-block; position: absolute; top: 6px; left: 0; width: 26px; height: 1px; background: #777;}
+	.room-sec .p-ps {position: relative; padding-left: 18px; font-size: 12px; color: #848484; margin-top: 18px; letter-spacing: -1px; line-height: 1.4;}
+	.room-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 14px; height: 14px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); background-size: 14px; top: 1px;}
+	
+	.room-sec .ul-list .li-item .bxBox {position: absolute; bottom: 70px; width: 100%; border: 3px solid #01374f; overflow: hidden; visibility: hidden;}
+	.room-sec .ul-list .li-item .bxBox li img {width: 100%; height: 160px;}
+	.room-sec .ul-list .li-item .txt-box {position: absolute; left: 0; top: 50%; margin-top: -12px; width: 100%; color: #fff; letter-spacing: -1px; text-align: center;}
+	.room-sec .ul-list .li-item .txt-box .p1 {font-size: 13px; font-weight: 600; display: none;}
+	.room-sec .ul-list .li-item .txt-box .p2 {font-size: 12px; line-height: 1.3;}
+	.room-sec .ul-list .li-item .bxBox .a-x {right: 0; top: 0; background: #01374f; width: 26px; height: 26px;}
+	.room-sec .ul-list .li-item .bxBox .a-x:before, .room-sec .ul-list .li-item .bxBox .a-x:after {background: #fff; left: 14px; top: 2px;}
+	.room-sec .bx-wrapper .bx-controls-direction {margin-top: -4.15px;}
+	.room-sec .bx-wrapper .bx-controls-direction a {width: 8px; height: auto;}
+	.room-sec .bx-wrapper .bx-prev {left: 5px;}
+	.room-sec .bx-wrapper .bx-next {right: 5px;}
+	
+	
+	.food-sec {position: relative;}
+	.food-sec > .p0 {letter-spacing: -1px;}
+	.food-sec .ul-list {width: 90%; margin: 0 auto;}
+	.food-sec .ul-list {margin-top: 5px;}
+	.food-sec .ul-list .li-item {position: relative; float: left; width: 48.5%; margin-top: 12px; height: 196px; border: 1px solid #d2d2d2; border-radius: 6px; overflow: hidden;}
+	.food-sec .ul-list .li-item:nth-child(2n-1) {margin-right: 1.5%;}
+	.food-sec .ul-list .li-item:nth-child(2n) {margin-left: 1.5%;}
+	.food-sec .ul-list .li-item figure {position: relative; height: 100px; overflow: hidden;}
+	.food-sec .ul-list .li-item figure > img {width: 100%; position: absolute; top: -14px;}
+	.food-sec .ul-list .li-item figure figcaption {position: absolute; display: block; color: #fff; background: url(http://img.go.co.kr/black_rgba58.png) repeat; left: 0; bottom: 0; width: 100%; font-size: 11.5px; letter-spacing: -1px; text-align: center; line-height: 24px; padding-bottom: 1px;}
+	.food-sec .ul-list .li-item .d-cont {padding: 5px 0 5px 5px; padding-top: 5px; word-break: keep-all; line-height: 1.4;}
+	.food-sec .ul-list .li-item .d-cont .p-name {font-size: 13px; color: #4e4e4e; font-weight: 700;}
+	.food-sec .ul-list .li-item .d-cont .p-txt {font-size: 12px; color: #575757; letter-spacing: -1.5px; margin-top: 2px;}
+	.food-sec .ul-list .li-item .d-cont .s-1 {color: #bf6a6a;}
+	
+	.facil-sec {position: relative;}
+	.facil-sec > .p0 {letter-spacing: -1px; width: 84%;}
+	.facil-sec .ul-list, .facil-sec .p-ps, .facil-sec .ul-list-2 {width: 98%; margin: 0 auto;}
+	.facil-sec .ul-list {margin-top: 15px;} 
+	.facil-sec .ul-list .li-item {position: relative; float: left; margin-top: 8px; width: 32.33%;}
+	.facil-sec .ul-list .li-item:nth-child(3n-1) {margin: 8px 1.5% 0;}
+	.facil-sec .ul-list .li-item figure {position: relative;}
+	.facil-sec .ul-list .li-item figure > img {width: 100%;}
+	.facil-sec .ul-list .li-item figure > figcaption {display: block; width: 100%; position: absolute; bottom: 0; left: 0; padding: 5px 5px 6px 0; line-height: 1.2; background: #000000; background: rgba(0,0,0, .42); text-align: right; color: #fff; font-size: 12px;}
+	.facil-sec .ul-list .li-item figure > figcaption:after {content: ""; display: inline-block; height: 104%; vertical-align: middle;}
+	/*.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+	.facil-sec .p-ps {position: relative; padding-left: 18px; font-size: 12px; color: #848484; margin-top: 18px; letter-spacing: -1px; line-height: 1.4;}
+	.facil-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 14px; height: 14px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); background-size: 14px; top: 1px;}
+		
+    /* 190103 노래,합주 관련 추가 */
+	.facil-sec .ul-list-2 .li-item {position: relative; display: inline-block; margin-top: 8px; width: 100%; background: #000; background: rgba(0,0,0, .7);}
+	.facil-sec .ul-list-2 .li-item figure {position: relative;}
+	.facil-sec .ul-list-2 .li-item figure img {width: 100%;}
+    .facil-sec .ul-list-2 .li-item figure figcaption, .facil-sec .ul-list-2 .li-item .li-txt {box-sizing: border-box; width: 100%; padding: 7px 10px 8px 10px; text-align: center; letter-spacing: -0.7px; font-size: 12px; line-height: 1.3; color: #fff;}
+	.facil-sec .ul-list-2 .li-item figure figcaption {display: block; position: absolute; bottom: 0; left: 0; background: #000; background: rgba(0,0,0, .7);}
+    .facil-sec .ul-list-2 .li-item .li-txt {display: table; word-break: keep-all;}
+    .facil-sec .ul-list-2 .li-item .li-txt span {display: table-cell; vertical-align: middle;}
+    
+	.etc-sec {position: relative; margin-bottom: 10px; padding-top: 25px;}
+	.etc-sec .d-cm {position: relative; text-align: center; line-height: 1.3; width: 98%; margin: 0 auto;}
+	.etc-sec .d-cm > p {position: relative; word-break: keep-all;}
+	.etc-sec .d-cm .p-0 {font-size: 17px; color: #00b2dd; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+	.etc-sec .d-cm .p-1 {font-size: 12px; color: #636363; line-height: 1.5; margin-top: 5px; letter-spacing: -1.7px;}
+	.etc-sec .d-cm .area-btn {font-size: 15px; width: 95%; margin: 15px auto 0;}
+	.etc-sec .d-cm .area-btn .a-btn {position: relative; display: inline-block; width: 100%	; height: 46px; background: #00b2dd; color: #fff;}
+	.etc-sec .d-cm .area-btn .a-btn:after {content: ""; display: inline-block; height: 109%; vertical-align: middle;}
+	.etc-sec .d-cm .area-btn .a-btn .ic-rArrow:after {border-color: #fff; width: 7px; height: 7px; top: -1px; left: 4px; margin-right: -15px;}
+	/*.etc-sec .d-box-2.d-cm .p-0:before {content: "조금 더 "; display: inline-block;}*/
+	.etc-sec .d-box-2 .area-btn {margin-top: 20px;}
+	.etc-sec .d-box-2 .area-btn .a-btn {font-size: 16px; cursor: default; letter-spacing: 0;}
+	.etc-sec .d-box-2 .area-btn .pic-call {position: relative; display: inline-block; width: 20px; height: 20px; background: url(http://img.ocean2you.co.kr/renew/group/pic_callW.png); background-size: 20px; vertical-align: middle; top: -2px;}
+	.etc-sec .d-box-2 .area-btn .a-btn > .txt {position: relative; font-size: 13px; top: -2px; letter-spacing: -1px; margin-left: -3px;}
+	.etc-sec .d-box-2 .p-2 {font-size: 16px; font-weight: 700; margin-top: 15px; color: #00b2dd;}
+	.etc-sec .d-box-2 .p-2 .pic-sms {width: 22px; height: 22px;}
+	
+	
+	/* 시설안내 표 */
+	.facil-sec .facil-tb {width: 98%; margin: 8px auto 0;}
+	.facil-sec .facil-tb + p {margin-top: 10px;}
+	.facil-tb colgroup col.nth-1 {width: 15%;}
+	.facil-tb colgroup col.nth-2 {width: 35%;}
+	.facil-tb colgroup col.nth-3 {width: 50%;}
+	.facil-tb th, .facil-tb td {border: 1px solid #d6d6d6; font-size: 17px; color: #5c5c5c; text-align: center; padding: 10px 0; font-family: 'Nanum Gothic', sans-serif; font-size: 12px; vertical-align: middle;}
+	.facil-tb th {font-weight: 700; background: #f3f0f0;}
+	.facil-tb td {letter-spacing: -1.7px;}
+	
+	/*일정 안내*/
+	.enjoy-sec {padding-bottom: 25px;}
+	.enjoy-sec .courseTab, .enjoy-sec .courseList {position: relative; width: 98%; margin: 0 auto;}
+	.enjoy-sec .courseTab {margin: 8px auto;}
+	.enjoy-sec .courseTab > li {float: left; width: 48%; margin: 2% 1% 0; cursor: pointer; text-align: center; color: #319af6; border: 2px solid #319af6; line-height: 38px; font-size: 14px;}
+	.enjoy-sec .courseTab > li.on {color: #fff; background: #319af6;}
+	.enjoy-sec .courseList > li {position: relative; display: none; text-align: center;}
+	.enjoy-sec .courseList > li > img {width: 100%; margin: 40px auto 0;}
+	.enjoy-sec .courseList > li.on {display: block;}
+
+	/*단체예약 Q&A*/
+	.qna-group {position: relative; padding: 25px 0; background: #f9f9f9; color: #474747;}
+	.qna-group h2 {text-align: center; font-size: 16px;}
+	.qna-group h2 > span {display: inline-block;}
+	.qna-group h2 .tit {padding: 0 5px;}
+	.qna-group h2 .titBg {width: 40px; height: 10px; background: url(http://img.ocean2you.co.kr/renew/group/faqTitBg.png) repeat-x; background-size: 10px}
+	.qna-list {margin-top: 10px;}
+	.qna-list > li {position: relative; border-bottom: 1px solid #ccc; font-size: 13px; letter-spacing: -0.5px;}
+	.qna-list > li > div {position: relative; line-height: 1.4; word-break: keep-all; font-family: "Nanum Gothic", sans-serif;}
+	.qna-list > li .f-q {padding-left: 40px; padding-right: 24px;}
+	.qna-list > li .f-q > * {display: inline-block;}
+	.qna-list > li .f-q .q-con {position: absolute; left: 10px; font-weight: 700;}
+	.qna-list > li .f-q .arr {position: absolute; right: 10px; top: 8px;}
+	.qna-list > li .f-q .arr:after {top: -2px; border-color: #bbb;}
+	.qna-list > li .f-a {background: #fff; height: 0; padding: 0; overflow: hidden;}
+	.qna-list > li.on .f-q {color: #0293c4; font-weight: 700;}
+	.qna-list > li.on .f-q .arr:after {
+		top: 3px; border-color: #0293c4;
+		-webkit-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		-o-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+	.qna-list > li > div, .qna-list > li.on .f-a {padding: 9px 10px;}
+	.qna-list > li.on .f-a {height: auto; border-top: 1px solid #eee;}
+	
+	/* 20180320_접수완료 레이어 팝업_다솜 */
+	.group-popup .popup-wrap {max-width:300px;}
+	.group-popup .popup-container {padding:10px 10px 20px;}
+	.group-popup .popup-container .popup-cust {padding:3px 0 7px;}
+	.group-popup .popup-container .popup-cust p {font-size:17px; line-height:24px; word-break:keep-all}
+	.group-popup .popup-container .popup-cust .f-bd span {font-size:17px; line-height:24px; font-weight:bold;}
+	.group-popup .popup-container .popup-cust .popup-txt {font-size:14px; line-height:20px;}
+	.group-popup .popup-container .popup-cust .popup-txt.pd-tb {padding:4px 0;}
+	.group-popup .popup-container .info-txt {padding:7px 0 9px; font-size:13px; line-height:18px; word-break:keep-all}
+	.group-popup .popup-container .btn-close {min-width:100px; height:35px; font-size:15px; line-height:35px;}
+
+    /* 20180404_단체문의 텍스트 추가_다솜 */
+    .etc-sec .d-cm .c-blue {word-break: keep-all; font-size:16px; color:#0012ff}
+    .etc-sec .d-cm .c-lightred {word-break: keep-all; margin-left:66px; color:#ff0000}
+}
+
+@media (max-device-width: 320px) {
+	section[class*=-sec] h3.h3-tit + p {padding: 0 5px;}
+	
+	.food-sec .ul-list .li-item {height: 212px;}
+	.food-sec .ul-list .li-item .d-cont .s-1 {letter-spacing: -2px;}
+}
+
+@media (min-width: 768px) {
+	/*단체예약 Q&A*/
+	.qna-group {position: relative; padding: 35px 0; background: #f9f9f9; color: #474747;}
+	.qna-group h2 {text-align: center; font-size: 34px;}
+	.qna-group h2 > span {display: inline-block;}
+	.qna-group h2 .tit {padding: 0 15px;}
+	.qna-group h2 .titBg {width: 112px; height: 16px; background: url(http://img.ocean2you.co.kr/renew/group/faqTitBg.png) repeat-x;}
+	.qna-list {width: 768px; margin: 25px auto 0;}
+	.qna-list > li {position: relative; border-bottom: 1px solid #ccc; letter-spacing: -0.5px;}
+	.qna-list > li > div {position: relative; line-height: 1.5; word-break: keep-all; font-family: "Nanum Gothic", sans-serif;}
+	.qna-list > li .f-q {cursor:pointer; padding-left: 92px; padding-right: 54px; font-size: 22px;}
+	.qna-list > li .f-q > * {display: inline-block;}
+	.qna-list > li .f-q .q-con {position: absolute; left: 40px; font-weight: 700;}
+	.qna-list > li .f-q .arr {position: absolute; right: 40px; top: 10px;}
+	.qna-list > li .f-q .arr:after {top: -2px; border-color: #bbb; border-width: 2px; width: 12px; height: 12px;}
+	.qna-list > li .f-a {background: #fff; height: 0; padding: 0; overflow: hidden; font-size: 19px; line-height: 1.6}
+	.qna-list > li.on .f-q {color: #0293c4; font-weight: 700;}
+	.qna-list > li.on .f-q .arr:after {
+		top: 3px; border-color: #0293c4;
+		-webkit-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		-o-transform: rotate(135deg);
+		transform: rotate(135deg);
+	}
+	.qna-list > li > div, .qna-list > li.on .f-a {padding: 12px 40px;}
+	.qna-list > li.on .f-a {height: auto; border-top: 1px solid #eee;}
+    
+    /* 20180404_단체문의 텍스트 추가_다솜 */
+    .etc-sec .d-cm .p-1.c-blue {word-break: keep-all; font-size:22px; color:#0012ff}
+    .etc-sec .d-cm .p-1.c-lightred {word-break: keep-all; margin-left:72px; color:#ff0000}
+}
+
+@media (min-width: 768px) and (max-width: 1190px) {
+	.vid-wrap {height: 284px;}
+
+/*
+	.rBn-box {margin-left: 392px;}
+	.rBn-box > a {width: 110px;}
+*/
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 24px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 18px auto 20px; background: #fff;}
+	.title .tit-box .p0 {font-size: 18px; margin-top: 10px;}
+	
+	.group-wrap {padding: 45px 0 54px;}
+	.group-wrap .container {width: 768px;}
+	
+	hr {border: 0; border-top: 1px solid #dedede; margin: 30px auto;}
+	
+	.intro-sec {position: relative; width: 100%;}
+	.intro-sec .d-row {position: relative;}
+	.intro-sec .d-map {width: 630px; margin: 30px auto 0;}
+	.intro-sec .d-map > img {width: 100%;}
+	.intro-sec p {text-align: center;}
+	.intro-sec .p-1 {font-size: 25px; font-weight: 700; font-family: "Nanum Gothic", sans-serif; line-height: 1.4; letter-spacing: -1px;}
+	.intro-sec .p-1 strong {font-size: 27px; color: #242424; margin-bottom: 4px; display: inline-block; letter-spacing: -0.5px;}
+	.intro-sec .p-2 {font-size: 19px; color: #595959; line-height: 1.5; margin-top: 28px; letter-spacing: -1px;}
+	.intro-sec .area-btn {margin-top: 30px;}
+	.intro-sec .area-btn > a {position: relative; display: inline-block; width: 347px; height: 57px; background: #319af6; color: #fff; font-size: 18px; text-align: center;}
+	.intro-sec .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.intro-sec .area-btn > a .ic-rArrow:after {border-color: #fff; width: 9px; height: 9px; top: -1px; left: 15px;}
+	.intro-sec .sun {width: 94%; margin: 10px auto;}
+	.intro-sec .p-3 {width: 84%; margin: 0 auto; position: relative; color: #c41919; font-size: 18px; line-height: 1.5;}
+	.intro-sec .p-3.dot .dot {}
+	
+	.banq-sec {}
+	.banq-sec .mBanqTb {}
+	.banq-sec .mBanqTb table {background: #fff; width: 98%; margin: 12px auto 0;}
+	.banq-sec .mBanqTb [class*=hall-] th, .banq-sec .mBanqTb [class*=hall-] td {border: 1px solid #d6d6d6; font-size: 16px; color: #5c5c5c; line-height: 1.4; letter-spacing: -1px; vertical-align: middle;}
+	.banq-sec .mBanqTb th {background: #f3f0f0; padding: 8px 0;}
+	.banq-sec .mBanqTb td {padding: 5px;}
+	.banq-sec .mBanqTb .hall-1 col:first-child {width: 25%;}
+	.banq-sec .mBanqTb .hall-1 col:nth-child(2) {width: 27%;}
+	.banq-sec .mBanqTb .hall-1 col:nth-child(3) {width: 18%;}
+	.banq-sec .mBanqTb .hall-1 col:nth-child(4) {width: 20%;}
+	.banq-sec .mBanqTb .hall-1 th {}
+	.banq-sec .mBanqTb .hall-1 td {text-align: center;}
+	.banq-sec .mBanqTb .hall-2 col{width: 25%;}
+	.banq-sec .mBanqTb .hall-2 td {padding-left: 15px;}
+	.banq-sec .mBanqTb .hall-2 .textCenter td {padding-left: 50px;}
+	.banq-sec .mBanqTb .hall-2 .numType_01 {width: 30px;}
+	.banq-sec .mBanqTb .hall-2 .numType_02 {width: 26px;}
+	.banq-sec .mBanqTb .hall-2 .numType_03 {width: 26px;}
+	.banq-sec .mBanqTb .hall-2 .numType_04 {width: 22px; margin: 0 3px;}
+	.banq-sec .mBanqTb .hall-2 [class*=numType_] + span {position: relative; top: 2px;}
+	.banq-sec .mBanqTb .hall-3 col:nth-child(1) {width: 25%;}
+	.banq-sec .mBanqTb .hall-3 col:nth-child(2) {width: 75%;}
+	.banq-sec .mBanqTb .hall-3 td{word-break: keep-all;}
+	.banq-sec .p-ps {width: 98%; margin: 0 auto; position: relative; padding-left: 18px; font-size: 17px; color: #848484; margin-top: 40px; letter-spacing: -1px; line-height: 1.4;}
+	.banq-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 17px; height: 17px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); top: 4px;}
+	
+	section[class*=-sec] h3.h3-tit {font-size: 25px; color: #4c4c4c; text-align: center; font-weight: 700;}
+	section[class*=-sec] h3.h3-tit + p {font-size: 18px; color: #454545; text-align: center; line-height: 1.3; word-break: keep-all; letter-spacing: -0.5px; margin: 15px auto 0;}
+	.room-sec {position: relative;}
+	.room-sec  > .p0 {width: 90%;}
+	
+	.room-sec .ul-list, .room-sec .p-ps {width: 732px; margin: 0 auto;}
+	.room-sec .ul-list {margin-top: 20px;}
+	.room-sec .ul-list .li-item {float: left; position: relative; width: 354px; margin-top: 25px; margin-left: 24px;}
+	.room-sec .ul-list .li-item:nth-child(2n-1) {margin-left: 0;}
+	.room-sec .ul-list .li-item figure {position: relative;}
+	.room-sec .ul-list .li-item figure > img {width: 100%;}
+	.room-sec .ul-list .li-item > div {position: relative;}
+	.room-sec .ul-list .li-item .d-row-1 {margin-top: 6px; height: 57px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name {font-size: 20px; color: #535353; font-weight: 700; line-height: 1.1; position: relative; top: 3px;}
+	.room-sec .ul-list .li-item .d-row-1 .a-btn {position: absolute; right: 0; top: 0; font-size: 14px; background: #01374f; color: #fff; display: inline-block; text-align: center; line-height: 1.3; letter-spacing: -0.5px; padding: 11px; z-index: 2; letter-spacing: -0.5px;}
+	.room-sec .ul-list .li-item .d-row-2 {padding-left: 66px; line-height: 1.4; color: #636363; margin-top: -5px;}
+	.room-sec .ul-list .li-item .d-row-2:before {content: ""; display: inline-block; position: absolute; top: 11px; left: 0; width: 50px; height: 1px; background: #777;}
+	.room-sec .p-ps {position: relative; padding-left: 18px; font-size: 17px; color: #848484; margin-top: 40px; letter-spacing: -1px; line-height: 1.4;}
+	.room-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 17px; height: 17px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); top: 4px;}
+	
+	.room-sec .ul-list .li-item .bxBox {position: absolute; bottom: 100px; width: 732px; border: 5px solid #01374f; z-index: 1; overflow: hidden; visibility: hidden;}
+	.room-sec .ul-list .li-item.nth-2 .bxBox {left: -378px;}
+	.room-sec .ul-list .li-item .txt-box {position: absolute; left: 0; top: 88px; width: 100%; color: #fff; text-align: center;}
+	.room-sec .ul-list .li-item .txt-box .p1 {font-size: 22px;}
+	.room-sec .ul-list .li-item .txt-box .p2 {font-size: 15px; margin-top: 16px; line-height: 1.6;}
+	.room-sec .ul-list .li-item .bxBox .a-x {right: 0; top: 0; background: #01374f; width: 32px; height: 32px;}
+	.room-sec .ul-list .li-item .bxBox .a-x:before, .room-sec .ul-list .li-item .bxBox .a-x:after {background: #fff; left: 5px; top: 14px; width: 26px; height: 1px;}
+	.room-sec .bx-wrapper .bx-controls-direction {margin-top: -15px;}
+	.room-sec .bx-wrapper .bx-controls-direction a {width: 16px; height: auto;}
+	.room-sec .bx-wrapper .bx-prev {left: 14px;}
+	.room-sec .bx-wrapper .bx-next {right: 14px;}
+	
+	
+	.food-sec {position: relative;}
+	.food-sec > .p0 {letter-spacing: -1px;}
+	.food-sec .ul-list {width: 732px; margin: 0 auto;}
+	.food-sec .ul-list {margin-top: 20px;}
+	.food-sec .ul-list .li-item {position: relative; float: left; margin-top: 16px; width: 236px; height: 344px; border: 1px solid #d2d2d2; border-radius: 6px; overflow: hidden;}
+	.food-sec .ul-list .li-item:nth-child(3n-1) {margin: 16px 12px 0;}
+	.food-sec .ul-list .li-item figure {position: relative; height: 186px; overflow: hidden;}
+	.food-sec .ul-list .li-item figure > img {width: 100%;}
+	.food-sec .ul-list .li-item figure figcaption {position: absolute; display: block; color: #fff; background: url(http://img.go.co.kr/black_rgba58.png) repeat; left: 0; bottom: 0; width: 100%; font-size: 15px; letter-spacing: -1px; text-align: center; line-height: 28px; padding-bottom: 1px;}
+	.food-sec .ul-list .li-item .d-cont {padding: 5px 0 5px 5px; word-break: keep-all; line-height: 1.4;}
+	.food-sec .ul-list .li-item .d-cont .p-name {font-size: 19px; color: #4e4e4e; font-weight: 700;}
+	.food-sec .ul-list .li-item .d-cont .p-txt {font-size: 17px; color: #575757; letter-spacing: -1.2px; margin-top: 3px;}
+	.food-sec .ul-list .li-item .d-cont .s-1 {color: #bf6a6a;}
+		
+	.facil-sec {position: relative;}
+	.facil-sec > .p0 {letter-spacing: -1px; width: 84%;}
+	.facil-sec .ul-list, .facil-sec .p-ps, .facil-sec .ul-list-2 {width: 98%; margin: 0 auto;}
+	.facil-sec .ul-list {margin-top: 15px;} 
+	.facil-sec .ul-list .li-item {position: relative; float: left; margin-top: 8px; width: 32.33%;}
+	.facil-sec .ul-list .li-item:nth-child(3n-1) {margin: 8px 1.5% 0;}
+	.facil-sec .ul-list .li-item figure {position: relative;}
+	.facil-sec .ul-list .li-item figure > img {width: 100%;}
+	.facil-sec .ul-list .li-item figure > figcaption {display: block; width: 100%; position: absolute; bottom: 0; left: 0; padding: 5px 5px 6px 0; line-height: 1.2; background: #000000; background: rgba(0,0,0, .42); text-align: right; color: #fff; font-size: 17px;}
+	.facil-sec .ul-list .li-item figure > figcaption:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	/*.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+	.facil-sec .p-ps {position: relative; padding-left: 23px; font-size: 17px; color: #848484; margin-top: 30px; line-height: 1.4; letter-spacing: -0.5px;}
+	.facil-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 17px; height: 17px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); top: 4px;}
+		
+    /* 190103 노래,합주 관련 추가 */
+	.facil-sec .ul-list-2 .li-item {position: relative; float: right; display: block; margin-top: 8px; width: 49.3%; /*height: 200px;*/ background: #000; background: rgba(0,0,0, .7);}
+	.facil-sec .ul-list-2 .li-item:nth-child(2n+1) {float: left;}
+	.facil-sec .ul-list-2 .li-item figure {position: relative;}
+	.facil-sec .ul-list-2 .li-item figure img {width: 100%;}
+    .facil-sec .ul-list-2 .li-item figure figcaption, .facil-sec .ul-list-2 .li-item .li-txt {box-sizing: border-box; width: 100%; padding: 8px 8px 7px 8px; text-align: center; letter-spacing: -0.7px; color: #fff;}
+	.facil-sec .ul-list-2 .li-item figure figcaption {display: block; position: absolute; bottom: 0; left: 0; font-size: 17px; line-height: 1.3; background: #000; background: rgba(0,0,0, .7);}
+    .facil-sec .ul-list-2 .li-item .li-txt {display: table; font-size: 12px; line-height: 20px; word-break: keep-all;}
+    .facil-sec .ul-list-2 .li-item .li-txt span {display: table-cell; vertical-align: middle; }
+    .facil-sec .ul-list-2 .li-item .li-txt.ht-1 {height: 95px;}
+    
+	.etc-sec {position: relative; margin-bottom: 30px; padding-top: 30px;}
+	.etc-sec hr {margin: 40px auto;}
+	.etc-sec .d-cm {position: relative; text-align: center; line-height: 1.3;}
+	.etc-sec .d-cm .p-0 {font-size: 32px; color: #00b2dd; letter-spacing: -1px;}
+	.etc-sec .d-cm .p-1 {font-size: 18px; color: #636363; line-height: 1.5; margin-top: 10px;}
+	.etc-sec .d-cm .area-btn {font-size: 20px; margin-top: 26px;}
+	.etc-sec .d-cm .area-btn .a-btn {position: relative; display: inline-block; width: 356px; height: 70px; background: #00b2dd; color: #fff;}
+	.etc-sec .d-cm .area-btn .a-btn:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.etc-sec .d-cm .area-btn .a-btn .ic-rArrow:after {border-color: #fff; width: 10px; height: 10px; top: 0; left: 2px; margin-right: -15px;}
+	.etc-sec .d-box-2 .area-btn {margin-top: 20px;}
+	.etc-sec .d-box-2 .area-btn .a-btn {display: inline; font-size: 34px; font-weight: 700; color: #00b2dd; background: 0; cursor: default; vertical-align: middle;}
+	.etc-sec .d-box-2 .area-btn .pic-call {position: relative; display: inline-block; width: 35px; height: 35px; background: url(http://img.ocean2you.co.kr/renew/group/pic_call.png); vertical-align: middle; top: -4px; margin-left: -20px; left: -4px;}
+	.etc-sec .d-box-2 .area-btn .a-btn > .txt {position: relative; font-size: 21px; color: #333; font-weight: 400; top: -5px;}
+	.etc-sec .d-box-2 .p-2 {font-size: 28px; font-weight: 700; margin-top: 10px; color: #00b2dd;}
+	
+	
+	/* 시설안내 표 */
+	.facil-sec .facil-tb {margin-top: 15px;}
+	.facil-sec .facil-tb + p {margin-top: 10px;}
+	.facil-tb colgroup col.nth-1 {width: 30%;}
+	.facil-tb colgroup col.nth-2 {width: 30%;}
+	.facil-tb colgroup col.nth-3 {width: 40%;}
+	.facil-tb th, .facil-tb td {border: 1px solid #d6d6d6; font-size: 17px; color: #5c5c5c; text-align: center; padding: 10px 0; font-family: 'Nanum Gothic', sans-serif; vertical-align: middle;}
+	.facil-tb th {font-weight: 700; background: #f3f0f0;}
+	.facil-tb td {letter-spacing: -1px;}
+	
+	/*일정 안내*/
+	.enjoy-sec {padding-bottom: 30px;}
+	.enjoy-sec .courseTab, .enjoy-sec .courseList {position: relative; width: 640px; margin: 0 auto;}
+	.enjoy-sec .courseTab {margin: 8px auto;}
+	.enjoy-sec .courseTab > li {float: left; width: 48%; margin: 2% 1% 0; cursor: pointer; text-align: center; color: #319af6; border: 2px solid #319af6; line-height: 46px; font-size: 16px;}
+	.enjoy-sec .courseTab > li.on {color: #fff; background: #319af6;}
+	.enjoy-sec .courseList > li {position: relative; display: none; text-align: center;}
+	.enjoy-sec .courseList > li > img {width: 100%; margin: 70px auto 0;}
+	.enjoy-sec .courseList > li.on {display: block;}
+	
+}
+
+@media (min-width: 992px) and (max-width: 1190px) {
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	
+}
+
+@media (min-width: 1190px) {
+	
+
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .tit-box .p0 {font-size: 20px; margin-top: 10px;}
+	
+	.group-wrap {padding: 84px 0 76px;}
+	.group-wrap .container {width: 1190px;}
+	
+	hr {border: 0; border-top: 1px solid #dedede; margin: 56px auto;}
+	
+	.intro-sec {position: relative;}
+	.intro-sec .d-row {position: relative;}
+	.intro-sec .d-map {position: absolute; right: 0; top: 6px;}
+	.intro-sec p {letter-spacing: 0; word-break: keep-all;}
+	.intro-sec .p-1 {font-size: 29px; font-weight: 700; font-family: "Nanum Gothic", sans-serif; line-height: 1.4;}
+	.intro-sec .p-1 strong {font-size: 32px; color: #242424; margin-bottom: 20px; display: inline-block;}
+	.intro-sec .p-2 {width: 42%; font-size: 19px; color: #595959; line-height: 1.5; margin-top: 8px; letter-spacing: -1px;}
+    .intro-sec .p-2.type-2 {margin-top: 0; color: #0068c3;}
+	.intro-sec .area-btn {margin-top: 30px}
+	.intro-sec .area-btn > a {position: relative; display: inline-block; width: 42%; height: 62px; background: #319af6; color: #fff; font-size: 20px; text-align: center;}
+	.intro-sec .area-btn > a:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.intro-sec .area-btn > a .ic-rArrow:after {border-color: #fff; width: 9px; height: 9px; top: -1px; left: 20px;}
+	.intro-sec .sun {width: 42%; margin: 30px 0;}
+	.intro-sec .p-3 {width: 42%; position: relative; color: #c41919; font-size: 18px; line-height: 1.5;}
+	.intro-sec .p-3.dot .dot {display: none;}
+	.intro-sec .p-3.dot {padding-left: 20px;}
+	.intro-sec .p-3.dot:before {content: "※"; position: absolute; left: 0;}
+	.intro-sec .p-2, .intro-sec .sun, .intro-sec .p-3, .intro-sec .area-btn > a {width: 38%;}
+
+	.banq-sec {}
+	.banq-sec .banqTb {}
+	.banq-sec .banqTb table {background: #fff; width: 98%; margin: 12px auto 0;}
+	.banq-sec .banqTb [class*=hall-] th, .banq-sec .banqTb [class*=hall-] td {border: 1px solid #d6d6d6; font-size: 17px; color: #5c5c5c; line-height: 1.4; letter-spacing: -1px; vertical-align: middle;}
+	.banq-sec .banqTb th {background: #f3f0f0; padding: 5px 0; font-weight: 700;}
+	.banq-sec .banqTb td {padding: 8px 5px;}
+	.banq-sec .banqTb .hall-1 col:first-child {width: 12%;}
+	.banq-sec .banqTb .hall-1 col:nth-child(2) {width: 18%;}
+	.banq-sec .banqTb .hall-1 col:nth-child(3) {width: 10%;}
+	.banq-sec .banqTb .hall-1 col:nth-child(4) {width: 10%;}
+	.banq-sec .banqTb .hall-1 col:nth-child(5) {width: 15%;}
+	.banq-sec .banqTb .hall-1 col:nth-child(6) {width: 15%;}
+	.banq-sec .banqTb .hall-1 col:nth-child(7) {width: 15%;}
+	.banq-sec .banqTb .hall-1 th {}
+	.banq-sec .banqTb .hall-1 td {text-align: center;}
+	.banq-sec .banqTb .hall-1 .textCenter {padding-left: 30px; text-align: left;} 
+	.banq-sec .banqTb .hall-1 [class*=numType_] {margin-right: 10px;}
+	.banq-sec .banqTb .hall-1 [class*=numType_] + span {position: relative; top: 1px;}
+	.banq-sec .banqTb .hall-1 .s-num {display: inline-block;}
+	.banq-sec .banqTb .hall-3 col:nth-child(1) {width: 20%;}
+	.banq-sec .banqTb .hall-3 col:nth-child(2) {width: 80%;}
+	.banq-sec .banqTb .hall-3 .nth-2 {padding-left: 10px; letter-spacing: -1.5px;}
+	.banq-sec .p-ps {width: 98%; margin: 0 auto; position: relative; padding-left: 18px; font-size: 17px; color: #848484; margin-top: 40px; letter-spacing: -1px; line-height: 1.4;}
+	.banq-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 17px; height: 17px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); top: 4px;}
+	
+	section[class*=-sec] h3 {font-size: 25px; color: #4c4c4c; text-align: center; font-weight: 700;}
+	section[class*=-sec] h3 + p {font-size: 18px; color: #454545; text-align: center; line-height: 1.3; margin-top: 15px;}
+	.room-sec {position: relative;}
+	.room-sec .ul-list {position: relative; margin-top: 40px;}
+	.room-sec .ul-list .li-item {float: left; position: relative; width: 354px; margin-left: 63.5px;}
+	.room-sec .ul-list .li-item:first-child {margin-left: 0;}
+	.room-sec .ul-list .li-item figure {}
+	.room-sec .ul-list .li-item > div {position: relative;}
+	.room-sec .ul-list .li-item .d-row-1 {margin-top: 10px; height: 57px;}
+	.room-sec .ul-list .li-item .d-row-1 .s-name {font-size: 20px; color: #535353; font-weight: 700; line-height: 1.1; position: relative; top: 3px;}
+	.room-sec .ul-list .li-item .d-row-1 .a-btn {position: absolute; right: 0; top: 0; font-size: 14px; background: #01374f; color: #fff; display: inline-block; text-align: center; line-height: 1.3; letter-spacing: -0.5px; padding: 11px; z-index: 2;}
+	.room-sec .ul-list .li-item .d-row-2 {padding-left: 66px; line-height: 1.4; color: #636363; margin-top: -5px;}
+	.room-sec .ul-list .li-item .d-row-2:before {content: ""; display: inline-block; position: absolute; top: 11px; left: 0; width: 50px; height: 1px; background: #777;}
+	.room-sec .p-ps {position: relative; padding-left: 23px; font-size: 17px; color: #848484; margin-top: 40px; line-height: 1.4;}
+	.room-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 17px; height: 17px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); top: 4px;}
+	
+	.room-sec .ul-list .li-item .bxBox {visibility: hidden; position: absolute; bottom: 100px; left: 0; width: 1190px; border: 5px solid #01374f; overflow: hidden; z-index: 1;}
+	.room-sec .ul-list .li-item.nth-2 .bxBox {left: -417.5px;}
+	.room-sec .ul-list .li-item.nth-3 .bxBox {left: -835px;}
+	.room-sec .ul-list .li-item .txt-box {position: absolute; left: 0; top: 160px; width: 100%; color: #fff; text-align: center;}
+	.room-sec .ul-list .li-item .txt-box .p1 {font-size: 30px;}
+	.room-sec .ul-list .li-item .txt-box .p2 {font-size: 18px; margin-top: 16px; line-height: 1.6;}
+	.room-sec .ul-list .li-item .bxBox .a-x {right: 0; top: 0; background: #01374f; width: 36px; height: 36px;}
+	.room-sec .ul-list .li-item .bxBox .a-x:before, .room-sec .ul-list .li-item .bxBox .a-x:after {background: #fff; left: 5px; top: 16px; width: 30px; height: 1px;}
+	.room-sec .bx-wrapper {width: 1190px;}
+	.room-sec .bx-wrapper .bx-controls-direction a {width: 22px;}
+	
+	.food-sec {position: relative;}
+	.food-sec .ul-list {margin-left: -28px; margin-top: 5px;}
+	.food-sec .ul-list .li-item {position: relative; float: left; margin-left: 28px; margin-top: 30px; width: 276px; height: 369px; border: 1px solid #d2d2d2; border-radius: 6px; overflow: hidden;}
+	.food-sec .ul-list .li-item figure {position: relative;}
+	.food-sec .ul-list .li-item figure > img {width: 100%;}
+	.food-sec .ul-list .li-item figure figcaption {position: absolute; display: block; color: #fff; background: url(http://img.go.co.kr/black_rgba58.png) repeat; left: 0; bottom: 0; width: 100%; font-size: 16px; letter-spacing: -1px; text-align: center; line-height: 30px; padding-bottom: 1px;}
+	.food-sec .ul-list .li-item .d-cont {padding: 5px 0 5px 5px; padding-top: 14px; word-break: keep-all; line-height: 1.4;}
+	.food-sec .ul-list .li-item .d-cont .p-name {font-size: 19px; color: #4e4e4e; font-weight: 700;}
+	.food-sec .ul-list .li-item .d-cont .p-txt {font-size: 17px; color: #575757; letter-spacing: -1.5px; margin-top: 3px;}
+	.food-sec .ul-list .li-item .d-cont .s-1 {color: #bf6a6a;}
+	
+	.facil-sec {position: relative;}
+	.facil-sec .ul-list {margin-left: -28px; margin-top: 5px;}
+	.facil-sec .ul-list .li-item {position: relative; float: left; margin-left: 28px; margin-top: 30px; width: 276px; height: 247px;}
+	.facil-sec .ul-list .li-item figure {position: relative;}
+	.facil-sec .ul-list .li-item figure > img {width: 100%;}
+	.facil-sec .ul-list .li-item figure > figcaption {display: block; width: 100%; position: absolute; bottom: 0; left: 0; padding: 5px 15px 6px 0; line-height: 1.2; background: #000000; background: rgba(0,0,0, .42); text-align: right;  color: #fff;}
+	.facil-sec .ul-list .li-item figure > figcaption:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	/*.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+	.facil-sec .p-ps {position: relative; padding-left: 23px; font-size: 17px; color: #848484; margin-top: 30px; line-height: 1.4; letter-spacing: -0.5px;}
+	.facil-sec .p-ps:before {position: absolute; left: 0;  content: ""; display: inline-block; width: 17px; height: 17px; background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png); top: 4px;}
+	
+    /* 190103 노래,합주 관련 추가 */
+    .facil-sec .ul-list-2 {width: 100%; margin: 0 auto;}
+	.facil-sec .ul-list-2 .li-item {position: relative; float: left; display: block; margin-top: 30px; margin-left: 28px; width: 580px; /*height: 200px;*/}
+	.facil-sec .ul-list-2 .li-item:nth-child(2n+1) {margin-left: 0;}
+	.facil-sec .ul-list-2 .li-item figure {position: relative;}
+	.facil-sec .ul-list-2 .li-item figure img {width: 100%;}
+    .facil-sec .ul-list-2 .li-item figure figcaption, .facil-sec .ul-list-2 .li-item .li-txt {box-sizing: border-box; width: 100%; padding: 8px 8px 7px 8px; text-align: center; letter-spacing: -0.7px; color: #fff; background: #000; background: rgba(0,0,0, .7);}
+	.facil-sec .ul-list-2 .li-item figure figcaption {display: block; position: absolute; bottom: 0; left: 0; font-size: 17px; line-height: 1.2;}
+    .facil-sec .ul-list-2 .li-item .li-txt {display: table; font-size: 13px; line-height: 20px; word-break: keep-all;}
+    .facil-sec .ul-list-2 .li-item .li-txt span {display: table-cell; vertical-align: middle; }
+    .facil-sec .ul-list-2 .li-item .li-txt.ht-1 {height: 75px;}
+    
+	.etc-sec {position: relative; margin-bottom: 50px; padding-top: 50px;}
+	.etc-sec .d-cm {position: relative; text-align: center; line-height: 1.3;}
+	.etc-sec .d-cm .p-0 {font-size: 40px; color: #00b2dd;}
+	.etc-sec .d-cm .p-1 {font-size: 18px; color: #636363; line-height: 1.5; margin-top: 10px;}
+	.etc-sec .d-box-2 .p-0 {font-size: 32px;}
+	.etc-sec .d-cm .area-btn {font-size: 20px; margin-top: 26px;}
+	.etc-sec .d-cm .area-btn .a-btn {position: relative; display: inline-block; width: 356px; height: 70px; background: #00b2dd; color: #fff;}
+	.etc-sec .d-cm .area-btn .a-btn:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+	.etc-sec .d-cm .area-btn .a-btn .ic-rArrow:after {border-color: #fff; width: 10px; height: 10px; top: 0; left: 2px; margin-right: -15px;}
+	.etc-sec .d-box-2 .area-btn {margin-top: 20px;}
+	.etc-sec .d-box-2 .area-btn .a-btn {display: inline; font-size: 34px; font-weight: 700; color: #00b2dd; background: 0; cursor: default; vertical-align: middle;}
+	.etc-sec .d-box-2 .area-btn .pic-call {position: relative; display: inline-block; width: 35px; height: 35px; background: url(http://img.ocean2you.co.kr/renew/group/pic_call.png); vertical-align: middle; top: -4px; margin-left: -20px; left: -4px;}
+	.etc-sec .d-box-2 .area-btn .a-btn > .txt {position: relative; font-size: 21px; color: #333; font-weight: 400; top: -5px;}
+	.etc-sec .d-box-2 .p-2 {font-size: 28px; font-weight: 700; margin-top: 10px; color: #00b2dd;}
+	
+	/* 시설안내 표 */
+	.facil-sec .facil-tb {margin-top: 15px;}
+	.facil-sec .facil-tb + p {margin-top: 10px;}
+	.facil-tb colgroup col.nth-1 {width: 30%;}
+	.facil-tb colgroup col.nth-2 {width: 30%;}
+	.facil-tb colgroup col.nth-3 {width: 40%;}
+	.facil-tb th, .facil-tb td {border: 1px solid #d6d6d6; font-size: 17px; color: #5c5c5c; text-align: center; padding: 10px 0; font-family: 'Nanum Gothic', sans-serif; vertical-align: middle;}
+	.facil-tb th {font-weight: 700; background: #f3f0f0;}
+	
+	/*일정 안내*/
+	.enjoy-sec {padding-bottom: 50px;}
+	.enjoy-sec .courseTab, .enjoy-sec .courseList {position: relative; width: 100%; margin: 0 auto;}
+	.enjoy-sec .courseTab {margin: 70px auto 0;}
+	.enjoy-sec .courseTab > li {float: left; width: 282px; margin-left: 20px; cursor: pointer; text-align: center; color: #319af6; border: 2px solid #319af6; line-height: 56px; font-size: 20px;}
+	.enjoy-sec .courseTab > li:first-child {margin-left: 0;}
+	.enjoy-sec .courseTab > li.on {color: #fff; background: #319af6;}
+	.enjoy-sec .courseList > li {position: relative; display: none; text-align: center;}
+	.enjoy-sec .courseList > li > img {width: 100%; margin: 80px auto 0;}
+	.enjoy-sec .courseList > li.on {display: block;}
+	
+	/*단체문의 Q&A*/
+	.qna-group {padding: 50px 0 55px;}
+	.qna-group h2 .titBg {width: 209px;}
+	.qna-list {width: 864px; margin: 40px auto 0;}	
+    
+}
+

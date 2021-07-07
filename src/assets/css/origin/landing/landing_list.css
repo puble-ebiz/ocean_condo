@@ -1,0 +1,205 @@
+/*룸서비스 관련(20200702)*/
+/*[룸서비스-인트로_고코용]*/
+html{
+    /* font-size: 62.5%; */
+    font-size: 62.5%;
+}
+
+body{
+    /* font-size: calc(1.6rem + 3vw); */
+    font-size: 1.6rem;
+}
+
+.roomservice-intro{
+    width: 100%;
+    /* width: 640px; */
+    /* margin:0 auto; */
+    position: relative;
+    padding-bottom: 5.981vw;
+}
+.roomservice-intro .contents-main{
+    width: 100%;
+}
+
+.roomservice-intro .btn-order{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*[룸서비스-오더]*/
+.roomservice-order{
+    width: 100%;
+    padding-bottom: calc(110/640 * 100vw);
+}
+
+.roomservice-order .top-title-box{
+    width: 100%;
+    height: calc(74/640 * 100vw);
+    position: relative;
+    background-color: #f2f2f2;
+    border-bottom: calc(2/640 * 100vw) solid #c7c7c7;
+}
+
+.roomservice-order .top-title-box .title{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: calc(24/640 * 100vw);
+    letter-spacing: -0.2rem;
+}
+
+.roomservice-order .top-title-box .btn-back{
+    position: absolute;
+    right: calc(14/640 * 100vw);
+    top: 50%;
+    transform: translateY(-50%);
+    color: #050505;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: calc(36/640 * 100vw);
+    /* padding:0 6px; */
+}
+
+.roomservice-order .contents-order{
+    padding: 0 calc(18/640 * 100vw);
+    padding-top: calc(18/640 * 100vw);
+}
+
+.roomservice-order .contents-order .order-notice{
+    color: #e70000;
+    font-size: calc(21/640 * 100vw);
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    /* word-break: keep-all; */
+    margin-bottom: calc(28/640 * 100vw);
+}
+
+.roomservice-order .form-info-box .input-info-ul{
+
+}
+
+.roomservice-order .form-info-box .input-info-ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: calc(20/640 * 100vw);;
+}
+
+.roomservice-order .form-info-box .input-info-ul>li label{
+    font-size: calc(24/640 * 100vw);
+    
+}
+
+.roomservice-order .form-info-box .input-info-ul>li input{
+    border: 1px solid #919191;
+    width: calc(350/640 * 100vw);
+    height: calc(60/640 * 100vw);
+    padding-left: calc(14/640 * 100vw);
+    font-size: calc(24/640 * 100vw);
+}
+
+.roomservice-order .product-list-ul{
+    
+}
+
+.roomservice-order .product-list-ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: calc(18/640 * 100vw);
+}
+
+.roomservice-order .product-list-ul>li .produt-name{
+    font-size: calc(24/640 * 100vw);
+}
+
+.roomservice-order .product-list-ul>li .price-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: calc(350/640 * 100vw);
+}
+
+
+.roomservice-order .product-list-ul>li .price-box>p{
+    font-size: calc(22/640 * 100vw);
+    font-weight: 600;
+}
+
+.roomservice-order .product-list-ul>li .price-box .p-price-local{
+    color: #888;
+    text-decoration:line-through;
+}
+
+.roomservice-order .product-list-ul>li .price-box .p-price-sale .span-num{
+    color: #e32222;
+}
+
+.roomservice-order .product-list-ul>li .price-box .p-price-sale .span-won{
+    
+}
+
+
+.roomservice-order .product-list-ul>li .price-box .product-count-box{
+    position: relative;
+}
+.roomservice-order .product-list-ul>li .price-box .product-count-box::after{
+    position: absolute;
+    content: "";
+    display:block;
+	width:0px;
+	height:0px;
+	border-style:solid;
+	border-width: calc(6/640 * 100vw);
+    border-color:#000 transparent transparent transparent;
+    top: calc(50%);
+    right: calc(12/640 * 100vw);
+    transform: translateY(-25%);
+}
+
+.roomservice-order .product-list-ul>li .price-box .product-count-box select{
+    width: calc(110/640 * 100vw);
+    height: calc(64/640 * 100vw);
+    border: calc(2/640 * 100vw) solid #8f8f8f;
+    border-radius: calc(4/640 * 100vw);
+    padding-left: calc(14/640 * 100vw);
+    text-align: center;
+    font-size: calc(25/640 * 100vw);
+    letter-spacing: -0.2rem;
+    /* text-align-last: center; */
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(180deg, #f6f6f6, #e5e5e5);
+}
+
+.roomservice-order .btn_payment{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: calc(98/640 * 100vw);
+    background-color: #124883;
+    color: white;
+    font-size: calc(24/640 * 100vw);;
+}
+
+/* select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+select::-ms-expand{
+    display: none;
+} */
+
+
+/*룸서비스2020_07(오션투유용)*/
+.roomservice2020_07-main{
+    width: 100%;
+    /* width: 640px; */
+    /* margin:0 auto; */
+    position: relative;
+    /* padding-bottom: 5.981vw; */
+}

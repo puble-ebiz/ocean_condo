@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+.vid-wrap {background: url(http://img.ocean2you.co.kr/renew/intro/intro_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 400px;}
+
+.vid-wrap *, .footer * {font-family: "Nanum Barun Gothic", "Nanum Gothic", sans-serif; letter-spacing: -0.2px;}
+
+.title img {vertical-align: middle;}
+
+.xs-block {display: block;}
+
+.title {position: relative;}
+.title .tit-box {text-align: center; padding-top: 126px; color: #fff;}
+.title .tit-box h2 {font-size: 20px;}
+.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 15px auto; background: #fff;}
+.title .titTxt img {width: 310px;}
+.title .tit-box .p0 {font-size: 15px; margin-top: 5px; line-height: 1.4; word-break: keep-all; letter-spacing: -1px;}
+.title .p0.under {display: inline-block; padding-bottom: 1px; border-bottom: 1px solid #fff;}
+/* .title {position: relative;}
+.title .tit-box {text-align: center; padding-top: 96px; color: #fff;}
+.title .tit-box h2 {font-size: 20px; font-weight: 400; color: #fff;}
+.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 15px auto; background: #fff;}
+.title .titTxt img {width: 310px;}
+.title .tit-box .p0 {font-size: 16px; margin-top: 5px; line-height: 1.4; word-break: keep-all; letter-spacing: -1px;}
+.title .facil-tab {position: relative; margin: 22px auto 0; width: 310px; left: 1.5px;}
+.title .facil-tab > li {position: relative; float: left; top: 0; width: 46%; border: 2px solid #fff; margin: 0 2%;}
+.title .facil-tab > li.on {border: 2px solid #fff;}
+.title .facil-tab > li a {display: block; width: 100%; height: 45px; font-size: 16px; font-weight: 400; color: #fff;}
+.title .facil-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+
+.title .facil-tab > li a img {position: relative; margin-right: 10px;}
+.title .facil-tab > li a .i-user {top: -2px;}
+.title .facil-tab > li a .i-cal {top: -1px;} */
+
+.history .his-tab, .history .his-tab * {box-sizing: border-box;}
+.history {position: relative; padding: 0 0 40px; background: #f1f1f1;}
+.history .container {position: relative; width: 100%; padding: 8px 0; background: #fff;}
+.history .his-tab {position: relative; width: 100%; height: 36px;}
+.history .his-tab > li {position: relative; width: 33.33%; float: left; height: 100%; border: 1px solid #b7bfc8; border-right: none; background: #fff;}
+.history .his-tab > li:first-child {border-left-width: none;}
+.history .his-tab > li .btn-a {color: #6c7580; display: block; height: 100%; text-align: center; font-weight: 600; font-size: 13px; letter-spacing: -1px;}
+.history .his-tab > li .btn-a:after {content: ""; display: inline-block; height: 107%; vertical-align: middle;}
+.history .his-tab > li.on .btn-a {background: #44a8ff;}
+.history .his-tab > li.on .btn-a {color: #fff;}

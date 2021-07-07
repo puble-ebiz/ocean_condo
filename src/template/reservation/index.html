@@ -1,0 +1,248 @@
+@@include('../include/_head.html', {
+	"page": "reservation"
+})
+
+
+</head>
+
+<h1 class="hidden">오션투유 리조트 주변관광지</h1>
+    <div id="wrap">
+	    @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_reservation.html')
+
+    <!--탑메뉴 오버이벤트를 위한 태그-->
+    <div class="page-data" data-name="d_rsv01"></div>
+		
+    <section class="reservation" id="setTop">
+
+        <div id="wrapper">
+            <div id="contents">
+                <h2 class="com-ft">리조트 평형별 예약 가능일자 조회</h2>
+                <!-- 2021 리조트 평형별 예약 가능일자 조회 -->
+                <div class="rsv-comment">
+                    <p>ㆍ 원하시는 리조트와 평형을 선택하신 후 예약가능 날짜를 확인하세요. </p>
+                    <p>ㆍ‘예약가능’이 표기된 일자만 예약이 가능합니다. <span>‘예약가능’ 버튼을 클릭하시면 예약화면으로 이동</span>합니다.</p>
+                </div>
+                <div class="app-wrap">
+                    <!-- 달력 -->
+                    <div >
+                        <div class="sltCal-sec clr">
+                            <div class="cal-inner">
+                                <div class="date-select">
+                                    <div class="pass-box">
+                                        <p><span></span>이전달</p>
+                                        <p>다음달<span></span></p>
+                                    </div>
+                                    <div class="select-box">
+                                        <select name="condo" id="condo-select">
+                                            <option value="">오션투유 리조트1</option>
+                                            <option value="">오션투유 리조트2</option>
+                                        </select>
+                                        <select name="condo-area" id="area-select">
+                                            <option value="">14평</option>
+                                            <option value="">24평</option>
+                                        </select>
+                                        <select name="condo-month" id="month-select">
+                                            <option value="">2월</option>
+                                            <option value="">3월</option>
+                                            <option value="">4월</option>
+                                            <option value="">5월</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                                <div class="rsv-calendar">
+                                    <div>
+                                        <h4>2021년2월</h4>
+                                        <table class="cal-tb">
+                                            <colgroup>
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>일</th>
+                                                    <th>월</th>
+                                                    <th>화</th>
+                                                    <th>수</th>
+                                                    <th>목</th>
+                                                    <th>금</th>
+                                                    <th>토</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr id="month_0">
+                                                    <td class="off"></td>
+                                                    <td class="off">01</td>
+                                                    <td class="off">02</td>
+                                                    <td class="off">03</td>
+                                                    <td class="off">04</td>
+                                                    <td class="off">05</td>
+                                                    <td class="off">06</td>
+                                                </tr>
+                                                <tr id="month_1">
+                                                    <td class="off">07</td>
+                                                    <td class="off">08</td>
+                                                    <td class="off">09</td>
+                                                    <td class="off">10</td>
+                                                    <td class="off">11</td>
+                                                    <td class="off">12</td>
+                                                    <td class="off">13</td>
+                                                </tr>
+                                                <tr id="month_2">
+                                                    <td class="off">14</td>
+                                                    <td class="off">15</td>
+                                                    <td class="off">16</td>
+                                                    <td class="off">17</td>
+                                                    <td onclick="location.href='../reservation/application.html'">18</td>
+                                                    <td onclick="location.href='../reservation/application.html'">19</td>
+                                                    <td onclick="location.href='../reservation/application.html'">20</td>
+                                                </tr>
+                                                <tr id="month_2">
+                                                    <td onclick="location.href='../reservation/application.html'">21</td>
+                                                    <td onclick="location.href='../reservation/application.html'">22</td>
+                                                    <td onclick="location.href='../reservation/application.html'">23</td>
+                                                    <td onclick="location.href='../reservation/application.html'">24</td>
+                                                    <td onclick="location.href='../reservation/application.html'">25</td>
+                                                    <td onclick="location.href='../reservation/application.html'">26
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                    <td onclick="location.href='../reservation/application.html'">27
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                </tr>
+                                                <tr id="month_2">
+                                                    <td onclick="location.href='../reservation/application.html'">28
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                    <td ></td>
+                                                    <td ></td>
+                                                    <td ></td>
+                                                    <td ></td>
+                                                    <td ></td>
+                                                    <td ></td>
+
+
+                                                </tr>
+                                            
+
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>                                   
+                                    <div>
+                                        <h4>2021년3월</h4>
+                                        <table class="cal-tb">
+                                            <colgroup>
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                                <col style="">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>일</th>
+                                                    <th>월</th>
+                                                    <th>화</th>
+                                                    <th>수</th>
+                                                    <th>목</th>
+                                                    <th>금</th>
+                                                    <th>토</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr id="month_0">
+                                                    <td class="off"></td>
+                                                    <td class="off">01</td>
+                                                    <td class="off">02</td>
+                                                    <td class="off">03</td>
+                                                    <td class="off">04</td>
+                                                    <td class="off">05</td>
+                                                    <td class="off">06</td>
+                                                </tr>
+                                                <tr id="month_1">
+                                                    <td class="off">07</td>
+                                                    <td class="off">08</td>
+                                                    <td class="off">09</td>
+                                                    <td class="off">10</td>
+                                                    <td class="off">11</td>
+                                                    <td class="off">12</td>
+                                                    <td class="off">13</td>
+                                                </tr>
+                                                <tr id="month_2">
+                                                    <td class="off">14</td>
+                                                    <td class="off">15</td>
+                                                    <td class="off">16</td>
+                                                    <td class="off">17</td>
+                                                    <td onclick="location.href='../reservation/application.html'">18</td>
+                                                    <td onclick="location.href='../reservation/application.html'">19</td>
+                                                    <td onclick="location.href='../reservation/application.html'">20</td>
+                                                </tr>
+                                                <tr id="month_2">
+                                                    <td onclick="location.href='../reservation/application.html'">21</td>
+                                                    <td onclick="location.href='../reservation/application.html'">22</td>
+                                                    <td onclick="location.href='../reservation/application.html'">23</td>
+                                                    <td onclick="location.href='../reservation/application.html'">24</td>
+                                                    <td onclick="location.href='../reservation/application.html'">25</td>
+                                                    <td onclick="location.href='../reservation/application.html'">26
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                    <td onclick="location.href='../reservation/application.html'">27
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                </tr>
+                                                <tr id="month_2">
+                                                    <td onclick="location.href='../reservation/application.html'">28
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                    <td onclick="location.href='../reservation/application.html'">29
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                    <td onclick="location.href='../reservation/application.html'">30
+                                                        <span>예약가능</span>
+                                                    </td>
+                                                    <td ></td>
+                                                    <td ></td>
+                                                    <td ></td>
+                                                    <td ></td>
+
+
+                                                </tr>
+                                            
+
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="clr"></div>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+
+        });
+    </script>
+		
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

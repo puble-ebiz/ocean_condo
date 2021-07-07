@@ -1,0 +1,356 @@
+.scss_com {
+
+    $line-color: #ccc;
+    $contents-color: #F0F0F0;
+
+    //팝업
+    .popup {
+        /* 팝업이 열렸을 때, 팝업창 주변 전체를 어둡게 합니다 */
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 200;
+
+        .popup-inner {
+            /* 열렸을 때 팝업창 크기와 색상을 지정합니다. */
+            position: absolute;
+            width: 50.0rem;
+            height: 24.0rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background: #fff;
+
+            .popup-contents {
+                display: block;
+                font-size: 2.0rem;
+                text-align: center;
+
+                .popup-close {
+                    /* 팝업창 내 닫기 버튼의 위치를 지정합니다. */
+                    position: absolute;
+                    display: block;
+                    top: 10px;
+                    right: 10px;
+                }
+
+                p {
+                    padding: 4.4rem 0 2.0rem;
+                }
+
+                >div {
+                    display: flex;
+                    width: 22.0rem;
+                    margin: auto;
+
+                    a {
+                        width: 10.0rem;
+                    }
+
+                    a:first-child {
+                        margin-right: 2.0rem;
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+
+    //팝업end
+
+    //input number 일때 화살표없애기
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    //a버튼 style
+    a.btn {
+        display: block;
+        margin: 30px auto;
+        width: 180px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+    }
+
+    a.btn_blue {
+        background: #44A8FF;
+    }
+
+    a.btn_gray {
+        background: #888888;
+    }
+
+    /* IE 10, 11의 네이티브 화살표 숨기기 */
+    select::-ms-expand {
+        display: none;
+    }
+
+    // selectBox 
+    select {
+        -webkit-appearance: none;
+        /* 네이티브 외형 감추기 */
+        -moz-appearance: none;
+        appearance: none;
+        background: url("http://img.ocean2youresort.co.kr/common/img_down.png") no-repeat 90% 50% #fff;
+        /* 화살표 모양의 이미지 */
+        text-indent: 15px;
+    }
+
+    h2 {
+        padding: 5.5rem 0 3.5rem;
+        font-size: 4.2rem;
+        text-align: center;
+    }
+
+    input {
+        height: 4.5rem;
+        border: 1px solid #999;
+        text-indent: 10px;
+    }
+
+    //table style START
+    table {
+        border-collapse: collapse;
+        font-weight: 300;
+
+        tr {
+            height: 5.0rem;
+            border-bottom: 1px solid $line-color;
+
+            >* {
+                border-left: 1px solid $line-color;
+            }
+        }
+
+        thead {
+            th:nth-of-type(1) {
+                border-left: none;
+            }
+
+            th {
+                background: #EAF3FB;
+                font-weight: 300;
+            }
+        }
+
+        tbody {
+            tr {
+
+                th {
+                    background: #F9F9F9;
+                    font-weight: 300;
+                    border-left: none;
+                }
+
+                td {
+                    padding: 7px 0;
+                    text-align: center;
+
+                    .down_file {
+                        position: relative;
+                        display: block;
+                        width: 21.5rem;
+                        height: 4.5rem;
+                        margin: 10px;
+                        padding-right: 4.5rem;
+                        line-height: 4.5rem;
+                        background-color: #DCDCDC;
+                        text-align: center;
+                        font-weight: normal;
+                        font-size: 1.6rem;
+                        border: none;
+
+                        img {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            display: block;
+                            width: 4.5rem;
+                            height: 4.5rem;
+                            padding: 1.3rem;
+                            background-color: #595959;
+                            box-sizing: border-box;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    //table END
+
+
+
+    // 검색 START
+    .search {
+        position: relative;
+        width: 100%;
+        height: 6.0rem;
+
+        .total {
+            padding-top: 2.0rem;
+
+            font-size: 1.8rem;
+
+            span {
+                color: #44A8FF;
+            }
+        }
+
+        .search_box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+
+            * {
+                height: 4.0rem;
+                border: 1px solid #BCBCBC;
+            }
+
+            select {
+                width: 12.0rem;
+            }
+
+            input {
+                width: 18.0rem;
+                margin: 0 0.6rem;
+            }
+
+            button {
+                width: 8.0rem;
+                background-color: #595959;
+                color: white;
+            }
+        }
+    }
+
+    // 검색 END
+}
+
+//pagenation START
+
+.rsv-num-box {
+    position: relative;
+    margin: 0 auto;
+    text-align: center
+}
+
+.rsv-num-box .pagenation {
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.rsv-num-box .pagenation>li {
+    float: left;
+}
+
+.rsv-num-box .pagenation>li>a {
+    display: inline-block;
+    width: 36px;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    background: #fff;
+    color: #398fe1;
+    border-left: 1px solid #ddd;
+}
+
+.rsv-num-box .pagenation>li:first-child>a {
+    border-left: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.rsv-num-box .pagenation>li.first>a {
+    color: #686868;
+}
+
+.rsv-num-box .pagenation>li.last>a {
+    color: #686868;
+}
+
+.rsv-num-box .pagenation>li:last-child>a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #686868;
+}
+
+.rsv-num-box .pagenation>li>a:active,
+.pagenation>li.on>a {
+    color: #fff;
+    background: #32618A;
+}
+
+//pagenation END
+
+// 아코디언 CSS
+#accordian {
+    li span {
+        display: inline-block;
+    }
+
+    li {
+        >.title {
+            cursor: pointer;
+        }
+
+        >ul {
+            display: none;
+
+            >li {
+                color: #595959;
+            }
+        }
+    }
+
+}
+
+@media (max-width:990px) {
+    .rsv-num-box .pagenation>li>a {
+        font-size: 1.6rem;
+        padding: 8px 0;
+    }
+
+    //table 모바일 폰트
+    .scss_com {
+        table {
+            thead {
+                th {
+                    font-size: 14px;
+                }
+            }
+
+            tbody {
+                tr {
+                    th {
+                        font-size: 14px;
+                    }
+
+                    td {
+                        font-size: 13px;
+                        line-height: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+}

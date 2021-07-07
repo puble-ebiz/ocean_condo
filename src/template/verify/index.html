@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--모바일용 주소창제거-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--모바일용// 주소창제거-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+    <link rel="stylesheet" href="/static/css/verify/reset.css">
+    <link rel="stylesheet" href="/static/css/verify/contents.css">
+    <!--//CSS-->
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!--//JS-->
+    
+    <title>예약정보</title>
+</head>
+<body>
+    <div class="wrap">
+        <form class="">
+
+        </form>
+        <form class="">
+
+        </form>
+    </div>
+
+    <!--풀스크린용 이벤트용-->
+    <button type="button" class="ev-start-fullscreen" ></button>
+    <!--///풀스크린용 이벤트용-->
+</body>
+<script>
+    window.scrollTo(0,1);
+// document.addEventListener('fullscreenchange', function(e){
+
+//   toggleFullScreen();
+  
+// });
+// if (!document.fullscreenElement){
+//             document.documentElement.requestFullscreen();
+//         }
+    // document.documentElement.requestFullscreen();
+    $(document).ready(function(){
+        window.scrollTo(0,1);
+        document.fullScreen;
+        // document.addEventListener("keypress", function(e) {
+        //     if (e.keyCode === 13) {
+        //         toggleFullScreen();
+        //     }
+        // }, false);
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                document.exitFullscreen(); 
+                }
+            }
+        }
+
+        $('.ev-start-fullscreen').on('click', function () {
+            console.log("클릭");
+            toggleFullScreen();
+        });
+
+        $('.ev-start-fullscreen').trigger('click');
+    });
+    
+        
+
+
+</script>
+</html>

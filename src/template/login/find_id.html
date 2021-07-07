@@ -1,0 +1,132 @@
+@@include('../include/_head.html', {
+    "page": "login"
+    })
+    
+</head>
+
+<body>
+    <main id="wrap" class="wrap">
+        @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_login.html')
+
+        <!--탑메뉴 오버이벤트를 위한 태그-->
+        <div class="page-data" data-name="d_find_id"></div>
+
+        <div class="wrap-container wrap-login">
+            <section class="sect-find">
+                <div class="sect-contents">
+                    <h3 class="page-title">회원번호 찾기</h3>
+                    <div class="login-contents">
+                        <div class="find-area">
+                            <ul class="select-member-ul">
+                                <li>
+                                    <input type="radio" name="member" id="mem01" class="in-radio" checked>
+                                    <label for="mem01">개인회원</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="member" id="mem02" class="in-radio">
+                                    <!-- <label for="mem02">휴대폰 본인인증 찾기</label> -->
+                                    <label for="mem02">기업회원</label>
+                                    
+                                </li>
+                            </ul>
+
+                            <div class="cont-box cont-box01 on">
+                                <p class="p-note">※ 회원정보에 등록한 이름, 이메일주소, 휴대전화 번호가 같아야 인증번호를 받으실 수 있습니다.</p>
+                                <div class="in-area-find-id">
+                                    <ul class="in-area-ul">
+                                        <li class="item-name">
+                                            <label for="in-name">이름</label>
+                                            <input type="text" id="in-name">
+                                        </li>
+                                        <li class="item-email">
+                                            <label for="in-email">이메일주소</label>
+                                            <input type="email" id="in-email">
+                                        </li>
+                                        <li class="item-phone">
+                                            <label for="in-phone">휴대폰 번호</label>
+                                            <input type="number" placeholder="‘-’ 없이 입력해주세요" maxlength="6" id="in-phone">
+                                            <a class="btn-get-num" href="#none">인증번호 받기</a>
+                                        </li>
+                                        <li class="item-num">
+                                            <label for="in-num">인증번호</label>
+                                            <input type="text" placeholder="인증번호6자리 숫자 입력" maxlength="6" class="in-num">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cont-box cont-box02">
+                                <p class="p-note">※ 회원정보에 등록한 이름, 이메일주소, 휴대전화 번호가 같아야 인증번호를 받으실 수 있습니다.</p>
+                                <div class="in-area-find-id">
+                                    <ul class="in-area-ul">
+                                        <li class="item-name">
+                                            <label for="in-name">사업주명</label>
+                                            <input type="text" id="in-name">
+                                        </li>
+                                        <li class="item-business">
+                                            <label for="business-num">사업자번호</label>
+                                            <div class="in-box">
+                                                <input type="number"  maxlength="3" id="business-num">
+                                                <p>-</p>
+                                                <input type="number" maxlength="4">
+                                                <p>-</p>
+                                                <input type="number" maxlength="4">
+                                            </div>
+                                        </li>
+                                        <li class="item-phone">
+                                            <label for="in-phone">휴대폰 번호</label>
+                                            <input type="number" placeholder="‘-’ 없이 입력해주세요" maxlength="6" id="in-phone">
+                                            <a class="btn-get-num" href="#none">인증번호 받기</a>
+                                        </li>
+                                        <li class="item-num">
+                                            <label for="in-num">인증번호</label>
+                                            <input type="text" placeholder="인증번호6자리 숫자 입력" maxlength="6" class="in-num">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-btn-area">
+                        <a href="./find_id_complete.html" class="btn-check btn-blue">회원번호 찾기</a>
+                    </div>
+                </div>
+            </section>
+    
+            
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".wrap-login .select-member-ul .in-radio").on("click",function(){
+                    let index = $(this).parent("li").index();
+                    if(index == 0){
+                        $(".wrap-login .cont-box02").removeClass("on");
+                        $(".wrap-login .cont-box01").addClass("on");
+                    }
+                    if(index == 1){
+                        $(".wrap-login .cont-box01").removeClass("on");
+                        $(".wrap-login .cont-box02").addClass("on");
+                    }
+                    // console.log("작동");
+                    
+                });
+
+                //휴대폰 다음으로 바로가기
+                $(".wrap-login .item-phone .in-box input").keyup(function () { 
+                    if (this.value.length >= this.maxLength) {
+                        this.value = this.value.slice(0, this.maxLength);
+                        $(this).next().next('input').focus();
+                    } 
+                });
+            });
+        </script>
+
+
+        @@include('../include/_footer.html')
+    </main>
+
+</body>
+
+</html>

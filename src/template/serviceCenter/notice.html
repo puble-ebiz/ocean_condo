@@ -1,0 +1,143 @@
+@@include('../include/_head.html', {
+	"page": "serviceCenter"
+})
+	
+</head>
+<body>
+<h1 class="hidden">고객센터 - 공지사항</h1>
+<div class="wrap">
+
+    @@include('../include/_header.html')
+    @@include('../include/_sub/_subpage_top_service.html')
+
+    <div class="page-data" data-name="d_svc01"></div>
+    <!-- 2021 고객센터 -->
+    <div class="wrap-container">
+        <section class="scss_com service-center">
+            <div class="sect-contents">
+                <h3 class="common-page-title">공지사항</h3>
+                <!-- 공지사항 list -->
+                <article>
+                    <div class="search">
+                        <div class="search_inner">
+                            <p class="total">총 <span class="bule">10</span> 개</p>
+                            <fieldset>
+                                <legend class="blind">검색</legend>
+                                <div class="search_box">
+                                    <select>
+                                        <option>제목</option>
+                                        <option>내용</option>
+                                    </select>
+                                    <input type="text"/>
+                                    <button type="submit" class="search">검색</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="content-area">
+                        <ul class="svc-list">
+                            <!-- 공지사항이 없을때 -->
+                            <li>게시글이 없습니다.</li>
+                            <!-- //공지사항이 없을때 -->
+
+                            <li>
+                                <div class="title">
+                                    <span>1</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>2</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>3</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>4</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>5</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>6</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>7</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>8</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>9</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>10</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <span>1</span>
+                                    <p><a href="./notice_view.html">예약 후 숙박시설 방문 시 유의사항 안내드립니다.</a></p>
+                                    <b>2020-12-01</b>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="rsv-num-box">
+                        <ul class="pagenation clr" id="pagenation">
+                            <li class="first"><a href="#none" onclick="javascript:location.href='#'">&lt;&lt;</a></li>
+                            <li class="first"><a href="#none" onclick="javascript:location.href='#'">&lt;</a></li>		  
+                            <li class="on"><a href="#none" onclick="javascript:location.href='#'">1</a></li>
+                            <li class="last"><a href="#none" onclick="javascript:location.href='#'">&gt;</a></li>
+                            <li class="last"><a href="#none" onclick="javascript:location.href='#'">&gt;&gt;</a></li>
+                        </ul>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+    </div>
+
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+@@include('../include/_head.html', {
+	"page": "reservation"
+})
+
+<!-- <link rel="stylesheet" href="/resources/demos/s1tyle.css">  -->
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+
+
+</head>
+
+<h1 class="hidden">오션투유 리조트 주변관광지</h1>
+    <div id="wrap">
+	    @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_reservation.html')
+
+            <!--탑메뉴 오버이벤트를 위한 태그-->
+    <div class="page-data" data-name="d_rsv01"></div>
+		
+    <section class="reservation" id="setTop">
+
+        <div id="wrapper">
+            <div id="contents">
+                <h2 class="com-ft">예약신청</h2>
+                <!-- 2021 예약신청 -->
+                <div class="rsv-comment">
+                    <p>ㆍ 이용하시고자 하는 리조트와 평형, 입실일자 숙박일수를 선택하여 확인해 주시기 바랍니다. </p>
+                    <p>ㆍ 입력하신 이메일과 휴대폰번호로 예약번호와 예약안내문을 발송해 드리오니 정확하게 입력해주세요.</p>
+                </div>
+                <div class="app-wrap">
+                    <div>
+                        <div class="app-list">
+                            <h3>예약정보</h3>
+                            <ul>
+                                <li>
+                                    <div class="th">리조트명</div>
+                                    <div class="td">오션투유 리조트</div>
+                                </li>
+                                <li>
+                                    <div class="th">체크인/체크아웃</div>
+                                    <div class="td">
+                                        <input name="DateIn" type="text" value="in" id="datepicker1"/> - <input name="DateOut" value="out" type="text" id="datepicker2"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <div class="th">숙박일수</div>
+                                            <div class="td">1박 2일</div>
+                                        </li>
+                                        <li>
+                                            <div class="th">투숙인원</div>
+                                            <div class="td">
+                                                <select name="condo-month" id="month-select">
+                                                    <option value="">1명</option>
+                                                    <option value="">2명</option>
+                                                    <option value="">3명</option>
+                                                    <option value="">4명</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <div class="th">평형</div>
+                                            <div class="td">
+                                                <select name="condo-month" id="month-select">
+                                                    <option value="">14평</option>
+                                                    <option value="">24평</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="th">객실수</div>
+                                            <div class="td">
+                                                <select name="condo-month" id="month-select">
+                                                    <option value="">1실</option>
+                                                    <option value="">2실</option>
+                                                    <option value="">3실</option>
+                                                    <option value="">4실</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>예약자 정보</h3>
+                            <ul>
+                                <li>
+                                    <div class="th">예약자명</div>
+                                    <div class="td"><input type="text" value="홍길동"/></div>
+                                </li>
+                                <li>
+                                    <div class="th">연락처</div>
+                                    <div class="td"><input type="text" value="01012345678"/></div>
+                                </li>
+                                <li>
+                                    <div class="th">이메일</div>
+                                    <div class="td"><input type="text" value="ocen2you@naver.com"/></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- btn -->
+                        <div class="app-btn">
+                            <a href="#">취소</a>
+                            <a href="#">예약 신청하기</a>
+                        </div>
+
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <script>
+            $( function() {
+                $( "#datepicker1" ).datepicker({
+                      dateFormat: "mm/dd/yy"}
+              );
+              $( "#datepicker2" ).datepicker({
+                      dateFormat: "mm/dd/yy"}
+              );
+            } );
+        </script>
+        <div class="clr"></div>
+    </section>
+		
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

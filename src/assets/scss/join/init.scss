@@ -1,0 +1,21 @@
+.wrap-join {
+    width: 100%;
+}
+
+.wrap-join {
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="checkbox"] {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
+
+
+@import "./join";
+@import "./join_in";

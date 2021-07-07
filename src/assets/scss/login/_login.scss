@@ -1,0 +1,654 @@
+.wrap-login section {
+    width: 100%;
+
+    .sect-contents {
+        .select-member-ul {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+            &>li {
+                &:last-of-type {
+                    margin-left: 4.5rem;
+                }
+
+                .in-radio {
+                    display: none;
+                }
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    font-size: 2.0rem;
+
+                    &::before {
+                        box-sizing: border-box;
+                        content: "";
+                        display: block;
+                        background: #ccc;
+                        border: solid 0.4rem #fff;
+                        width: 2.1rem;
+                        height: 2.1rem;
+                        border-radius: 50%;
+                        box-shadow: 0 0 0 1.6px #ccc;
+                        margin-right: 1.0rem;
+                        margin-top: 1px;
+                    }
+                }
+
+                input:checked+label {
+                    &::before {
+                        background: #44a8ff;
+                        box-shadow: 0 0 0 1.6px #44a8ff;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .login-contents {
+        margin-top: 6.0rem;
+        padding-top: 5.2rem;
+        padding-bottom: 6.8rem;
+        width: 100%;
+        border-top: 2px solid #595959;
+        border-bottom: 1px solid #ccc;
+        background-color: #f9f9f9;
+        // display: flex;
+        position: relative;
+        // justify-content: space-between;
+    }
+
+    .bottom-btn-area {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        .btn-white {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 160px;
+            height: 50px;
+            border: 1px solid #999;
+            font-size: 16px;
+        }
+
+        .btn-blue {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #44a8ff;
+            width: 160px;
+            height: 50px;
+            color: white;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+.wrap-login .sect-login {
+
+    .sect-contents {
+        .title-box {
+            margin: 0 auto;
+            text-align: center;
+
+            .title-main {
+                // color: #252525;
+                // font-size: 4.2rem;
+                // font-weight: 500;
+                // letter-spacing: -2.1px;
+
+            }
+
+            .title-sub {
+                margin-top: 2.0rem;
+                letter-spacing: -0.5px;
+                color: #595959;
+                font-size: 20px;
+
+            }
+        }
+
+        .login-contents {
+            .login-area {
+                // width: 100%;
+                width: 57.3rem;
+                margin: 0 auto;
+
+                .in-login-box {
+                    margin-top: 4.0rem;
+                    display: flex;
+
+                    .input-box {
+                        label {
+                            float: left;
+                            display: block;
+                            padding-right: 2.0rem;
+                            line-height: 5.0rem;
+                            font-size: 1.6rem;
+                            cursor: auto;
+                            clear: both;
+                        }
+
+                        >div {
+                            margin-bottom: 1.4rem;
+
+                            input {
+                                width: 5.0rem;
+                                padding-left: 0;
+                                margin-right: 2px;
+                                margin-left: 2px;
+                                text-align: center;
+                                text-indent: 0;
+                            }
+
+                            input:nth-of-type(1) {
+                                margin-left: 0;
+                            }
+
+                            input:nth-of-type(4) {
+                                width: 10.0rem;
+                            }
+
+                            input:nth-of-type(5) {
+                                width: 4.0rem;
+                                margin-right: 0;
+                            }
+                        }
+
+                        .in-pw {
+                            width: 34.0rem;
+                        }
+                    }
+
+                    .btn-box {
+                        margin-left: 1.4rem;
+
+                        .btn-login {
+                            width: 12.0rem;
+                            height: 100%;
+                            background-color: #373737;
+                            color: #fff;
+                            font-size: 1.8rem;
+
+                        }
+                    }
+
+                }
+
+
+                .save-id-box {
+                    margin-top: 2.4rem;
+                    padding-left: 7.9rem;
+
+                    .check-save-id {
+                        display: none;
+                    }
+
+                    .check-label {
+                        color: #595959;
+                        font-size: 1.6rem;
+                        line-height: 1.2;
+                        letter-spacing: -0.8px;
+                        display: flex;
+                        align-items: center;
+
+                        &::before {
+                            content: "✔";
+                            margin-right: 10px;
+                            display: block;
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            border: 2px solid #ccc;
+                            background-color: #ccc;
+                            color: #fff;
+                            font-size: 1.8rem;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 2px;
+                        }
+
+                    }
+
+                    .check-save-id:checked+.check-label::before {
+                        // content: "✓";
+                        content: "✔";
+                        color: #fff;
+                        // font-size: 2.0rem;
+                        // align-items: center;
+                        background-color: #2a6caa;
+                        border-color: #3c7b99;
+                    }
+                }
+
+                .member-box {
+                    border-top: 1px solid #999;
+                    padding-top: 2.5rem;
+                    margin-top: 2.4rem;
+
+                    .member-ul {
+                        display: flex;
+                        justify-content: center;
+
+                        &>li {
+                            padding: 0 2.4rem;
+                            border-right: 1px solid #999;
+
+                            &:last-of-type {
+                                border-right: none;
+                            }
+
+                            a {
+                                color: #595959;
+                                font-size: 1.6rem;
+                                letter-spacing: -0.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .login-info {
+            display: block;
+            margin-top: 3.0rem;
+            text-align: center;
+            line-height: 0.7rem;
+
+            .triangle {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                padding-left: 1.0rem;
+                border-style: solid;
+                border-width: 0.7rem;
+                border-color: transparent transparent transparent #595959;
+            }
+        }
+
+    }
+
+
+    ///popup
+
+    .popup-inner {
+        width: 69.0rem;
+        height: 60.0rem;
+
+        .popup-contents {
+            h3 {
+                width: 57.0rem;
+                padding: 4.5rem 0 2.5rem;
+                margin: auto;
+                font-size: 3.8rem;
+                border-bottom: 2px solid black;
+
+            }
+
+            >div {
+                display: block;
+                width: 57.0rem;
+
+                table {
+                    tr {
+                        th {
+                            font-size: 1.6rem;
+                        }
+
+                        td {
+                            padding: 7px 20px;
+
+                            textarea,
+                            input {
+                                display: block;
+                                width: 90%;
+                                padding: 10px;
+                                border: 1px solid #999;
+                                font-size: 16px;
+
+
+                            }
+
+                            textarea {
+                                height: 14.0rem;
+                                resize: none;
+                                overflow-y: scroll;
+                            }
+
+
+                        }
+                    }
+                }
+
+                a {
+                    display: block;
+                    margin: 2.0rem auto;
+                    width: 24.0rem;
+                    height: 6.0rem;
+                    border-radius: 5px;
+                    line-height: 6.0rem;
+                    font-size: 2.0rem;
+                    font-weight: 500;
+                    background-color: #44A8FF;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+.wrap-login .sect-find {
+    .sect-contents {
+        .login-contents {
+
+            //기본
+            .find-area {
+                .cont-box {
+                    display: none;
+                    margin: 0 auto;
+                    margin-top: 23px;
+
+                    .p-note {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 auto;
+                        color: #595959;
+                        font-size: 16px;
+                        letter-spacing: 1.5;
+                        line-height: 1.4;
+                        text-align: left;
+                        // text-indent: -12px;
+                        text-align: left;
+                    }
+
+                    .btn-apply-phone {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 auto;
+                        margin-top: 70px;
+                        width: 180px;
+                        height: 54px;
+                        background-color: #595959;
+                        color: #fff;
+                    }
+
+                    .in-area-find-id {
+                        width: 57.8rem;
+                        margin: 0 auto;
+
+                        .in-area-ul {
+                            margin-top: 50px;
+
+                            &>li {
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                margin-bottom: 15px;
+
+                                label {
+                                    display: block;
+                                    width: 9.6rem;
+                                    color: #595959;
+                                    font-size: 1.6rem;
+                                    font-weight: 500;
+                                    letter-spacing: -0.8px;
+                                }
+
+                                input {
+                                    padding-left: 20px;
+                                    width: 34.0rem;
+                                    height: 4.4rem;
+                                    border: 1px solid #999;
+                                    font-size: 1.6rem;
+
+                                    &::placeholder {
+                                        color: #999;
+                                    }
+                                }
+                            }
+
+                            .item-phone {
+
+                                .btn-get-num {
+                                    margin-left: 10px;
+                                    background-color: #595959;
+                                    width: 12.0rem;
+                                    height: 4.4rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #fff;
+                                    font-size: 1.5rem;
+                                }
+                            }
+
+                            .item-business {
+                                .in-box {
+                                    width: 34.0rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    input {
+                                        width: 10.0rem;
+                                    }
+                                }
+                            }
+
+
+                            .item-membernum {
+                                input {
+                                    width: 5.3rem;
+                                    padding-left: 0;
+                                    text-align: center;
+                                    margin-right: 2px;
+                                    margin-left: 2px;
+                                }
+
+                                input:nth-of-type(1) {
+                                    margin-left: 0;
+                                }
+
+                                input:nth-of-type(4) {
+                                    width: 10.0rem;
+                                }
+
+                                input:nth-of-type(5) {
+                                    width: 4.3rem;
+                                    margin-right: 0;
+                                }
+                            }
+
+
+
+
+
+
+
+
+                        }
+                    }
+                }
+
+                .on {
+                    display: block;
+                }
+            }
+
+            //회원번호 찾기부분
+            .find-area {
+                .result-title-box {
+
+                    .icon-img {
+                        width: 49px;
+                        margin: 0 auto;
+                    }
+
+                    .title {
+                        margin-top: 17px;
+                        color: #373737;
+                        font-size: 28px;
+                        letter-spacing: -0.7px;
+                        text-align: center;
+                    }
+                }
+
+                .note-box {
+                    text-align: center;
+                    margin-top: 26px;
+
+                    p {
+                        line-height: 1.5;
+                        color: #595959;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+
+                    .p-mark {
+                        font-weight: 500;
+                    }
+                }
+
+                .view-box-id {
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    width: 340px;
+                    height: 54px;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .p-id {
+                        color: #37a2ff;
+                        font-size: 18px;
+                        line-height: 1.1;
+                    }
+                }
+            }
+
+            //비밀번호 관련
+            .find-area {
+                .newpw-title-box {
+                    text-align: center;
+
+                    .icon-img {
+                        margin: 0 auto;
+                        width: 46px;
+                    }
+
+                    .title {
+                        margin-top: 17px;
+                        color: #373737;
+                        font-size: 28px;
+                        font-weight: 500;
+                        letter-spacing: -0.8px;
+                    }
+
+                    .p-sub {
+                        color: #595959;
+                        font-size: 16px;
+                        margin-top: 27px;
+                    }
+                }
+
+                .in-area-newpw {
+                    width: 470px;
+                    margin: 0 auto;
+                    margin-top: 40px;
+
+                    .in-area-ul {
+                        &>li {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 15px;
+
+                            &:last-of-type {
+                                margin-bottom: 0;
+                            }
+
+                            label {
+                                margin: 0;
+                                padding: 0;
+                                width: 140px;
+                                color: #595959;
+                                font-size: 16px;
+                                font-weight: 500;
+                                letter-spacing: -0.8px;
+                            }
+
+                            input {
+                                width: 340px;
+                                height: 44px;
+                                padding-left: 12px;
+                                border: 1px solid #999;
+                                font-size: 20px;
+                                line-height: 1;
+                            }
+
+                        }
+
+                        // margin: 0 auto;
+                    }
+
+                    .p-notice {
+                        text-align: center;
+                        margin-top: 15px;
+                        color: #888;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: -0.8px;
+                    }
+
+                }
+
+            }
+        }
+
+        .bottom-btn-area {
+            .btn-check {
+                margin-left: 14px;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+@media(max-width:990px) {
+
+
+    .wrap-login .sect-login .sect-contents .login-contents .login-area .in-login-box .input-box label,
+    .wrap-login .sect-login .sect-contents .login-contents .login-area .save-id-box .check-label,
+    .wrap-login .sect-login .sect-contents .login-contents .login-area .member-box .member-ul>li a,
+    .wrap-login section .sect-contents .select-member-ul>li label,
+    .wrap-login .sect-find .sect-contents .login-contents .find-area .cont-box .in-area-find-id .in-area-ul>li label {
+        font-size: 15px !important;
+    }
+
+    .wrap-login .sect-login .sect-contents .login-contents .login-area .in-login-box .btn-box .btn-login {
+        width: 10rem;
+    }
+
+    .wrap-login .sect-find .sect-contents .login-contents .find-area .cont-box .in-area-find-id .in-area-ul>li label {
+        width: 13rem;
+    }
+
+    .wrap-login .sect-find .sect-contents .login-contents .find-area .cont-box .in-area-find-id .in-area-ul>li input {
+        width: 30rem;
+    }
+}

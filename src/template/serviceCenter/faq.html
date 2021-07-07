@@ -1,0 +1,195 @@
+@@include('../include/_head.html', {
+	"page": "serviceCenter"
+})
+	
+</head>
+
+<!-- 아코디언 스크립트 -->
+<script>                           
+    $(function(){
+        $("#accordian .title").click(function(){
+            $("#accordian ul ul").slideUp();
+            $('.ico_ar').css('transform','none');
+            if(!$(this).next().is(":visible"))
+            {
+                $(this).next().slideDown();
+                $(this).find('.ico_ar:eq(0)').css('transform','rotate(180deg)');
+            }
+        })
+    })
+</script>
+<!-- //아코디언 스크립트 -->
+
+<body>
+<h1 class="hidden">고객센터 - FAQ</h1>
+<div class="wrap">
+
+    @@include('../include/_header.html')
+    @@include('../include/_sub/_subpage_top_service.html')
+
+    <div class="page-data" data-name="d_svc02"></div>
+    <!-- 2021 고객센터 자주묻는질문 -->
+    <div class="wrap-container">
+        <section class="scss_com service-center">
+            <div class="sect-contents">
+                <h3 class="common-page-title">자주묻는 질문 FAQ</h3>
+                <!-- 자주묻는질문 list -->
+                <ul class="mb-tab clr">
+                    <li class="tab01 on"><a href="#">전체</a></li>
+                    <li class="tab02"><a href="#">예약/이용</a></li>
+                    <li class="tab03"><a href="#">결제/환불</a></li>
+                    <li class="tab03"><a href="#">회원관련</a></li>
+                    <li class="tab03"><a href="#">회원권 명의변경</a></li>
+                    <li class="tab03"><a href="#">회원카드발급</a></li>
+                    <li class="tab03"><a href="#">기타</a></li>
+                </ul>
+                <article>
+                    <div class="content-area faq">
+
+                        <div id="accordian">
+                            <ul class="svc-list">
+                                <!-- FAQ list -->
+                                <li>
+                                    <div class="title">
+                                        <span>1</span>
+                                        <p>예약 후 숙박시설 방문 시 유의사항 안내드립니다.</p>
+                                        <b class="ico_ar">▼</b>
+                                    </div>
+                                    <ul class="content">
+                                        <li>
+                                            <div><b>A</b></div>
+                                            <p>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- ////FAQ list -->
+                                <li>
+                                    <div class="title">
+                                        <span>2</span>
+                                        <p>예약 후 숙박시설 방문 시 유의사항 안내드립니다.</p>
+                                        <b class="ico_ar">▼</b>
+                                    </div>
+                                    <ul class="content">
+                                        <li>
+                                            <div><b>A</b></div>
+                                            <p>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>3</span>
+                                        <p>예약 후 숙박시설 방문 시 유의사항 안내드립니다.</p>
+                                        <b class="ico_ar">▼</b>
+                                    </div>
+                                    <ul class="content">
+                                        <li>
+                                            <div><b>A</b></div>
+                                            <p>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>4</span>
+                                        <p>예약 후 숙박시설 방문 시 유의사항 안내드립니다.</p>
+                                        <b class="ico_ar">▼</b>
+                                    </div>
+                                    <ul class="content">
+                                        <li>
+                                            <div><b>A</b></div>
+                                            <p>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>5</span>
+                                        <p>예약 후 숙박시설 방문 시 유의사항 안내드립니다.</p>
+                                        <b class="ico_ar">▼</b>
+                                    </div>
+                                    <ul class="content">
+                                        <li>
+                                            <div><b>A</b></div>
+                                            <p>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <div class="title">
+                                        <span>6</span>
+                                        <p>예약 후 숙박시설 방문 시 유의사항 안내드립니다.</p>
+                                        <b class="ico_ar">▼</b>
+                                    </div>
+                                    <ul class="content">
+                                        <li>
+                                            <div><b>A</b></div>
+                                            <p>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <span>7</span>
+                                        <p>예약 후 숙박시설 방문 시 유의사항 안내드립니다.</p>
+                                        <b class="ico_ar">▼</b>
+                                    </div>
+                                    <ul class="content">
+                                        <li>
+                                            <div><b>A</b></div>
+                                            <p>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다. <br/>
+                                                예약 후 숙박시설 방문 시 유의사항 안내드립니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+    </div>
+
+    
+	@@include('../include/_footer.html') 
+</div>
+
+</body>
+</html>

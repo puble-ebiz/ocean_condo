@@ -1,0 +1,1103 @@
+@charset "utf-8";
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+.com-ft {
+    text-align: center;
+    margin-top: 5.5rem;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    letter-spacing: -2.1px;
+    font-weight: 500;
+    /*font-family: 'Nanum Gothic';*/
+}
+
+.rsv-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 0 100px;
+    /*font-family: 'Nanum Gothic';*/
+}
+
+.rsv-wrap caption {
+    position: absolute;
+    font-size: 0;
+    text-indent: -99999px;
+}
+
+/* 탭 */
+.rsv-tab {
+    position: relative;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.rsv-tab li {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 33.3%;
+    height: 60px;
+    border: 1px solid #b9b9b9;
+    border-bottom: 1px solid #373737;
+    background: #f7f8fa
+}
+
+.rsv-tab li:last-child {
+    width: 33.4%;
+}
+
+
+.rsv-tab .tab-rsv-03 {
+    border-right: 1px solid #b9b9b9;
+}
+
+.rsv-tab .on {
+    border-color: #373737;
+    background: #fff;
+    border-bottom: none;
+}
+
+.rsv-tab .on+li {
+    border-left: 0;
+    padding-left: 1px;
+}
+
+.rsv-tab li.on a {
+    color: #373737;
+}
+
+.rsv-tab li a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    color: #686868
+}
+
+
+/* 개월수 */
+.rsv-day-area {
+    position: relative;
+    display: block;
+    margin: 24px auto 8px;
+}
+
+.rsv-day-area .rsv-day-list {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.rsv-day-area .rsv-day-list li {
+    position: relative;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 60px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    border-left: 0;
+    background: -webkit-linear-gradient(#fff 35%, #f7f7f8);
+    background: -moz-linear-gradient(#fff 35%, #f7f7f8);
+    background: -o-linear-gradient(#fff 35%, #f7f7f8);
+    background: linear-gradient(#fff 35%, #f7f7f8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f8', GradientType=0);
+}
+
+.rsv-day-area .rsv-day-list li:first-child {
+    border-left: 1px solid #d7d7d7
+}
+
+.rsv-day-area .rsv-day-list li a {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 22px;
+    color: #424242
+}
+
+/* 예약 조회 테이블 */
+.rsv-list-area {
+    margin-top: 20px;
+    margin-bottom: 105px;
+}
+
+.rsv-col-box {
+    position: relative;
+    text-align: center
+}
+
+.rsv-col-box .rsv-col {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #616e7b;
+}
+
+
+
+.rsv-col-box .rsv-col .nth-2 {
+    width: 30%;
+}
+
+.rsv-col-box .rsv-col .nth-3 {
+    width: 10%;
+}
+
+
+.rsv-col-box .rsv-col thead th {
+    padding: 1.3rem 1.2rem;
+    font-size: 15px;
+    font-weight: normal;
+    border: 1px solid #d0d1d3;
+    border-right: 0;
+    background: #f9f9f9;
+}
+
+.rsv-col-box .rsv-col thead th:first-child {
+    border-left: 0;
+    border-bottom: 0;
+
+}
+
+.rsv-col-box .rsv-col tbody {
+    color: #232323;
+}
+
+.rsv-col-box .rsv-col tbody td:nth-child(2) {
+    padding-left: 3.0rem;
+    text-align: left;
+
+}
+
+.rsv-col-box .rsv-col tbody td:nth-child(2) a:hover {
+    color: #32618A;
+    transition: all .5s;
+}
+
+.rsv-col-box .rsv-col tbody td:nth-child(2) a {
+    transition: all .5s;
+
+}
+
+.rsv-col-box .rsv-col tbody td {
+    padding: 2.0rem 0 2.0rem;
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    border: 1px solid #d0d1d3;
+    background: #fff
+}
+
+.rsv-col-box .rsv-col tbody td:first-child {
+    border-left: none;
+}
+
+.rsv-col-box .rsv-col tbody td:last-child {
+    border-right: none;
+}
+
+.rsv-col-box .rsv-col .btn-rcp {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    height: 27px;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    color: #686868;
+    border: 1px solid #d4d4d4;
+    background: #f7f7f9
+}
+
+.rsv-col-box tbody .no td {
+    padding: 2.0rem 0 2.0rem;
+    font-size: 17px;
+    color: #686868;
+}
+
+/* 예약 상세보기 */
+.rsv-detail-area {
+    margin-top: 30px;
+}
+
+.rsv-detail-area .rsv-detail-tit {
+    position: relative;
+    margin-left: 7px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    vertical-align: middle;
+    color: #686868;
+}
+
+.rsv-detail-area .rsv-detail-tit:before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-right: 5px;
+    // background: url(http://img.ocean2youresort.co.kr/reservation/img_tit_arrow.png) no-repeat;
+    background: url(http://img.ocean2youresort.co.kr/reservation/img_tit_arrow.png) no-repeat;
+}
+
+.rsv-row-box {
+    margin-top: 15px;
+}
+
+.rsv-row-box .color_p {
+    color: #FF1C4C;
+}
+
+.rsv-row-box+.rsv-row-box {
+    margin-top: 28px;
+}
+
+.rsv-row-box .rsv-row {
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #373737;
+}
+
+.rsv-row-box .rsv-row.top li {
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+.rsv-row-box .rsv-row.top li:last-child {
+    display: block;
+    float: left;
+    width: 40%;
+    border-top: 1px solid #d0d1d3;
+}
+
+.rsv-row-box .rsv-row.top li:last-child .th {
+    border-left: 1px solid #d0d1d3;
+}
+
+.rsv-row-box .rsv-row li {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    color: #686868;
+    border-bottom: 1px solid #d0d1d3
+}
+
+.rsv-row-box .rsv-row li:first-child {
+    border-top: 1px solid #d0d1d3
+}
+
+.rsv-row-box .rsv-row li .th,
+.rsv-row-box .rsv-row li .td {
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 18px 0;
+    word-break: keep-all;
+    vertical-align: middle;
+}
+
+.rsv-row-box .rsv-row li .th {
+    width: 195px;
+    padding-left: 18px;
+    padding-right: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #383838;
+    border-right: 1px solid #d0d1d3;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.rsv-row-box .rsv-row li .td {
+    font-size: 17px;
+    line-height: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.rsv-row-box .rsv-row li .td.rsv a {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border: 1px solid #FF1C4C;
+    font-size: 14px;
+    color: #FF1C4C;
+}
+
+.rsv-row-box .rsv-row li .td.rsv a:last-child {
+    border: 1px solid #686868;
+    color: #686868;
+}
+
+.rsv-row-box .rsv-row li .btn-box {
+    padding-top: 11px;
+    padding-bottom: 10px
+}
+
+.rsv-row-box .rsv-row li .btn-box a {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 89px;
+    height: 29px;
+    margin-right: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.rsv-row-box .rsv-row .btn-check {
+    color: #fa6c0a;
+    border-color: #fa7418;
+    background: none
+}
+
+.rsv-row-box .rsv-row .btn-rcp {
+    color: #686868;
+    border-color: #72767e;
+    background: #fff
+}
+
+/* 취소 수수료 안내 */
+.rsv-detail-area .cancel-guide-area {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 14px;
+    padding: 12px 13px 18px;
+    border: 1px solid #e7e7e7;
+    background: #fff
+}
+
+.cancel-guide-area p {
+    margin-left: -5px;
+    line-height: 16px;
+    word-break: keep-all;
+}
+
+.cancel-guide-area .cancel-tit {
+    font-size: 13px;
+    color: #242424
+}
+
+.cancel-guide-area .cancel-txt {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #232323
+}
+
+.cancel-guide-area .cancel-col {
+    box-sizing: border-box;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 11px;
+    text-align: center;
+}
+
+.cancel-guide-area .cancel-col .nth-1 {
+    width: 32%
+}
+
+.cancel-guide-area .cancel-col .nth-2 {
+    width: 22%
+}
+
+.cancel-guide-area .cancel-col .nth-3 {
+    width: 24%
+}
+
+.cancel-guide-area .cancel-col .nth-4 {
+    width: 22%
+}
+
+.cancel-guide-area .cancel-col th,
+.cancel-guide-area .cancel-col td {
+    font-size: 13px;
+    line-height: 15px;
+    border: 1px solid #bcbcbc;
+    border-right: 0
+}
+
+
+
+.cancel-guide-area .cancel-col th {
+    padding: 13px 0;
+    border-bottom: 0;
+    background: #f5f5f5;
+    font-weight: normal;
+
+}
+
+.cancel-guide-area .cancel-col td {
+    padding: 8px 0;
+    color: #737373;
+    background: #fff
+}
+
+.cancel-guide-area .cancel-col th:last-child,
+.cancel-guide-area .cancel-col td:last-child {
+    border-right: 1px solid #bcbcbc;
+}
+
+
+/* 버튼 */
+.rsv-btn-area {
+    margin: 0 auto;
+    margin-top: 5.3rem;
+    text-align: center
+}
+
+.rsv-btn-area .btn-rsv {
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 3px;
+    background: #398fe1
+}
+
+/* 진행 순서 안내 */
+.rsv-tit {
+    padding: 3.0rem 0 1.0rem;
+    font-size: 2.5rem;
+}
+
+.rsv-guide-area {
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.rsv-guide-area .rsv-guide-tit {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #232323
+}
+
+.rsv-guide-area .img {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(http://img.ocean2youresort.co.kr/reservation/rsv_list.png);
+    background-repeat: no-repeat;
+}
+
+.rsv-guide-area .colorImg .img {
+    background: url(http://img.ocean2youresort.co.kr/reservation/rsv_list_over.png);
+
+}
+
+.rsv-guide-area .colorImg .guide-tit {
+    font-weight: 500;
+    color: #7db5e9;
+}
+
+.rsv-guide-area li p {
+    font-size: 16px;
+    line-height: 20px;
+    word-break: keep-all;
+    color: #555
+}
+
+
+.rsv-guide-area .guide-tit span {
+    display: inline-block;
+    margin-right: 4px;
+    font-style: italic;
+    letter-spacing: 0
+}
+
+.rsv-guide-area .guide-txt {
+    font-weight: 500;
+}
+
+.rsv-guide-area .on .img {
+    background: url(http://img.ocean2youresort.co.kr/reservation/rsv_list_on.png);
+}
+
+.rsv-guide-area .on .guide-tit {
+    color: #314c74
+}
+
+.rsv-guide-area .rsv-order-list {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 7%;
+    border: 1px solid #b9b9b9;
+    background: #fff
+}
+
+.rsv-guide-area .rsv-order-list li {
+    float: left;
+    position: relative;
+    padding-left: 16px;
+    text-align: center;
+}
+
+.rsv-guide-area .rsv-order-list li:first-child {
+    padding-left: 0
+}
+
+.rsv-guide-area .rsv-order-list .nth-1 {
+    width: 185px;
+}
+
+.rsv-guide-area .rsv-order-list .nth-2 {
+    width: 181px;
+}
+
+.rsv-guide-area .rsv-order-list .nth-3 {
+    width: 194px;
+}
+
+.rsv-guide-area .rsv-order-list .nth-4 {
+    width: 214px;
+}
+
+.rsv-guide-area .rsv-order-list .nth-5 {
+    width: 240px;
+}
+
+.rsv-guide-area .rsv-order-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 100%;
+    left: 0;
+    background: url(http://img.ocean2youresort.co.kr/reservation/img_list_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.rsv-guide-area .rsv-order-list li:first-child:before {
+    content: none
+}
+
+.rsv-guide-area .rsv-order-list li .img {
+    margin-bottom: 3px;
+}
+
+.rsv-guide-area .rsv-order-list .nth-1 .img {
+    background-position: 0px 0;
+}
+
+.rsv-guide-area .rsv-order-list .nth-2 .img {
+    background-position: -70px 0;
+}
+
+.rsv-guide-area .rsv-order-list .nth-3 .img {
+    background-position: -140px 0;
+}
+
+.rsv-guide-area .rsv-order-list .nth-4 .img {
+    background-position: -210px 0;
+}
+
+.rsv-guide-area .rsv-order-list .nth-5 .img {
+    background-position: -280px 0;
+}
+
+.rsv-guide-area .rsv-order-list li p {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.rsv-guide-area .rsv-guide-list {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 55px;
+    padding: 0 30px;
+    border: 1px solid #b9b9b9;
+    border-top: 0;
+    background: #eef0f6
+}
+
+.rsv-guide-area .rsv-guide-list li {
+    position: relative;
+    box-sizing: border-box;
+    padding: 18px 25px 18px 0;
+    border-top: 1px solid #c6c7ca
+}
+
+.rsv-guide-area .rsv-guide-list li:first-child {
+    border-top: 0
+}
+
+.rsv-guide-area .rsv-guide-list li>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.rsv-guide-area .rsv-guide-list .img-box {
+    width: 175px;
+}
+
+
+.rsv-guide-area .rsv-guide-list .nth-1 .img {
+    background-position: -5px -55px;
+}
+
+.rsv-guide-area .rsv-guide-list .nth-2 .img {
+    background-position: -75px -55px;
+}
+
+.rsv-guide-area .rsv-guide-list .nth-3 .img {
+    background-position: -145px -55px;
+}
+
+.rsv-guide-area .rsv-guide-list .nth-4 .img {
+    background-position: -215px -55px;
+}
+
+.rsv-guide-area .rsv-guide-list .nth-5 .img {
+    background-position: -285px -55px;
+}
+
+.rsv-guide-area .rsv-guide-list .txt-box {
+    padding-left: 5px;
+}
+
+.rsv-guide-area .rsv-guide-list .guide-txt {
+    margin-top: 6px;
+}
+
+
+
+.rsv-comment {
+    padding: 40px 0 35px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+.rsv-comment p span {
+    color: #44A8FF;
+}
+
+.date-select {
+    height: 63px;
+    padding: 1.0rem;
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+
+.date-select .select-box {
+    width: 50%;
+    margin: auto;
+    z-index: 9;
+}
+
+.date-select .select-box select {
+    padding: 10px;
+    border: 1px solid #999999;
+    color: #373737;
+}
+
+.pass-box span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px;
+}
+
+.pass-box p:nth-of-type(1) span {
+    border-color: transparent #333 transparent transparent;
+    margin-right: 5px;
+}
+
+.pass-box p:nth-of-type(2) span {
+    border-color: transparent transparent transparent #333;
+    margin-left: 5px;
+
+}
+
+.pass-box p {
+    position: absolute;
+    width: 8.5rem;
+    padding: 13px 5px;
+    border: 1px solid #999999;
+    background-color: #fff;
+    color: #373737;
+    cursor: pointer;
+}
+
+.pass-box p:nth-of-type(2) {
+    right: 10px;
+
+}
+
+.date-select .select-box select:nth-of-type(1) {
+    width: 50%;
+}
+
+.date-select .select-box select:nth-of-type(2) {
+    width: 28%;
+}
+
+.date-select .select-box select:nth-of-type(3) {
+    width: 20%;
+}
+
+
+
+/* 달력 */
+.rsv-calendar {
+    overflow: hidden;
+    width: 100%;
+}
+
+.rsv-calendar h4 {
+    padding: 4.0rem 0 2.0rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.rsv-calendar>div {
+    width: 48%;
+}
+
+.rsv-calendar>div:first-child {
+    float: left;
+}
+
+.rsv-calendar>div:last-child {
+    float: right;
+}
+
+.rsv-calendar table,
+.rsv-calendar th,
+.rsv-calendar td {
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+    font-weight: normal;
+}
+
+.rsv-calendar th {
+    width: 14%;
+    padding: 12px 0;
+    background-color: #595959;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+
+.res-calender td {
+    vertical-align: top;
+}
+
+
+.rsv-calendar td {
+    height: 70px;
+    padding-top: 10px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    color: #373737;
+    text-align: center;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+.rsv-calendar td.off {
+    color: #888888;
+    background-color: #F9F9F9;
+    cursor: auto;
+}
+
+.rsv-calendar td span {
+    display: block;
+    width: 70%;
+    padding: 3px;
+    margin: 7px auto 0;
+    background-color: #44A8FF;
+    border: 1px solid #398FE1;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 100;
+    color: #fff;
+}
+
+// 달력 일요일
+.rsv-calendar tr td:first-child {
+    background-color: #FFEBF1;
+}
+
+// 달력 토요일
+.rsv-calendar tr td:last-child {
+    background-color: #E7F1FA;
+}
+
+
+
+//예약신청
+.app-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.app-list {
+    padding: 3.0rem 0 1.0rem;
+    font-size: 2.5rem;
+}
+
+.app-list h3 {
+    padding: 3.0rem 0 3.0rem;
+    font-size: 2.5rem;
+}
+
+.app-list>ul {
+    width: 100%;
+    border-top: 2px solid #373737;
+}
+
+.app-list>ul>li {
+    color: #686868;
+    border-bottom: 1px solid #d0d1d3;
+}
+
+.app-list>ul li ul {
+    overflow: hidden;
+}
+
+.app-list>ul li ul li {
+    float: left;
+    width: 50%;
+}
+
+.app-list>ul>li ul li:nth-of-type(2) .th {
+    border-left: 1px solid #d0d1d3;
+}
+
+.app-list>ul>li ul li select {
+    width: 200px;
+    padding: 10px 0;
+    border: 1px solid #999999;
+}
+
+.app-list ul li .th,
+.app-list ul li .td {
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 18px 0;
+    word-break: keep-all;
+    vertical-align: middle;
+}
+
+.app-list ul li .th {
+    width: 195px;
+    padding-left: 18px;
+    padding-right: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #383838;
+    border-right: 1px solid #d0d1d3;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.app-list ul li .td {
+    font-size: 17px;
+    line-height: 23px;
+    padding: 0 30px;
+}
+
+.app-list input {
+    border: 1px solid #999999;
+    width: 250px;
+    padding: 10px 15px;
+}
+
+.app-btn {
+    width: 300px;
+    margin: auto;
+}
+
+.app-btn a {
+    float: right;
+    display: block;
+    margin: 0 auto;
+    width: 48%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 3px;
+    background: #398fe1;
+    text-align: center;
+}
+
+.app-btn a:first-child {
+    float: left;
+    background-color: #fff;
+    border: 1px solid #999999;
+    color: #595959;
+}
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.app-wrap select::-ms-expand,
+.rsv-wrap select::-ms-expand {
+    display: none;
+}
+
+// selectBox 
+.app-wrap select,
+.rsv-wrap select {
+    -webkit-appearance: none;
+    /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    background: url("http://img.ocean2youresort.co.kr/common/img_down.png") no-repeat 90% 50% #fff;
+    /* 화살표 모양의 이미지 */
+
+    text-indent: 15px;
+}
+
+@media (max-width:990px) {
+    .rsv-wrap {
+        padding: 90px 20px 100px;
+    }
+
+    .rsv-guide-area .rsv-guide-list .img-box {
+        width: 100px;
+    }
+
+    .rsv-guide-area .rsv-order-list {
+        display: none;
+    }
+
+    .rsv-guide-area .rsv-guide-list {
+        border-top: 1px solid #b9b9b9;
+        margin-top: 4rem;
+    }
+
+    .app-wrap select,
+    .rsv-wrap select {
+        text-indent: 0;
+        background: url("http://img.ocean2youresort.co.kr/common/img_down.png") no-repeat 95% 50% #fff;
+    }
+
+    .date-select .select-box {
+        width: 52%;
+    }
+
+    .date-select .select-box select {
+        padding: 5px 20px 5px 2px;
+    }
+
+    .pass-box span {
+        display: none;
+    }
+
+    .pass-box p {
+        padding: 9px 5px;
+    }
+
+    .pass-box p:nth-of-type(2) {
+        text-align: right;
+    }
+
+    .rsv-calendar>div {
+        float: none !important;
+        width: 90%;
+        margin: auto;
+    }
+
+
+    .rsv-comment {
+        padding: 20px 0;
+        font-size: 13px;
+
+    }
+
+    //예약신청
+    .app-wrap {
+        width: 95%;
+        margin: auto;
+    }
+
+    .app-list {
+        padding-bottom: 35px;
+    }
+
+    .app-list>ul>li ul li select {
+        width: 80px;
+        text-indent: 5px;
+    }
+
+    .app-list ul li .th,
+    .app-list ul li .td {}
+
+    .app-list ul li .th {
+        padding: 18px 0;
+        width: 130px;
+    }
+
+    .app-list ul li .td {
+        padding: 0 10px;
+    }
+
+    .app-list input#datepicker1,
+    .app-list input#datepicker2 {
+        width: 40%;
+    }
+
+    .app-btn a {
+        font-size: 15px;
+    }
+
+    .rsv-col-box .rsv-col tbody td {
+        font-size: 15px;
+    }
+
+    .rsv-row-box .rsv-row.top li {
+        width: 100%;
+        float: none;
+    }
+
+    .rsv-row-box .rsv-row.top li:last-child {
+        width: 100%;
+
+    }
+
+    .rsv-row-box .rsv-row.top li:last-child .th {
+        border-left: 0;
+    }
+
+    .rsv-row-box .rsv-row li .th {
+        padding-left: 15px;
+        width: 120px;
+    }
+
+    .rsv-btn-area .btn-rsv {
+        font-size: 15px;
+    }
+
+    .rsv-tab li a {
+        font-size: 15px;
+    }
+
+}

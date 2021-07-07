@@ -1,0 +1,263 @@
+/*헤더부분*/
+.header-new {
+    img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.show-mobile {
+    display: none;
+}
+
+@media (max-width:990px) {
+    .show-mobile {
+        display: block;
+    }
+}
+
+.header-new {
+    z-index: 100;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    // min-width: 1280px;
+    // background-color: rgba(255,255,255,0.7);
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    border-bottom: 1px solid #fff;
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .logo-area {
+            .top-logo {
+                display: block;
+                padding-bottom: 10px;
+
+            }
+        }
+
+        .menu-area {
+            margin: 0 auto;
+
+            .nav-main-menu {
+                .main-menu-ul {
+                    display: flex;
+
+                    &>li {
+                        // margin: 0 2.0rem;
+                        margin: 0 20px;
+
+                        a {
+                            display: block;
+                            padding: 20px 0;
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .service-area {
+            height: 100%;
+            display: flex;
+
+            align-items: center;
+
+            .nav-member {
+                margin-right: 40px;
+
+                .member-ul {
+                    display: flex;
+
+                    li {
+                        a {
+                            display: block;
+                            padding: 10px;
+                            color: #fff;
+                            line-height: 1.1;
+                            font-size: 16px;
+                            border: 1px solid #fff;
+
+                            &:first-of-type {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .reserve-menu-area {
+        z-index: 500;
+        position: relative;
+        width: 135px;
+        height: 100%;
+
+        .nav-reserve {
+            // z-index: 100;
+            width: 100%;
+            // height: 1000px;
+            // height: auto;
+            background-color: #44a8ff;
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+
+            .btn-go-reserve {
+                position: relative;
+                display: flex;
+                background-color: #44a8ff;
+                min-height: 99px;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+
+                .icon-calendar {
+                    margin: 0 auto;
+                    width: 22px;
+                }
+
+                .p-name {
+                    margin-top: 13px;
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+
+            .reserve-ul {
+                position: relative;
+                display: none;
+                background-color: #24800f;
+                width: 100%;
+
+                &>li {
+                    background-color: #44a8ff;
+                    width: 100%;
+                    border-top: 1px solid #fff;
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        max-height: 100px;
+                        padding: 32px 0;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .over-on {
+                height: auto;
+            }
+
+            // &:hover>.reserve-ul{
+            //     display: block;
+            //     height: 400px;
+            //     // pointer-events: none;
+            // }
+        }
+
+        // .btn-over:hover + .reserve-ul{
+        //     height: auto;
+        // }
+
+    }
+}
+
+
+@media (max-width:990px) {
+    .header-new {
+
+        .header-container {
+            justify-content: space-between;
+
+            .logo-area {
+                .top-logo {}
+            }
+
+            .menu-area {
+                display: none;
+                position: fixed;
+                margin-right: 0;
+                top: 0;
+                right: 0;
+                height: 100%;
+                background-color: #19223f;
+                width: 26.0rem;
+
+                .nav-main-menu {
+                    .main-menu-ul {
+
+                        flex-direction: column;
+
+                        &>li {
+                            border-bottom: 1px solid #fff;
+                            margin: 0;
+
+                            a {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .service-area {
+                display: none;
+
+                .nav-member {
+
+                    .member-ul {
+
+                        li {
+                            a {
+
+                                &:first-of-type {}
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .reserve-menu-area {
+
+            .nav-reserve {
+
+                .btn-go-reserve {
+
+                    .icon-calendar {}
+
+                    .p-name {}
+                }
+
+                .reserve-ul {
+
+                    &>li {
+
+                        a {}
+                    }
+                }
+
+                .over-on {}
+
+            }
+
+
+
+
+        }
+    }
+}

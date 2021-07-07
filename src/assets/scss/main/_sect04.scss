@@ -1,0 +1,132 @@
+.wrap-main .sect-tourist {
+    margin-top: 8.0rem;
+
+    .sect-area {
+        .sect-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            // .sect-title-box{
+            //     display: flex;
+            //     justify-content: space-between;
+            //     align-items: flex-end;
+
+            //     .title{
+            //         color: #373737;
+            //         font-size: 3.6rem;
+            //         font-weight: 500;
+            //         line-height: 1.1;
+            //         letter-spacing: -1.8px;
+            //     }
+            //     .btn-go-page{
+
+            //     }
+            // }
+            .contents {
+                width: 100%;
+                margin-top: 3.6rem;
+
+                .tourist-ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &>li {
+
+                        position: relative;
+
+                        .img-box {
+                            position: relative;
+
+                            img {
+                                display: block;
+                            }
+                        }
+
+                        .item-title {
+                            position: absolute;
+                            top: 3.2rem;
+                            left: 3.0rem;
+                            color: #fff;
+                            font-size: 2.8rem;
+                            font-weight: 500;
+                            letter-spacing: -1.5px;
+                            line-height: 1;
+
+                        }
+
+                        .item-tag {
+                            position: absolute;
+                            bottom: 0;
+                            display: flex;
+                            align-items: center;
+                            height: 6.0rem;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            width: 100%;
+                            padding-left: 2.0rem;
+
+                            span {
+                                display: block;
+                                color: #fff;
+                                font-size: 1.8rem;
+                                font-weight: 300;
+                                line-height: 1.22;
+                                letter-spacing: -1px;
+                                margin-right: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 990px) {
+    .wrap-main .sect-tourist {
+        .sect-area {
+
+            .sect-container {
+
+                .sect-title-box {
+
+
+                    .title {}
+
+                    .btn-go-page {}
+                }
+
+                .contents {
+
+                    .tourist-ul {
+                        flex-wrap: wrap;
+
+                        // justify-content: center;
+                        &>li {
+                            width: 48%;
+
+                            &:nth-of-type(n+3) {
+                                margin-top: 2.4rem;
+                            }
+
+                            .img-box {
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .item-title {}
+
+                            .item-tag {
+
+                                span {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

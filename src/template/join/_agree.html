@@ -1,0 +1,122 @@
+<div class="agree-contents">
+    <div class="checkbox_group">
+        <div class="ckbox">
+            <input type="checkbox" id="check_all" checked="checked">
+            <label for="check_all">전체 약관에 동의합니다.</label>
+        </div>
+
+        <div id="accordian">
+            <!-- list -->
+            <ul class="agree-list">
+                <li>
+                    <div class="title">
+                        <p>오션튜유리조트 이용약관 동의 (필수)</p>
+                        <b class="ico_ar">▼</b>
+                    </div>
+                    <ul class="content">
+                        <li class="prbox">
+                            <pre>
+개인정보의 마케팅 활용에 관한 사항
+① 이용 항목 | 이름(실명), 생년월일, 성별, 휴대폰번호, 주소
+② 이용 목적 | 상품 및 서비스 소개, 호텔의 프로모션 및 이벤트에 대해 SMS, DM, 등을 통해 마케팅, 홍보의 목적으로 활용
+③ 보유ㆍ이용 기간 | 수집ㆍ이용 동의일로부터 회원 탈퇴 시까지
+※위 사항에 대한 동의를 거부할 수 있으나, 이에 대한 동의가 없을 경우 당사의 상품 및 서비스 소개를 받지 못할 수 있음을 알려드립니다.
+                            </pre>
+                        </li>
+                        <li class="ckbox">
+                            <input type="checkbox" id="check_1" class="normal" checked="checked">
+                            <label for="check_1">동의합니다.</label>
+                        </li>
+                    </ul>
+                    
+                </li>
+            
+                <li>
+                    <div class="title">
+                        <p>개인정보 수집 및 이용약관에 대한 안내 (필수)</p>
+                        <b class="ico_ar">▼</b>
+                    </div>
+                    <ul class="content">
+                        <li class="prbox">
+                            <pre>
+개인정보의 마케팅 활용에 관한 사항
+① 이용 항목 | 이름(실명), 생년월일, 성별, 휴대폰번호, 주소
+② 이용 목적 | 상품 및 서비스 소개, 호텔의 프로모션 및 이벤트에 대해 SMS, DM, 등을 통해 마케팅, 홍보의 목적으로 활용
+③ 보유ㆍ이용 기간 | 수집ㆍ이용 동의일로부터 회원 탈퇴 시까지
+※위 사항에 대한 동의를 거부할 수 있으나, 이에 대한 동의가 없을 경우 당사의 상품 및 서비스 소개를 받지 못할 수 있음을 알려드립니다.
+                            </pre>
+                        </li>
+                        <li class="ckbox">
+                            <input type="checkbox" id="check_2" class="normal" checked="checked">
+                            <label for="check_2">동의합니다.</label>
+                        </li>
+                    </ul>
+                    
+                </li>
+
+                <li>
+                    <div class="title">
+                        <p>이벤트 든 프로모션 알림(SMS) 수신</p>
+                        <b class="ico_ar">▼</b>
+                    </div>
+                    <ul class="content">
+                        <li class="prbox">
+                            <pre>
+개인정보의 마케팅 활용에 관한 사항
+① 이용 항목 | 이름(실명), 생년월일, 성별, 휴대폰번호, 주소
+② 이용 목적 | 상품 및 서비스 소개, 호텔의 프로모션 및 이벤트에 대해 SMS, DM, 등을 통해 마케팅, 홍보의 목적으로 활용
+③ 보유ㆍ이용 기간 | 수집ㆍ이용 동의일로부터 회원 탈퇴 시까지
+※위 사항에 대한 동의를 거부할 수 있으나, 이에 대한 동의가 없을 경우 당사의 상품 및 서비스 소개를 받지 못할 수 있음을 알려드립니다.
+                            </pre>
+                        </li>
+                        <li class="ckbox">
+                            <input type="checkbox" id="check_3" class="normal" checked="checked">
+                            <label for="check_3">동의합니다.</label>
+                        </li>
+                    </ul>
+                </li>
+                <!-- ////list -->
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script>
+// 체크박스 전체 선택
+$(".checkbox_group").on("click", "#check_all", function () {
+    $(this).parents(".checkbox_group").find('input').prop("checked", $(this).is(":checked"));
+});
+
+// 체크박스 개별 선택
+$(".checkbox_group").on("click", ".normal", function() {
+    var is_checked = true;
+
+    $(".checkbox_group .normal").each(function(){
+        is_checked = is_checked && $(this).is(":checked");
+    });
+
+    $("#check_all").prop("checked", is_checked);
+});
+</script>
+<!-- 아코디언 스크립트 -->
+<script>                           
+    $(function(){
+        $("#accordian .title").click(function(){
+            $("#accordian ul ul").slideUp();
+            $('.ico_ar').css('transform','none');
+            if(!$(this).next().is(":visible"))
+            {
+                $(this).next().slideDown();
+                $(this).find('.ico_ar:eq(0)').css('transform','rotate(180deg)');
+            }
+        })
+    })
+</script>
+<!-- //아코디언 스크립트 -->
+
+
+
+
+
+

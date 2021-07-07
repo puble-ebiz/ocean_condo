@@ -1,0 +1,152 @@
+@charset 'utf-8';
+
+.fishing-wrap .fishing-sec {padding-bottom: 50px;}
+.fishing-wrap .company-area select, .fishing-wrap .company-area input {border-radius: 1px;}
+.fishing-wrap .company-area select {cursor: pointer; background: url(http://img.ocean2you.co.kr/renew/fishing/i_dArr.png) no-repeat center right 13px;}
+
+.fishing-wrap section[class*=fishing-] h3, .fishing-wrap section[class*=fishing-] .p0 {text-align: center;}
+.fishing-wrap section[class*=fishing-] h3 {margin-top: 65px; font-size: 35px; font-weight: 600; letter-spacing: -2.5px; color: #44a8ff;}
+.fishing-wrap section[class*=fishing-] .p0 {margin-top: 30px; font-size: 18px; letter-spacing: -1.5px; color: #373737;}
+.fishing-wrap section[class*=fishing-] .mg- {display: block; height: 1px; width: 60px; margin: 14px auto 30px; background: #44a8ff;}
+.fishing-wrap h4 {margin-top: 30px; font-size: 22px; font-weight: bold; line-height: 30px; letter-spacing: -1px; text-align: center; color: #5d5d5d;}
+
+/* 항구 및 정보 */
+.fishing-wrap .harbor-area {position: relative; width: 100%; margin: 0 auto; padding: 0 17px; text-align: center;}
+.fishing-wrap .harbor-area .hb-menu {position: relative; display: inline-block; margin: 0 auto; text-align: center;}
+.fishing-wrap .harbor-area .hb-menu .menu-txt {display: none;}
+.fishing-wrap .harbor-area .hb-menu .hb-menu-list {position: relative;}
+.fishing-wrap .harbor-area .hb-menu .hb-menu-list li {position: relative; display: inline-block; float: left;}
+.fishing-wrap .harbor-area .hb-menu .hb-menu-list li:before {content: ''; position: absolute; display: block; width: 2px; height: 17px; left: 0; top: 50%; margin-top: -6px; background: #c8c8c8}
+.fishing-wrap .harbor-area .hb-menu .hb-menu-list li:first-child:before {display: none;}
+.fishing-wrap .harbor-area .hb-menu .hb-menu-list li a {position: relative; display: block; padding: 0 11px 0 14px; font-size: 18px; line-height: 24px; letter-spacing: -0.5px; color: #5d5d5d;}
+.fishing-wrap .harbor-area .hb-menu .hb-menu-list .on {}
+.fishing-wrap .harbor-area .hb-menu .hb-menu-list li a:hover, .fishing-wrap .harbor-area .hb-menu .hb-menu-list li.on a {color: #0082e7;}
+
+.fishing-wrap .harbor-area .hb-th {position: relative; height: 35px; vertical-align: middle; line-height: 35px; background: #f6f6f6;}
+.fishing-wrap .harbor-area .hb-td {position: relative; vertical-align: middle; line-height: 35px; border-top: 1px solid #c9c9c9; background: #fff;}
+
+.fishing-wrap .harbor-area .hb-table-box {position: relative;}
+.fishing-wrap .harbor-area .hb-table-box .hb-table {position: relative;}
+.fishing-wrap .harbor-area .hb-table-box .hb-table col[class*=t-wid-] {width: 33.3%;}
+.fishing-wrap .harbor-area .hb-table-box .hb-table thead {}
+.fishing-wrap .harbor-area .hb-table-box .hb-table tbody {}
+.fishing-wrap .harbor-area .hb-table-box .hb-table tr {}
+.fishing-wrap .harbor-area .hb-table-box .hb-table th, .fishing-wrap .harbor-area .hb-table-box .hb-table td {height: 35px; font-size: 16px; vertical-align: middle; color: #000;}
+.fishing-wrap .harbor-area .hb-table-box .hb-table th {letter-spacing: -1px; border-left: 1px solid #c9c9c9; background: #f6f6f6;}
+.fishing-wrap .harbor-area .hb-table-box .hb-table td {letter-spacing: -0.5px; border: 1px solid #c9c9c9; border-right: 0; border-bottom: 0;  background: #fff;}
+.fishing-wrap .harbor-area .hb-table-box .hb-table.type-2 col[class*=t-wid-] {width: 50%;} /* 풍향 숨김 */
+.fishing-wrap .harbor-area .hb-table-box .hb-table.type-2 thead th:first-child, .fishing-wrap .harbor-area .hb-table-box .hb-table.type-2 tbody td:first-child {display: none}
+
+.fishing-wrap .harbor-area .hb-list-table {border-left: 1px solid #c9c9c9;}
+.fishing-wrap .harbor-area .hb-list-table li {height: 35px;}
+.fishing-wrap .harbor-area .hb-list-table .hb-th {border-top: 1px solid #c9c9c9;}
+.fishing-wrap .harbor-area .hb-list-table .hb-td {display: none;} 
+.fishing-wrap .harbor-area .hb-list-table li:first-child {border-top: 0}
+.fishing-wrap .harbor-area .type-2 .hb-list-table {border-left: 0;}
+.fishing-wrap .harbor-area .type-2 .hb-list-table .hb-td {display: block;}
+
+.fishing-wrap .harbor-area .hb-day-weather {margin: 24px auto 19px; border: 1px solid #c9c9c9;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box {position: relative; float: left; display: block; width: 28%;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box .hb-th {}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box .hb-th p {font-size: 16px; color: #0076c9;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box .hb-td {box-sizing: border-box; height: 70px; padding: 22px 0;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box .hb-td .hb-day {font-size: 20px; font-weight: bold; line-height: 24px; letter-spacing: -1px; color: #0083df;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box .hb-td a[class*=hb-weather-] {position: absolute; top:50%; margin-top: -5px;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box .hb-td .hb-weather-prev {left: 13px;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-day-box .hb-td .hb-weather-next {right: 13px;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-table-box {float: left; width: 72%;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-table-box .hb-table {}
+.fishing-wrap .harbor-area .hb-day-weather .hb-table-box .hb-table col[class*=t-wid-] {width: 17.6%;}
+.fishing-wrap .harbor-area .hb-day-weather .hb-table-box .hb-table col.t-wid-1, .fishing-wrap .harbor-area .hb-day-weather .hb-table-box .hb-table col.t-wid-2 {width: 12.6%;}
+
+.fishing-wrap .harbor-area .hb-detail-weather {display: block; border: 1px solid #c9c9c9;}
+.fishing-wrap .harbor-area .hb-detail-weather .hb-table-box {position: relative; float: left; display: block; width: 29.2%;}
+.fishing-wrap .harbor-area .hb-detail-weather .hb-table-box.type-2 {width: 12.4%;}
+.fishing-wrap .harbor-area .hb-detail-weather .hb-table-box .hb-list-table {display: none;}
+.fishing-wrap .harbor-area .hb-detail-weather .hb-table-box.type-2 .hb-list-table {display: block;}
+.fishing-wrap .harbor-area .hb-detail-weather .hb-table-tit {position: relative; height: 35px; vertical-align: middle; font-size: 16px; line-height: 35px; border-left: 1px solid #c9c9c9; background: #f6f6f6;}
+.fishing-wrap .harbor-area .hb-detail-weather .hb-table-box .hb-table col[class*=t-wid-] {width: 33.3%;}
+.fishing-wrap .harbor-area .hb-detail-weather .hb-table {border-top: 1px solid #c9c9c9;}
+
+
+/* 낚시업체 및 정보 */
+.fishing-wrap .company-area {position: relative; width: 100%; margin: 0 auto; text-align: center;}
+.fishing-wrap .company-area .cp-input-area {position: relative; display: block; width: 700px; margin: 25px auto 30px; text-align: center;}
+.fishing-wrap .company-area select[class*=cp-sel-], .fishing-wrap .company-area .cp-ip-box .cp-ip, .fishing-wrap .company-area .btn-cp-search {box-sizing: border-box; height: 36px; font-size: 16px; line-height: 36px; vertical-align: middle; letter-spacing: -0.5px;}
+.fishing-wrap .company-area select[class*=cp-sel-], .fishing-wrap .company-area .cp-ip-box, .fishing-wrap .company-area .btn-cp-search {display: inline-block; float: left;}
+.fishing-wrap .company-area select[class*=cp-sel-] {/*width:132px;*/ width: 18.8%; margin: 0 7px; padding:0 25px 0 14px; color: #5d5d5d;}
+.fishing-wrap .company-area select.cp-sel-1 {margin-left: 0;}
+.fishing-wrap .company-area .cp-ip-box {width: 43%;}
+.fishing-wrap .company-area .cp-ip-box .cp-ip {display: inline-block; /*width:292px;*/ width: 100%; margin: 0 7px; padding:0 35px; text-align: left; color: #8f8e8e; background: #f5f5f5;}
+.fishing-wrap .company-area .cp-ip-box .cp-ip::placeholder {color: #8f8e8e}
+.fishing-wrap .company-area .btn-cp-search {float: right; width: 95px; margin-right: 0; text-align: center; border: 1px solid #c4c2c3; border-radius: 1px; background: #afafaf;}
+.fishing-wrap .company-area .btn-cp-search span {box-sizing: border-box; display: inline-block; padding-left: 19px; font-size: 16px; line-height: 36px; color: #fff; background: url(http://img.ocean2you.co.kr/renew/fishing/btn_search.png) no-repeat center left;}
+
+.fishing-wrap .company-area .cp-list-box {}
+.fishing-wrap .company-area .cp-list-box .cp-list {padding-left: 17px;}
+.fishing-wrap .company-area .cp-list-box .cp-list li {float: left; box-sizing: border-box; width:25%; /*width:33.3%;*/ margin-bottom: 27px;}
+.fishing-wrap .company-area .cp-list-box .cp-list li a {display: block; box-sizing: border-box; margin-right: 17px; padding-bottom: 15px; border: 1px solid #c9c9c9; border-radius: 1px;}
+.fishing-wrap .company-area .cp-list-box .cp-list li a .img {border-bottom: 1px solid #c9c9c9;}
+.fishing-wrap .company-area .cp-list-box .cp-list li a .img img {width: 100%;}
+/* 팝업과 같은 css 사용 */
+.cp-list-box p {position: relative; padding: 0 14px; font-size: 16px; line-height: 24px; letter-spacing: -0.5px; color: #000;}
+.cp-list-box .cp-map {margin-top: 15px;}
+.cp-list-box .cp-map:before {content: ''; display: inline-block; width: 14px; height:24px; margin-right: 6px; vertical-align: middle; background: url(http://img.ocean2you.co.kr/renew/fishing/ico_map.png) no-repeat center left;}
+.cp-list-box .cp-tit {font-size: 20px; font-weight: bold; color: #0083df;}
+.cp-list-box .cp-txt {overflow: hidden; margin-top: 2px; font-size: 14px; word-wrap: normal; white-space: nowrap; text-overflow: ellipsis;}
+.cp-list-box .cp-call {}
+.cp-list-box .cp-call:before {content: '☎'; display: inline-block; margin-right: 5px;}
+.fishing-wrap .company-area .page-box {position: relative; text-align: center;}
+.fishing-wrap .company-area .pagenation {position: relative; text-align: center; font-size: 0;}
+.fishing-wrap .company-area .pagenation a {display: inline-block; font-size: 14px; width: 34px; height: 34px; font-family: sans-serif; font-weight: 600; vertical-align: middle; line-height: 2.3em; color: #d2d2d2; border: 1px solid #d2d2d2; border-left: 0;}
+.fishing-wrap .company-area .pagenation a:nth-child(2) {border-left: 1px solid #d2d2d2;}
+.fishing-wrap .company-area .pagenation a[class*="prev"], .fishing-wrap .company-area .pagenation a[class*="next"] {font-size: 12px; line-height: 2.5em; letter-spacing: -2px;}
+.fishing-wrap .company-area .pagenation a:hover, .fishing-wrap .company-area .pagenation a.on {background: #d2d2d2; color: #fff;}
+.fishing-wrap .company-area .pagenation a.prev, .fishing-wrap .company-area .pagenation a.next {background: #d2d2d2; color: #595959;}
+.fishing-wrap .company-area .pagenation a.prev {text-indent: -4px; margin-right: 10px;}
+.fishing-wrap .company-area .pagenation a.next {text-indent: 1px; margin-left: 10px;}
+
+.fishing-wrap .company-area .p1 {margin: 33px auto 20px; font-size: 16px; line-height: 33px; color: #000;}
+
+/* 팝업 */
+.fishing-pop-bg {position: fixed;}
+.fishing-pop-bg .fishing-pop {display: none; position: relative; box-sizing: border-box; width: 865px; margin: 0 auto; margin-top: 14%; background: #fff;}
+.fishing-pop-wrap {position: relative; box-sizing: border-box; width: 100%; margin: 0 auto; padding: 45px 45px;}
+.fishing-pop-wrap .btn-close {position: absolute; top: 35px; right: 44px;}
+.fishing-pop-wrap .btn-close span {position: relative; display: inline-block; font-size: 17px; line-height: 17px; vertical-align: middle; letter-spacing: -1px; color: #6b6b6b;}
+.fishing-pop-wrap .btn-close span:before {content:''; display: inline-block; width: 17px; height: 17px; padding-right: 6px; vertical-align: middle; background: url(http://img.ocean2you.co.kr/renew/i_x2.png) no-repeat center center;}
+
+.fishing-pop-wrap .fishing-pop-con {position: relative;}
+.fishing-pop-wrap .fs-top-area {}
+.fishing-pop-wrap .fs-top-area .fs-txt-box, .fishing-pop-wrap .fs-top-area .fs-detail-area {float: right; width: 44.2%; padding-left: 19px;}
+.fishing-pop-wrap .fs-top-area .fs-txt-box {margin-top: -6px;}
+.fishing-pop-wrap .fs-top-area .fs-txt-box .cp-list-box {}
+.fishing-pop-wrap .fs-top-area .cp-list-box p {padding: 0; font-size: 16px;}
+.fishing-pop-wrap .fs-top-area .cp-list-box .cp-tit {font-size: 26px; line-height: 30px;}
+.fishing-pop-wrap .fs-top-area .cp-list-box .cp-map {margin-top: 6px;}
+.fishing-pop-wrap .fs-top-area .cp-list-box .cp-txt {margin-top: 0;}
+
+.fishing-pop-wrap .fs-top-area .fs-slide-area {float: left; width: 55.8%; border: 1px solid #c9c9c9;}
+.fishing-pop-wrap .fs-top-area .fs-slide-area .fs-slide-list img {width: 100%; height: 100%;}
+.fishing-pop-wrap .fs-top-area .fs-slide-area .bx-controls-direction {}
+.fishing-pop-wrap .fs-top-area .fs-slide-area .bx-controls-direction a {width: 28px; height: 28px;}
+.fishing-pop-wrap .fs-top-area .fs-slide-area .bx-controls-direction .bx-prev {left: 12px;}
+.fishing-pop-wrap .fs-top-area .fs-slide-area .bx-controls-direction .bx-next {right: 12px;}
+
+.fishing-pop-wrap .fs-top-area .fs-detail-area {margin-top: 10px;}
+.fishing-pop-wrap .fs-top-area .fs-detail-area .fs-detail-box {width: 100%; border: 1px solid #c9c9c9;}
+.fishing-pop-wrap .fs-top-area .fs-detail-box .fs-detail-dl {position: relative; box-sizing: border-box; display: table; width: 100%; border-top: 1px solid #c9c9c9}
+.fishing-pop-wrap .fs-top-area .fs-detail-box .fs-detail-dl:first-child {border-top: 0;}
+.fishing-pop-wrap .fs-top-area .fs-detail-box .fs-detail-dl dt, .fishing-pop-wrap .fs-top-area .fs-detail-box .fs-detail-dl dd {display: table-cell; padding: 5px 0; font-size: 16px; line-height: 24px; letter-spacing: -1px; vertical-align: middle; color: #000;}
+.fishing-pop-wrap .fs-top-area .fs-detail-box .fs-detail-dl dt {width: 80px; text-align: center; border-right: 1px solid #c9c9c9; background: #f6f6f6;}
+.fishing-pop-wrap .fs-top-area .fs-detail-box .fs-detail-dl dd {padding-left: 10px;}
+
+.fishing-pop-wrap .fs-view-area {position: relative; width: 100%; margin-top: 22px;}
+.fishing-pop-wrap .fs-view-area .fs-view-box {border: 1px solid #c9c9c9; border-top: 0;}
+.fishing-pop-wrap .fs-view-area .fs-view-box:first-child {border-top: 1px solid #c9c9c9;}
+.fishing-pop-wrap .fs-view-area .fs-view-box .fs-view-tit {position: relative; padding: 6px 0; font-size: 16px; line-height: 24px; text-align: center; color: #000; border-bottom: 1px solid #c9c9c9; background: #f6f6f6}
+.fishing-pop-wrap .fs-view-area .fs-view-box .fs-view-txt-box {position: relative; word-break: keep-all; color: #5f5e5e;}
+.fishing-pop-wrap .fs-view-area .fs-view-box .fs-view-txt-box p {padding: 22px 30px; font-size: 16px; line-height: 25px;}
+.fishing-pop-wrap .fs-view-area .fs-view-box .fs-view-txt-box .fs-view-map {position: relative; display: block; width: 100%; height: 310px; background: url(http://img.ocean2you.co.kr/renew/fishing/img_pop_map.jpg) no-repeat center center; background-size: cover;}
+
+.fishing-pop-wrap .p1 {margin: 22px auto 0; font-size: 16px; line-height: 33px; text-align: center; color: #000;}

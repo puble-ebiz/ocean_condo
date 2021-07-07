@@ -1,0 +1,93 @@
+@charset 'utf-8';
+
+.vid-wrap {background: url(http://img.ocean2you.co.kr/renew/package/pkg_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 400px;}
+
+.title {position: relative;}
+.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+.title .tit-box h2 {font-size: 27px; letter-spacing:-2.5px}
+.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+/* 201800614 tab수정 */
+.title .facil-tab {position: relative; width: 1180px; margin: 47px auto 0; left: 1.5px;}
+/*.title .facil-tab > li {position: relative; float: left; top: 0; width: 16.666%; border: 2px solid transparent; border-left: 1px solid #a8a6a4; margin-left: -1px; padding-left: 1px;}*/
+.title .facil-tab > li {position: relative; float: left; top: 0; width: 20%; border: 2px solid transparent; border-left: 1px solid #a8a6a4; margin-left: -1px; padding-left: 1px;}
+.title .facil-tab > li.nth-1 {border-left: none; margin-left: 0;}
+/*.title .facil-tab > li.on {border: 2px solid #fff; z-index: 1; padding-left: 0;}
+.title .facil-tab > li.nth-1.on {padding-right: 1px;}*/
+.title .facil-tab > li a {display: block; box-sizing: border-box; width: 100%; height: 46px; font-size: 16px;  letter-spacing: -1px; font-weight: 400; color: #fff;}
+.title .facil-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+.title .facil-tab > li a span {display:block}
+
+.bx-wrapper, .bx-wrapper, .facil-wrap .container {width: 1180px;}
+#facil-box > section, #facil-box > section div.d-area-1 + section {word-break: keep-all; text-align: center; opacity: 0; visibility: hidden; height: 0; overflow: hidden;}
+#facil-box > section.on, #facil-box > section div.d-area-1.on + section {opacity: 1; visibility: visible;  height: auto; overflow: visible;}
+.facil-wrap [class*=facil-] h3 {font-size: 38px; color: #44a8ff;}
+.facil-wrap [class*=facil-] .p0 {margin-top: 15px; font-size: 18px; color: #373737;}
+.facil-wrap [class*=facil-] .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 50px; background: #44a8ff;}
+.facil-wrap [class*=facil-] .fc-list li:first-child h4 {margin-top: 50px;}
+.facil-wrap [class*=facil-] h4 {font-size: 22px; margin: 80px auto 30px; color: #595959; font-weight: 600;}
+.facil-wrap .bxBox {position: relative;}
+
+.facil-wrap .fc-list .txt-box {position: absolute; left: 0; top: 140px; width: 100%; color: #fff;}
+.facil-wrap .fc-list .txt-box .p1 {font-size: 30px;}
+.facil-wrap .fc-list .txt-box .p2 {font-size: 18px; margin-top: 16px; line-height: 1.6;}
+.facil-wrap .fc-list .txt-box .more-a > * {vertical-align: middle;}
+.facil-wrap .fc-list .txt-box .more-a {width: 142px; height: 35px; font-size: 17px; display: inline-block; margin-top: 20px; padding: 3px 10px 6px; border: 1px solid #44a8ff;}
+.facil-wrap .fc-list .txt-box .more-a .gt {display: inline; position: relative; top: 2px; width: 8px; margin-left: 2px; left: 10px;}
+.facil-wrap .facil-1 .fc-list li.nth-2 .bxBox .txt-box
+, .facil-wrap .facil-1 .fc-list li.nth-4 .bxBox .txt-box {top: 155px;}
+
+.facil-wrap .facil-1 .flt-box {position: relative; margin-top: 60px;}
+.facil-wrap .facil-1 .flt-box > div {position: relative; float: left; width: 50%;}
+.facil-wrap .facil-1 .flt-box > div img {}
+.facil-wrap .facil-1 .flt-box > .d1, .facil-wrap .facil-1 .flt-box > .d3 {text-align: left;}
+.facil-wrap .facil-1 .flt-box > .d2, .facil-wrap .facil-1 .flt-box > .d4 {text-align: right;}
+.facil-wrap .facil-1 .flt-box > .d3, .facil-wrap .facil-1 .flt-box > .d4 {margin-top:20px;}
+
+.facil-wrap .facil-1 .flt-box > div .txt-box {text-align: center; top: 35%;}
+.facil-wrap .facil-1 .flt-box .d1 .txt-box, .facil-wrap .facil-1 .flt-box .d3 .txt-box {padding-right: 10px;}
+.facil-wrap .facil-1 .flt-box .d2 .txt-box, .facil-wrap .facil-1 .flt-box .d4 .txt-box {padding-left: 10px;}
+
+.facil-wrap .facil-2 .fc-list > li.nth-3 .bxBox.nth-2 {margin-top: 85px;}
+.facil-wrap .facil-2 .fc-list .txt-box {top: 130px;}
+
+
+#facil-box > section div[class*=d-area-] {position: relative; margin-top: 90px;}
+#facil-box > section div.d-area-1 {margin-top: 100px;}
+#facil-box > section div.d-area-1.on + section {margin-top: 60px;}
+#facil-box > section div[class*=d-area-] a {position: relative; display: block; height: 77px; border: 1px solid #b4b4b4; background: #eee; color: #44a8ff; border-radius: 6px; font-size: 24px;}
+#facil-box > section div[class*=d-area-] a:before {content: ""; display: inline-block; height: 106%; vertical-align: middle;}
+#facil-box > section div[class*=d-area-].on a {background: #44a8ff; border-color: #44a8ff; color: #fff;}
+#facil-box > section .d-area-1 a:after, #facil-box > section .d-area-2 a:after {position: relative; left: 9px; top: -3px; content: "▶"; font-size: 16px;}
+#facil-box > section .d-area-1.on a:after {color: #fff;}
+
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {position: absolute; width: 100%; bottom: -30px; display: block; text-align: center;}
+.bx-wrapper .bx-pager.bx-default-pager a {background: #fff; width: 11px; height: 11px; margin: 0 2.5px;
+	border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; border: 1px solid #8d8d8b;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {background: #44a8ff; border-color: #44a8ff;}
+
+
+/* 190304 다이닝 및 연회&부대시설 리스트 디자인 리뉴 */
+.facil-wrap {padding: 60px 0 80px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.facil-wrap .banner-box {margin-bottom: 30px;}
+.facil-wrap .facil-list {position: relative; width: 100%;}
+.facil-wrap .facil-list > li {position: relative; box-sizing: border-box; margin-top: 35px; border: 1px solid #cecece;}
+.facil-wrap .facil-list > li:first-child {margin-top: 0;}
+.facil-wrap .facil-list .fc-img, .facil-wrap .facil-list .fc-box {position: relative; float: left; box-sizing: border-box; width: 50%; text-align: left;}
+.facil-wrap .facil-list .fc-img {}
+.facil-wrap .facil-list .fc-img img {width: 100%;}
+.facil-wrap .facil-list .fc-box {padding: 45px 20px 20px 40px;}
+.facil-wrap .facil-list .fc-box p {letter-spacing: -0.5px; color: #2b2b2b;}
+.facil-wrap .facil-list .fc-box .p-0 {font-size: 35px; font-weight: bold; line-height: 45px;}
+.facil-wrap .facil-list .fc-box .p-1 {margin-top: 8px; font-size: 18px; line-height: 25px;}
+.facil-wrap .facil-list .fc-box .p-2 {margin-top: 20px; font-size: 16px; font-weight: 300; line-height: 24px; color: #666;}
+.facil-wrap .facil-list .fc-box .p-list {margin-top: 33px;}
+.facil-wrap .facil-list .fc-box .p-list li {position: relative; padding-left: 8px; font-size: 16px; font-weight: 300; line-height: 26px; color: #666;} 
+.facil-wrap .facil-list .fc-box .p-list li:before {content: ''; display: block; position: absolute; width: 3px; height: 3px; left: 0; top: 12px; border-radius: 50%; background: #666;}
+.facil-wrap .facil-list .fc-box .p-list li em {padding-right: 5px; font-weight: 500;}
+.facil-wrap .facil-list .fc-box .p-list li span {}
+.facil-wrap .facil-list .fc-box .p-mark {font-size: 16px; font-weight: 300; line-height: 26px; color: #666;}
+.facil-wrap .facil-list .btn-view {position: absolute; display: inline-block; bottom: 20px; right: 20px; text-align: center; border: 1px solid #666;}
+.facil-wrap .facil-list .btn-view span {position: relative; display: inline-block; height: 40px; padding: 0 37px 0 23px; font-size: 15px; line-height: 40px;}
+.facil-wrap .facil-list .btn-view span:before {content: '▶'; position: absolute; display: block; color: #5c5c5c; right: 12px;}

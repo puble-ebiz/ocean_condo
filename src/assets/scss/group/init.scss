@@ -1,0 +1,2751 @@
+@charset 'utf-8';
+/* 20180320_접수완료 레이어 팝업_다솜 */
+/*.bx-wrapper, .bx-wrapper, .group-wrap .container {width: 360px;}*/
+/*.banq-sec .mBanqTb .hall-2 .textCenter {text-align: center;}*/
+/*.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+/* 190103 노래,합주 관련 추가 */
+/*.etc-sec .d-box-2.d-cm .p-0:before {content: "조금 더 "; display: inline-block;}*/
+/* 시설안내 표 */
+/*일정 안내*/
+/*단체예약 Q&A*/
+/* 20180320_접수완료 레이어 팝업_다솜 */
+/* 20180404_단체문의 텍스트 추가_다솜 */
+/*단체예약 Q&A*/
+/* 20180404_단체문의 텍스트 추가_다솜 */
+/*
+	.rBn-box {margin-left: 392px;}
+	.rBn-box > a {width: 110px;}
+*/
+/*.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+/* 190103 노래,합주 관련 추가 */
+/* 시설안내 표 */
+/*일정 안내*/
+/*.facil-sec .ul-list .li-item figure > .s-bg {background: #000; opacity: 0.42; filter: alpha(opacity=42);}*/
+/* 190103 노래,합주 관련 추가 */
+/* 시설안내 표 */
+/*일정 안내*/
+/*단체문의 Q&A*/
+#wrap {
+	* {
+		box-sizing: border-box;
+	}
+}
+a {
+	color: #2b2b2b;
+}
+.vid-wrap {
+	background: url(http://img.ocean2you.co.kr/renew/intro/intro_titBg.jpg) no-repeat top center;
+	padding-top: 98px;
+	position: relative;
+	width: 100%;
+	height: 320px;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.group-popup {
+	z-index: 9999;
+	display: none;
+	position: fixed;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	.popup-wrap {
+		position: relative;
+		max-width: 600px;
+		margin: 0 auto;
+		top: 50%;
+		margin-top: -200px;
+	}
+	.popup-container {
+		position: relative;
+		box-sizing: border-box;
+		padding: 25px 25px 35px;
+		text-align: center;
+		border: 1px solid #c5c5c5;
+		background: #fff;
+		.fc-blue {
+			color: #2876e6;
+		}
+		.popup-cust {
+			padding: 5px 0 14px;
+			border-bottom: 1px solid #c5c5c5;
+			p {
+				font-size: 24px;
+				line-height: 35px;
+				letter-spacing: -1px;
+				color: #131313;
+			}
+			.f-bd {
+				span {
+					font-size: 24px;
+					line-height: 35px;
+					font-weight: bold;
+				}
+			}
+			.popup-txt {
+				font-size: 20px;
+			}
+			.popup-txt.pd-tb {
+				padding: 6px 0;
+			}
+		}
+		.info-txt {
+			padding: 15px 0 19px;
+			font-size: 16px;
+			line-height: 23px;
+			color: #707070;
+		}
+		.btn-close {
+			display: inline-block;
+			min-width: 200px;
+			height: 50px;
+			font-size: 18px;
+			line-height: 50px;
+			font-weight: bold;
+			color: #fff;
+			background: #f75c07;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.xs-block {
+		display: block;
+	}
+	.xs-hidden {
+		display: none;
+	}
+	.vid-wrap {
+		height: auto;
+	}
+	.title {
+		position: relative;
+		.tit-box {
+			text-align: center;
+			padding-top: 16px;
+			padding-bottom: 22px;
+			color: #fff;
+			h2 {
+				font-size: 18px;
+			}
+			.mg- {
+				display: block;
+				height: 1px;
+				width: 30px;
+				margin: 18px auto 20px;
+				background: #fff;
+			}
+			.titTxt {
+				img {
+					width: 290px;
+				}
+			}
+			.p0 {
+				display: none;
+			}
+		}
+	}
+	.group-wrap {
+		padding: 34px 0 54px;
+	}
+	hr {
+		border: 0;
+		border-top: 1px solid #dedede;
+		margin: 25px auto;
+	}
+	.intro-sec {
+		position: relative;
+		width: 100%;
+		.d-row {
+			position: relative;
+		}
+		.d-map {
+			width: 97%;
+			margin: 10px auto 0;
+			>img {
+				width: 100%;
+			}
+		}
+		p {
+			width: 99%;
+			margin: 0 auto;
+			text-align: center;
+			word-break: keep-all;
+		}
+		.p-1 {
+			font-size: 14px;
+			font-weight: 700;
+			font-family: "Nanum Gothic", sans-serif;
+			line-height: 1.3;
+			letter-spacing: -0.5px;
+			strong {
+				font-size: 16px;
+				color: #242424;
+				margin-bottom: 4px;
+				display: inline-block;
+			}
+		}
+		.p-2 {
+			font-size: 12.5px;
+			color: #595959;
+			line-height: 1.5;
+			margin-top: 8px;
+			letter-spacing: -1px;
+		}
+		.p-2.type-2 {
+			margin-top: 0;
+			color: #0068c3;
+		}
+		.area-btn {
+			margin-top: 16px;
+			>a {
+				position: relative;
+				display: inline-block;
+				width: 94%;
+				height: 44px;
+				background: #319af6;
+				color: #fff;
+				font-size: 15px;
+				text-align: center;
+				&:after {
+					content: "";
+					display: inline-block;
+					height: 105%;
+					vertical-align: middle;
+				}
+				.ic-rArrow {
+					&:after {
+						border-color: #fff;
+						width: 7px;
+						height: 7px;
+						top: -1px;
+						left: 6px;
+					}
+				}
+			}
+		}
+		.sun {
+			width: 94%;
+			margin: 10px auto;
+		}
+		.p-3 {
+			width: 84%;
+			margin: 0 auto;
+			position: relative;
+			color: #c41919;
+			font-size: 12.5px;
+			line-height: 1.5;
+		}
+	}
+	.banq-sec {
+		.mBanqTb {
+			table {
+				background: #fff;
+				width: 98%;
+				margin: 10px auto 0;
+			}
+			[class*=hall-] {
+				th {
+					border: 1px solid #d6d6d6;
+					font-size: 11.5px;
+					color: #5c5c5c;
+					line-height: 1.4;
+					letter-spacing: -1px;
+					vertical-align: middle;
+				}
+				td {
+					border: 1px solid #d6d6d6;
+					font-size: 11.5px;
+					color: #5c5c5c;
+					line-height: 1.4;
+					letter-spacing: -1px;
+					vertical-align: middle;
+				}
+			}
+			th {
+				background: #f3f0f0;
+				padding: 8px 0;
+			}
+			td {
+				padding: 5px;
+			}
+			.hall-1 {
+				col {
+					&:first-child {
+						width: 27%;
+					}
+					&:nth-child(2) {
+						width: 27%;
+					}
+					&:nth-child(3) {
+						width: 18%;
+					}
+					&:nth-child(4) {
+						width: 20%;
+					}
+				}
+				td {
+					text-align: center;
+				}
+			}
+			.hall-2 {
+				col {
+					width: 25%;
+				}
+				td {
+					padding-left: 5px;
+				}
+				.numType_01 {
+					width: 30px;
+				}
+				.numType_02 {
+					width: 26px;
+				}
+				.numType_03 {
+					width: 26px;
+				}
+				.numType_04 {
+					width: 22px;
+					margin: 0 3px;
+				}
+				[class*=numType_] {
+					+ {
+						span {
+							position: relative;
+							top: 2px;
+						}
+					}
+				}
+			}
+			.hall-3 {
+				col {
+					&:nth-child(1) {
+						width: 25%;
+					}
+					&:nth-child(2) {
+						width: 75%;
+					}
+				}
+				td {
+					word-break: keep-all;
+				}
+			}
+		}
+		.p-ps {
+			width: 98%;
+			margin: 0 auto;
+			position: relative;
+			padding-left: 18px;
+			font-size: 12px;
+			color: #848484;
+			margin-top: 10px;
+			letter-spacing: -1px;
+			line-height: 1.4;
+			word-break: keep-all;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				background-size: 14px;
+				top: 1px;
+			}
+		}
+	}
+	section[class*=-sec] {
+		h3.h3-tit {
+			font-size: 16px;
+			color: #4c4c4c;
+			text-align: center;
+			font-weight: 700;
+			+ {
+				p {
+					font-size: 14px;
+					color: #454545;
+					text-align: center;
+					line-height: 1.3;
+					word-break: keep-all;
+					letter-spacing: -0.5px;
+					margin: 8px auto 0;
+				}
+			}
+		}
+	}
+	.room-sec {
+		position: relative;
+		>.p0 {
+			width: 90%;
+		}
+		.ul-list {
+			width: 86%;
+			margin: 0 auto;
+			.li-item {
+				float: left;
+				position: relative;
+				width: 100%;
+				margin-top: 25px;
+				&:first-child {
+					margin-left: 0;
+					figure {
+						>img {
+							position: absolute;
+							bottom: -15px;
+						}
+					}
+				}
+				figure {
+					position: relative;
+					overflow: hidden;
+					width: 100%;
+					height: 160px;
+					>img {
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+					}
+				}
+				>div {
+					position: relative;
+				}
+				.d-row-1 {
+					margin-top: 6px;
+					height: 32px;
+					.s-name {
+						font-size: 15px;
+						color: #535353;
+						font-weight: 700;
+						line-height: 1.1;
+						position: relative;
+						top: 3px;
+					}
+					.a-btn {
+						position: absolute;
+						right: 0;
+						top: 0;
+						font-size: 12px;
+						background: #01374f;
+						color: #fff;
+						display: inline-block;
+						text-align: center;
+						line-height: 1.3;
+						letter-spacing: -0.5px;
+						padding: 8px 9px;
+						z-index: 2;
+						letter-spacing: -0.5px;
+					}
+				}
+				.d-row-2 {
+					padding-left: 32px;
+					line-height: 1.4;
+					color: #636363;
+					margin-top: -5px;
+					font-size: 13px;
+					&:before {
+						content: "";
+						display: inline-block;
+						position: absolute;
+						top: 6px;
+						left: 0;
+						width: 26px;
+						height: 1px;
+						background: #777;
+					}
+				}
+				.bxBox {
+					position: absolute;
+					bottom: 70px;
+					width: 100%;
+					border: 3px solid #01374f;
+					overflow: hidden;
+					visibility: hidden;
+					li {
+						img {
+							width: 100%;
+							height: 160px;
+						}
+					}
+					.a-x {
+						right: 0;
+						top: 0;
+						background: #01374f;
+						width: 26px;
+						height: 26px;
+						&:before {
+							background: #fff;
+							left: 14px;
+							top: 2px;
+						}
+						&:after {
+							background: #fff;
+							left: 14px;
+							top: 2px;
+						}
+					}
+				}
+				.txt-box {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top: -12px;
+					width: 100%;
+					color: #fff;
+					letter-spacing: -1px;
+					text-align: center;
+					.p1 {
+						font-size: 13px;
+						font-weight: 600;
+						display: none;
+					}
+					.p2 {
+						font-size: 12px;
+						line-height: 1.3;
+					}
+				}
+			}
+		}
+		.p-ps {
+			width: 86%;
+			margin: 0 auto;
+			position: relative;
+			padding-left: 18px;
+			font-size: 12px;
+			color: #848484;
+			margin-top: 18px;
+			letter-spacing: -1px;
+			line-height: 1.4;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				background-size: 14px;
+				top: 1px;
+			}
+		}
+		.bx-wrapper {
+			.bx-controls-direction {
+				margin-top: -4.15px;
+				a {
+					width: 8px;
+					height: auto;
+				}
+			}
+			.bx-prev {
+				left: 5px;
+			}
+			.bx-next {
+				right: 5px;
+			}
+		}
+	}
+	.food-sec {
+		position: relative;
+		>.p0 {
+			letter-spacing: -1px;
+		}
+		.ul-list {
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 5px;
+			.li-item {
+				position: relative;
+				float: left;
+				width: 48.5%;
+				margin-top: 12px;
+				height: 196px;
+				border: 1px solid #d2d2d2;
+				border-radius: 6px;
+				overflow: hidden;
+				&:nth-child(2n-1) {
+					margin-right: 1.5%;
+				}
+				&:nth-child(2n) {
+					margin-left: 1.5%;
+				}
+				figure {
+					position: relative;
+					height: 100px;
+					overflow: hidden;
+					>img {
+						width: 100%;
+						position: absolute;
+						top: -14px;
+					}
+					figcaption {
+						position: absolute;
+						display: block;
+						color: #fff;
+						background: url(http://img.go.co.kr/black_rgba58.png) repeat;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						font-size: 11.5px;
+						letter-spacing: -1px;
+						text-align: center;
+						line-height: 24px;
+						padding-bottom: 1px;
+					}
+				}
+				.d-cont {
+					padding: 5px 0 5px 5px;
+					padding-top: 5px;
+					word-break: keep-all;
+					line-height: 1.4;
+					.p-name {
+						font-size: 13px;
+						color: #4e4e4e;
+						font-weight: 700;
+					}
+					.p-txt {
+						font-size: 12px;
+						color: #575757;
+						letter-spacing: -1.5px;
+						margin-top: 2px;
+					}
+					.s-1 {
+						color: #bf6a6a;
+					}
+				}
+			}
+		}
+	}
+	.facil-sec {
+		position: relative;
+		>.p0 {
+			letter-spacing: -1px;
+			width: 84%;
+		}
+		.ul-list {
+			width: 98%;
+			margin: 0 auto;
+			margin-top: 15px;
+			.li-item {
+				position: relative;
+				float: left;
+				margin-top: 8px;
+				width: 32.33%;
+				&:nth-child(3n-1) {
+					margin: 8px 1.5% 0;
+				}
+				figure {
+					position: relative;
+					>img {
+						width: 100%;
+					}
+					>figcaption {
+						display: block;
+						width: 100%;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						padding: 5px 5px 6px 0;
+						line-height: 1.2;
+						background: #000000;
+						background: rgba(0,0,0, .42);
+						text-align: right;
+						color: #fff;
+						font-size: 12px;
+						&:after {
+							content: "";
+							display: inline-block;
+							height: 104%;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+		.p-ps {
+			width: 98%;
+			margin: 0 auto;
+			position: relative;
+			padding-left: 18px;
+			font-size: 12px;
+			color: #848484;
+			margin-top: 18px;
+			letter-spacing: -1px;
+			line-height: 1.4;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				background-size: 14px;
+				top: 1px;
+			}
+		}
+		.ul-list-2 {
+			width: 98%;
+			margin: 0 auto;
+			.li-item {
+				position: relative;
+				display: inline-block;
+				margin-top: 8px;
+				width: 100%;
+				background: #000;
+				background: rgba(0,0,0, .7);
+				figure {
+					position: relative;
+					img {
+						width: 100%;
+					}
+					figcaption {
+						box-sizing: border-box;
+						width: 100%;
+						padding: 7px 10px 8px 10px;
+						text-align: center;
+						letter-spacing: -0.7px;
+						font-size: 12px;
+						line-height: 1.3;
+						color: #fff;
+						display: block;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						background: #000;
+						background: rgba(0,0,0, .7);
+					}
+				}
+				.li-txt {
+					box-sizing: border-box;
+					width: 100%;
+					padding: 7px 10px 8px 10px;
+					text-align: center;
+					letter-spacing: -0.7px;
+					font-size: 12px;
+					line-height: 1.3;
+					color: #fff;
+					display: table;
+					word-break: keep-all;
+					span {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+		.facil-tb {
+			width: 98%;
+			margin: 8px auto 0;
+			+ {
+				p {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.etc-sec {
+		position: relative;
+		margin-bottom: 10px;
+		padding-top: 25px;
+		.d-cm {
+			position: relative;
+			text-align: center;
+			line-height: 1.3;
+			width: 98%;
+			margin: 0 auto;
+			>p {
+				position: relative;
+				word-break: keep-all;
+			}
+			.p-0 {
+				font-size: 17px;
+				color: #00b2dd;
+				font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
+			}
+			.p-1 {
+				font-size: 12px;
+				color: #636363;
+				line-height: 1.5;
+				margin-top: 5px;
+				letter-spacing: -1.7px;
+			}
+			.area-btn {
+				font-size: 15px;
+				width: 95%;
+				margin: 15px auto 0;
+				.a-btn {
+					position: relative;
+					display: inline-block;
+					width: 100%;
+					height: 46px;
+					background: #00b2dd;
+					color: #fff;
+					&:after {
+						content: "";
+						display: inline-block;
+						height: 109%;
+						vertical-align: middle;
+					}
+					.ic-rArrow {
+						&:after {
+							border-color: #fff;
+							width: 7px;
+							height: 7px;
+							top: -1px;
+							left: 4px;
+							margin-right: -15px;
+						}
+					}
+				}
+			}
+			.c-blue {
+				word-break: keep-all;
+				font-size: 16px;
+				color: #0012ff;
+			}
+			.c-lightred {
+				word-break: keep-all;
+				margin-left: 66px;
+				color: #ff0000;
+			}
+		}
+		.d-box-2 {
+			.area-btn {
+				margin-top: 20px;
+				.a-btn {
+					font-size: 16px;
+					cursor: default;
+					letter-spacing: 0;
+					>.txt {
+						position: relative;
+						font-size: 13px;
+						top: -2px;
+						letter-spacing: -1px;
+						margin-left: -3px;
+					}
+				}
+				.pic-call {
+					position: relative;
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					background: url(http://img.ocean2you.co.kr/renew/group/pic_callW.png);
+					background-size: 20px;
+					vertical-align: middle;
+					top: -2px;
+				}
+			}
+			.p-2 {
+				font-size: 16px;
+				font-weight: 700;
+				margin-top: 15px;
+				color: #00b2dd;
+				.pic-sms {
+					width: 22px;
+					height: 22px;
+				}
+			}
+		}
+	}
+	.facil-tb {
+		colgroup {
+			col.nth-1 {
+				width: 15%;
+			}
+			col.nth-2 {
+				width: 35%;
+			}
+			col.nth-3 {
+				width: 50%;
+			}
+		}
+		th {
+			border: 1px solid #d6d6d6;
+			font-size: 17px;
+			color: #5c5c5c;
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Nanum Gothic', sans-serif;
+			font-size: 12px;
+			vertical-align: middle;
+			font-weight: 700;
+			background: #f3f0f0;
+		}
+		td {
+			border: 1px solid #d6d6d6;
+			font-size: 17px;
+			color: #5c5c5c;
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Nanum Gothic', sans-serif;
+			font-size: 12px;
+			vertical-align: middle;
+			letter-spacing: -1.7px;
+		}
+	}
+	.enjoy-sec {
+		padding-bottom: 25px;
+		.courseTab {
+			position: relative;
+			width: 98%;
+			margin: 0 auto;
+			margin: 8px auto;
+			>li {
+				float: left;
+				width: 48%;
+				margin: 2% 1% 0;
+				cursor: pointer;
+				text-align: center;
+				color: #319af6;
+				border: 2px solid #319af6;
+				line-height: 38px;
+				font-size: 14px;
+			}
+			>li.on {
+				color: #fff;
+				background: #319af6;
+			}
+		}
+		.courseList {
+			position: relative;
+			width: 98%;
+			margin: 0 auto;
+			>li {
+				position: relative;
+				display: none;
+				text-align: center;
+				>img {
+					width: 100%;
+					margin: 40px auto 0;
+				}
+			}
+			>li.on {
+				display: block;
+			}
+		}
+	}
+	.qna-group {
+		position: relative;
+		padding: 25px 0;
+		background: #f9f9f9;
+		color: #474747;
+		h2 {
+			text-align: center;
+			font-size: 16px;
+			>span {
+				display: inline-block;
+			}
+			.tit {
+				padding: 0 5px;
+			}
+			.titBg {
+				width: 40px;
+				height: 10px;
+				background: url(http://img.ocean2you.co.kr/renew/group/faqTitBg.png) repeat-x;
+				background-size: 10px;
+			}
+		}
+	}
+	.qna-list {
+		margin-top: 10px;
+		>li {
+			position: relative;
+			border-bottom: 1px solid #ccc;
+			font-size: 13px;
+			letter-spacing: -0.5px;
+			>div {
+				position: relative;
+				line-height: 1.4;
+				word-break: keep-all;
+				font-family: "Nanum Gothic", sans-serif;
+				padding: 9px 10px;
+			}
+			.f-q {
+				padding-left: 40px;
+				padding-right: 24px;
+				>* {
+					display: inline-block;
+				}
+				.q-con {
+					position: absolute;
+					left: 10px;
+					font-weight: 700;
+				}
+				.arr {
+					position: absolute;
+					right: 10px;
+					top: 8px;
+					&:after {
+						top: -2px;
+						border-color: #bbb;
+					}
+				}
+			}
+			.f-a {
+				background: #fff;
+				height: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+		}
+		>li.on {
+			.f-q {
+				color: #0293c4;
+				font-weight: 700;
+				.arr {
+					&:after {
+						top: 3px;
+						border-color: #0293c4;
+						-webkit-transform: rotate(135deg);
+						-ms-transform: rotate(135deg);
+						-o-transform: rotate(135deg);
+						transform: rotate(135deg);
+					}
+				}
+			}
+			.f-a {
+				padding: 9px 10px;
+				height: auto;
+				border-top: 1px solid #eee;
+			}
+		}
+	}
+	.group-popup {
+		.popup-wrap {
+			max-width: 300px;
+		}
+		.popup-container {
+			padding: 10px 10px 20px;
+			.popup-cust {
+				padding: 3px 0 7px;
+				p {
+					font-size: 17px;
+					line-height: 24px;
+					word-break: keep-all;
+				}
+				.f-bd {
+					span {
+						font-size: 17px;
+						line-height: 24px;
+						font-weight: bold;
+					}
+				}
+				.popup-txt {
+					font-size: 14px;
+					line-height: 20px;
+				}
+				.popup-txt.pd-tb {
+					padding: 4px 0;
+				}
+			}
+			.info-txt {
+				padding: 7px 0 9px;
+				font-size: 13px;
+				line-height: 18px;
+				word-break: keep-all;
+			}
+			.btn-close {
+				min-width: 100px;
+				height: 35px;
+				font-size: 15px;
+				line-height: 35px;
+			}
+		}
+	}
+}
+@media (max-device-width: 320px) {
+	section[class*=-sec] {
+		h3.h3-tit {
+			+ {
+				p {
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+	.food-sec {
+		.ul-list {
+			.li-item {
+				height: 212px;
+				.d-cont {
+					.s-1 {
+						letter-spacing: -2px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.qna-group {
+		position: relative;
+		padding: 35px 0;
+		background: #f9f9f9;
+		color: #474747;
+		h2 {
+			text-align: center;
+			font-size: 34px;
+			>span {
+				display: inline-block;
+			}
+			.tit {
+				padding: 0 15px;
+			}
+			.titBg {
+				width: 112px;
+				height: 16px;
+				background: url(http://img.ocean2you.co.kr/renew/group/faqTitBg.png) repeat-x;
+			}
+		}
+	}
+	.qna-list {
+		width: 768px;
+		margin: 25px auto 0;
+		>li {
+			position: relative;
+			border-bottom: 1px solid #ccc;
+			letter-spacing: -0.5px;
+			>div {
+				position: relative;
+				line-height: 1.5;
+				word-break: keep-all;
+				font-family: "Nanum Gothic", sans-serif;
+				padding: 12px 40px;
+			}
+			.f-q {
+				cursor: pointer;
+				padding-left: 92px;
+				padding-right: 54px;
+				font-size: 22px;
+				>* {
+					display: inline-block;
+				}
+				.q-con {
+					position: absolute;
+					left: 40px;
+					font-weight: 700;
+				}
+				.arr {
+					position: absolute;
+					right: 40px;
+					top: 10px;
+					&:after {
+						top: -2px;
+						border-color: #bbb;
+						border-width: 2px;
+						width: 12px;
+						height: 12px;
+					}
+				}
+			}
+			.f-a {
+				background: #fff;
+				height: 0;
+				padding: 0;
+				overflow: hidden;
+				font-size: 19px;
+				line-height: 1.6;
+			}
+		}
+		>li.on {
+			.f-q {
+				color: #0293c4;
+				font-weight: 700;
+				.arr {
+					&:after {
+						top: 3px;
+						border-color: #0293c4;
+						-webkit-transform: rotate(135deg);
+						-ms-transform: rotate(135deg);
+						-o-transform: rotate(135deg);
+						transform: rotate(135deg);
+					}
+				}
+			}
+			.f-a {
+				padding: 12px 40px;
+				height: auto;
+				border-top: 1px solid #eee;
+			}
+		}
+	}
+	.etc-sec {
+		.d-cm {
+			.p-1.c-blue {
+				word-break: keep-all;
+				font-size: 22px;
+				color: #0012ff;
+			}
+			.p-1.c-lightred {
+				word-break: keep-all;
+				margin-left: 72px;
+				color: #ff0000;
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1190px) {
+	.vid-wrap {
+		height: 284px;
+	}
+	.title {
+		position: relative;
+		.tit-box {
+			text-align: center;
+			padding-top: 76px;
+			color: #fff;
+			h2 {
+				font-size: 24px;
+			}
+			.mg- {
+				display: block;
+				height: 1px;
+				width: 30px;
+				margin: 18px auto 20px;
+				background: #fff;
+			}
+			.p0 {
+				font-size: 18px;
+				margin-top: 10px;
+			}
+		}
+	}
+	.group-wrap {
+		padding: 45px 0 54px;
+		.container {
+			width: 768px;
+		}
+	}
+	hr {
+		border: 0;
+		border-top: 1px solid #dedede;
+		margin: 30px auto;
+	}
+	.intro-sec {
+		position: relative;
+		width: 100%;
+		.d-row {
+			position: relative;
+		}
+		.d-map {
+			width: 630px;
+			margin: 30px auto 0;
+			>img {
+				width: 100%;
+			}
+		}
+		p {
+			text-align: center;
+		}
+		.p-1 {
+			font-size: 25px;
+			font-weight: 700;
+			font-family: "Nanum Gothic", sans-serif;
+			line-height: 1.4;
+			letter-spacing: -1px;
+			strong {
+				font-size: 27px;
+				color: #242424;
+				margin-bottom: 4px;
+				display: inline-block;
+				letter-spacing: -0.5px;
+			}
+		}
+		.p-2 {
+			font-size: 19px;
+			color: #595959;
+			line-height: 1.5;
+			margin-top: 28px;
+			letter-spacing: -1px;
+		}
+		.area-btn {
+			margin-top: 30px;
+			>a {
+				position: relative;
+				display: inline-block;
+				width: 347px;
+				height: 57px;
+				background: #319af6;
+				color: #fff;
+				font-size: 18px;
+				text-align: center;
+				&:after {
+					content: "";
+					display: inline-block;
+					height: 105%;
+					vertical-align: middle;
+				}
+				.ic-rArrow {
+					&:after {
+						border-color: #fff;
+						width: 9px;
+						height: 9px;
+						top: -1px;
+						left: 15px;
+					}
+				}
+			}
+		}
+		.sun {
+			width: 94%;
+			margin: 10px auto;
+		}
+		.p-3 {
+			width: 84%;
+			margin: 0 auto;
+			position: relative;
+			color: #c41919;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+	}
+	.banq-sec {
+		.mBanqTb {
+			table {
+				background: #fff;
+				width: 98%;
+				margin: 12px auto 0;
+			}
+			[class*=hall-] {
+				th {
+					border: 1px solid #d6d6d6;
+					font-size: 16px;
+					color: #5c5c5c;
+					line-height: 1.4;
+					letter-spacing: -1px;
+					vertical-align: middle;
+				}
+				td {
+					border: 1px solid #d6d6d6;
+					font-size: 16px;
+					color: #5c5c5c;
+					line-height: 1.4;
+					letter-spacing: -1px;
+					vertical-align: middle;
+				}
+			}
+			th {
+				background: #f3f0f0;
+				padding: 8px 0;
+			}
+			td {
+				padding: 5px;
+			}
+			.hall-1 {
+				col {
+					&:first-child {
+						width: 25%;
+					}
+					&:nth-child(2) {
+						width: 27%;
+					}
+					&:nth-child(3) {
+						width: 18%;
+					}
+					&:nth-child(4) {
+						width: 20%;
+					}
+				}
+				td {
+					text-align: center;
+				}
+			}
+			.hall-2 {
+				col {
+					width: 25%;
+				}
+				td {
+					padding-left: 15px;
+				}
+				.textCenter {
+					td {
+						padding-left: 50px;
+					}
+				}
+				.numType_01 {
+					width: 30px;
+				}
+				.numType_02 {
+					width: 26px;
+				}
+				.numType_03 {
+					width: 26px;
+				}
+				.numType_04 {
+					width: 22px;
+					margin: 0 3px;
+				}
+				[class*=numType_] {
+					+ {
+						span {
+							position: relative;
+							top: 2px;
+						}
+					}
+				}
+			}
+			.hall-3 {
+				col {
+					&:nth-child(1) {
+						width: 25%;
+					}
+					&:nth-child(2) {
+						width: 75%;
+					}
+				}
+				td {
+					word-break: keep-all;
+				}
+			}
+		}
+		.p-ps {
+			width: 98%;
+			margin: 0 auto;
+			position: relative;
+			padding-left: 18px;
+			font-size: 17px;
+			color: #848484;
+			margin-top: 40px;
+			letter-spacing: -1px;
+			line-height: 1.4;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				top: 4px;
+			}
+		}
+	}
+	section[class*=-sec] {
+		h3.h3-tit {
+			font-size: 25px;
+			color: #4c4c4c;
+			text-align: center;
+			font-weight: 700;
+			+ {
+				p {
+					font-size: 18px;
+					color: #454545;
+					text-align: center;
+					line-height: 1.3;
+					word-break: keep-all;
+					letter-spacing: -0.5px;
+					margin: 15px auto 0;
+				}
+			}
+		}
+	}
+	.room-sec {
+		position: relative;
+		>.p0 {
+			width: 90%;
+		}
+		.ul-list {
+			width: 732px;
+			margin: 0 auto;
+			margin-top: 20px;
+			.li-item {
+				float: left;
+				position: relative;
+				width: 354px;
+				margin-top: 25px;
+				margin-left: 24px;
+				&:nth-child(2n-1) {
+					margin-left: 0;
+				}
+				figure {
+					position: relative;
+					>img {
+						width: 100%;
+					}
+				}
+				>div {
+					position: relative;
+				}
+				.d-row-1 {
+					margin-top: 6px;
+					height: 57px;
+					.s-name {
+						font-size: 20px;
+						color: #535353;
+						font-weight: 700;
+						line-height: 1.1;
+						position: relative;
+						top: 3px;
+					}
+					.a-btn {
+						position: absolute;
+						right: 0;
+						top: 0;
+						font-size: 14px;
+						background: #01374f;
+						color: #fff;
+						display: inline-block;
+						text-align: center;
+						line-height: 1.3;
+						letter-spacing: -0.5px;
+						padding: 11px;
+						z-index: 2;
+						letter-spacing: -0.5px;
+					}
+				}
+				.d-row-2 {
+					padding-left: 66px;
+					line-height: 1.4;
+					color: #636363;
+					margin-top: -5px;
+					&:before {
+						content: "";
+						display: inline-block;
+						position: absolute;
+						top: 11px;
+						left: 0;
+						width: 50px;
+						height: 1px;
+						background: #777;
+					}
+				}
+				.bxBox {
+					position: absolute;
+					bottom: 100px;
+					width: 732px;
+					border: 5px solid #01374f;
+					z-index: 1;
+					overflow: hidden;
+					visibility: hidden;
+					.a-x {
+						right: 0;
+						top: 0;
+						background: #01374f;
+						width: 32px;
+						height: 32px;
+						&:before {
+							background: #fff;
+							left: 5px;
+							top: 14px;
+							width: 26px;
+							height: 1px;
+						}
+						&:after {
+							background: #fff;
+							left: 5px;
+							top: 14px;
+							width: 26px;
+							height: 1px;
+						}
+					}
+				}
+				.txt-box {
+					position: absolute;
+					left: 0;
+					top: 88px;
+					width: 100%;
+					color: #fff;
+					text-align: center;
+					.p1 {
+						font-size: 22px;
+					}
+					.p2 {
+						font-size: 15px;
+						margin-top: 16px;
+						line-height: 1.6;
+					}
+				}
+			}
+			.li-item.nth-2 {
+				.bxBox {
+					left: -378px;
+				}
+			}
+		}
+		.p-ps {
+			width: 732px;
+			margin: 0 auto;
+			position: relative;
+			padding-left: 18px;
+			font-size: 17px;
+			color: #848484;
+			margin-top: 40px;
+			letter-spacing: -1px;
+			line-height: 1.4;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				top: 4px;
+			}
+		}
+		.bx-wrapper {
+			.bx-controls-direction {
+				margin-top: -15px;
+				a {
+					width: 16px;
+					height: auto;
+				}
+			}
+			.bx-prev {
+				left: 14px;
+			}
+			.bx-next {
+				right: 14px;
+			}
+		}
+	}
+	.food-sec {
+		position: relative;
+		>.p0 {
+			letter-spacing: -1px;
+		}
+		.ul-list {
+			width: 732px;
+			margin: 0 auto;
+			margin-top: 20px;
+			.li-item {
+				position: relative;
+				float: left;
+				margin-top: 16px;
+				width: 236px;
+				height: 344px;
+				border: 1px solid #d2d2d2;
+				border-radius: 6px;
+				overflow: hidden;
+				&:nth-child(3n-1) {
+					margin: 16px 12px 0;
+				}
+				figure {
+					position: relative;
+					height: 186px;
+					overflow: hidden;
+					>img {
+						width: 100%;
+					}
+					figcaption {
+						position: absolute;
+						display: block;
+						color: #fff;
+						background: url(http://img.go.co.kr/black_rgba58.png) repeat;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						font-size: 15px;
+						letter-spacing: -1px;
+						text-align: center;
+						line-height: 28px;
+						padding-bottom: 1px;
+					}
+				}
+				.d-cont {
+					padding: 5px 0 5px 5px;
+					word-break: keep-all;
+					line-height: 1.4;
+					.p-name {
+						font-size: 19px;
+						color: #4e4e4e;
+						font-weight: 700;
+					}
+					.p-txt {
+						font-size: 17px;
+						color: #575757;
+						letter-spacing: -1.2px;
+						margin-top: 3px;
+					}
+					.s-1 {
+						color: #bf6a6a;
+					}
+				}
+			}
+		}
+	}
+	.facil-sec {
+		position: relative;
+		>.p0 {
+			letter-spacing: -1px;
+			width: 84%;
+		}
+		.ul-list {
+			width: 98%;
+			margin: 0 auto;
+			margin-top: 15px;
+			.li-item {
+				position: relative;
+				float: left;
+				margin-top: 8px;
+				width: 32.33%;
+				&:nth-child(3n-1) {
+					margin: 8px 1.5% 0;
+				}
+				figure {
+					position: relative;
+					>img {
+						width: 100%;
+					}
+					>figcaption {
+						display: block;
+						width: 100%;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						padding: 5px 5px 6px 0;
+						line-height: 1.2;
+						background: #000000;
+						background: rgba(0,0,0, .42);
+						text-align: right;
+						color: #fff;
+						font-size: 17px;
+						&:after {
+							content: "";
+							display: inline-block;
+							height: 105%;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+		.p-ps {
+			width: 98%;
+			margin: 0 auto;
+			position: relative;
+			padding-left: 23px;
+			font-size: 17px;
+			color: #848484;
+			margin-top: 30px;
+			line-height: 1.4;
+			letter-spacing: -0.5px;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				top: 4px;
+			}
+		}
+		.ul-list-2 {
+			width: 98%;
+			margin: 0 auto;
+			.li-item {
+				position: relative;
+				float: right;
+				display: block;
+				margin-top: 8px;
+				width: 49.3%;
+				background: #000;
+				background: rgba(0,0,0, .7);
+				&:nth-child(2n+1) {
+					float: left;
+				}
+				figure {
+					position: relative;
+					img {
+						width: 100%;
+					}
+					figcaption {
+						box-sizing: border-box;
+						width: 100%;
+						padding: 8px 8px 7px 8px;
+						text-align: center;
+						letter-spacing: -0.7px;
+						color: #fff;
+						display: block;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						font-size: 17px;
+						line-height: 1.3;
+						background: #000;
+						background: rgba(0,0,0, .7);
+					}
+				}
+				.li-txt {
+					box-sizing: border-box;
+					width: 100%;
+					padding: 8px 8px 7px 8px;
+					text-align: center;
+					letter-spacing: -0.7px;
+					color: #fff;
+					display: table;
+					font-size: 12px;
+					line-height: 20px;
+					word-break: keep-all;
+					span {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+				.li-txt.ht-1 {
+					height: 95px;
+				}
+			}
+		}
+		.facil-tb {
+			margin-top: 15px;
+			+ {
+				p {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.etc-sec {
+		position: relative;
+		margin-bottom: 30px;
+		padding-top: 30px;
+		hr {
+			margin: 40px auto;
+		}
+		.d-cm {
+			position: relative;
+			text-align: center;
+			line-height: 1.3;
+			.p-0 {
+				font-size: 32px;
+				color: #00b2dd;
+				letter-spacing: -1px;
+			}
+			.p-1 {
+				font-size: 18px;
+				color: #636363;
+				line-height: 1.5;
+				margin-top: 10px;
+			}
+			.area-btn {
+				font-size: 20px;
+				margin-top: 26px;
+				.a-btn {
+					position: relative;
+					display: inline-block;
+					width: 356px;
+					height: 70px;
+					background: #00b2dd;
+					color: #fff;
+					&:after {
+						content: "";
+						display: inline-block;
+						height: 105%;
+						vertical-align: middle;
+					}
+					.ic-rArrow {
+						&:after {
+							border-color: #fff;
+							width: 10px;
+							height: 10px;
+							top: 0;
+							left: 2px;
+							margin-right: -15px;
+						}
+					}
+				}
+			}
+		}
+		.d-box-2 {
+			.area-btn {
+				margin-top: 20px;
+				.a-btn {
+					display: inline;
+					font-size: 34px;
+					font-weight: 700;
+					color: #00b2dd;
+					background: 0;
+					cursor: default;
+					vertical-align: middle;
+					>.txt {
+						position: relative;
+						font-size: 21px;
+						color: #333;
+						font-weight: 400;
+						top: -5px;
+					}
+				}
+				.pic-call {
+					position: relative;
+					display: inline-block;
+					width: 35px;
+					height: 35px;
+					background: url(http://img.ocean2you.co.kr/renew/group/pic_call.png);
+					vertical-align: middle;
+					top: -4px;
+					margin-left: -20px;
+					left: -4px;
+				}
+			}
+			.p-2 {
+				font-size: 28px;
+				font-weight: 700;
+				margin-top: 10px;
+				color: #00b2dd;
+			}
+		}
+	}
+	.facil-tb {
+		colgroup {
+			col.nth-1 {
+				width: 30%;
+			}
+			col.nth-2 {
+				width: 30%;
+			}
+			col.nth-3 {
+				width: 40%;
+			}
+		}
+		th {
+			border: 1px solid #d6d6d6;
+			font-size: 17px;
+			color: #5c5c5c;
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Nanum Gothic', sans-serif;
+			vertical-align: middle;
+			font-weight: 700;
+			background: #f3f0f0;
+		}
+		td {
+			border: 1px solid #d6d6d6;
+			font-size: 17px;
+			color: #5c5c5c;
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Nanum Gothic', sans-serif;
+			vertical-align: middle;
+			letter-spacing: -1px;
+		}
+	}
+	.enjoy-sec {
+		padding-bottom: 30px;
+		.courseTab {
+			position: relative;
+			width: 640px;
+			margin: 0 auto;
+			margin: 8px auto;
+			>li {
+				float: left;
+				width: 48%;
+				margin: 2% 1% 0;
+				cursor: pointer;
+				text-align: center;
+				color: #319af6;
+				border: 2px solid #319af6;
+				line-height: 46px;
+				font-size: 16px;
+			}
+			>li.on {
+				color: #fff;
+				background: #319af6;
+			}
+		}
+		.courseList {
+			position: relative;
+			width: 640px;
+			margin: 0 auto;
+			>li {
+				position: relative;
+				display: none;
+				text-align: center;
+				>img {
+					width: 100%;
+					margin: 70px auto 0;
+				}
+			}
+			>li.on {
+				display: block;
+			}
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1190px) {
+	.title {
+		position: relative;
+		.tit-box {
+			text-align: center;
+			padding-top: 76px;
+			color: #fff;
+			h2 {
+				font-size: 27px;
+			}
+			.mg- {
+				display: block;
+				height: 1px;
+				width: 60px;
+				margin: 18px auto 20px;
+				background: #fff;
+			}
+		}
+	}
+}
+@media (min-width: 1190px) {
+	.title {
+		position: relative;
+		.tit-box {
+			text-align: center;
+			padding-top: 76px;
+			color: #fff;
+			h2 {
+				font-size: 27px;
+			}
+			.mg- {
+				display: block;
+				height: 1px;
+				width: 60px;
+				margin: 18px auto 20px;
+				background: #fff;
+			}
+			.p0 {
+				font-size: 20px;
+				margin-top: 10px;
+			}
+		}
+	}
+	.group-wrap {
+		padding: 84px 0 76px;
+		.container {
+			width: 1190px;
+		}
+	}
+	hr {
+		border: 0;
+		border-top: 1px solid #dedede;
+		margin: 56px auto;
+	}
+	.intro-sec {
+		position: relative;
+		.d-row {
+			position: relative;
+		}
+		.d-map {
+			position: absolute;
+			right: 0;
+			top: 6px;
+		}
+		p {
+			letter-spacing: 0;
+			word-break: keep-all;
+		}
+		.p-1 {
+			font-size: 29px;
+			font-weight: 700;
+			font-family: "Nanum Gothic", sans-serif;
+			line-height: 1.4;
+			strong {
+				font-size: 32px;
+				color: #242424;
+				margin-bottom: 20px;
+				display: inline-block;
+			}
+		}
+		.p-2 {
+			width: 42%;
+			font-size: 19px;
+			color: #595959;
+			line-height: 1.5;
+			margin-top: 8px;
+			letter-spacing: -1px;
+			width: 38%;
+		}
+		.p-2.type-2 {
+			margin-top: 0;
+			color: #0068c3;
+		}
+		.area-btn {
+			margin-top: 30px;
+			>a {
+				position: relative;
+				display: inline-block;
+				width: 42%;
+				height: 62px;
+				background: #319af6;
+				color: #fff;
+				font-size: 20px;
+				text-align: center;
+				width: 38%;
+				&:after {
+					content: "";
+					display: inline-block;
+					height: 105%;
+					vertical-align: middle;
+				}
+				.ic-rArrow {
+					&:after {
+						border-color: #fff;
+						width: 9px;
+						height: 9px;
+						top: -1px;
+						left: 20px;
+					}
+				}
+			}
+		}
+		.sun {
+			width: 42%;
+			margin: 30px 0;
+			width: 38%;
+		}
+		.p-3 {
+			width: 42%;
+			position: relative;
+			color: #c41919;
+			font-size: 18px;
+			line-height: 1.5;
+			width: 38%;
+		}
+		.p-3.dot {
+			.dot {
+				display: none;
+			}
+			padding-left: 20px;
+			&:before {
+				content: "※";
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+	.banq-sec {
+		.banqTb {
+			table {
+				background: #fff;
+				width: 98%;
+				margin: 12px auto 0;
+			}
+			[class*=hall-] {
+				th {
+					border: 1px solid #d6d6d6;
+					font-size: 17px;
+					color: #5c5c5c;
+					line-height: 1.4;
+					letter-spacing: -1px;
+					vertical-align: middle;
+				}
+				td {
+					border: 1px solid #d6d6d6;
+					font-size: 17px;
+					color: #5c5c5c;
+					line-height: 1.4;
+					letter-spacing: -1px;
+					vertical-align: middle;
+				}
+			}
+			th {
+				background: #f3f0f0;
+				padding: 5px 0;
+				font-weight: 700;
+			}
+			td {
+				padding: 8px 5px;
+			}
+			.hall-1 {
+				col {
+					&:first-child {
+						width: 12%;
+					}
+					&:nth-child(2) {
+						width: 18%;
+					}
+					&:nth-child(3) {
+						width: 10%;
+					}
+					&:nth-child(4) {
+						width: 10%;
+					}
+					&:nth-child(5) {
+						width: 15%;
+					}
+					&:nth-child(6) {
+						width: 15%;
+					}
+					&:nth-child(7) {
+						width: 15%;
+					}
+				}
+				td {
+					text-align: center;
+				}
+				.textCenter {
+					padding-left: 30px;
+					text-align: left;
+				}
+				[class*=numType_] {
+					margin-right: 10px;
+					+ {
+						span {
+							position: relative;
+							top: 1px;
+						}
+					}
+				}
+				.s-num {
+					display: inline-block;
+				}
+			}
+			.hall-3 {
+				col {
+					&:nth-child(1) {
+						width: 20%;
+					}
+					&:nth-child(2) {
+						width: 80%;
+					}
+				}
+				.nth-2 {
+					padding-left: 10px;
+					letter-spacing: -1.5px;
+				}
+			}
+		}
+		.p-ps {
+			width: 98%;
+			margin: 0 auto;
+			position: relative;
+			padding-left: 18px;
+			font-size: 17px;
+			color: #848484;
+			margin-top: 40px;
+			letter-spacing: -1px;
+			line-height: 1.4;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				top: 4px;
+			}
+		}
+	}
+	section[class*=-sec] {
+		h3 {
+			font-size: 25px;
+			color: #4c4c4c;
+			text-align: center;
+			font-weight: 700;
+			+ {
+				p {
+					font-size: 18px;
+					color: #454545;
+					text-align: center;
+					line-height: 1.3;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+	.room-sec {
+		position: relative;
+		.ul-list {
+			position: relative;
+			margin-top: 40px;
+			.li-item {
+				float: left;
+				position: relative;
+				width: 354px;
+				margin-left: 63.5px;
+				&:first-child {
+					margin-left: 0;
+				}
+				>div {
+					position: relative;
+				}
+				.d-row-1 {
+					margin-top: 10px;
+					height: 57px;
+					.s-name {
+						font-size: 20px;
+						color: #535353;
+						font-weight: 700;
+						line-height: 1.1;
+						position: relative;
+						top: 3px;
+					}
+					.a-btn {
+						position: absolute;
+						right: 0;
+						top: 0;
+						font-size: 14px;
+						background: #01374f;
+						color: #fff;
+						display: inline-block;
+						text-align: center;
+						line-height: 1.3;
+						letter-spacing: -0.5px;
+						padding: 11px;
+						z-index: 2;
+					}
+				}
+				.d-row-2 {
+					padding-left: 66px;
+					line-height: 1.4;
+					color: #636363;
+					margin-top: -5px;
+					&:before {
+						content: "";
+						display: inline-block;
+						position: absolute;
+						top: 11px;
+						left: 0;
+						width: 50px;
+						height: 1px;
+						background: #777;
+					}
+				}
+				.bxBox {
+					visibility: hidden;
+					position: absolute;
+					bottom: 100px;
+					left: 0;
+					width: 1190px;
+					border: 5px solid #01374f;
+					overflow: hidden;
+					z-index: 1;
+					.a-x {
+						right: 0;
+						top: 0;
+						background: #01374f;
+						width: 36px;
+						height: 36px;
+						&:before {
+							background: #fff;
+							left: 5px;
+							top: 16px;
+							width: 30px;
+							height: 1px;
+						}
+						&:after {
+							background: #fff;
+							left: 5px;
+							top: 16px;
+							width: 30px;
+							height: 1px;
+						}
+					}
+				}
+				.txt-box {
+					position: absolute;
+					left: 0;
+					top: 160px;
+					width: 100%;
+					color: #fff;
+					text-align: center;
+					.p1 {
+						font-size: 30px;
+					}
+					.p2 {
+						font-size: 18px;
+						margin-top: 16px;
+						line-height: 1.6;
+					}
+				}
+			}
+			.li-item.nth-2 {
+				.bxBox {
+					left: -417.5px;
+				}
+			}
+			.li-item.nth-3 {
+				.bxBox {
+					left: -835px;
+				}
+			}
+		}
+		.p-ps {
+			position: relative;
+			padding-left: 23px;
+			font-size: 17px;
+			color: #848484;
+			margin-top: 40px;
+			line-height: 1.4;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				top: 4px;
+			}
+		}
+		.bx-wrapper {
+			width: 1190px;
+			.bx-controls-direction {
+				a {
+					width: 22px;
+				}
+			}
+		}
+	}
+	.food-sec {
+		position: relative;
+		.ul-list {
+			margin-left: -28px;
+			margin-top: 5px;
+			.li-item {
+				position: relative;
+				float: left;
+				margin-left: 28px;
+				margin-top: 30px;
+				width: 276px;
+				height: 369px;
+				border: 1px solid #d2d2d2;
+				border-radius: 6px;
+				overflow: hidden;
+				figure {
+					position: relative;
+					>img {
+						width: 100%;
+					}
+					figcaption {
+						position: absolute;
+						display: block;
+						color: #fff;
+						background: url(http://img.go.co.kr/black_rgba58.png) repeat;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						font-size: 16px;
+						letter-spacing: -1px;
+						text-align: center;
+						line-height: 30px;
+						padding-bottom: 1px;
+					}
+				}
+				.d-cont {
+					padding: 5px 0 5px 5px;
+					padding-top: 14px;
+					word-break: keep-all;
+					line-height: 1.4;
+					.p-name {
+						font-size: 19px;
+						color: #4e4e4e;
+						font-weight: 700;
+					}
+					.p-txt {
+						font-size: 17px;
+						color: #575757;
+						letter-spacing: -1.5px;
+						margin-top: 3px;
+					}
+					.s-1 {
+						color: #bf6a6a;
+					}
+				}
+			}
+		}
+	}
+	.facil-sec {
+		position: relative;
+		.ul-list {
+			margin-left: -28px;
+			margin-top: 5px;
+			.li-item {
+				position: relative;
+				float: left;
+				margin-left: 28px;
+				margin-top: 30px;
+				width: 276px;
+				height: 247px;
+				figure {
+					position: relative;
+					>img {
+						width: 100%;
+					}
+					>figcaption {
+						display: block;
+						width: 100%;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						padding: 5px 15px 6px 0;
+						line-height: 1.2;
+						background: #000000;
+						background: rgba(0,0,0, .42);
+						text-align: right;
+						color: #fff;
+						&:after {
+							content: "";
+							display: inline-block;
+							height: 105%;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+		.p-ps {
+			position: relative;
+			padding-left: 23px;
+			font-size: 17px;
+			color: #848484;
+			margin-top: 30px;
+			line-height: 1.4;
+			letter-spacing: -0.5px;
+			&:before {
+				position: absolute;
+				left: 0;
+				content: "";
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(http://img.ocean2you.co.kr/renew/group/pic_i.png);
+				top: 4px;
+			}
+		}
+		.ul-list-2 {
+			width: 100%;
+			margin: 0 auto;
+			.li-item {
+				position: relative;
+				float: left;
+				display: block;
+				margin-top: 30px;
+				margin-left: 28px;
+				width: 580px;
+				&:nth-child(2n+1) {
+					margin-left: 0;
+				}
+				figure {
+					position: relative;
+					img {
+						width: 100%;
+					}
+					figcaption {
+						box-sizing: border-box;
+						width: 100%;
+						padding: 8px 8px 7px 8px;
+						text-align: center;
+						letter-spacing: -0.7px;
+						color: #fff;
+						background: #000;
+						background: rgba(0,0,0, .7);
+						display: block;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						font-size: 17px;
+						line-height: 1.2;
+					}
+				}
+				.li-txt {
+					box-sizing: border-box;
+					width: 100%;
+					padding: 8px 8px 7px 8px;
+					text-align: center;
+					letter-spacing: -0.7px;
+					color: #fff;
+					background: #000;
+					background: rgba(0,0,0, .7);
+					display: table;
+					font-size: 13px;
+					line-height: 20px;
+					word-break: keep-all;
+					span {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+				.li-txt.ht-1 {
+					height: 75px;
+				}
+			}
+		}
+		.facil-tb {
+			margin-top: 15px;
+			+ {
+				p {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.etc-sec {
+		position: relative;
+		margin-bottom: 50px;
+		padding-top: 50px;
+		.d-cm {
+			position: relative;
+			text-align: center;
+			line-height: 1.3;
+			.p-0 {
+				font-size: 40px;
+				color: #00b2dd;
+			}
+			.p-1 {
+				font-size: 18px;
+				color: #636363;
+				line-height: 1.5;
+				margin-top: 10px;
+			}
+			.area-btn {
+				font-size: 20px;
+				margin-top: 26px;
+				.a-btn {
+					position: relative;
+					display: inline-block;
+					width: 356px;
+					height: 70px;
+					background: #00b2dd;
+					color: #fff;
+					&:after {
+						content: "";
+						display: inline-block;
+						height: 105%;
+						vertical-align: middle;
+					}
+					.ic-rArrow {
+						&:after {
+							border-color: #fff;
+							width: 10px;
+							height: 10px;
+							top: 0;
+							left: 2px;
+							margin-right: -15px;
+						}
+					}
+				}
+			}
+		}
+		.d-box-2 {
+			.p-0 {
+				font-size: 32px;
+			}
+			.area-btn {
+				margin-top: 20px;
+				.a-btn {
+					display: inline;
+					font-size: 34px;
+					font-weight: 700;
+					color: #00b2dd;
+					background: 0;
+					cursor: default;
+					vertical-align: middle;
+					>.txt {
+						position: relative;
+						font-size: 21px;
+						color: #333;
+						font-weight: 400;
+						top: -5px;
+					}
+				}
+				.pic-call {
+					position: relative;
+					display: inline-block;
+					width: 35px;
+					height: 35px;
+					background: url(http://img.ocean2you.co.kr/renew/group/pic_call.png);
+					vertical-align: middle;
+					top: -4px;
+					margin-left: -20px;
+					left: -4px;
+				}
+			}
+			.p-2 {
+				font-size: 28px;
+				font-weight: 700;
+				margin-top: 10px;
+				color: #00b2dd;
+			}
+		}
+	}
+	.facil-tb {
+		colgroup {
+			col.nth-1 {
+				width: 30%;
+			}
+			col.nth-2 {
+				width: 30%;
+			}
+			col.nth-3 {
+				width: 40%;
+			}
+		}
+		th {
+			border: 1px solid #d6d6d6;
+			font-size: 17px;
+			color: #5c5c5c;
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Nanum Gothic', sans-serif;
+			vertical-align: middle;
+			font-weight: 700;
+			background: #f3f0f0;
+		}
+		td {
+			border: 1px solid #d6d6d6;
+			font-size: 17px;
+			color: #5c5c5c;
+			text-align: center;
+			padding: 10px 0;
+			font-family: 'Nanum Gothic', sans-serif;
+			vertical-align: middle;
+		}
+	}
+	.enjoy-sec {
+		padding-bottom: 50px;
+		.courseTab {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			margin: 70px auto 0;
+			>li {
+				float: left;
+				width: 282px;
+				margin-left: 20px;
+				cursor: pointer;
+				text-align: center;
+				color: #319af6;
+				border: 2px solid #319af6;
+				line-height: 56px;
+				font-size: 20px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+			>li.on {
+				color: #fff;
+				background: #319af6;
+			}
+		}
+		.courseList {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			>li {
+				position: relative;
+				display: none;
+				text-align: center;
+				>img {
+					width: 100%;
+					margin: 80px auto 0;
+				}
+			}
+			>li.on {
+				display: block;
+			}
+		}
+	}
+	.qna-group {
+		padding: 50px 0 55px;
+		h2 {
+			.titBg {
+				width: 209px;
+			}
+		}
+	}
+	.qna-list {
+		width: 864px;
+		margin: 40px auto 0;
+	}
+}

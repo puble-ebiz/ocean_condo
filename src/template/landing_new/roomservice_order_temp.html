@@ -1,0 +1,124 @@
+@@loop('../include/_landing_head.html', [
+	{"cssPathList":[]}
+])
+	
+</head>
+<body>
+	<main class="roomservice-order">
+		<div class="top-title-box">
+			<h4 class="title">룸서비스 실시간 주문</h4>
+			<button type="button" class="btn-back" onclick="location.href='roomservice_intro.html'">X</button>
+		</div>
+		<div class="contents-order">
+			<div class="order-notice">
+				결제완료 이후부터 룸서비스가 준비되므로<br>
+				결제 후에는 환불이 불가하오니 이점 유의하십시오.
+			</div>
+			<form class="form-info-box">
+				<ul class="input-info-ul">
+					<li class="room-num-box">
+						<label>투숙객실 번호</label>
+						<input type="number">
+					</li>
+					<li class="name-box">
+						<label>주문자명</label>
+						<input type="text">
+					</li>
+					<li class="phone-num-box">
+						<label>휴대폰번호</label>
+						<input type="number" maxlength="11">
+					</li>
+				</ul>
+				<ul class="product-list-ul">
+					<!--견본파일 가져오고 지워짐-->
+					<li>
+						<p class="produt-name">모둠회(대)==견본</p>
+						<div class="price-box">
+							<p class="p-price-local">
+								<span class="span-num">70,000</span><span class="span-won">원</span>
+							</p>
+							<p class="p-price-sale">
+								<span class="span-num">20,000</span><span class="span-won">원</span>
+							</p>
+						
+							<div class="product-count-box">
+								<select>
+									<!-- <option value="0">0 개</option>
+									<option value="1">1 개</option>
+									<option value="2">2 개</option>
+									<option value="3">3 개</option>
+									<option value="4">4 개</option>
+									<option value="6">5 개</option>-->
+								</select>
+							</div>
+						</div>
+					</li>
+					<!--견본파일 끝-->
+				</ul>
+			</form>
+		</div>
+		<button class="btn_payment" type="button">결제하기</button>
+	</main>
+</body>
+</html>
+
+<script>
+	$(document).ready(function(){
+		let priceUl = $(".product-list-ul");
+		let pricelist = $(".product-list-ul li");
+		let priceSample = pricelist.clone().wrap('<div/>').parent();
+
+		pricelist.remove();
+
+		// priceUl.append(priceSample.html());
+
+		priceListInfo.forEach(function(data){
+			priceSample.find('.produt-name').text(data.name);
+			priceSample.find('.p-price-local .span-num').text(data.pLocal);
+			priceSample.find('.p-price-sale .span-num').text(data.pSale);
+			priceSample.find('.product-count-box select').empty();
+			for (let i = 0; i < data.count; i++) {
+				priceSample.find('.product-count-box select').append("<option value='"+ i +"'>"+ i + "개</option>");	
+			}
+			priceUl.append(priceSample.html());
+		});
+
+
+	});
+
+	let priceListInfo = []
+
+	setPirceInfo = function(priceLocal , priceSale, countNum, productNaem){
+		let priceObj = new Object;
+		priceObj.name = productNaem;
+		priceObj.pLocal = numberComma(priceLocal);
+		priceObj.pSale = numberComma(priceSale);
+		priceObj.count = countNum;
+		priceListInfo.push(priceObj)
+	}
+
+	/*숫자 컴마 붙이기*/
+	function numberComma(num) {
+		return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
+
+	//상품리스트
+	let countNum = 11;
+	setPirceInfo(70000, 69000, countNum, "모둠회(대)");
+	setPirceInfo(50000, 49000, countNum, "모둠회(중)");
+	setPirceInfo(30000, 29000, countNum, "모둠회(소)");
+	setPirceInfo(30000, 29000, countNum, "물회(2인분)");
+	setPirceInfo(19000, 18000, countNum, "바베큐플레이즈");
+
+	setPirceInfo(18900, 18900, countNum, "불고기피자(L)");
+	setPirceInfo(15900, 15900, countNum, "불고기피자(R)");
+	
+	setPirceInfo(18900, 18900, countNum, "페퍼로니피자(L)");
+	setPirceInfo(15900, 15900, countNum, "페퍼로니피자(R)");
+	
+	setPirceInfo(18900, 18900, countNum, "핫치킨피자(L)");
+	setPirceInfo(15900, 15900, countNum, "핫치킨피자(R)");
+	setPirceInfo(18900, 18900, countNum, "고르곤졸라피자(L)");
+	setPirceInfo(15900, 15900, countNum, "고르곤졸라피자(R)");
+</script>

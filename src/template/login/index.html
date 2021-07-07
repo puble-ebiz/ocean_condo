@@ -1,0 +1,168 @@
+@@include('../include/_head.html', {
+    "page": "login"
+    })
+    
+</head>
+
+<body>
+    <main id="wrap" class="wrap">
+        @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_login.html')
+
+        <!--탑메뉴 오버이벤트를 위한 태그-->
+        <div class="page-data" data-name="d_login"></div>
+
+        <div class="wrap-container wrap-login scss_com">
+            <section class="sect-login">
+                <div class="sect-contents">
+                    <div class="title-box">
+                        <h3 class="page-title title-main">오션투유 리조트 홈페이지 방문을 환영합니다.</h3>
+                        <div class="title-sub">로그인 후 오션투유 리조트 회원권을 확인하세요.</div>
+                    </div>
+                    <div class="login-contents">
+                        <div class="login-area">
+                            <!-- 2021-04-14 -->
+                            <!-- <ul class="select-member-ul login-comm-select-ul">
+                                <li>
+                                    <input type="radio" name="member" id="mem01" class="in-radio" checked>
+                                    <label for="mem01">개인회원</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="member" id="mem02" class="in-radio">
+                                    <label for="mem02">기업회원</label>
+                                </li>
+                            </ul> -->
+                            <div class="in-login-box">
+                                <div class="input-box">
+                                    <div>
+                                        <label for="in-membernum">회원번호</label>
+                                        <input type="text" id="in-membernum" maxlength="2" class="in-id" >
+                                        -<input type="text" id="in-membernum" maxlength="2" class="in-id">
+                                        -<input type="text" id="in-membernum" maxlength="2" class="in-id">
+                                        -<input type="text" id="in-membernum" maxlength="6" class="in-id">
+                                        -<input type="text" id="in-membernum" maxlength="2" class="in-id">
+                                    </div>
+                                    <label>비밀번호</label>
+                                    <input class="in-pw" type="password" placeholder="비밀번호를 입력해주세요">
+                                </div>
+                                <div class="btn-box">
+                                    <button type="button" class="btn-login">로그인</button>
+                                </div>
+                            </div>
+                            <div class="save-id-box">
+                                <input type="checkbox" id="check-save-id" class="check-save-id">
+                                <label for="check-save-id" class="check-label">회원번호 저장</label>
+                            </div>
+                            <div class="member-box">
+                                <ul class="member-ul">
+                                    <li><a href="./find_id.html">회원번호 찾기</a></li>
+                                    <li><a href="./find_pw.html">비밀번호 재설정</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="login-info" href="#"data-popup-open="change">로그인 관련 문의하기 <span class="triangle"></span></a>
+                </div>
+                
+                <!-- popup 추가 --> 
+                <div class="popup" data-popup="change"> 
+                    <div class="popup-inner"> 
+                        <div class="popup-contents"> 
+                            <a class="popup-close" data-popup-close="change" href="#">
+                                <img src="http://img.ocean2youresort.co.kr/mypage/icon_close.png" alt="닫기"/>
+                            </a> <!-- 팝업 닫기 버튼입니다 --> 
+                            
+                            <h3>로그인관련 문의하기</h3>
+                            <div>
+                                <table>
+                                    <caption>로그인 문의</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>이름</th>
+                                            <td><input type="text" placeholder="이름을 입력해주세요"/></td>
+                                        </tr>
+                                        <tr>
+                                            <th>휴대폰번호</th>
+                                            <td><input type="text" placeholder='"-"없이 입력해주세요'></td>
+                                        </tr>
+                                        <tr>
+                                            <th>이메일</th>
+                                            <td><input type="text" placeholder="이메일을 입력해주세요"></td>
+                                        </tr>
+                                        <tr>
+                                            <th>내용</th>
+                                            <td><textarea name="questionContent"  id="in-email" placeholder="문의사항을 입력해주세요."></textarea></td>
+                                        </tr>                    
+                                    </tbody>
+                                </table>
+                                <a href="#">문의하기</a>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+                <!-- popup// --> 
+
+                <script>
+                    $(function() {
+                    //OPEN
+                    $('[data-popup-open]').on('click', function(e)  {
+                        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+                        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+                        e.preventDefault();
+                    });
+
+                    //CLOSE
+                    $('[data-popup-close]').on('click', function(e)  {
+                        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+                        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+                        e.preventDefault();
+                    });
+                });
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+    
+            
+        </div>
+
+
+        @@include('../include/_footer.html')
+    </main>
+
+</body>
+
+</html>

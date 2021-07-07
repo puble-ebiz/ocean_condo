@@ -1,0 +1,124 @@
+@charset 'utf-8';
+
+
+.vid-wrap {background: url(http://img.ocean2you.co.kr/renew/intro/intro_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 320px;
+-webkit-background-size: cover; background-size: cover;}
+
+#wrapper {line-height: 1.5;}
+
+#contents {margin-top: 0; border-top: 3px solid #717171;}
+
+
+@media (max-width: 767px) {
+	.xs-block {display: block;}
+
+	.vid-wrap {height: auto;}
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 16px; padding-bottom: 22px; color: #fff;}
+	.title .tit-box h2 {font-size: 20px; font-weight: 400; color: #fff;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 18px auto 20px; background: #fff;}
+	.title .titTxt img {width: 310px;}
+	.title .tit-box .p0 {font-size: 16px; margin-top: 5px; line-height: 1.4; word-break: keep-all; letter-spacing: -1px;}
+	.title .facil-tab {position: relative; margin: 22px auto 0; width: 310px; left: 1.5px;}
+	.title .facil-tab > li {position: relative; float: left; top: 0; width: 46%; border: 2px solid #fff; margin: 0 2%;}
+	.title .facil-tab > li.on {border: 2px solid #fff;}
+	.title .facil-tab > li a {display: block; width: 100%; height: 45px; font-size: 16px; font-weight: 400; color: #fff;}
+	.title .facil-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+	
+	.title .facil-tab > li a img {position: relative; margin-right: 10px;}
+	.title .facil-tab > li a .i-user {top: -2px;}
+	.title .facil-tab > li a .i-cal {top: -1px;}
+	
+	.reservation {padding: 15px 0 84px;}
+	.reservation .container {width: 310px;}
+	.reservation .container > h3 {font-size: 28px; color: #44a8ff; text-align: center; font-weight: 600; font-family: "Nanum Gothic", sans-serif;}
+	.reservation .p0 {font-size: 15px; text-align: center; margin-top: 12px; line-height: 1.3;}
+	.reservation .mg- {display: block; height: 1px; width: 60px; margin: 20px auto 48px; background: #44a8ff;}
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+	
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 24px; font-weight: 400;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 18px auto 20px; background: #fff;}
+	.title .titTxt img {width: 570px;}
+	.title .tit-box .p0 {font-size: 18px; margin-top: 10px;}
+	.title .facil-tab {position: relative; margin: 22px auto 0; width: 350px; left: 1.5px;}
+	.title .facil-tab > li {position: relative; float: left; top: 0; width: 46%; border: 2px solid #fff; margin: 0 2%;}
+	.title .facil-tab > li a {display: block; width: 100%; height: 45px; font-size: 16px; font-weight: 400; color: #fff;}
+	.title .facil-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+	
+	.title .facil-tab > li a img {position: relative; margin-right: 12px;}
+	.title .facil-tab > li a .i-user {top: -2px;}
+	.title .facil-tab > li a .i-cal {top: -1px;}
+	
+	.reservation {padding: 25px 0 114px;}
+	.reservation .container {width: 768px;}
+	.reservation .container > h3 {font-size: 32px; color: #44a8ff; text-align: center; font-weight: 600; font-family: "Nanum Gothic", sans-serif;}
+	.reservation .p0 {font-weight: 17px; text-align: center; margin-top: 12px;}
+	.reservation .mg- {display: block; height: 1px; width: 60px; margin: 20px auto 48px; background: #44a8ff;}
+
+}
+
+@media (min-width: 992px) and (max-width: 1431px) {
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 24px; font-weight: 400;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .titTxt img {width: 570px;}
+	.title .tit-box .p0 {font-size: 18px; margin-top: 10px;}
+	.title .facil-tab {position: relative; margin: 22px auto 0; width: 462px; left: 1.5px;}
+	.title .facil-tab > li {position: relative; float: left; top: 0; width: 44%; border: 2px solid #fff; margin: 0 3%;}
+	.title .facil-tab > li a {display: block; width: 100%; height: 45px; font-size: 16px; font-weight: 400; color: #fff;}
+	.title .facil-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+	
+	.title .facil-tab > li a img {position: relative; margin-right: 12px;}
+	.title .facil-tab > li a .i-user {top: -2px;}
+	.title .facil-tab > li a .i-cal {top: -1px;}
+	
+	.reservation {padding: 25px 0 114px;}
+	.reservation .container {width: 992px;}
+	.reservation .container > h3 {font-size: 32px; color: #44a8ff; text-align: center; font-weight: 600; font-family: "Nanum Gothic", sans-serif;}
+	.reservation .p0 {font-weight: 18px; text-align: center; margin-top: 12px;}
+	.reservation .mg- {display: block; height: 1px; width: 60px; margin: 20px auto 48px; background: #44a8ff;}
+	
+
+	
+}
+
+
+@media (min-width: 1432px) {
+	
+
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px; font-weight: 400;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .facil-tab {position: relative; margin: 22px auto 0; width: 462px; left: 1.5px;}
+	.title .facil-tab > li {position: relative; float: left; top: 0; width: 44%; border: 2px solid #fff; margin: 0 3%;}
+	.title .facil-tab > li a {display: block; width: 100%; height: 45px; font-size: 16px; font-weight: 400; color: #fff;}
+	.title .facil-tab > li a:after {content: ""; display: inline-block; height: 108%; vertical-align: middle;}
+	
+	.title .facil-tab > li a img {position: relative; margin-right: 12px;}
+	.title .facil-tab > li a .i-user {top: -2px;}
+	.title .facil-tab > li a .i-cal {top: -1px;}
+	
+	.reservation {padding: 25px 0 114px;}
+	.reservation .container {width: 1054px;}
+	.reservation .container > h3 {font-size: 34px; color: #44a8ff; text-align: center; font-weight: 600; font-family: "Nanum Gothic", sans-serif;}
+	.reservation .p0 {font-weight: 18px; text-align: center; margin-top: 12px;}
+	.reservation .mg- {display: block; height: 1px; width: 60px; margin: 20px auto 48px; background: #44a8ff;}
+		
+	
+}
+
+.rWing-wrap {position: absolute; right: 50%; margin-right: -625px; /*top: 740px;*/ z-index: 20;}
+.rWing-wrap .rw-tab {position: relative;}
+.rWing-wrap .rw-tab > li {margin-top: 14px;}
+.rWing-wrap .rw-tab > li:first-child {margin-top: 0;}
+

@@ -1,0 +1,463 @@
+//GUIDE COMMON CSS
+.information {
+    article {
+
+        //공통
+        h3 {
+            padding-top: 7.0rem;
+            line-height: 4.0rem;
+            font-size: 2.5rem;
+            font-weight: 500;
+
+            span {
+                display: inline-block;
+                padding-left: 2.0rem;
+                font-weight: 300;
+                font-size: 1.8rem;
+                color: #FF3F71;
+            }
+
+            span.gray {
+                color: #595959;
+            }
+        }
+
+        >div {
+            margin-top: 1.5rem;
+            border-top: 2px solid #373737;
+
+            tr {
+
+                td {
+                    padding: 1.5rem 0;
+                    line-height: 2.4rem;
+                }
+            }
+
+            >p.comment {
+                padding-top: 2.0rem;
+                padding-bottom: 1.0rem;
+                line-height: 2.4rem;
+                font-weight: 300;
+                color: #595959;
+            }
+
+        }
+
+        //공통 end
+    }
+
+    //guide01
+    //info01
+    .info01 {
+        >div {
+            display: flex;
+            margin-top: 4.0rem;
+            padding: 5.0rem 6.0rem;
+            border-bottom: 1px solid #BCBCBC;
+
+
+            img {
+                display: block;
+                width: 25%;
+                max-width: 250px;
+            }
+
+            >div {
+                width: 75%;
+                position: relative;
+                padding-left: 7.0rem;
+                font-weight: 300;
+
+
+                h4 {
+                    font-size: 2.8rem;
+                    padding-bottom: 2.0rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+
+                ul {
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+
+                    li {
+                        margin-right: 1.0rem;
+                        padding: 7px 20px;
+                        border: 1px solid #BCBCBC;
+                        border-radius: 15px;
+                        font-size: 1.8rem;
+
+                    }
+                }
+            }
+        }
+    }
+
+    //guide02 
+    //rsv_list
+    .rsv_list {
+        img {
+            display: block;
+            width: 100%;
+            padding-top: 3.0rem;
+        }
+
+    }
+
+    .manners {
+        td {
+            padding: 2.5rem 3.5rem;
+            text-align: left;
+
+            b {
+                display: block;
+                border: 0;
+                font-weight: 500;
+            }
+
+            span.blue {
+                display: block;
+                color: #44A8FF;
+            }
+
+            span.red {
+                padding-top: 2.5rem;
+                display: block;
+                color: #FF376B;
+            }
+
+            em {
+                display: inline-block;
+                padding-left: 1.0rem;
+                border: 0;
+
+            }
+        }
+    }
+
+    //guide03
+    .rsv_room {
+        margin-top: 4.5rem;
+
+        th {
+            font-size: 1.8rem;
+            font-weight: 500;
+
+            img {
+                display: inline-block;
+                padding-right: 10px;
+            }
+        }
+
+        td {
+            padding: 2.0rem 0;
+            font-size: 1.8rem;
+
+            b {
+                display: block;
+                padding-bottom: 5px;
+                font-size: 2.2rem;
+                font-weight: 500;
+            }
+        }
+
+
+
+    }
+
+    .penalty {
+        tr:nth-of-type(1) {
+            th {
+                line-height: 2.4rem;
+            }
+        }
+
+        tr:nth-of-type(2) {
+            th {
+                background: #F9F9F9;
+            }
+        }
+    }
+
+
+
+}
+
+//guide04 
+.guide04,
+.guide05 {
+    article {
+        >div {
+            tr {
+                td {
+                    padding: 2.5rem 2.0rem;
+                    text-align: left;
+                }
+
+                td.payment {
+                    a {
+                        display: block;
+                        width: 240px;
+                        height: 4.4rem;
+                        margin: 0 auto 10px;
+                        line-height: 4.4rem;
+                        background-color: #44A8FF;
+                        text-align: center;
+                        color: white;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    article:last-of-type(2) {
+        table {
+            a {
+                background-color: #44A8FF;
+                color: #fff;
+            }
+
+        }
+    }
+
+    article:last-of-type {
+        h3 {
+            padding-bottom: 2.0rem;
+        }
+
+        p {
+            line-height: 3.0rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//guide05
+.guide05,
+.guide06 {
+
+    /* 탭 */
+    .mb-tab {
+        position: relative;
+        width: 100%;
+        margin-top: 4.0rem;
+
+        li {
+            display: block;
+            position: relative;
+            box-sizing: border-box;
+            float: left;
+            width: 20%;
+            height: 60px;
+            border-top: 1px solid #b9b9b9;
+            border-bottom: 1px solid #595959;
+            border-left: 1px solid #b9b9b9;
+            background: #f7f8fa;
+
+            a {
+                display: block;
+                font-size: 1.6rem;
+                text-align: center;
+                line-height: 60px;
+                color: #686868
+            }
+
+        }
+
+        li:nth-last-of-type(1) {
+            border-right: 1px solid #b9b9b9;
+
+        }
+
+        li:nth-last-of-type(1).on {
+            border-right: 1px solid #595959;
+        }
+
+        li.on {
+            border-top: 1px solid #595959;
+            border-bottom: 0px;
+            border-left: 1px solid #595959;
+            border-right: 1px solid #595959;
+
+            a {
+                background-color: white;
+            }
+        }
+    }
+
+    .top-title {
+        h3 {
+            padding: 5.0rem 0 1.5rem;
+            font-size: 2.8rem;
+            font-weight: 500;
+        }
+
+        p {
+            padding-bottom: 1.0rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+    }
+
+    table {
+        td {
+            p {
+                text-align: left;
+
+                em {
+                    display: inline-block;
+                    padding-left: 5.5rem;
+                    border: 0;
+
+                }
+            }
+
+            .down_file {
+                width: 24.0rem !important;
+            }
+        }
+    }
+
+
+}
+
+//guide06
+.guide06 {
+    article {
+        h3 {
+            padding-top: 7.0rem;
+
+            span {
+                padding-left: 0;
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: #44A8FF;
+            }
+        }
+    }
+
+    .mb-tab {
+        li {
+            width: 50% !important;
+        }
+    }
+}
+
+//table type 
+
+
+
+.table-type-color {
+    table {
+        tr {
+            th {
+                background-color: #F9F9F9;
+                line-height: 2.5rem;
+            }
+
+            th.blue {
+                background-color: #EAF3FB;
+                border-right: 1px solid #ccc;
+            }
+
+            th.yellow {
+                background-color: #FFFDDF;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+@media(max-width:990px) {
+    .information {
+
+        //info01
+        .info01 {
+
+
+            >div {
+                display: block;
+
+                img {
+                    width: 50%;
+                    margin: auto;
+                }
+
+                >div {
+                    width: 100%;
+                    padding-left: 0;
+                    text-align: center;
+
+                    h4 {
+                        padding-top: 2.0rem;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    ul {
+                        overflow: hidden;
+                        position: unset;
+                        display: block;
+
+                        li {
+                            float: left;
+                            width: 48%;
+                            margin-top: 1.0rem;
+                            margin-right: 1%;
+                            font-size: 12px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

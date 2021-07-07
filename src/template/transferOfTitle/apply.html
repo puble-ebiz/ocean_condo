@@ -1,0 +1,120 @@
+<!-- 2021 header include -->
+@@include('../include/_head.html', {
+	"page": "transferOfTitle"
+})
+</head>
+
+<!-- 기업회원일때 addClass -->
+<script>
+    $(document).ready(function(){
+        $(".in-radio").on("click",function(){
+            let index = $(this).parent("li").index();
+            if(index == 1){
+                $(".cont-box01").removeClass("off");
+            }
+            if(index == 0){
+                $(".cont-box01").addClass("off");
+            }
+            // console.log("작동");
+            
+        });
+    });
+</script>
+<!-- 개인정보취급방침 addClass -->
+<script>
+    $(document).ready(function(){
+        $('.view_policy').click(function(event){
+        event.preventDefault();
+        $('.policy-box').children('.policy').toggleClass('active');
+        });
+     });
+</script>
+
+
+<!-- 2021 html 기준 -->
+
+<!-- 2021 명의개서 -->
+<h1 class="hidden">명의개서 신청서</h1>
+    <div id="wrap">
+        @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_transferOfTitle.html')
+        <section class="scss_com transfer" id="setTop">
+            <div id="wrapper">
+                <div id="contents">
+                    <h2>오션투유 리조트 명의개서</h2>
+                    <div class="">
+                        <h3 class="text_color">오션투유 리조트 <span> 운영사 변경에 따른 명의개서</span> 신청서 작성</h3>
+
+                        <ul class="select-member-ul">
+                            <li>
+                                <input type="radio" name="member" id="mem01" class="in-radio" checked>
+                                <label for="mem01">개인회원</label>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="member" id="mem02" class="in-radio">
+                                <label for="mem02">기업회원</label>
+                            </li>
+                        </ul>
+
+                        <div class="in-area-apply">
+                            <ul class="in-area-ul">
+                                <li class="item-name">
+                                    <label for="in-name">이름</label>
+                                    <input type="text" id="in-name" placeholder="이름을 입력해주세요.">
+                                </li>
+
+                                <!-- 사업자 체크했을때 start -->
+                                <li class="item-corporate-name cont-box01 off">
+                                    <label for="item-corporate-name">사업자명</label>
+                                    <input type="text" id="item-corporate-name" placeholder="사업자명을 입력해주세요.">
+                                </li>
+                                <li class="item-corporate-num cont-box01 off">
+                                    <label for="in-corporate-num">사업자 번호</label>
+                                    <div class="in-box">
+                                        <input type="number" id="in-corporate-num">
+                                        <p>-</p>
+                                        <input type="number">
+                                        <p>-</p>
+                                        <input type="number">
+                                    </div>
+                                </li>
+                                <!-- 사업자 체크했을때 end// -->
+
+                                <li class="item-phone">
+                                    <label for="in-phone">휴대폰 번호</label>
+                                    <input type="number" id="in-phone" placeholder="'-'없이 입력해주세요.">
+                                </li>
+                                
+                                <li class="item-email">
+                                    <label for="in-email">이메일주소</label>
+                                    <input type="email" id="in-email" placeholder="이메일주소 입력">
+                                </li>
+                                <li class="item-question">
+                                    <label for="in-email">문의사항</label>
+                                    <textarea name="questionContent"  id="in-email" placeholder="문의사항을 입력해주세요."></textarea>
+                                </li>
+                            </ul>
+
+                            <div class="policy-box">
+                                <div class="policy-box-btn">
+                                    <input type="checkbox" id="check-policy" class="check-policy">
+                                    <label for="check-policy" class="check-label">개인정보취급방침 동의</label>
+                                    <span class="view_policy">[보기]</span>
+                                </div>
+                                <p class="policy">개인정보취급방침 TEST</p>
+                            </div>
+                            
+                        </div>
+                        <a href="../transferOfTitle/apply_guide.html"class="btn btn_blue">명의개서 신청완료</a>
+                    </div>
+                    @@include('./_bottom_info.html')
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    @@include('../include/_footer.html')
+</html>
+                

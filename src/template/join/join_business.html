@@ -1,0 +1,102 @@
+@@include('../include/_head.html', {
+    "page": "join"
+    })
+    
+</head>
+
+<body>
+    <main id="wrap" class="wrap">
+        @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_join.html')
+
+
+        <div class="wrap-container wrap-join">
+            <section class="sect-join">
+                <div class="sect-contents">
+                    <div class="title-box">
+                        <h3 class="page-title title-main">기업회원가입</h3>
+                    </div>
+
+                    <div class="join-in-contents">
+                        <div class="in-area in-area-top">
+                            <p class="p-notice">※ 오션투유콘도에서 사용하실<span>새로운 비밀번호를 입력</span>해주세요</p>
+                            <ul class="in-ul">
+                                <li>
+                                    <label for="in-pw">새 비밀번호</label>
+                                    <input type="text" id="in-pw" class="in-pw" placeholder="새 비밀번호 입력">
+                                </li>
+                                <li>
+                                    <label for="in-pw-check">새 비밀번호 확인</label>
+                                    <input type="text" id="in-pw-check" class="in-pw-check" placeholder="새 비밀번호 확인">
+                                </li>
+                            </ul>
+                            <p class="p-notice">* 영문/숫자/특수문자 8~15자 이하</p>
+                        </div>
+                        <div class="in-area in-area-bottom">
+                            <ul class="in-ul">
+                                <li>
+                                    <label for="in-name">대표자명</label>
+                                    <input type="text" id="in-name" class="in-name">
+                                </li>
+                                <li>
+                                    <label for="business-name">상호</label>
+                                    <input type="text" id="business-name" class="business-name">
+                                </li>
+                                <li class="item-business">
+                                    <label for="business-num">사업자번호</label>
+                                    <div class="in-box">
+                                        <input type="number"  maxlength="3" id="business-num">
+                                        <p>-</p>
+                                        <input type="number" maxlength="4">
+                                        <p>-</p>
+                                        <input type="number" maxlength="4">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="in-email01">이메일 주소</label>
+                                    <input type="text" id="in-email01" class="in-email01" placeholder="이메일을 입력해주세요">
+                                </li>
+                                <li>
+                                    <label for="in-tel01">휴대폰 번호</label>
+                                    <input type="text" id="in-tel01" class="in-tel" placeholder="“-”없이 입력해주세요">
+                                    <button type="button" class="btn-black">인증번호 발송</button>
+                                </li>
+                                <!-- 인증번호 발송 후 -->
+                                <li>
+                                    <p style="font-size: 0; width:130px">인증번호</p>
+                                    <input type="text" id="in-tel01" class="in-tel" placeholder="인증번호 6자리 숫자 입력">
+                                </li>
+                                <!-- ///인증번호 발송 후 -->
+                                <li class="item-address">
+                                    <label for="in-address01">주소</label>
+                                    <div class="address-box">
+                                        <div class="box box-top">
+                                            <input type="text" id="in-address01" class="in-address01">
+                                            <button type="button" class="btn-black">우편번호 찾기</button>
+                                        </div>
+                                        <div class="box box-bottom">
+                                            <input type="text" id="in-address02" class="in-address02" placeholder="주소를 입력해주세요.">
+                                            <input type="text" id="in-address03" class="in-address03" placeholder="상세 주소를 입력해주세요">
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <p class="p-notice">* 회원카드가 발송되는 기본정보입니다. 정확하게 입력해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="bottom-btn-area">
+                        <a href="./join_complete.html" class="btn-join-complete btn-blue">회원가입 완료</a>
+                    </div>
+                    @@include('./_agree.html')
+                   
+                </div>
+            </section> 
+        </div>
+
+        @@include('../include/_footer.html')
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@@include('../include/_head.html', {
+    "page": "login"
+    })
+    
+</head>
+
+<body>
+    <main id="wrap" class="wrap">
+        @@include('../include/_header.html')
+        @@include('../include/_sub/_subpage_top_login.html')
+
+
+        <!--탑메뉴 오버이벤트를 위한 태그-->
+        <div class="page-data" data-name="d_find_id"></div>
+
+        <div class="wrap-container wrap-login">
+            <section class="sect-find">
+                <div class="sect-contents">
+                    <h3 class="page-title">회원번호 찾기</h3>
+                    <div class="login-contents">
+                        <div class="find-area">
+                            <div class="result-title-box">
+                                <div class="icon-img">
+                                    <img src="http://design.ebiznetworks.co.kr/lhc/ocean2y_condo/img/login/icon_search.png" alt="돋보기">
+                                </div>
+                                <p class="title">회원번호 찾기 결과</p>
+                            </div>
+
+                            <div class="note-box">
+                                <p class="p-mark">고객님의 회원번호는 다음과 같습니다. </p>
+                                <p>회원번호를 확인하시고 로그인을 진행해주세요.</p>
+                            </div>
+
+                            <div class="view-box-id">
+                                <p class="p-id">ocean2you123</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bottom-btn-area">
+                        <a href="./find_pw.html" class="btn-close btn-white">비밀번호 찾기</a>
+                        <a href="./index.html" class="btn-check btn-blue">로그인</a>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+
+        @@include('../include/_footer.html')
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+@charset 'utf-8';
+#wrap * {box-sizing: border-box;}
+
+.vid-wrap {background: url(http://img.ocean2you.co.kr/renew/intro/intro_titBg.jpg) no-repeat top center; padding-top: 98px; position: relative; width: 100%; height: 400px;
+-webkit-background-size: cover; background-size: cover;}
+
+.xs-inline {display: block;}
+.xs-visible {display: none;}
+.xs-hidden {display: block;}
+@media (max-width: 767px) {
+	.xs-inline {display: inline;}
+	.xs-visible {display: block;}
+	.xs-hidden {display: none;}
+	.vid-wrap {height: 260px;}
+	
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 5px; color: #fff; width: 320px;}
+	.title .tit-box h2 {font-size: 20px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 30px; margin: 15px auto; background: #fff;}
+	.title .titTxt img {width: 310px;}
+	.title .tit-box .p0 {font-size: 16px; margin-top: 5px; line-height: 1.4; word-break: keep-all; letter-spacing: -1px;}
+	
+	.resort {position: relative; padding: 30px 0 0px;}
+	.resort .container {width: 90%; padding-bottom: 35px; border-bottom: 1px solid #e0e0e0;}
+	.resort .resortImg {}
+	.resort h3 {font-size: 16px; margin-top: 15px; color: #373737; line-height: 1.3; word-break: keep-all; letter-spacing: -1px;}
+	.resort .p1, .resort .p2 {font-size: 13px; color: #7c7c7c; line-height: 1.5; word-break: keep-all;}
+	.resort .mg- {position: relative; left: 2px; width: 28px; height: 1px; background: #44a8ff; margin: 10px 0 15px;}
+	.resort .p1 {}
+	.resort .p2 {margin-top: 10px;}
+	.resort .btn-area {position: relative; text-align: center; margin: 35px auto 0;}
+	.resort .rv-a {position: relative; display: block; width: 256px; margin: 0 auto; height: 46px; font-size: 16px; font-family: "Nanum Gothic", sans-serif; text-align: center; background: #44a8ff; border: 1px solid #44a8ff; color: #fff; line-height: 42px; border-radius: 4px; box-sizing: border-box;}
+	.resort .rv-a.a1 {
+		border: 1px solid #44a8ff; color: #44a8ff; margin-bottom: 10px;
+		background: #fefeff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fefeff 0%, #f1f3f4 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #fefeff 0%,#f1f3f4 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #fefeff 0%,#f1f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#f1f3f4',GradientType=0 ); /* IE6-9 */
+	}
+	.resort .rv-a.a1 .i_user {position: relative; left: -6px;width: 20px;}
+	.resort .rv-a > * {vertical-align: middle;}
+	.resort .rv-a .gt {position: absolute; top: 17px; right: 25px; width: 7px;}
+	
+	.oc2point {position: relative; padding: 35px 0 45px;}
+	.oc2point .container {width: 90%;}
+	.oc2point .ul0 {}
+	.oc2point .ul0 > li {position: relative; overflow: hidden; width: 100%;}
+	.oc2point .ul0 .l-1 .txt-box {position: relative; background: #f5f5f5; padding: 25px 5px 15px 15px; word-break: keep-all;}
+	.oc2point .ul0 > li.xs-visible {margin-top: 15px;}
+	.oc2point .ul0 > li .p0 {color: #a9a9a9; font-size: 16px;}
+	.oc2point .ul0 > li h3 {font-size: 17px; color: #373737; margin-top: 14px; letter-spacing: -1px;}
+	.oc2point .ul0 > li .p1 {font-size: 13px; line-height: 1.5; margin-top: 5px; color: #7c7c7c; letter-spacing: -1.5px;}
+	.oc2point .ul0 > li h3 + .p1 {margin-top: 15px;}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 24px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .titTxt img {width: 575px;}
+	.title .tit-box .p0 {font-size: 18px; margin-top: 10px;}
+	
+	.resort {position: relative; padding: 50px 0 0px;}
+	.resort .container {width: 768px; padding-bottom: 65px; border-bottom: 1px solid #e0e0e0;}
+	.resort .resortImg {}
+	.resort h3 {font-size: 17px; margin-top: 30px; color: #373737;}
+	.resort .p1, .resort .p2 {font-size: 15px; color: #7c7c7c; line-height: 1.5; word-break: keep-all;}
+	.resort .mg- {position: relative; left: 2px; width: 28px; height: 1px; background: #44a8ff; margin: 15px 0 20px;}
+	.resort .p1 {}
+	.resort .p2 {margin-top: 10px;}
+	.resort .btn-area {position: relative; text-align: center; margin: 35px auto 0; width: 768px;}
+	.resort .rv-a {position: relative; display: inline-block; margin: 0 5px; width: 216px; height: 46px; font-size: 16px; font-family: "Nanum Gothic", sans-serif; text-align: center; background: #44a8ff; color: #fff; line-height: 42px; border-radius: 4px;}
+	.resort .rv-a.a1 {
+		border: 1px solid #44a8ff; color: #44a8ff;
+		background: #fefeff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fefeff 0%, #f1f3f4 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #fefeff 0%,#f1f3f4 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #fefeff 0%,#f1f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#f1f3f4',GradientType=0 ); /* IE6-9 */
+	}
+	.resort .rv-a.a1 .i_user {position: relative; left: -6px;width: 20px;}
+	.resort .rv-a > * {vertical-align: middle;}
+	.resort .rv-a .gt {position: absolute; top: 17px; right: 15px; width: 7px;}
+	
+	.oc2point {position: relative; padding: 60px 0 70px;}
+	.oc2point .container {width: 768px;}
+	.oc2point .ul0 {}
+	.oc2point .ul0 > li {position: relative; float: left; height: 267px; overflow: hidden;}
+	.oc2point .ul0 > li.nth-1, .oc2point .ul0 > li.nth-3 {width: 394px;}
+	.oc2point .ul0 > li.nth-2, .oc2point .ul0 > li.nth-4 {width: 373px;}
+	.oc2point .ul0 .l-1 .txt-box {position: absolute; background: #f5f5f5; padding: 25px 5px 20px 15px;}
+	.oc2point .ul0 > li.nth-2 .txt-box {width: 349px; height: 100%; top: 0; left: 0;}
+	.oc2point .ul0 > li.nth-3 .txt-box {width: 375px; height: 249px; top: 0; right: 0;}
+	.oc2point .ul0 > li.nth-4 {}
+	.oc2point .ul0 > li .p0 {color: #a9a9a9; font-size: 16px;}
+	.oc2point .ul0 > li h3 {font-size: 17px; color: #373737; margin-top: 14px;}
+	.oc2point .ul0 > li .p1 {font-size: 13px; line-height: 1.5; margin-top: 5px; color: #7c7c7c; letter-spacing: -1.5px;}
+	.oc2point .ul0 > li h3 + .p1 {margin-top: 15px;}
+}
+
+@media (min-width: 992px) and (max-width: 1431px) {
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 24px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .titTxt img {width: 575px;}
+	.title .tit-box .p0 {font-size: 18px; margin-top: 10px;}
+	
+	.resort {position: relative; padding: 100px 0 0px;}
+	.resort .container {width: 992px; padding-bottom: 65px; border-bottom: 1px solid #e0e0e0;}
+	.resort .resortImg {}
+	.resort h3 {font-size: 20px; margin-top: 50px; color: #373737;}
+	.resort .p1, .resort .p2 {font-size: 16px; color: #7c7c7c; line-height: 1.5; word-break: keep-all;}
+	.resort .mg- {position: relative; left: 2px; width: 38px; height: 1px; background: #44a8ff; margin: 20px 0 24px;}
+	.resort .p1 {}
+	.resort .p2 {margin-top: 14px;}
+	.resort .btn-area {position: relative; text-align: center; margin: 65px auto 0; width: 768px;}
+	.resort .rv-a {position: relative; display: inline-block; margin: 0 15px; width: 306px; height: 64px; font-size: 20px; font-family: "Nanum Gothic", sans-serif; text-align: center; background: #44a8ff; color: #fff; line-height: 57px; border-radius: 4px; font-weight: 700;}
+	.resort .rv-a.a1 {
+		border: 1px solid #44a8ff; color: #44a8ff;
+		background: #fefeff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fefeff 0%, #f1f3f4 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #fefeff 0%,#f1f3f4 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #fefeff 0%,#f1f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#f1f3f4',GradientType=0 ); /* IE6-9 */
+	}
+	.resort .rv-a.a1 .i_user {position: relative; left: -6px;}
+	.resort .rv-a > * {vertical-align: middle;}
+	.resort .rv-a .gt {position: absolute; top: 24px; right: 25px;}
+	
+	.oc2point {position: relative; padding: 130px 0 178px;}
+	.oc2point .container {width: 992px;}
+	.oc2point .ul0 {}
+	.oc2point .ul0 > li {position: relative; float: left; height: 334px; overflow: hidden;}
+	.oc2point .ul0 > li.nth-1, .oc2point .ul0 > li.nth-3 {width: 508px;}
+	.oc2point .ul0 > li.nth-2, .oc2point .ul0 > li.nth-4 {width: 482px;}
+	.oc2point .ul0 .l-1 .txt-box {position: absolute; background: #f5f5f5; padding: 30px 20px 20px;}
+	.oc2point .ul0 > li.nth-2 .txt-box {width: 451px; height: 100%; top: 0; left: 0;}
+	.oc2point .ul0 > li.nth-3 .txt-box {width: 484px; height: 321px; top: 0; right: 0;}
+	.oc2point .ul0 > li.nth-4 {}
+	.oc2point .ul0 > li .p0 {color: #a9a9a9; font-size: 18px;}
+	.oc2point .ul0 > li h3 {font-size: 20px; color: #373737; margin-top: 14px;}
+	.oc2point .ul0 > li .p1 {font-size: 15px; line-height: 1.5; margin-top: 10px; color: #7c7c7c; letter-spacing: -1px;}
+	.oc2point .ul0 > li h3 + .p1 {margin-top: 25px;}
+}
+
+@media (min-width: 1432px) {
+	
+
+	.title {position: relative;}
+	.title .tit-box {text-align: center; padding-top: 76px; color: #fff;}
+	.title .tit-box h2 {font-size: 27px;}
+	.title .tit-box .mg- {display: block; height: 1px; width: 60px; margin: 18px auto 20px; background: #fff;}
+	.title .tit-box .p0 {font-size: 20px; margin-top: 10px;}
+	
+	.resort {position: relative; padding: 100px 0 0px;}
+	.resort .container {width: 1280px; padding-bottom: 65px; border-bottom: 1px solid #e0e0e0;}
+	.resort .resortImg {}
+	.resort h3 {font-size: 22px; margin-top: 50px; color: #373737;}
+	.resort .p1, .resort .p2 {font-size: 18px; color: #7c7c7c; line-height: 1.5; word-break: keep-all; letter-spacing: -1.5px;}
+	.resort .mg- {position: relative; left: 2px; width: 38px; height: 1px; background: #44a8ff; margin: 20px 0 24px;}
+	.resort .p1 {}
+	.resort .p2 {margin-top: 14px;}
+	.resort .btn-area {position: relative; text-align: center; margin: 65px auto 0; width: 768px;}
+	.resort .rv-a {position: relative; display: inline-block; margin: 0 15px; width: 306px; height: 64px; font-size: 20px; font-family: "Nanum Gothic", sans-serif; text-align: center; background: #44a8ff; color: #fff; line-height: 57px; border-radius: 4px; font-weight: 700;}
+	.resort .rv-a.a1 {
+		border: 1px solid #44a8ff; color: #44a8ff;
+		background: #fefeff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #fefeff 0%, #f1f3f4 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #fefeff 0%,#f1f3f4 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #fefeff 0%,#f1f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#f1f3f4',GradientType=0 ); /* IE6-9 */
+	}
+	.resort .rv-a.a1 .i_user {position: relative; left: -6px;}
+	.resort .rv-a > * {vertical-align: middle;}
+	.resort .rv-a .gt {position: absolute; top: 24px; right: 25px;}
+	
+	.oc2point {position: relative; padding: 130px 0 178px;}
+	.oc2point .container {width: 1280px;}
+	.oc2point .ul0 {}
+	.oc2point .ul0 > li {position: relative; float: left; height: 446px; word-break: keep-all;}
+	.oc2point .ul0 > li.nth-1, .oc2point .ul0 > li.nth-3 {width: 656px;}
+	.oc2point .ul0 > li.nth-2, .oc2point .ul0 > li.nth-4 {width: 622px;}
+	.oc2point .ul0 .l-1 .txt-box {position: absolute; background: #f5f5f5; padding: 80px 20px 40px 45px;}
+	.oc2point .ul0 > li.nth-2 .txt-box {width: 581px; height: 100%; top: 0; left: 0;}
+	.oc2point .ul0 > li.nth-3 .txt-box {width: 625px; height: 414px; top: 0; right: 0;}
+	.oc2point .ul0 > li.nth-4 {}
+	.oc2point .ul0 > li .p0 {color: #a9a9a9; font-size: 20px;}
+	.oc2point .ul0 > li h3 {font-size: 26px; color: #373737; margin-top: 14px;}
+	.oc2point .ul0 > li .p1 {font-size: 18px; line-height: 1.5; margin-top: 10px; color: #7c7c7c;}
+	.oc2point .ul0 > li h3 + .p1 {margin-top: 40px;}
+	
+	
+}
+
+@media (min-width: 1561px) {
+	.rBn-box {margin-left: 660px;}
+}

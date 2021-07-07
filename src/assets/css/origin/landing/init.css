@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body { font-family: "Nanum Gothic", sans-serif; color: #333; }
+
+.text-hide { position: absolute; width: 0; height: 0; font: 0/0 arial, sans-serif; text-indent: -9999px; }
+
+.fixed { position: fixed; width: 100%; left: 0; }
+
+.sec { position: relative; }
+
+.picture { text-align: center; }
+
+em { font-weight: 700; }
+
+.landing-wrapper { position: relative; max-width: 768px; margin: 0 auto; }
+
+/* 오션투유 룸서비스 */
+.landing-wrapper.roomservice .landing-contents .visual .tel-num { display: block; position: absolute; width: 100%; bottom: 7.3%; text-align: center; }
+
+.landing-wrapper.roomservice .landing-contents .visual .tel-num > img { width: 84.5%; }
+
+.landing-wrapper.roomservice .landing-footer { height: 72px; }
+
+.landing-wrapper.roomservice .landing-footer .link-call { height: 72px; display: block; bottom: 0; background: #004579; text-align: center; }
+
+.landing-wrapper.roomservice .landing-footer .link-call > img { width: 320px; margin: 0 auto; }
+
+.landing-wrapper.wifi { font-family: "NanumSquare", "Nanum Square", sans-serif; line-height: 1.423; letter-spacing: -0.7px; }
+
+.landing-wrapper.wifi .blue { color: #6eaaff; }
+
+.landing-wrapper.wifi .blue-dark { color: #003863; }
+
+.landing-wrapper.wifi .landing-header { z-index: 1; position: absolute; width: 100%; top: 0; left: 0; text-align: center; font-size: 0; }
+
+.landing-wrapper.wifi .landing-header .title { display: inline-block; height: 23px; padding: 7px 10px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #003863; font-size: 11px; color: #fff; line-height: 1; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual { height: 516px; padding-top: 23px; -webkit-box-sizing: border-box; box-sizing: border-box; background: #6eaaff url("http://img.ocean2you.co.kr/renew/landing/wifi/visual_bg.png") no-repeat center/cover; text-align: center; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .title-picture { padding: 10px 0 7px; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .title-picture img { width: 292px; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .title, .landing-wrapper.wifi .landing-contents .sec.visual .text { color: #003863; font-weight: 700; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .title { font-size: 21px; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .text { margin-top: 5px; font-size: 16px; line-height: 1.5; }
+
+@media (max-width: 320px) { .landing-wrapper.wifi .landing-contents .sec.visual .text { font-size: 15px; } }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .logo { margin-top: 5px; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .logo img { height: 72px; }
+
+.landing-wrapper.wifi .landing-contents .sec.visual .copyright { position: absolute; width: 100%; left: 0; bottom: 15px; font-size: 10px; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list { background-color: #88ade3; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item { padding: 20px 0; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item:not(:first-child) { border-top: 1px solid #c4d6f1; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .item-title, .landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list { padding: 0 10px; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .item-title img { height: 25px; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list { margin-top: 7px; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list .picture-item { position: relative; float: left; width: calc(100% / 2); }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list .picture-item img { width: 96%; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list .picture-item figcaption { margin-top: 5px; text-align: left; font-size: 13px; color: #fff; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list .picture-item:nth-child(1) { text-align: left; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list .picture-item:nth-child(2) { text-align: right; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list .picture-item:nth-child(2) figcaption { padding-left: 4%; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item { width: calc(100% / 3); }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item img { width: 95%; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item figcaption { white-space: nowrap; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item:nth-child(1) { text-align: left; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item:nth-child(2) { text-align: center; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item:nth-child(2) figcaption { padding-left: 2.5%; text-indent: 22px; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item:nth-child(3) { text-align: right; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .picture-list.count-3 .picture-item:nth-child(3) figcaption { padding-left: 5%; text-indent: 8px; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .service-use { padding-left: 10px; font-size: 15px; font-weight: 700; color: #003863; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .service-use .use-title { margin-top: 8px; }
+
+.landing-wrapper.wifi .landing-contents .sec.service .service-list .service-item .service-use .use-text { margin-top: 2px; letter-spacing: -1px; }
+
+.landing-wrapper.wifi .landing-footer { padding: 20px 0; background-color: #6c89b3; text-align: center; }
+
+.landing-wrapper.wifi .landing-footer .logo-f img { height: 21px; }
+
+.landing-wrapper.wifi .landing-footer .copyright { margin-top: 5px; font-size: 10px; color: #fff; }
+/*# sourceMappingURL=init.css.map */

@@ -1,0 +1,410 @@
+.wrap-main .sect-room {
+    .sect-area {
+        .sect-container {
+
+            .contents {
+                margin-top: 3.9rem;
+            }
+        }
+    }
+}
+
+/*룸타입 슬라이드*/
+.wrap-main .sect-room .sect-area .sect-container .contents {
+    .slide-area {
+        position: relative;
+
+        .slide-room-ul {
+
+            li.item {
+                display: flex;
+
+                // justify-content: space-between;
+                .room-viewer-area {
+                    flex-shrink: 0;
+                    width: 59.0rem;
+                    height: 40.0rem;
+                    max-width: 66.0rem;
+                    margin-left: 0.1rem;
+
+                    .room-viewer-ul {
+
+                        li.viewer-item {
+                            height: 40.0rem;
+
+                            // background-color: rebeccapurple;;
+                            img {
+                                height: 100%;
+                                // width: 66.0rem;
+                                max-width: none;
+                            }
+                        }
+                    }
+                }
+
+                .room-info-area {
+                    padding-left: 4.7rem;
+
+                    // padding-left: 6.0rem;
+                    .info-box {
+                        .title-box {
+                            .title-img {
+                                height: 1.8rem;
+
+                                img {
+                                    width: auto;
+                                    height: 100%;
+                                }
+                            }
+
+                            .title-main {
+                                margin-top: 1.8rem;
+                                color: #595959;
+                                font-size: 4.5rem;
+                                font-weight: 700;
+                                letter-spacing: -3.0px;
+
+                            }
+
+                            .title-sub {
+                                margin-top: 2.0rem;
+                                color: #595959;
+                                font-size: 1.8rem;
+                                font-weight: 200;
+                                letter-spacing: -0.5px;
+                                line-height: 1.4;
+                            }
+                        }
+
+                        .type-box {
+                            margin-top: 2.0rem;
+                            margin-bottom: 3.0rem;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+
+                            .type-txt-box {
+                                p {
+                                    color: #373737;
+                                    font-size: 1.8rem;
+                                    line-height: 1.5;
+                                    font-weight: 200;
+
+                                    .span-mark {
+                                        font-weight: 500;
+                                    }
+                                }
+
+                            }
+
+                            .btn-go {
+                                color: #595959;
+                                font-size: 1.5rem;
+                                font-weight: 400;
+                                line-height: 1.1;
+                                display: flex;
+                                align-items: flex-end;
+
+                                .icon-go {
+                                    padding-bottom: 0.2rem;
+                                    width: 3.0rem;
+                                    margin-left: 0.7rem;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .room-viewer-control {
+                        .slick-dots {
+                            display: flex;
+
+                            .slick-active {
+                                position: relative;
+
+                            }
+
+                            .slick-active :after {
+                                content: "+";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                font-size: 3.0rem;
+                                line-height: 100px;
+                                color: white;
+                                background: rgba(0, 0, 0, 0.5);
+                            }
+
+                            &>li:last-of-type {
+                                margin-right: 0;
+                            }
+
+                            &>li {
+                                height: 100px;
+                                width: 100px;
+                                margin-right: 10px;
+                                overflow: hidden;
+
+
+                                //클릭이미지
+                                .viewer-btn {
+                                    width: 170px;
+                                    cursor: pointer;
+                                    margin-left: -35px;
+
+                                    img {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .room-slide-control {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            display: flex;
+
+            .control-dots {
+                margin: 0 auto 10px;
+
+                .slick-dots {
+                    display: flex;
+
+                    &>li {
+                        .btn {
+                            background-color: #bbb;
+                            width: 1.0rem;
+                            height: 1.0rem;
+                            border-radius: 50%;
+                            margin-right: 1.0rem;
+                        }
+
+                        &:last-of-type {
+                            .btn {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    &>li.slick-active {
+                        .btn {
+                            background-color: #44a8ff;
+                            border-radius: 5px;
+                            width: 3.0rem;
+                            height: 1.0rem;
+                        }
+                    }
+                }
+            }
+
+            .control-arrows {
+                margin-left: 8.6rem;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+                button {
+                    width: 4.0rem;
+                    height: 4.0rem;
+                    border: 1px solid #595959;
+                    text-align: center;
+                    line-height: 4.0rem;
+                    background: white;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 테블릿
+@media (max-width: 1230px) {
+    .wrap-main .sect-room {
+        .sect-area {
+            .sect-container {
+
+                .contents {}
+            }
+        }
+    }
+
+    /*룸타입 슬라이드*/
+    .wrap-main .sect-room .sect-area .sect-container .contents {
+        .slide-area {
+            position: relative;
+
+            .slide-room-ul {
+
+                li.item {
+                    display: block;
+
+                    .room-viewer-area {
+                        width: auto;
+
+                        .room-viewer-ul {
+
+                            li.viewer-item {
+                                img {}
+                            }
+                        }
+                    }
+
+                    .room-info-area {
+                        padding-left: 0;
+
+                        .info-box {
+                            .title-box {
+                                .title-img {
+
+                                    img {}
+                                }
+
+                                .title-main {}
+
+                                .title-sub {}
+                            }
+
+                            .type-box {
+
+                                .type-txt-box {
+                                    p {
+
+                                        .span-mark {}
+                                    }
+
+                                }
+
+                                .btn-go {
+
+                                    .icon-go {
+
+                                        img {}
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .room-viewer-control {
+                            .slick-dots {
+                                height: auto;
+
+                                .slick-active {}
+
+                                .slick-active :after {
+                                    line-height: 300%;
+                                }
+
+                                &>li:last-of-type {}
+
+                                &>li {
+                                    width: auto;
+                                    height: auto;
+
+                                    //클릭이미지
+                                    .viewer-btn {
+                                        width: auto;
+
+                                        img {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .room-slide-control {
+                position: unset;
+                width: auto;
+                margin-top: 2.0rem;
+
+                .control-dots {
+
+                    .slick-dots {
+
+                        &>li {
+
+
+                            .btn {}
+
+                            &:last-of-type {
+                                .btn {}
+                            }
+                        }
+
+                        &>li.slick-active {
+                            .btn {}
+                        }
+                    }
+                }
+
+                .control-arrows {
+                    display: none;
+
+                    button {}
+                }
+            }
+        }
+
+    }
+}
+
+// 모바일
+@media (max-width:990px) {}

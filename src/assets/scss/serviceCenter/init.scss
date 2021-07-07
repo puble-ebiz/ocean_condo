@@ -1,0 +1,408 @@
+.service-center {
+    .content-area.faq {
+        margin-top: 1.5rem;
+        border-top: 0;
+
+
+    }
+
+    .content-area {
+        border-top: 2px solid #373737;
+
+        .svc-list {
+            li {
+
+                border-bottom: 1px solid #ddd;
+                line-height: 6.0rem;
+                text-align: center;
+
+                div.title {
+                    display: flex;
+
+                    >* {
+                        display: block;
+                        text-align: center;
+                        font-weight: 300;
+                    }
+
+                    >span {
+                        width: 10%;
+                        min-width: 20px;
+                    }
+
+                    >p {
+                        width: 75%;
+                        text-align: left;
+
+                        a {
+                            text-align: left;
+                        }
+
+                        a:hover {
+                            color: #32618A;
+                        }
+                    }
+
+                    >b {
+                        width: 15%;
+                        min-width: 80px;
+                    }
+                }
+
+                .content {
+                    li {
+                        display: flex;
+                        padding: 3.5rem 0;
+                        background-color: #F9F9F9;
+                        border-top: 1px solid #ddd;
+                        border-bottom: 0px;
+
+                        div {
+                            width: 10%;
+
+                            b {
+                                display: block;
+                                width: 3.0rem;
+                                height: 3.0rem;
+                                margin: auto;
+                                line-height: normal;
+                                font-weight: normal;
+                                background-color: #595959;
+                                color: white;
+                            }
+                        }
+
+                        p {
+                            width: 90%;
+                            text-align: left;
+                            line-height: 2.0rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .svc-title {
+            padding: 2.0rem 4.0rem;
+            border-bottom: 1px solid #BCBCBC;
+
+            h4 {
+                font-size: 2.0rem;
+            }
+
+            span {
+                font-weight: 100;
+            }
+        }
+
+        .svc-content {
+            min-height: 24.5rem;
+            padding: 5.0rem 4.0rem;
+
+        }
+
+        //묻고답하기 list START
+        .qna {
+            table {
+                thead {
+                    th {
+                        background-color: white;
+                        border-left: 0;
+                    }
+                }
+
+                tbody {
+                    td {
+                        border-left: 0;
+                    }
+
+                    td:nth-of-type(3) {
+                        text-align: left;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                tr {
+                    td {
+                        padding: 1.8rem 0;
+                    }
+                }
+
+                tr.asw {
+                    background-color: #F9F9F9;
+
+                    td {
+                        span {
+                            display: block;
+                            width: 9.0rem;
+                            padding: 5px 0;
+                            margin: auto;
+                            background-color: #595959;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .answer {
+            background-color: #F9F9F9;
+            display: flex;
+
+            >div {
+                padding-right: 2.0rem;
+
+                b {
+                    display: block;
+                    width: 8.0rem;
+                    height: 3.0rem;
+                    line-height: 3.0rem;
+                    margin: auto;
+                    font-weight: normal;
+                    background-color: #595959;
+                    text-align: center;
+                    color: white;
+                }
+            }
+
+            p {
+                span {
+                    display: block;
+                    line-height: 3.0rem;
+                    font-weight: 100;
+                    padding-bottom: 3.5rem;
+                }
+            }
+        }
+
+        >div:last-of-type {
+            margin-bottom: 2.0rem;
+            border-bottom: 1px solid #BCBCBC;
+            line-height: normal;
+        }
+
+
+        //묻고답하기-쓰기 START
+        .write.table {
+            padding: 5.0rem 10.0rem;
+            background-color: #F9F9F9;
+
+            li {
+                display: flex;
+                padding-bottom: 1.5rem;
+
+                p {
+                    width: 15%;
+                    padding-left: 2.0rem;
+                    line-height: 4.5rem;
+                }
+
+                input,
+                select,
+                textarea {
+                    width: 35%;
+                    border: 1px solid #999;
+
+                }
+
+                select {
+                    height: 4.5rem;
+                }
+
+                textarea {
+                    height: 35.0rem;
+                    padding: 10px;
+                }
+            }
+
+            :nth-of-type(1),
+            :nth-of-type(5) {
+
+                input,
+                textarea {
+                    width: 85%;
+                }
+            }
+
+
+        }
+
+
+
+        //묻고답하기-쓰기 END
+    }
+
+    .btn-write {
+        overflow: hidden;
+
+        a {
+            float: right;
+            margin: 0;
+            width: 13.0rem;
+            height: 4.5rem;
+            line-height: 4.5rem;
+        }
+    }
+
+    .popup-contents {
+        >input[type="text"] {
+            width: 32.0rem;
+            height: 4.5rem;
+            margin-bottom: 2.0rem;
+            line-height: 4.5rem;
+        }
+
+        >div {
+            a {
+                width: 10.0rem;
+                height: 4.5rem;
+                line-height: 4.5rem;
+                border: 1px solid #999999;
+                background-color: #888888;
+                font-weight: 300;
+                font-size: 1.6rem;
+                color: white;
+            }
+
+            :last-of-type {
+                background-color: #44A8FF;
+            }
+        }
+    }
+
+    .back {
+        display: block;
+        width: 100px;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        border: 1px solid #999999;
+        text-align: center;
+    }
+
+    article {
+        position: relative;
+
+        .button {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+
+            a {
+                display: block;
+                width: 10.0rem;
+                height: 4.5rem;
+                line-height: 4.5rem;
+                margin-left: 10px;
+                font-weight: normal;
+                background-color: #595959;
+                text-align: center;
+                color: white;
+
+            }
+        }
+    }
+
+    .btn-submit {
+        overflow: hidden;
+        width: 32.0rem;
+        margin: auto;
+
+        a {
+            display: block;
+            float: left;
+            width: 49%;
+            height: 4.5rem;
+            text-align: center;
+            line-height: 4.5rem;
+            border: 1px solid #999999;
+        }
+
+        a:last-of-type {
+            float: right;
+            background-color: #44A8FF;
+            color: white;
+        }
+    }
+}
+
+/* 탭 */
+.mb-tab {
+    position: relative;
+    width: 100%;
+    margin-top: 4.0rem;
+
+    li {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        float: left;
+        width: 14.2%;
+        height: 60px;
+        border-top: 1px solid #b9b9b9;
+        border-bottom: 1px solid #595959;
+        border-left: 1px solid #b9b9b9;
+        background: #f7f8fa;
+
+        a {
+            display: block;
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 60px;
+            color: #686868
+        }
+
+    }
+
+    li:nth-last-of-type(1) {
+        border-right: 1px solid #b9b9b9;
+
+    }
+
+    li:nth-last-of-type(1).on {
+        border-right: 1px solid #595959;
+    }
+
+    li.on {
+        border-top: 1px solid #595959;
+        border-bottom: 0px;
+        border-left: 1px solid #595959;
+        border-right: 1px solid #595959;
+
+        a {
+            background-color: white;
+        }
+    }
+}
+
+@media(max-width:990px) {
+
+    //묻고답하기 list START
+    .qna {
+        table {
+
+            // table-layout: fixed;
+            // font-size: 2.0rem;
+
+            tbody {
+                tr {
+                    td {
+                        padding: 1.0rem 0 !important;
+                    }
+
+                    td:nth-of-type(3) {
+                        a {
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
