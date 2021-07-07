@@ -56,3 +56,4 @@ _tmp/
 img/
 dist/
 .sass-cache/
+node_modules
